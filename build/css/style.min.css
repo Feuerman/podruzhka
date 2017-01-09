@@ -1,0 +1,19 @@
+.owl-carousel .owl-item {
+    float: none;
+    display: inline-block;
+}
+
+.owl-carousel .owl-item img {
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+    vertical-align: bottom;
+}
+
+.novetly-slider {
+    text-align: center;
+}
+
+.novetly-slider .owl-item {
+    border-bottom: 1px #ccc solid;
+}
