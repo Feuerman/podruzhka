@@ -13,14 +13,379 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <p>header</p>
-  </header>
-  <section class="main-content">
-    <section class="novetly-slider owl-carousel"><img src="img/novetly-slider__1.jpg"><img src="img/novetly-slider__2.jpg"><img src="img/novetly-slider__3.jpg"><img src="img/novetly-slider__4.jpg"><img src="img/novetly-slider__5.jpg"><img src="img/novetly-slider__1.jpg"><img src="img/novetly-slider__2.jpg"><img src="img/novetly-slider__3.jpg"></section>
-  </section>
-  <script src="vendor/fancybox/jquery.fancybox.js"></script>
-  <footer class="footer">
-    <p>footer</p>
-  </footer>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <div class="header-menu">
+        <nav>
+          <ul class="top-menu">
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Каталог</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Акции</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Только у нас</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Новинки</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Хочу скидки</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Магазины</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Пообщаемся</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-panel">
+        <div class="header-panel__actions header-panel__item">
+          <button class="js-modal-search"><i class="icon icon__loop"></i></button>
+          <button class="js-modal-callback"><i class="icon icon__phone"></i></button>
+          <button class="js-modal-auth"><i class="icon icon__auth"></i></button>
+        </div>
+        <div class="header-basket header-panel__item">
+          <div class="header-basket__image"><i class="icon icon__basket"></i></div>
+          <div class="header-basket__count"><span>99</span></div>
+        </div>
+        <div class="header-social header-panel__item">
+          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+        </div>
+      </div>
+    </header>
+    <section class="top-slider-wrap">
+      <section class="top-slider owl-carousel js-slider-top"><img src="img/slider-top__1.jpg" alt=""><img src="img/slider-top__1.jpg" alt=""><img src="img/slider-top__1.jpg" alt=""><img src="img/slider-top__1.jpg" alt=""></section>
+      <div class="top-slider-nav">
+        <button class="top-slider-nav__left arrow arrow--left"></button>
+        <button class="top-slider-nav__right arrow arrow--right"></button>
+      </div>
+    </section>
+    <section class="section-winner">
+      <div class="section-winner__item section-winner__left">
+        <p>ДО ВЫБОРА ПОБЕДИТЕЛЯ ОСТАЛОСЬ…</p>
+      </div>
+      <div class="section-winner__item section-winner__timer">
+        <div class="timer">
+          <div class="timer-section timer-section--hourse">
+            <div class="timer-section-value">
+              <div class="timer-section-value__item"><span>0</span></div>
+              <div class="timer-section-value__item"><span>3</span></div>
+            </div><span class="timer-section__name">часов</span>
+          </div>
+          <div class="timer-sep"><span>:</span></div>
+          <div class="timer-section timer-section--minutes">
+            <div class="timer-section-value">
+              <div class="timer-section-value__item"><span>2</span></div>
+              <div class="timer-section-value__item"><span>7</span></div>
+            </div><span class="timer-section__name">минут</span>
+          </div>
+          <div class="timer-sep"><span>:</span></div>
+          <div class="timer-section timer-section--seconds">
+            <div class="timer-section-value">
+              <div class="timer-section-value__item"><span>3</span></div>
+              <div class="timer-section-value__item"><span>3</span></div>
+            </div><span class="timer-section__name">секунд</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-winner__item section-winner__right">
+        <p>
+           
+          ДАРИМ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ<br>НА 60 000 РУБЛЕЙ В re:Store
+        </p>
+      </div>
+    </section>
+    <section class="section-action">
+      <section class="action-slider-wrap">
+        <div class="action-slider-title">
+          <div class="action-slider-title__text">
+            <p>выгодные<span>Акции</span></p>
+          </div>
+          <div class="action-slider-title__bg-1"></div>
+          <div class="action-slider-title__bg-2"></div>
+        </div>
+        <div class="action-slider owl-carousel js-slider-action"><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__3.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__4.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__5.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__3.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__4.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__5.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a></div>
+      </section>
+      <div class="action-slider-nav">
+        <button class="action-slider-nav__left arrow arrow--left"></button>
+        <button class="action-slider-nav__right arrow arrow--right"></button>
+      </div>
+    </section>
+    <section class="section-novetly">
+      <div class="section-novetly-col section-novetly-col--left"><a class="section-novetly__journal"><img src="img/journal-august-2016.jpg" alt=""></a></div>
+      <div class="section-novetly-col section-novetly-col--right">
+        <div class="section-novetly-col__title">
+          <h2>новинки</h2>
+        </div>
+        <div class="section-novetly__slider">
+          <div class="novetly-slider owl-carousel js-slider-novetly">
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__status">
+                  <div class="e-status e-status--discount"><i class="icon icon__discount"></i></div>
+                  <div class="e-status e-status--novetly"><span>new</span></div>
+                </div>
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__2.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__status">
+                  <div class="e-status e-status--novetly"><span>new</span></div>
+                </div>
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__status">
+                  <div class="e-status e-status--discount"><i class="icon icon__discount"></i></div>
+                  <div class="e-status e-status--novetly"><span>new</span></div>
+                </div>
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+            <div class="novetly-slider-item">
+              <div class="novetly-slider-item__header">
+                <div class="novetly-slider-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
+                <div class="novetly-slider-item__category">помада</div>
+                <div class="novetly-slider-item__rating">
+                  <div class="rating">
+                    <div class="rating__item active"></div>
+                    <div class="rating__item active"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                    <div class="rating__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="novetly-slider-item__footer">
+                <div class="novetly-slider-item__price">
+                  <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                </div>
+                <div class="novetly-slider-item__shades">
+                  <div class="image">
+                    <div class="icon icon__basket--large"></div>
+                  </div>
+                  <div class="text">14 оттенков</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="novetly-slider-nav">
+            <button class="novetly-slider-nav__left arrow arrow--left"></button>
+            <button class="novetly-slider-nav__right arrow arrow--right"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-exclusive">
+      <div class="section-exclusive-col section-exclusive-col--left">
+        <div class="section-exclusive-col__title">
+          <h2>эксклюзивно</h2>
+        </div>
+        <div class="section-exclusive__slider">
+          <div class="exclusive-slider owl-carousel js-slider-exclusive">
+            <div class="exclusive-slider-item">
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__1.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__2.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+            </div>
+            <div class="exclusive-slider-item">
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__3.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__4.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+            </div>
+            <div class="exclusive-slider-item">
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__5.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__6.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+            </div>
+            <div class="exclusive-slider-item">
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__7.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__8.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+            </div>
+            <div class="exclusive-slider-item">
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__1.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+              <div class="exclusive-slider-item__sub">
+                <div class="exclusive-slider-item__logo"><img src="img/company-logo__2.jpg" alt=""></div>
+                <div class="exclusive-slider-item__desc">
+                  <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="exclusive-slider-nav">
+            <button class="exclusive-slider-nav__left arrow arrow--left"></button>
+            <button class="exclusive-slider-nav__right arrow arrow--right"></button>
+          </div>
+        </div>
+      </div>
+      <div class="section-exclusive-col section-exclusive-col--right"><a class="section-exclusive__journal"><img src="img/denimania.jpg" alt=""></a></div>
+    </section>
+    <script src="vendor/fancybox/jquery.fancybox.js"></script>
+    <footer class="footer">
+      <p>footer</p>
+    </footer>
+  </div>
 </body>

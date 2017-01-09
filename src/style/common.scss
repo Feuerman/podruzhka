@@ -1,17 +1,252 @@
-.owl-carousel .owl-item {
-  float: none;
-  display: inline-block;
-}
-.owl-carousel .owl-item img {
-  display: inline-block;
-  width: auto;
-  max-width: 90%;
-  vertical-align: bottom;
+.header {
+	overflow: hidden;
+	padding-top: 19px;
+	padding-bottom: 25px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+	&-logo {
+		float: left;
+		margin-right: 90px;
+	}
+	&-menu {
+		float: left;
+		margin-top: 17px;
+	}
+	&-panel {
+		float: right;
+		margin-top: 5px;
+		&__item {
+			display: inline-block;
+		}
+		&__actions {
+			button {
+				& + button {
+					margin-left: 14px;
+				}
+				.icon {
+
+				}
+			}
+		}
+	}
+	&-basket {
+		position: relative;
+		top: 5px;
+		margin-left: 30px;
+		&__image {
+			width: 30px;
+			height: 30px;
+			background: $color-links-primary-active;
+			border-radius: 50%;
+			.icon {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				left: 0;
+				margin: auto;
+			}
+		}
+		&__count {
+			position: absolute;
+			top: -9px;
+			right: -8px;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background: rgb(252, 222, 7);
+			line-height: 10px;
+			text-align: center;
+			span {
+				font-size: 1rem;
+				font-family: DaxlinePro;
+				color: $color-links-primary-active;
+			}
+		}
+	}
+	&-social {
+		position: relative;
+		top: -5px;
+		margin-left: 60px;
+	}
 }
 
-.novetly-slider {
-  text-align: center;
-  .owl-item {
-    border-bottom: 1px #ccc solid;
-  }
+.top-slider {
+	&-wrap {
+		position: relative;
+		padding-left: 83px;
+		padding-right: 83px;
+		background: rgb(248, 248, 248);
+	}
+	img {
+
+	}
+	&-nav {
+		.arrow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&__left {
+			left: 30px;
+		}
+		&__right {
+			right: 30px;
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 11px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.section-winner {
+	padding-top: 19px;
+	padding-bottom: 10px;
+	padding-left: 83px;
+	padding-right: 83px;
+	background: rgb(35, 190, 190);
+	font-family: DaxlinePro;
+	font-weight: 500;
+	text-align: center;
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__left, &__right {
+		p {
+			font-size: 2.1rem;
+			line-height: 1.2;
+			color: rgb(255, 255, 255);
+		}
+	}
+	&__left {
+
+	}
+	&__right {
+
+	}
+	&__timer {
+		margin-left: 105px;
+		margin-right: 105px;
+	}
+}
+
+.section-action {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 83px;
+	padding-right: 83px;
+	background-color: rgb(248, 248, 248);
+}
+
+.section-novetly {
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 83px;
+	padding-right: 83px;
+	background-color: rgb(201, 237, 237);
+	background-image: url('../img/section-bg__1.png');
+	background-position: right 15px;
+	background-repeat: no-repeat;
+	&-col {
+		&--left {
+			float: left;
+		}
+		&--right {
+			position: relative;
+			float: right;
+			width: calc(100% - 300px);
+			height: 450px;
+			padding-top: 24px;
+			padding-bottom: 27px;
+			padding-left: 40px;
+			padding-right: 40px;
+			background-color: rgb(255, 255, 255);
+		}
+		&__title {
+			padding-bottom: 23px;
+			text-align: center;
+			border-bottom: 1px rgb(236, 226, 233) solid;
+			h2 {
+				margin: 0;
+				font-family: DaxlinePro;
+				font-size: 2.3rem;
+				line-height: 1;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__journal {
+		img {
+			width: 295px;
+			height: 450px;
+		}
+	}
+	&__slider {
+		margin-top: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+.section-exclusive {
+	overflow: hidden;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 83px;
+	padding-right: 83px;
+	background-color: rgb(248, 248, 248);
+	background-image: url('../img/section-bg__2.png');
+	background-position: left calc(100% - 80px);
+	background-repeat: no-repeat;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 3px;
+		bottom: 57px;
+		display: block;
+		width: 71px;
+		height: 71px;
+		background: url('../img/section-bg__3.png') 0 0 no-repeat;
+	}
+	&-col {
+		&--left {
+			float: left;
+			width: calc(100% - 420px);
+			height: 633px;
+			background-color: rgb(255, 255, 255);
+		}
+		&--right {
+			float: right;
+		}
+		&__title {
+			height: 63px;
+			text-align: center;
+			h2 {
+				margin: 0;
+				font-family: DaxlinePro;
+				font-size: 2.3rem;
+				line-height: 63px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__slider {
+		position: relative;
+		height: calc(100% - 63px);
+	}
+	&__journal {
+		display: block;
+		img {
+			width: 404px;
+			height: 633px;
+		}
+	}
 }

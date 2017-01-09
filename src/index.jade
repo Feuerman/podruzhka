@@ -1,14 +1,328 @@
 include templates/head.jade
 body
-	include templates/header.jade
-	section.main-content
-		section.novetly-slider.owl-carousel
-			img(src="img/novetly-slider__1.jpg")
-			img(src="img/novetly-slider__2.jpg")
-			img(src="img/novetly-slider__3.jpg")
-			img(src="img/novetly-slider__4.jpg")
-			img(src="img/novetly-slider__5.jpg")
-			img(src="img/novetly-slider__1.jpg")
-			img(src="img/novetly-slider__2.jpg")
-			img(src="img/novetly-slider__3.jpg")
-	include templates/footer.jade
+	.page-wrapper
+		include templates/header.jade
+		section.top-slider-wrap
+			section.top-slider.owl-carousel.js-slider-top
+				img(src="img/slider-top__1.jpg", alt="")
+				img(src="img/slider-top__1.jpg", alt="")
+				img(src="img/slider-top__1.jpg", alt="")
+				img(src="img/slider-top__1.jpg", alt="")
+			.top-slider-nav
+				button.top-slider-nav__left.arrow.arrow--left
+				button.top-slider-nav__right.arrow.arrow--right
+		section.section-winner
+			.section-winner__item.section-winner__left
+				p ДО ВЫБОРА ПОБЕДИТЕЛЯ ОСТАЛОСЬ…
+			.section-winner__item.section-winner__timer
+				.timer
+					.timer-section.timer-section--hourse
+						.timer-section-value
+							.timer-section-value__item
+								span 0
+							.timer-section-value__item
+								span 3
+						span.timer-section__name часов
+					.timer-sep
+						span :
+					.timer-section.timer-section--minutes
+						.timer-section-value
+							.timer-section-value__item
+								span 2
+							.timer-section-value__item
+								span 7
+						span.timer-section__name минут
+					.timer-sep
+						span :
+					.timer-section.timer-section--seconds
+						.timer-section-value
+							.timer-section-value__item
+								span 3
+							.timer-section-value__item
+								span 3
+						span.timer-section__name секунд
+			.section-winner__item.section-winner__right
+				p 
+					| ДАРИМ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ
+					br
+					| НА 60 000 РУБЛЕЙ В re:Store
+		section.section-action
+			section.action-slider-wrap
+				.action-slider-title
+					.action-slider-title__text
+						p
+							| выгодные
+							span Акции
+					.action-slider-title__bg-1
+					.action-slider-title__bg-2
+				.action-slider.owl-carousel.js-slider-action
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__1.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__2.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__3.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__4.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__5.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__1.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__2.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__3.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__4.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__5.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__1.jpg", alt="")
+					a.action-slider__item(href="#")
+						img(src="img/slider-action__2.jpg", alt="")
+			.action-slider-nav
+				button.action-slider-nav__left.arrow.arrow--left
+				button.action-slider-nav__right.arrow.arrow--right
+		section.section-novetly
+			.section-novetly-col.section-novetly-col--left
+				a.section-novetly__journal
+					img(src="img/journal-august-2016.jpg", alt="")
+			.section-novetly-col.section-novetly-col--right
+				.section-novetly-col__title
+					h2 новинки
+				.section-novetly__slider
+					.novetly-slider.owl-carousel.js-slider-novetly
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__1.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__status
+									.e-status.e-status--discount
+										i.icon.icon__discount
+									.e-status.e-status--novetly
+										span new
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__2.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__status
+									.e-status.e-status--novetly
+										span new
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__3.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__4.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__status
+									.e-status.e-status--discount
+										i.icon.icon__discount
+									.e-status.e-status--novetly
+										span new
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__5.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+						.novetly-slider-item
+							.novetly-slider-item__header
+								.novetly-slider-item__image
+									img(src="img/novetly-slider__1.jpg", alt="")
+								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
+								.novetly-slider-item__category помада
+								.novetly-slider-item__rating
+									.rating
+										.rating__item.active
+										.rating__item.active
+										.rating__item
+										.rating__item
+										.rating__item
+							.novetly-slider-item__footer
+								.novetly-slider-item__price
+									.value.value--current 
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.novetly-slider-item__shades
+									.image
+										.icon.icon__basket--large
+									.text 14 оттенков
+					.novetly-slider-nav
+						button.novetly-slider-nav__left.arrow.arrow--left
+						button.novetly-slider-nav__right.arrow.arrow--right
+		section.section-exclusive
+			.section-exclusive-col.section-exclusive-col--left
+				.section-exclusive-col__title
+					h2 эксклюзивно
+				.section-exclusive__slider
+					.exclusive-slider.owl-carousel.js-slider-exclusive
+						.exclusive-slider-item
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__1.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__2.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+						.exclusive-slider-item
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__3.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__4.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+						.exclusive-slider-item
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__5.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__6.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+						.exclusive-slider-item
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__7.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__8.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+						.exclusive-slider-item
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__1.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+							.exclusive-slider-item__sub
+								.exclusive-slider-item__logo
+									img(src="img/company-logo__2.jpg", alt="")
+								.exclusive-slider-item__desc
+									p Корейский косметический бренд, созданный специалистами эстетической медицины!
+					.exclusive-slider-nav
+						button.exclusive-slider-nav__left.arrow.arrow--left
+						button.exclusive-slider-nav__right.arrow.arrow--right
+			.section-exclusive-col.section-exclusive-col--right
+				a.section-exclusive__journal
+					img(src="img/denimania.jpg", alt="")
+		include templates/footer.jade

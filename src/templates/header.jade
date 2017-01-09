@@ -1,2 +1,42 @@
 header.header
-	p header
+	.header-logo
+		a(href="#")
+			img(src="img/logo.png", alt="")
+	.header-menu
+		nav
+			ul.top-menu
+				li.top-menu__item
+					a.top-menu__link(href="#") Каталог
+				li.top-menu__item
+					a.top-menu__link(href="#") Акции
+				li.top-menu__item
+					a.top-menu__link(href="#") Только у нас
+				li.top-menu__item
+					a.top-menu__link(href="#") Новинки
+				li.top-menu__item
+					a.top-menu__link(href="#") Хочу скидки
+				li.top-menu__item
+					a.top-menu__link(href="#") Магазины
+				li.top-menu__item
+					a.top-menu__link(href="#") Пообщаемся
+	.header-panel
+		.header-panel__actions.header-panel__item
+			button.js-modal-search
+				i.icon.icon__loop
+			button.js-modal-callback
+				i.icon.icon__phone
+			button.js-modal-auth
+				i.icon.icon__auth
+		.header-basket.header-panel__item
+			.header-basket__image
+				i.icon.icon__basket
+			.header-basket__count
+				span 99
+		.header-social.header-panel__item
+			.social
+				a.social__item(href="#")
+					i.icon.icon__fb
+				a.social__item(href="#")
+					i.icon.icon__vk
+				a.social__item(href="#")
+					i.icon.icon__inst

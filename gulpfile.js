@@ -84,23 +84,23 @@ gulp.task('imagebuild', function () {
 		.pipe(reload({stream: true}));
 });
 
-gulp.task('sprite', function() {
-	var spriteData =
-		gulp.src('src/img/sprite/*.*')
-			.pipe(spritesmith({
-				imgName: '../img/sprite.png',
-				cssName: 'sprite.scss',
-				cssFormat: 'scss',
-				algorithm: 'alt-diagonal',
-				cssVarMap: function (sprite) {
-				  sprite.name = 'icon__' + sprite.name;
-				}
-			}));
-
-	spriteData.img.pipe(gulp.dest('build/img/'));
-	spriteData.css.pipe(gulp.dest('src/style/'));
-
-});
+// gulp.task('sprite', function() {
+// 	var spriteData =
+// 		gulp.src('src/img/sprite/*.*')
+// 			.pipe(spritesmith({
+// 				imgName: '../img/sprite.png',
+// 				cssName: 'sprite.scss',
+// 				cssFormat: 'scss',
+// 				algorithm: 'alt-diagonal',
+// 				cssVarMap: function (sprite) {
+// 				  sprite.name = 'icon__' + sprite.name;
+// 				}
+// 			}));
+//
+// 	spriteData.img.pipe(gulp.dest('build/img/'));
+// 	spriteData.css.pipe(gulp.dest('src/style/'));
+//
+// });
 
 gulp.task('fonts', function () {
 	gulp.src('src/fonts/**/*')
@@ -119,7 +119,7 @@ gulp.task('build', [
 	'jsbuild',
 	'stylebuild',
 	'imagebuild',
-	'sprite',
+	// 'sprite',
 	'fonts',
 	'vendor'
 ]);
