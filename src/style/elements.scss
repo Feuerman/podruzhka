@@ -39,6 +39,24 @@ a {}
 		background-image: url('../img/arrow-right.svg');
 	}
 }
+
+.owl-nav {
+	button {
+		z-index: 900;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 22.5px;
+		height: 39px;
+		text-indent: -9999px;
+	}
+	.owl-prev {
+		background-image: url('../img/arrow-left.svg');
+	}
+	.owl-next {
+		background-image: url('../img/arrow-right.svg');
+	}
+}
+
 .rating {
 	&__item {
 		display: inline-block;
@@ -80,6 +98,25 @@ a {}
 		text-align: center;
 		span {
 			color: rgb(255, 255, 255);
+		}
+	}
+}
+
+.list-bg {
+	&--flower {
+		.list-bg__item {
+
+		}
+	}
+	&__item {
+
+	}
+}
+
+.block-shop-app {
+	&__item {
+		img {
+
 		}
 	}
 }

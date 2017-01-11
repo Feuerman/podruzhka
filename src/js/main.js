@@ -19,7 +19,21 @@ $(document).ready(function () {
 	actionSlider.owlCarousel({
 		items: 9,
 		dots: false,
-		loop: true
+		loop: true,
+		responsive:{
+			0: {
+				items: 6
+			},
+			1360:{
+				items:7
+			},
+			1550:{
+				items:8
+			},
+			1700:{
+				items:9
+			}
+		}
 	});
 	$('.action-slider-nav__left').click(function() {
 		actionSlider.trigger('prev.owl.carousel');
@@ -34,7 +48,21 @@ $(document).ready(function () {
 		items: 5,
 		dots: false,
 		loop: true,
-		margin: 25
+		margin: 25,
+		responsive:{
+			0: {
+				items: 3
+			},
+			1360:{
+				items:3
+			},
+			1550:{
+				items:4
+			},
+			1750:{
+				items:5
+			}
+		}
 	});
 	$('.novetly-slider-nav__left').click(function() {
 		novetlySlider.trigger('prev.owl.carousel');
@@ -56,4 +84,63 @@ $(document).ready(function () {
 	$('.exclusive-slider-nav__right').click(function() {
 		exclusiveSlider.trigger('next.owl.carousel');
 	})
+
+
+	var instagramSlider = $('.js-slider-instagram');
+	instagramSlider.owlCarousel({
+		dots: false,
+		loop: true,
+		margin: 15,
+		responsive:{
+			0: {
+				items: 3
+			},
+			1360:{
+				items:4
+			},
+			1550:{
+				items:5
+			},
+			1750:{
+				items:6
+			}
+		}
+	});
+	$('.instagram-slider-nav__left').click(function() {
+		instagramSlider.trigger('prev.owl.carousel');
+	})
+	$('.instagram-slider-nav__right').click(function() {
+		instagramSlider.trigger('next.owl.carousel');
+	})
+
+
+	var journalSlider = $('.js-slider-journal');
+	journalSlider.owlCarousel({
+		items: 4,
+		dots: false,
+		nav: true,
+		navElement: 'button',
+		mouseDrag: false,
+		touchDrag: false,
+		margin: 25,
+		onChange: function () {
+			setTimeout(function() {
+				handlerActiveSlides();
+			}, 0);
+		}
+	});
+
+	function handlerActiveSlides(initIndex, count) {
+		var slides = journalSlider.find('.owl-item');
+		var classIndex = 1;
+		slides.removeClass (function (index, className) {
+			return (className.match (/(^|\s)journal-active-\S+/g) || []).join(' ');
+		});
+		slides.each(function (index, item) {
+			if ($(item).hasClass('active')) {
+				$(item).addClass('journal-active-' + classIndex);
+				classIndex++;
+			}
+		});
+	}
 });

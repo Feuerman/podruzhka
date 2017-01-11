@@ -58,7 +58,6 @@
 			text-align: center;
 			span {
 				font-size: 1rem;
-				font-family: DaxlinePro;
 				color: $color-links-primary-active;
 			}
 		}
@@ -70,46 +69,12 @@
 	}
 }
 
-.top-slider {
-	&-wrap {
-		position: relative;
-		padding-left: 83px;
-		padding-right: 83px;
-		background: rgb(248, 248, 248);
-	}
-	img {
-
-	}
-	&-nav {
-		.arrow {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		&__left {
-			left: 30px;
-		}
-		&__right {
-			right: 30px;
-		}
-	}
-	.owl-dots {
-		position: absolute;
-		bottom: 11px;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
-}
-
 .section-winner {
 	padding-top: 19px;
 	padding-bottom: 10px;
 	padding-left: 83px;
 	padding-right: 83px;
 	background: rgb(35, 190, 190);
-	font-family: DaxlinePro;
 	font-weight: 500;
 	text-align: center;
 	&__item {
@@ -175,7 +140,6 @@
 			border-bottom: 1px rgb(236, 226, 233) solid;
 			h2 {
 				margin: 0;
-				font-family: DaxlinePro;
 				font-size: 2.3rem;
 				line-height: 1;
 				text-transform: uppercase;
@@ -196,7 +160,8 @@
 }
 
 .section-exclusive {
-	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -218,20 +183,17 @@
 	}
 	&-col {
 		&--left {
-			float: left;
-			width: calc(100% - 420px);
-			height: 633px;
 			background-color: rgb(255, 255, 255);
+			width: 76%;
 		}
 		&--right {
-			float: right;
+			width: 23%;
 		}
 		&__title {
 			height: 63px;
 			text-align: center;
 			h2 {
 				margin: 0;
-				font-family: DaxlinePro;
 				font-size: 2.3rem;
 				line-height: 63px;
 				text-transform: uppercase;
@@ -245,8 +207,134 @@
 	&__journal {
 		display: block;
 		img {
-			width: 404px;
-			height: 633px;
+			width: 100%;
+		}
+	}
+}
+
+.section-discount {
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 83px;
+	padding-right: 83px;
+	background-color: rgb(255, 222, 50);
+	&-list {
+		width: 100%;
+		&__item {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 20%;
+			float: left;
+			padding-left: 3%;
+			color: rgb(106, 31, 69);
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			transition: all 0.2s;
+			&:hover {
+				color: rgb(237, 38, 144);
+				text-decoration: none;
+				.image {
+					&--init {
+						opacity: 0;
+					}
+					&--active {
+						opacity: 1;
+					}
+				}
+			}
+			.image {
+				position: relative;
+				float: left;
+				.icon {
+					transition: all 0.2s;
+				}
+				&--active {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+				}
+			}
+			.text {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.section-instagram {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	padding-left: 83px;
+	padding-right: 83px;
+	&-header {
+		overflow: hidden;
+		margin-bottom: 20px;
+		&__title {
+			float: left;
+			margin-right: 20px;
+			.icon {
+			}
+			span {
+				position: relative;
+				top: -3px;
+				padding-left: 10px;
+				font-size: 2.15rem;
+				text-transform: uppercase;
+				color: rgb(80, 80, 80);
+			}
+		}
+		&__button {
+			margin-left: 15px;
+			.button {
+				height: 25px;
+				line-height: 25px;
+				padding-left: 18px;
+				padding-right: 18px;
+				border: 1px $color-links-primary-active solid;
+				border-radius: 4px;
+				font-size: 1.2rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $color-links-primary-active;
+				transition: all 0.3s;
+				&:hover {
+					background-color: $color-links-primary-active;
+					color: rgb(255, 255, 255);
+				}
+			}
+		}
+	}
+}
+
+.section-journal {
+	background-color: rgb(248, 248, 248);
+	&-container {
+		background-color: rgb(35, 190, 190);
+		text-align: center;
+	}
+	&__slider {
+		display: inline-block;
+		width: 1000px;
+		padding-right: 35px;
+	}
+	&__desc {
+		display: inline-block;
+		width: 350px;
+		.title {
+			span {
+
+			}
+		}
+		.list-bg {
+			&__item {
+
+			}
+		}
+		.block-shop-app__item {
+
 		}
 	}
 }

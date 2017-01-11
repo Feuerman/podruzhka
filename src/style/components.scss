@@ -9,7 +9,6 @@
 		color: $color-links-primary;
 		font-size: 1.3rem;
 		line-height: 1;
-		font-family: DaxlinePro;
 		text-transform: uppercase;
 		&:hover, .active {
 			color: $color-links-primary-active;
@@ -23,9 +22,6 @@
 }
 .owl-carousel .owl-item img {
   display: inline-block;
-  width: auto;
-  max-width: 90%;
-  vertical-align: bottom;
 }
 
 .owl-dots {
@@ -50,6 +46,39 @@
 	}
 	.owl-dot + .owl-dot {
 		margin-left: 10px;
+	}
+}
+
+.top-slider {
+	&-wrap {
+		position: relative;
+		padding-left: 83px;
+		padding-right: 83px;
+		background: rgb(248, 248, 248);
+	}
+	img {
+		width: 100%;
+	}
+	&-nav {
+		.arrow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&__left {
+			left: 30px;
+		}
+		&__right {
+			right: 30px;
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 11px;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 }
 
@@ -223,13 +252,13 @@
 			text-align: center;
 			img {
 				max-width: 90%;
+				width: auto!important;
 			}
 		}
 		&__title {
 			margin-bottom: 5px;
 			font-size: 1.6rem;
 			line-height: 1.2;
-			font-family: DaxlinePro;
 			font-weight: 300;
 			text-transform: uppercase;
 		}
@@ -237,7 +266,6 @@
 			float: left;
 			margin-bottom: 10px;
 			padding-top: 1px;
-			font-family: DaxlinePro;
 			font-weight: 300;
 			text-transform: uppercase;
 			color: rgb(178, 178, 178);
@@ -256,7 +284,6 @@
 		&__price {
 			float: left;
 			.value {
-				font-family: DaxlinePro;
 				font-weight: 500;
 				line-height: 1.2;
 				&--current {
@@ -283,7 +310,6 @@
 					}
 				}
 				.rouble {
-					font-family: sans-serif;
 				}
 			}
 		}
@@ -309,7 +335,6 @@
 			}
 			.text {
 				font-size: 1.2rem;
-				font-family: DaxlinePro;
 				font-weight: 300;
 				color: rgb(178, 178, 178);
 				text-transform: uppercase;
@@ -367,11 +392,13 @@
 				bottom: 0;
 				left: 0;
 				margin: auto;
+				max-height: 50%;
+				max-width: 50%;
 			}
 		}
 		&__desc {
 			display: table-cell;
-			padding: 60px;
+			padding: 3vw;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -383,10 +410,9 @@
 			transition: all 0.3s ease-in-out;
 			p {
 				text-align: left;
-				font-size: 2.4rem;
+				font-size: 1.17vw;
 				line-height: 1.2;
 				color: rgb(255, 255, 255);
-				font-family: DaxlinePro;
 				font-weight: 300;
 			}
 		}
@@ -403,6 +429,114 @@
 		}
 		&__right {
 			right: 30px;
+		}
+	}
+}
+
+.instagram-slider {
+	&-wrap {
+		position: relative;
+	}
+	&-nav {
+		.arrow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&__left {
+			left: -52.5px;
+		}
+		&__right {
+			right: -52.5px;
+		}
+	}
+	&-item {
+		position: relative;
+		&__image {
+			img {
+				width: 100%;
+			}
+		}
+		&__title {
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+			.icon {
+				margin-right: 5px;
+			}
+			span {
+				position: relative;
+				bottom: 10px;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+}
+
+.journal-slider {
+	&-wrap {
+		position: relative;
+	}
+	.owl-nav {
+		button {
+			position: absolute;
+			top: 45%;
+			&.disabled {
+				display: none;
+			}
+		}
+		.owl-prev {
+			left: -80px;
+		}
+		.owl-next {
+			right: 0;
+		}
+	}
+	.owl-stage-outer {
+		overflow: visible;
+	}
+	.owl-item {
+		opacity: 0;
+		transition: all 0.1s;
+		&.active {
+			opacity: 1;
+		}
+		&.journal-active-2 {
+			.journal-slider-item__image {
+				transform: scale(0.9);
+			}
+		}
+		&.journal-active-3 {
+			.journal-slider-item__image {
+				transform: scale(0.8);
+			}
+		}
+		&.journal-active-4 {
+			.journal-slider-item__image {
+				transform: scale(0.7);
+			}
+		}
+	}
+	&-item {
+		&__image {
+			padding: 100px 0 30px 0;
+			text-align: left;
+			transition: transform 0.3s;
+			img {
+				width: 80%;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+				transform: rotate(-15deg);
+			}
+		}
+		&__desc {
+			span {
+				&.strong {
+
+				}
+			}
 		}
 	}
 }
