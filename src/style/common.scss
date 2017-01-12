@@ -110,7 +110,9 @@
 }
 
 .section-novetly {
-	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 83px;
@@ -121,35 +123,29 @@
 	background-repeat: no-repeat;
 	&-col {
 		&--left {
-			float: left;
+			width: 23%;
+			max-width: 290px;
 		}
 		&--right {
 			position: relative;
-			float: right;
-			width: calc(100% - 300px);
-			height: 450px;
-			padding-top: 24px;
-			padding-bottom: 27px;
-			padding-left: 40px;
-			padding-right: 40px;
 			background-color: rgb(255, 255, 255);
+			max-width: calc(100% - 310px);
 		}
 		&__title {
-			padding-bottom: 23px;
+			height: 63px;
 			text-align: center;
 			border-bottom: 1px rgb(236, 226, 233) solid;
 			h2 {
 				margin: 0;
 				font-size: 2.3rem;
-				line-height: 1;
+				line-height: 63px;
 				text-transform: uppercase;
 			}
 		}
 	}
 	&__journal {
 		img {
-			width: 295px;
-			height: 450px;
+			width: 100%;
 		}
 	}
 	&__slider {
@@ -213,6 +209,7 @@
 }
 
 .section-discount {
+	position: relative;
 	overflow: hidden;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -220,12 +217,28 @@
 	padding-right: 83px;
 	background-color: rgb(255, 222, 50);
 	&-list {
-		width: 100%;
+		width: calc(100% - 80px);
+		margin: 0 auto;
+		.owl-item {
+			float: left!important;
+		}
+		.owl-nav {
+			button {
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.owl-prev {
+				left: -35px;
+			}
+			.owl-next {
+				right: -35px;
+			}
+		}
 		&__item {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			width: 20%;
 			float: left;
 			padding-left: 3%;
 			color: rgb(106, 31, 69);
@@ -312,29 +325,396 @@
 .section-journal {
 	background-color: rgb(248, 248, 248);
 	&-container {
+		background: url('../img/section-bg__3.png') 20px 130px no-repeat, url('../img/section-bg__6.png') 0 -90px no-repeat, url('../img/section-bg__7.png') right 85px no-repeat, url('../img/section-bg__8.png') right calc(100% + 120px) no-repeat;
 		background-color: rgb(35, 190, 190);
 		text-align: center;
 	}
 	&__slider {
 		display: inline-block;
-		width: 1000px;
+		width: calc(1400px - 500px);
 		padding-right: 35px;
 	}
 	&__desc {
 		display: inline-block;
-		width: 350px;
+		vertical-align: top;
+		width: 370px;
+		text-align: left;
+		color: rgb(255, 255, 255);
 		.title {
+			margin-bottom: 15px;
+			padding-top: 10px;
+			font-size: 3.5rem;
+			text-transform: uppercase;
 			span {
 
 			}
 		}
 		.list-bg {
+			margin-bottom: 35px;
+			font-size: 2rem;
 			&__item {
+				span {
+					text-transform: uppercase;
+				}
+			}
+		}
+		.block-shop-app {
+			margin-bottom: 10px;
+		}
+	}
+	&-bottom {
+		overflow: hidden;
+		padding-left: 83px;
+		padding-right: 83px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		&__container {
+			width: 1000px;
+			float: left;
+			margin-left: 10vw;
+			p {
+				font-size: 1.2rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.footer {
+	position: relative;
+	overflow: hidden;
+	padding-left: 83px;
+	padding-top: 28px;
+	padding-bottom: 60px;
+	background: url('../img/ellipse-white.png') calc(100% + 20px) calc(100% + 10px) no-repeat;
+	background-color: $color-links-primary-active;
+	color: rgb(255, 255, 255);
+	&-menu-section {
+		&__item {
+			width: 190px;
+			float: left;
+			.title {
+				margin-bottom: 20px;
+				font-size: 1.4rem;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			.footer-menu {
 
 			}
 		}
-		.block-shop-app__item {
+	}
+	&__logo-section {
+		position: absolute;
+		bottom: 10px;
+		right: 83px;
+		.image {
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				display: block;
+				left: -230px;
+				bottom: -10px;
+				width: 230px;
+				height: 74px;
+				background-position: 0 0;
+				background-image: url('../img/section-bg__10.png');
+				background-repeat: no-repeat;
+			}
+			img {
 
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.header {
+		&-logo {
+			margin-right: 30px;
+		}
+		&-panel {
+			&__actions {
+				button {
+					& + button {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		&-basket {
+			margin-left: 20px;
+		}
+		&-social {
+			margin-left: 50px;
+		}
+	}
+
+	.section-winner {
+		&__timer {
+			margin-left: 55px;
+			margin-right: 50px;
+		}
+	}
+
+	.section-discount {
+		&-list {
+			&__item {
+				flex-direction: column;
+				.image {
+					height: 40px;
+					margin-bottom: 10px;
+				}
+				.text {
+					padding-left: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.section-journal {
+		&-container {
+			background: url("../img/section-bg__6.png") -80px -90px no-repeat, url("../img/section-bg__8.png") calc(100% + 120px) calc(100% + 170px) no-repeat;
+			background-color: rgb(35, 190, 190);
+		}
+		&__slider {
+			width: 50%;
+			padding-right: 35px;
+		}
+		&__desc {
+			width: 33%;
+		}
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.header {
+		padding-left: 15px;
+		padding-right: 15px;
+		&-logo {
+			img {
+				width: 140px;
+				margin-top: 5px;
+			}
+		}
+		&-basket {
+			margin-left: 15px;
+		}
+		&-social {
+			margin-left: 20px;
+		}
+	}
+	.section-novetly, .section-exclusive, .section-action, .section-discount {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section-novetly {
+		&-col {
+			&--left {
+				width: 240px;
+			}
+			&--right {
+				position: relative;
+				background-color: rgb(255, 255, 255);
+				max-width: calc(100% - 250px);
+			}
+			&__title {
+				height: 63px;
+				text-align: center;
+				border-bottom: 1px rgb(236, 226, 233) solid;
+				h2 {
+					margin: 0;
+					font-size: 2.3rem;
+					line-height: 63px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		&__slider {
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	.section-exclusive {
+		&-col {
+			&--left {
+				position: relative;
+				background-color: rgb(255, 255, 255);
+				max-width: calc(100% - 250px);
+				width: 100%;
+			}
+			&--right {
+				width: 240px;
+			}
+			&__title {
+				height: 63px;
+				text-align: center;
+				border-bottom: 1px rgb(236, 226, 233) solid;
+				h2 {
+					margin: 0;
+					font-size: 2.3rem;
+					line-height: 63px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.section-instagram {
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+	.section-discount {
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			&__item {
+				float: none;
+				width: auto;
+				padding-left: 0;
+				&:nth-child(2), &:nth-child(1), &:last-child {
+					flex-shrink: 0;
+				}
+			}
+		}
+	}
+	.section-journal {
+		&__slider {
+			width: 60%;
+			padding-right: 50px;
+		}
+		&__desc {
+			width: 32%;
+			.title {
+				font-size: 3.2rem;
+			}
+			.list-bg {
+				font-size: 1.7rem;
+			}
+		}
+		&-bottom {
+			&__container {
+				width: 100%;
+				margin: 0;
+				float: none;
+			}
+		}
+	}
+	.section-winner {
+		padding: 20px 15px;
+		&__item {
+			width: 100%;
+			text-align: center;
+			.timer {
+				display: inline-block;
+			}
+		}
+		&__timer {
+			margin: 20px 0 10px 0;
+		}
+	}
+	.footer {
+		padding-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		&-menu {
+			display: none;
+		}
+		&-logo {
+			img {
+				width: 140px;
+				margin-top: 5px;
+			}
+		}
+		&-basket {
+			margin-left: 15px;
+		}
+		&-social {
+			display: none;
+		}
+	}
+	.section-journal {
+		&-container {
+			padding: 20px 50px;
+			background: rgb(35, 190, 190);
+		}
+		&__slider {
+			width: 90%;
+			padding-right: 0;
+		}
+		&__desc {
+			margin-top: 20px;
+			width: 100%;
+			.title {
+				font-size: 3.2rem;
+			}
+			.list-bg {
+				font-size: 1.7rem;
+			}
+		}
+		&-bottom {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+	.footer {
+		padding-left: 15px;
+		padding-right: 15px;
+		background: url('../img/ellipse-white.png') calc(100% + 50px) calc(100% + 30px) no-repeat;
+		background-color: $color-links-primary-active;
+		&-menu-section {
+			&__item {
+				width: auto;
+				max-height: 170px;
+			}
+			&__item + &__item {
+				margin-left: 50px;
+			}
+		}
+		&__logo-section {
+			bottom: 10px;
+			right: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-journal {
+		&-container {
+			padding: 20px 15px;
+		}
+		&__slider {
+			width: 90%;
+			padding-right: 0;
+		}
+		&__desc {
+			margin-top: 20px;
+			width: 100%;
+			.title {
+				font-size: 3.2rem;
+			}
+			.list-bg {
+				font-size: 1.7rem;
+			}
+		}
+		&-bottom {
+			padding-left: 15px;
+			padding-right: 15px;			
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.section-winner {
+		&__left, &__right {
+			p {
+				font-size: 1.7rem;
+			}
 		}
 	}
 }

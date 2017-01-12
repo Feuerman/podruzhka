@@ -41,7 +41,8 @@ a {}
 }
 
 .owl-nav {
-	button {
+	button, div {
+		position: absolute;
 		z-index: 900;
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -103,9 +104,35 @@ a {}
 }
 
 .list-bg {
+	padding: 0;
+	margin: 0;
 	&--flower {
 		.list-bg__item {
-
+			position: relative;
+			min-height: $icon-list-bg-flower-height;
+			padding-left: $icon-list-bg-flower-width * 1.6;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				width: $icon-list-bg-flower-width;
+				height: $icon-list-bg-flower-height;
+				background-position: $icon-list-bg-flower-offset-x $icon-list-bg-flower-offset-y;
+				background-repeat: no-repeat;
+				background-image: url($icon-list-bg-flower-image);
+			}
+			span {
+				font-size: 1em;
+			}
+		}
+		.list-bg__item + .list-bg__item {
+			margin-top: 0.3em;
 		}
 	}
 	&__item {
@@ -118,5 +145,9 @@ a {}
 		img {
 
 		}
+	}
+	&__item + &__item {
+		margin-left: 10px;
+		text-decoration: none;
 	}
 }

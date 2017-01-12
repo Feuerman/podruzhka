@@ -16,6 +16,18 @@
 		}
 	}
 }
+.footer-menu {
+	&__item {
+	}
+	&__link {
+		font-size: 1.2rem;
+		color: inherit;
+		text-transform: uppercase;
+		&:hover {
+			color: inherit;
+		}
+	}
+}
 .owl-carousel .owl-item {
   float: none;
   display: inline-block;
@@ -392,8 +404,8 @@
 				bottom: 0;
 				left: 0;
 				margin: auto;
-				max-height: 50%;
-				max-width: 50%;
+				max-height: 70%;
+				max-width: 70%;
 			}
 		}
 		&__desc {
@@ -489,53 +501,250 @@
 			}
 		}
 		.owl-prev {
-			left: -80px;
+			left: -50px;
 		}
 		.owl-next {
-			right: 0;
+			right: -10px;
 		}
 	}
+	.owl-stage {
+		pointer-events: none;
+	}
 	.owl-stage-outer {
-		overflow: visible;
+		// overflow: visible;
 	}
 	.owl-item {
 		opacity: 0;
 		transition: all 0.1s;
 		&.active {
 			opacity: 1;
+			pointer-events: all;
 		}
 		&.journal-active-2 {
 			.journal-slider-item__image {
-				transform: scale(0.9);
+				transform: scale(0.9) translateY(10px);
 			}
 		}
 		&.journal-active-3 {
 			.journal-slider-item__image {
-				transform: scale(0.8);
+				transform: scale(0.8) translateY(20px) translateX(-20px);
 			}
 		}
 		&.journal-active-4 {
 			.journal-slider-item__image {
-				transform: scale(0.7);
+				transform: scale(0.7) translateY(30px) translateX(-30px);
 			}
 		}
 	}
 	&-item {
 		&__image {
-			padding: 100px 0 30px 0;
+			display: block;
+			padding: 30px 10px 10px 25px;
 			text-align: left;
 			transition: transform 0.3s;
 			img {
-				width: 80%;
+				width: 90%;
 				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-				transform: rotate(-15deg);
+				transform: rotate(-10deg);
 			}
 		}
 		&__desc {
+			padding-left: 30px;
 			span {
+				color: rgb(255, 255, 255);
+				font-size: 2rem;
+				letter-spacing: 2px;
+				text-transform: uppercase;
 				&.strong {
-
+					font-size: 3.76rem;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.top-menu {
+		&__item + &__item {
+			margin-left: 15px;
+		}
+	}
+	.top-slider {
+		&-wrap {
+			padding: 0;
+		}
+		&-nav {
+			&__left {
+				left: 15px;
+			}
+			&__right {
+				right: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.top-menu {
+		&__item + &__item {
+			margin-left: 10px;
+		}
+		&__link {
+
+		}
+	}
+	.novetly-slider {
+		&-item {
+			&__image {
+				height: 140px;
+				line-height: 140px;
+				img {
+					max-width: 50%;
+					max-height: 100%;
+				}
+			}
+			&__title {
+				margin-bottom: 0;
+			}
+			&__category {
+				margin-bottom: 5px;
+			}
+			&__footer {
+				padding-top: 5px;
+				padding-bottom: 0;
+			}
+		}
+		&-nav {
+			&__left {
+				left: 10px;
+			}
+			&__right {
+				right: 10px;
+			}
+		}
+	}
+	.action-slider {
+		width: calc(100% - 180px);
+		&-wrap {
+			margin: 0 30px;
+		}
+		&-title {
+			min-width: 180px;
+		}
+		&-nav {
+			&__left {
+				left: 15px;
+			}
+			&__right {
+				right: 15px;
+			}
+		}
+		&__item {
+			img {
+				max-width: 90%;
+			}
+		}
+	}
+	.exclusive-slider {
+		&-item {
+			&__desc {
+				padding: 1vw;
+				p {
+					font-size: 1.5vw;
+				}
+			}
+		}
+	}
+	.instagram-slider {
+		&-nav {
+			&__left {
+				left: -39px;
+			}
+			&__right {
+				right: -39px;
+			}
+		}
+	}
+	.journal-slider {
+		&-item {
+			&__desc {
+				span {
+					font-size: 1.5rem;
+					&.strong {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.exclusive-slider {
+		&-item {
+			&__desc {
+				padding: 1.5vw;
+				p {
+					font-size: 1.5vw;
+				}
+			}
+		}
+	}
+	.journal-slider {
+		.owl-nav {
+			.owl-prev {
+				left: -35px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.exclusive-slider {
+		&-nav {
+			&__left {
+				left: 10px;
+			}
+			&__right {
+				right: 10px;
+			}
+		}
+		&-item {
+			&__desc {
+				padding: 1.5vw;
+				p {
+					font-size: 1.8vw;
+				}
+			}
+		}
+	}
+	.journal-slider {
+		.owl-nav {
+			.owl-prev {
+				left: -22.5px;
+			}
+			.owl-next {
+				right: -22.5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.journal-slider {
+		&-item {
+			&__image {
+				padding: 30px 10px 10px 50px;
+				img {
+					max-width: 80%;
+				}
+			}
+		}
+		.owl-nav {
+			.owl-prev {
+				left: -20px;
+			}
+			.owl-next {
+				right: -20px;
 			}
 		}
 	}

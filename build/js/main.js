@@ -4,8 +4,15 @@ $(document).ready(function () {
 		items: 1,
 		margin: 20,
 		loop: true,
-		dots: true,
-		smartSpeed: 800
+		smartSpeed: 800,
+		responsive:{
+			0: {
+				dots: false
+			},
+			768: {
+				dots: true
+			}
+		}
 	});
 	$('.top-slider-nav__left').click(function() {
 		topSlider.trigger('prev.owl.carousel');
@@ -22,6 +29,15 @@ $(document).ready(function () {
 		loop: true,
 		responsive:{
 			0: {
+				items: 3
+			},
+			850: {
+				items: 4
+			},
+			1000: {
+				items: 5
+			},
+			1200: {
 				items: 6
 			},
 			1360:{
@@ -50,10 +66,14 @@ $(document).ready(function () {
 		loop: true,
 		margin: 25,
 		responsive:{
-			0: {
-				items: 3
+			320: {
+				items: 1
 			},
-			1360:{
+			480: {
+				items: 2,
+				margin: 15
+			},
+			1000:{
 				items:3
 			},
 			1550:{
@@ -74,9 +94,16 @@ $(document).ready(function () {
 
 	var exclusiveSlider = $('.js-slider-exclusive');
 	exclusiveSlider.owlCarousel({
-		items: 4,
 		dots: false,
-		loop: true
+		loop: true,
+		responsive:{
+			320: {
+				items: 3
+			},
+			1024: {
+				items: 4
+			}
+		}
 	});
 	$('.exclusive-slider-nav__left').click(function() {
 		exclusiveSlider.trigger('prev.owl.carousel');
@@ -86,6 +113,26 @@ $(document).ready(function () {
 	})
 
 
+	var discountSlider = $('.js-slider-discount');
+	discountSlider.owlCarousel({
+		dots: false,
+		nav: true,
+		margin: 20,
+		navElement: 'button',
+		responsive:{
+			0: {
+				items:1
+			},
+			480: {
+				items:2
+			},
+			768: {
+				items:5
+			}
+		}
+	});
+
+
 	var instagramSlider = $('.js-slider-instagram');
 	instagramSlider.owlCarousel({
 		dots: false,
@@ -93,9 +140,15 @@ $(document).ready(function () {
 		margin: 15,
 		responsive:{
 			0: {
-				items: 3
+				items:1
 			},
-			1360:{
+			480: {
+				items:2
+			},
+			768: {
+				items:3
+			},
+			992: {
 				items:4
 			},
 			1550:{
@@ -116,13 +169,26 @@ $(document).ready(function () {
 
 	var journalSlider = $('.js-slider-journal');
 	journalSlider.owlCarousel({
-		items: 4,
 		dots: false,
 		nav: true,
 		navElement: 'button',
 		mouseDrag: false,
 		touchDrag: false,
 		margin: 25,
+		responsive:{
+			0: {
+				items: 1
+			},
+			480:{
+				items:2
+			},
+			768:{
+				items:3
+			},
+			1600: {
+				items:4
+			}
+		},
 		onChange: function () {
 			setTimeout(function() {
 				handlerActiveSlides();
