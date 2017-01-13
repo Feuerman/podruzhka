@@ -2,7 +2,9 @@ script(src="vendor/fancybox/jquery.fancybox.js")
 footer.footer
 	.footer-menu-section
 		.footer-menu-section__item
-			.title разделы
+			.title
+				span разделы
+				.icon
 			ul.footer-menu
 				li.footer-menu__item
 					a.footer-menu__link(href="#") каталог
@@ -19,7 +21,9 @@ footer.footer
 				li.footer-menu__item
 					a.footer-menu__link(href="#") пообщаемся
 		.footer-menu-section__item
-			.title каталог
+			.title
+				span каталог
+				.icon
 			ul.footer-menu
 				li.footer-menu__item
 					a.footer-menu__link(href="#") Макияж
@@ -36,7 +40,9 @@ footer.footer
 				li.footer-menu__item
 					a.footer-menu__link(href="#") Бренды
 		.footer-menu-section__item
-			.title промо
+			.title 
+				span промо
+				.icon
 			ul.footer-menu
 				li.footer-menu__item
 					a.footer-menu__link(href="#") Акции
@@ -47,7 +53,9 @@ footer.footer
 				li.footer-menu__item
 					a.footer-menu__link(href="#") Подписка на рассылку
 		.footer-menu-section__item
-			.title дополнительно
+			.title
+				span дополнительно
+				.icon
 			ul.footer-menu
 				li.footer-menu__item
 					a.footer-menu__link(href="#") Поиск
@@ -60,3 +68,12 @@ footer.footer
 	.footer__logo-section
 		.image
 			img(src="img/logo--large.png", alt="")
+	.footer__social.visible-xs
+		.title Мы в соц.сетях:
+		.social
+			a.social__item(href="#")
+				i.icon.icon__fb--white
+			a.social__item(href="#")
+				i.icon.icon__vk--white
+			a.social__item(href="#")
+				i.icon.icon__inst--white

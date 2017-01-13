@@ -15,8 +15,22 @@
 </head>
 <body>
   <div class="page-wrapper">
+    <div class="mobile-menu-container">
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Каталог</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Акции</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Только у нас</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Новинки</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Хочу скидки</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Магазины</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Пообщаемся</a></li>
+      </ul>
+    </div>
+    <div class="overlay-block overlay-block--open-nav"></div>
     <header class="header">
-      <div class="header-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <div class="header-logo">
+        <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="#"><img src="img/logo.png" alt=""></a>
+      </div>
       <div class="header-menu">
         <nav>
           <ul class="top-menu">
@@ -178,8 +192,11 @@
         </p>
       </div>
     </section>
-    <section class="section-action">
+    <section class="section-action">			
       <section class="action-slider-wrap">
+        <div class="section-action__title visible-xs">
+          <h2>Акции</h2>
+        </div>
         <div class="action-slider-title">
           <div class="action-slider-title__text">
             <p>выгодные<span>Акции</span></p>
@@ -188,14 +205,19 @@
           <div class="action-slider-title__bg-2"></div>
         </div>
         <div class="action-slider owl-carousel js-slider-action"><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__3.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__4.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__5.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__3.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__4.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__5.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__1.jpg" alt=""></a><a href="#" class="action-slider__item"><img src="img/slider-action__2.jpg" alt=""></a></div>
+        <div class="action-slider-nav visible-xs">
+          <button class="action-slider-nav__left arrow arrow--left"></button>
+          <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
+          <button class="action-slider-nav__right arrow arrow--right"></button>
+        </div>
       </section>
-      <div class="action-slider-nav">
+      <div class="action-slider-nav hidden-xs">
         <button class="action-slider-nav__left arrow arrow--left"></button>
-        <button class="action-slider-nav__right arrow arrow--right"></button>
+        <button class="action-slider-nav__right arrow arrow--right">				</button>
       </div>
     </section>
     <section class="section-novetly">
-      <div class="section-novetly-col section-novetly-col--left"><a class="section-novetly__journal"><img src="img/journal-august-2016.jpg" alt=""></a></div>
+      <div class="section-novetly-col section-novetly-col--left"><a href="#" class="section-novetly__journal"><img src="img/journal-august-2016.jpg" alt=""></a></div>
       <div class="section-novetly-col section-novetly-col--right">
         <div class="section-novetly-col__title">
           <h2>новинки</h2>
@@ -384,10 +406,15 @@
           </div>
           <div class="novetly-slider-nav">
             <button class="novetly-slider-nav__left arrow arrow--left"></button>
+            <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
             <button class="novetly-slider-nav__right arrow arrow--right"></button>
           </div>
         </div>
       </div>
+    </section>
+    <section class="section-image-main visible-xs">
+      <div class="section-image-main__item"><a href="#"><img src="img/denimania.jpg" alt=""></a></div>
+      <div class="section-image-main__item"><a href="#"><img src="img/journal-august-2016.jpg" alt=""></a></div>
     </section>
     <section class="section-exclusive">
       <div class="section-exclusive-col section-exclusive-col--left">
@@ -469,11 +496,12 @@
           </div>
           <div class="exclusive-slider-nav">
             <button class="exclusive-slider-nav__left arrow arrow--left"></button>
+            <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
             <button class="exclusive-slider-nav__right arrow arrow--right"></button>
           </div>
         </div>
       </div>
-      <div class="section-exclusive-col section-exclusive-col--right"><a class="section-exclusive__journal"><img src="img/denimania.jpg" alt=""></a></div>
+      <div class="section-exclusive-col section-exclusive-col--right"><a href="#" class="section-exclusive__journal"><img src="img/denimania.jpg" alt=""></a></div>
     </section>
     <section class="section-discount">
       <div class="section-discount-list owl-carousel js-slider-discount"><a href="#" class="section-discount-list__item">
@@ -500,6 +528,7 @@
       <div class="instagram-slider-wrap">
         <div class="instagram-slider-nav">
           <button class="instagram-slider-nav__left arrow arrow--left"></button>
+          <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
           <button class="instagram-slider-nav__right arrow arrow--right"></button>
         </div>
         <div class="instagram-slider owl-carousel js-slider-instagram">
@@ -583,7 +612,9 @@
     <footer class="footer">
       <div class="footer-menu-section">
         <div class="footer-menu-section__item">
-          <div class="title">разделы</div>
+          <div class="title"><span>разделы</span>
+            <div class="icon"></div>
+          </div>
           <ul class="footer-menu">
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">каталог</a></li>
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">акции</a></li>
@@ -595,7 +626,9 @@
           </ul>
         </div>
         <div class="footer-menu-section__item">
-          <div class="title">каталог</div>
+          <div class="title"><span>каталог</span>
+            <div class="icon"></div>
+          </div>
           <ul class="footer-menu">
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Макияж</a></li>
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Парфюмерия</a></li>
@@ -607,7 +640,9 @@
           </ul>
         </div>
         <div class="footer-menu-section__item">
-          <div class="title">промо</div>
+          <div class="title"> <span>промо</span>
+            <div class="icon"></div>
+          </div>
           <ul class="footer-menu">
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Акции</a></li>
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Журналы</a></li>
@@ -616,7 +651,9 @@
           </ul>
         </div>
         <div class="footer-menu-section__item">
-          <div class="title">дополнительно</div>
+          <div class="title"><span>дополнительно</span>
+            <div class="icon"></div>
+          </div>
           <ul class="footer-menu">
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Поиск</a></li>
             <li class="footer-menu__item"><a href="#" class="footer-menu__link">Карта сайта</a></li>
@@ -627,6 +664,10 @@
       </div>
       <div class="footer__logo-section">
         <div class="image"><img src="img/logo--large.png" alt=""></div>
+      </div>
+      <div class="footer__social visible-xs">
+        <div class="title">Мы в соц.сетях:</div>
+        <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
       </div>
     </footer>
   </div>

@@ -1,6 +1,23 @@
 include templates/head.jade
 body
 	.page-wrapper
+		.mobile-menu-container
+			ul.mobile-menu
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Каталог
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Акции
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Только у нас
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Новинки
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Хочу скидки
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Магазины
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#") Пообщаемся
+		.overlay-block.overlay-block--open-nav
 		include templates/header.jade
 		section.top-slider-wrap
 			section.top-slider.owl-carousel.js-slider-top
@@ -127,8 +144,10 @@ body
 					| ДАРИМ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ
 					br
 					| НА 60 000 РУБЛЕЙ В re:Store
-		section.section-action
+		section.section-action			
 			section.action-slider-wrap
+				.section-action__title.visible-xs
+					h2 Акции
 				.action-slider-title
 					.action-slider-title__text
 						p
@@ -161,12 +180,19 @@ body
 						img(src="img/slider-action__1.jpg", alt="")
 					a.action-slider__item(href="#")
 						img(src="img/slider-action__2.jpg", alt="")
-			.action-slider-nav
-				button.action-slider-nav__left.arrow.arrow--left
-				button.action-slider-nav__right.arrow.arrow--right
+				.action-slider-nav.visible-xs
+					button.action-slider-nav__left.arrow.arrow--left
+					.custom-dots
+						span.custom-dots__current
+						span из
+						span.custom-dots__count
+					button.action-slider-nav__right.arrow.arrow--right
+			.action-slider-nav.hidden-xs
+					button.action-slider-nav__left.arrow.arrow--left
+					button.action-slider-nav__right.arrow.arrow--right				
 		section.section-novetly
 			.section-novetly-col.section-novetly-col--left
-				a.section-novetly__journal
+				a.section-novetly__journal(href="#")
 					img(src="img/journal-august-2016.jpg", alt="")
 			.section-novetly-col.section-novetly-col--right
 				.section-novetly-col__title
@@ -338,7 +364,18 @@ body
 									.text 14 оттенков
 					.novetly-slider-nav
 						button.novetly-slider-nav__left.arrow.arrow--left
+						.custom-dots
+							span.custom-dots__current
+							span из
+							span.custom-dots__count
 						button.novetly-slider-nav__right.arrow.arrow--right
+		section.section-image-main.visible-xs
+			.section-image-main__item
+				a(href="#")
+					img(src="img/denimania.jpg", alt="")
+			.section-image-main__item
+				a(href="#")
+					img(src="img/journal-august-2016.jpg", alt="")
 		section.section-exclusive
 			.section-exclusive-col.section-exclusive-col--left
 				.section-exclusive-col__title
@@ -402,9 +439,13 @@ body
 									p Корейский косметический бренд, созданный специалистами эстетической медицины!
 					.exclusive-slider-nav
 						button.exclusive-slider-nav__left.arrow.arrow--left
+						.custom-dots
+							span.custom-dots__current
+							span из
+							span.custom-dots__count
 						button.exclusive-slider-nav__right.arrow.arrow--right
 			.section-exclusive-col.section-exclusive-col--right
-				a.section-exclusive__journal
+				a.section-exclusive__journal(href="#")
 					img(src="img/denimania.jpg", alt="")
 		section.section-discount
 			.section-discount-list.owl-carousel.js-slider-discount
@@ -463,6 +504,10 @@ body
 			.instagram-slider-wrap
 				.instagram-slider-nav
 					button.instagram-slider-nav__left.arrow.arrow--left
+					.custom-dots
+						span.custom-dots__current
+						span из
+						span.custom-dots__count
 					button.instagram-slider-nav__right.arrow.arrow--right
 				.instagram-slider.owl-carousel.js-slider-instagram
 					.instagram-slider-item

@@ -58,6 +58,22 @@ a {}
 	}
 }
 
+.custom-dots {
+	display: none;
+	position: absolute;
+	left: calc(50% - (170px / 2));
+	width: 170px;
+	bottom: 20px;
+	margin: auto;
+	text-align: center;
+	font-size: 1.6rem;
+	color: rgb(115, 115, 115);
+	span + span {
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
+
 .rating {
 	&__item {
 		display: inline-block;
@@ -149,5 +165,11 @@ a {}
 	&__item + &__item {
 		margin-left: 10px;
 		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.custom-dots {
+		display: block;
 	}
 }

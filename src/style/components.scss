@@ -15,6 +15,32 @@
 			text-decoration: none;
 		}
 	}
+	&-button {
+		width: 26px;
+		height: 21px;
+		span {
+			position: relative;
+			display: block;
+			height: 2px;
+			width: 100%;
+			background: rgb(121, 53, 87);
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				display: block;
+				left: 0;
+				height: 2px;
+				width: 100%;
+				background: rgb(121, 53, 87);
+			}
+			&::before {
+				top: -8px;
+			}
+			&::after {
+				bottom: -8px;
+			}
+		}
+	}
 }
 .footer-menu {
 	&__item {
@@ -24,6 +50,29 @@
 		color: inherit;
 		text-transform: uppercase;
 		&:hover {
+			color: inherit;
+		}
+	}
+}
+.mobile-menu {
+	width: 100%;
+	&__item {
+		border-bottom: 1px rgb(231, 220, 228) solid;
+	}
+	&__link {
+		display: block;
+		padding: 18px 25px;
+		font-size: 1.8rem;
+		color: rgb(113, 113, 113);
+		text-transform: uppercase;
+		transition: all 0.3s;
+		&:hover, &.active {
+			background-color: rgb(242, 237, 241);
+			text-decoration: none;
+			color: inherit;
+		}
+		&:focus, &:visited {
+			text-decoration: none;
 			color: inherit;
 		}
 	}
@@ -373,6 +422,9 @@
 	.owl-stage-outer, .owl-stage, .owl-item {
 		height: 100%;
 	}
+	.owl-stage-outer {
+		border-right: 1px rgb(215, 215, 215) solid;
+	}
 	.owl-item {
 		display: block;
 		float: left;
@@ -448,6 +500,9 @@
 .instagram-slider {
 	&-wrap {
 		position: relative;
+		.custom-dots {
+			bottom: -40px;
+		}
 	}
 	&-nav {
 		.arrow {
@@ -729,7 +784,123 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+	.exclusive-slider {
+		height: 62vw;
+		&-item {
+			&__desc {
+				padding: 2vw;
+				p {
+					font-size: 2.8vw;
+				}
+			}
+		}
+	}
+	.action-slider {
+		&-wrap {
+			border: none;
+			margin: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+			.custom-dots {
+				position: absolute;
+				left: calc(50% - (170px / 2));
+				width: 170px;
+				bottom: 23px;
+				margin: auto;
+				text-align: center;
+			}
+		}
+		margin-bottom: 40px;
+		float: none;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-color: rgb(236, 226, 233);
+		border-style: solid;
+		border-width: 1px 0 1px 0;
+		&-title {
+			display: none;
+		}
+		&-nav {
+			.arrow {
+				position: absolute;
+				top: auto;
+				bottom: 12px;
+				margin: auto;
+			}
+			&__left {
+				left: calc(50% - (170px / 2) - 23px);
+			}
+			&__right {
+				right: calc(50% - (170px / 2) - 23px);
+			}
+		}
+	}
+	.novetly-slider {
+		margin-bottom: 40px;
+		padding-bottom: 15px;
+		border-bottom: 1px rgb(236, 226, 233) solid;
+		&-item {
+			&__title {
+				margin-bottom: 10px;
+			}
+			&__footer {
+				padding-top: 15px;
+			}
+		}
+		&-nav {
+			.arrow {
+				position: absolute;
+				top: auto;
+				bottom: 12px;
+				margin: auto;
+			}
+			&__left {
+				left: calc(50% - (170px / 2) - 23px);
+			}
+			&__right {
+				right: calc(50% - (170px / 2) - 23px);
+			}
+		}
+	}
+	.exclusive-slider {
+		margin-bottom: 60px;
+		&-nav {
+			.arrow {
+				position: absolute;
+				top: auto;
+				bottom: 12px;
+				margin: auto;
+			}
+			&__left {
+				left: calc(50% - (170px / 2) - 23px);
+			}
+			&__right {
+				right: calc(50% - (170px / 2) - 23px);
+			}
+		}
+	}
+	.instagram-slider {
+		margin-bottom: 60px;
+		&-nav {
+			.arrow {
+				position: absolute;
+				top: auto;
+				bottom: -50px;
+				margin: auto;
+			}
+			&__left {
+				left: calc(50% - (170px / 2) - 23px);
+			}
+			&__right {
+				right: calc(50% - (170px / 2) - 23px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
 	.journal-slider {
 		&-item {
 			&__image {
@@ -746,6 +917,23 @@
 			.owl-next {
 				right: -20px;
 			}
+		}
+	}
+	.exclusive-slider {
+		height: 90vw;
+		&-item {
+			&__desc {
+				padding: 3vw;
+				p {
+					font-size: 3.8vw;
+				}
+			}
+		}
+	}
+	.novetly-slider {
+		&-item {
+			padding-left: 12vw;
+			padding-right: 12vw;
 		}
 	}
 }

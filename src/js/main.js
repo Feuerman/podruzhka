@@ -26,9 +26,12 @@ $(document).ready(function () {
 	actionSlider.owlCarousel({
 		items: 9,
 		dots: false,
-		loop: true,
+		onChanged: customPager,
 		responsive:{
 			0: {
+				items: 2
+			},
+			520: {
 				items: 3
 			},
 			850: {
@@ -63,15 +66,18 @@ $(document).ready(function () {
 	novetlySlider.owlCarousel({
 		items: 5,
 		dots: false,
-		loop: true,
 		margin: 25,
+		onChanged: customPager,
 		responsive:{
-			320: {
+			0: {
 				items: 1
 			},
-			480: {
+			520: {
 				items: 2,
 				margin: 15
+			},
+			768: {
+				loop: false
 			},
 			1000:{
 				items:3
@@ -80,6 +86,7 @@ $(document).ready(function () {
 				items:4
 			},
 			1750:{
+				loop: true,
 				items:5
 			}
 		}
@@ -95,12 +102,19 @@ $(document).ready(function () {
 	var exclusiveSlider = $('.js-slider-exclusive');
 	exclusiveSlider.owlCarousel({
 		dots: false,
-		loop: true,
+		onChanged: customPager,
 		responsive:{
-			320: {
+			0: {
+				items: 2
+			},
+			520: {
 				items: 3
 			},
+			768: {
+				loop: false,
+			},
 			1024: {
+				loop: true,
 				items: 4
 			}
 		}
@@ -123,10 +137,13 @@ $(document).ready(function () {
 			0: {
 				items:1
 			},
-			480: {
+			520: {
 				items:2
 			},
 			768: {
+				items:3
+			},
+			1024: {
 				items:5
 			}
 		}
@@ -136,8 +153,8 @@ $(document).ready(function () {
 	var instagramSlider = $('.js-slider-instagram');
 	instagramSlider.owlCarousel({
 		dots: false,
-		loop: true,
 		margin: 15,
+		onChanged: customPager,
 		responsive:{
 			0: {
 				items:1
@@ -146,6 +163,7 @@ $(document).ready(function () {
 				items:2
 			},
 			768: {
+				loop: false,
 				items:3
 			},
 			992: {
@@ -155,6 +173,7 @@ $(document).ready(function () {
 				items:5
 			},
 			1750:{
+				loop: true,
 				items:6
 			}
 		}
@@ -179,7 +198,7 @@ $(document).ready(function () {
 			0: {
 				items: 1
 			},
-			480:{
+			520:{
 				items:2
 			},
 			768:{
@@ -196,6 +215,14 @@ $(document).ready(function () {
 		}
 	});
 
+	function customPager(event) {
+		var items  = event.item.count;
+		var item = event.item.index;
+		var size = event.page.size;
+		$(this.$element[0]).parents('section').find('.custom-dots__current').text(item + size);
+		$(this.$element[0]).parents('section').find('.custom-dots__count').text(items);
+	}
+
 	function handlerActiveSlides(initIndex, count) {
 		var slides = journalSlider.find('.owl-item');
 		var classIndex = 1;
@@ -209,4 +236,19 @@ $(document).ready(function () {
 			}
 		});
 	}
+
+	var topNavBtn = $('.js-top-nav-toggle');
+	topNavBtn.on('click', function (e) {
+		e.preventDefault();
+		$('body').toggleClass('open-menu-panel');
+	});
+	$('.overlay-block--open-nav').on('click', function () {
+		$('body').toggleClass('open-menu-panel');
+	});
+
+	var footerMenuContainer = $('.footer-menu-section__item');
+	var footerMenuBtn = $('.footer-menu-section__item .title');
+	footerMenuBtn.on('click', function () {
+		$(this).parents(footerMenuContainer).toggleClass('active');
+	});
 });
