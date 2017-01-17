@@ -1,111 +1,118 @@
 include templates/head.jade
 body
 	.page-wrapper
-		.mobile-menu-container
-			ul.mobile-menu
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Каталог
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Акции
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Только у нас
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Новинки
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Хочу скидки
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Магазины
-				li.mobile-menu__item
-					a.mobile-menu__link(href="#") Пообщаемся
-		.overlay-block.overlay-block--open-nav
+		include templates/components/menu/mobile-top-menu.jade		
 		include templates/header.jade
 		section.top-slider-wrap
 			section.top-slider.owl-carousel.js-slider-top
-				picture
-					//[if IE 9]><!
-					video(style='display: none;')
-						//<![endif]
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
 						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
 						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
 						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
 						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
 						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
 						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
-					source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
-					source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
-					source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
-					source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
-					source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					img(srcset='img/slider-top__1.jpg')
-				picture
-					//[if IE 9]><!
-					video(style='display: none;')
-						//<![endif]
+						img(srcset='img/slider-top__1.jpg')
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
 						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
 						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
 						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
 						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
 						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
 						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
-					source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
-					source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
-					source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
-					source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
-					source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					img(srcset='img/slider-top__1.jpg')
-				picture
-					//[if IE 9]><!
-					video(style='display: none;')
-						//<![endif]
+						img(srcset='img/slider-top__1.jpg')
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
 						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
 						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
 						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
 						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
 						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
 						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
-					source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
-					source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
-					source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
-					source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
-					source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					img(srcset='img/slider-top__1.jpg')
-				picture
-					//[if IE 9]><!
-					video(style='display: none;')
-						//<![endif]
+						img(srcset='img/slider-top__1.jpg')
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
 						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
 						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
 						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
 						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
 						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
 						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
-					source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
-					source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
-					source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
-					source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
-					source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					img(srcset='img/slider-top__1.jpg')
-				picture
-					//[if IE 9]><!
-					video(style='display: none;')
-						//<![endif]
+						img(srcset='img/slider-top__1.jpg')
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
 						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
 						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
 						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
 						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
 						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
 						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
-					source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
-					source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
-					source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
-					source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
-					source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
-					img(srcset='img/slider-top__1.jpg')
+						img(srcset='img/slider-top__1.jpg')
+				a(href="#")
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+							source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+							source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+							source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
+						source(srcset='img/slider-top__1.jpg', media='(min-width: 1366px)')
+						source(srcset='img/slider-top__1--1366.jpg', media='(min-width: 1024px)')
+						source(srcset='img/slider-top__1--1024.jpg', media='(min-width: 800px)')
+						source(srcset='img/slider-top__1--800.jpg', media='(min-width: 520px)')
+						source(srcset='img/slider-top__1--480.jpg', media='(min-width: 340px)')
+						source(srcset='img/slider-top__1--320.jpg', media='(max-width: 340px)')
+						img(srcset='img/slider-top__1.jpg')				
 			.top-slider-nav
 				button.top-slider-nav__left.arrow.arrow--left
 				button.top-slider-nav__right.arrow.arrow--right
@@ -199,167 +206,173 @@ body
 					h2 новинки
 				.section-novetly__slider
 					.novetly-slider.owl-carousel.js-slider-novetly
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__1.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+								.products-list-item__rating
 									.rating
 										.rating__item.active
 										.rating__item.active
 										.rating__item
 										.rating__item
 										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__status
+						.products-list-item
+							.products-list-item__header
+								.products-list-item__status
 									.e-status.e-status--discount
 										i.icon.icon__discount
 									.e-status.e-status--novetly
 										span new
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__2.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
-									.rating
-										.rating__item.active
-										.rating__item.active
-										.rating__item
-										.rating__item
-										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__2.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__status
+						.products-list-item
+							.products-list-item__header
+								.products-list-item__status
 									.e-status.e-status--novetly
 										span new
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__3.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
-									.rating
-										.rating__item.active
-										.rating__item.active
-										.rating__item
-										.rating__item
-										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__3.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__4.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
-									.rating
-										.rating__item.active
-										.rating__item.active
-										.rating__item
-										.rating__item
-										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__4.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__status
+						.products-list-item
+							.products-list-item__header
+								.products-list-item__status
 									.e-status.e-status--discount
 										i.icon.icon__discount
 									.e-status.e-status--novetly
 										span new
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__5.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
-									.rating
-										.rating__item.active
-										.rating__item.active
-										.rating__item
-										.rating__item
-										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__5.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
-						.novetly-slider-item
-							.novetly-slider-item__header
-								.novetly-slider-item__image
-									img(src="img/novetly-slider__1.jpg", alt="")
-								.novetly-slider-item__title PERFECT MAT LIPSTICK second line test
-								.novetly-slider-item__category помада
-								.novetly-slider-item__rating
-									.rating
-										.rating__item.active
-										.rating__item.active
-										.rating__item
-										.rating__item
-										.rating__item
-							.novetly-slider-item__footer
-								.novetly-slider-item__price
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+							.products-list-item__footer
+								.products-list-item__price
 									.value.value--current 
 										span 1346
 										span.rouble &#x20bd;
 									.value.value--old
 										span 1346
 										span.rouble &#x20bd;
-								.novetly-slider-item__shades
-									.image
+								.products-list-item__shades
+									button.image.js-add-basket
 										.icon.icon__basket--large
 									.text 14 оттенков
 					.novetly-slider-nav
@@ -382,7 +395,7 @@ body
 					h2 эксклюзивно
 				.section-exclusive__slider
 					.exclusive-slider.owl-carousel.js-slider-exclusive
-						.exclusive-slider-item
+						a.exclusive-slider-item(href="#")
 							.exclusive-slider-item__sub
 								.exclusive-slider-item__logo
 									img(src="img/company-logo__1.jpg", alt="")
@@ -393,7 +406,7 @@ body
 									img(src="img/company-logo__2.jpg", alt="")
 								.exclusive-slider-item__desc
 									p Корейский косметический бренд, созданный специалистами эстетической медицины!
-						.exclusive-slider-item
+						a.exclusive-slider-item(href="#")
 							.exclusive-slider-item__sub
 								.exclusive-slider-item__logo
 									img(src="img/company-logo__3.jpg", alt="")
@@ -404,7 +417,7 @@ body
 									img(src="img/company-logo__4.jpg", alt="")
 								.exclusive-slider-item__desc
 									p Корейский косметический бренд, созданный специалистами эстетической медицины!
-						.exclusive-slider-item
+						a.exclusive-slider-item(href="#")
 							.exclusive-slider-item__sub
 								.exclusive-slider-item__logo
 									img(src="img/company-logo__5.jpg", alt="")
@@ -415,7 +428,7 @@ body
 									img(src="img/company-logo__6.jpg", alt="")
 								.exclusive-slider-item__desc
 									p Корейский косметический бренд, созданный специалистами эстетической медицины!
-						.exclusive-slider-item
+						a.exclusive-slider-item(href="#")
 							.exclusive-slider-item__sub
 								.exclusive-slider-item__logo
 									img(src="img/company-logo__7.jpg", alt="")
@@ -426,7 +439,7 @@ body
 									img(src="img/company-logo__8.jpg", alt="")
 								.exclusive-slider-item__desc
 									p Корейский косметический бренд, созданный специалистами эстетической медицины!
-						.exclusive-slider-item
+						a.exclusive-slider-item(href="#")
 							.exclusive-slider-item__sub
 								.exclusive-slider-item__logo
 									img(src="img/company-logo__1.jpg", alt="")
@@ -495,6 +508,7 @@ body
 							br
 							| социальной карте
 		section.section-instagram
+			.section-instagram__bg
 			.section-instagram-header
 				.section-instagram-header__title
 					i.icon.icon__inst--middle
@@ -552,70 +566,5 @@ body
 						.instagram-slider-item__title
 							i.icon.icon__inst--large
 							span #podrygkashop
-		section.section-journal
-			.section-journal-container
-				.section-journal__slider
-					.journal-slider-wrap
-						.journal-slider.owl-carousel.js-slider-journal
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-1.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 05
-									span /май
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-2.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 04
-									span /апрель
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-3.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 03
-									span /март
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-3.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 02
-									span /февраль
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-1.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 01
-									span /январь
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-2.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 01
-									span /январь
-							.journal-slider-item
-								a.journal-slider-item__image(href="#")
-									img(src="img/journal-3.jpg", alt="")
-								.journal-slider-item__desc
-									span.strong 01
-									span /январь
-				.section-journal__desc
-					.title
-						| Журнал 
-						span подружка
-					ul.list-bg.list-bg--flower
-						li.list-bg__item
-							span Узнавай про новинки
-						li.list-bg__item 
-							span читай Статьи, советы и т.п.
-						li.list-bg__item 
-							span Скачай на телефон
-					.block-shop-app
-						a.block-shop-app__item(href="#")
-							img(src="img/google-play.png", alt="")
-						a.block-shop-app__item(href="#")
-							img(src="img/app-store.png", alt="")
-			.section-journal-bottom
-				.section-journal-bottom__container
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+		include templates/components/section-journal.jade				
 		include templates/footer.jade

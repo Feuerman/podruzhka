@@ -1,4 +1,5 @@
 body {
+	background-color: rgb(222, 222, 222);
 	font-family: Tahoma;
 	transition: all 0.5s ease-in-out;
 	&.open-menu-panel {
@@ -21,7 +22,9 @@ body {
 
 .page-wrapper {
 	overflow: hidden;
-	width: 100%;
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
 }
 .overlay-block {
 	opacity: 0;
@@ -50,6 +53,8 @@ body {
 	top: 0;
 	width: 300px;
 	min-height: 100vh;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 520px) {

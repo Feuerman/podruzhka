@@ -9,7 +9,7 @@ $(document).ready(function () {
 			0: {
 				dots: false
 			},
-			768: {
+			520: {
 				dots: true
 			}
 		}
@@ -31,19 +31,19 @@ $(document).ready(function () {
 			0: {
 				items: 2
 			},
-			520: {
+			480: {
 				items: 3
 			},
 			850: {
 				items: 4
 			},
-			1000: {
-				items: 5
+			1024: {
+				items: 4
 			},
 			1200: {
 				items: 6
 			},
-			1360:{
+			1366:{
 				items:7
 			},
 			1550:{
@@ -72,14 +72,15 @@ $(document).ready(function () {
 			0: {
 				items: 1
 			},
-			520: {
+			480: {
 				items: 2,
 				margin: 15
 			},
-			768: {
-				loop: false
+			767: {
+				loop: false,
+				items: 2
 			},
-			1000:{
+			991:{
 				items:3
 			},
 			1550:{
@@ -107,13 +108,13 @@ $(document).ready(function () {
 			0: {
 				items: 2
 			},
-			520: {
+			480: {
 				items: 3
 			},
-			768: {
+			767: {
 				loop: false,
 			},
-			1024: {
+			991: {
 				loop: true,
 				items: 4
 			}
@@ -131,19 +132,16 @@ $(document).ready(function () {
 	discountSlider.owlCarousel({
 		dots: false,
 		nav: true,
-		margin: 20,
+		margin: 10,
 		navElement: 'button',
 		responsive:{
 			0: {
 				items:1
 			},
-			520: {
-				items:2
+			480: {
+				items: 2
 			},
-			768: {
-				items:3
-			},
-			1024: {
+			767: {
 				items:5
 			}
 		}
@@ -162,11 +160,11 @@ $(document).ready(function () {
 			480: {
 				items:2
 			},
-			768: {
+			767: {
 				loop: false,
 				items:3
 			},
-			992: {
+			991: {
 				items:4
 			},
 			1550:{
@@ -198,10 +196,10 @@ $(document).ready(function () {
 			0: {
 				items: 1
 			},
-			520:{
+			480:{
 				items:2
 			},
-			768:{
+			767:{
 				items:3
 			},
 			1600: {
@@ -237,6 +235,7 @@ $(document).ready(function () {
 		});
 	}
 
+
 	var topNavBtn = $('.js-top-nav-toggle');
 	topNavBtn.on('click', function (e) {
 		e.preventDefault();
@@ -246,9 +245,15 @@ $(document).ready(function () {
 		$('body').toggleClass('open-menu-panel');
 	});
 
+
 	var footerMenuContainer = $('.footer-menu-section__item');
 	var footerMenuBtn = $('.footer-menu-section__item .title');
 	footerMenuBtn.on('click', function () {
 		$(this).parents(footerMenuContainer).toggleClass('active');
+	});
+
+
+	$('.js-select').select2({
+		minimumResultsForSearch: Infinity
 	});
 });

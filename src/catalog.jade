@@ -1,0 +1,298 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu.jade		
+		include templates/header.jade
+		section.catalog-header
+			picture
+				//[if IE 9]><!
+				video(style='display: none;')
+					//<![endif]
+					source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+					source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+					source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+					source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+					source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+					source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+				source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+				source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+				source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+				source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+				source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				img(srcset='img/catalog-banner--1920.jpg')
+		section.catalog-section
+			.catalog-section__left
+				ul.left-menu
+					li.left-menu__item.active
+						a.left-menu__link(href="#") Макияж
+						ul.left-menu-sub.left-menu-sub--level-1
+							li.left-menu-sub__item.active
+								a.left-menu-sub__link(href="#") Лицо
+								ul.left-menu-sub.left-menu-sub--level-2
+									li.left-menu-sub__item.active
+										a.left-menu-sub__link(href="#") Корректор
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Тональные средства
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") пудра
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Румяна
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Глаза
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Губы
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Ногти
+					li.left-menu__item
+						a.left-menu__link(href="#") Парфюмерия
+					li.left-menu__item
+						a.left-menu__link(href="#") Уход
+					li.left-menu__item
+						a.left-menu__link(href="#") Для любимых
+					li.left-menu__item
+						a.left-menu__link(href="#") Дамские штучки
+					li.left-menu__item
+						a.left-menu__link(href="#") Для дома
+					li.left-menu__item
+						a.left-menu__link(href="#") Бренды
+				.legend
+					.legend-item.legend-item--novetly
+						.legend-item__text
+							span Новинки
+						.legend-item__image
+							i.icon.icon__new
+					.legend-item.legend-item--prices
+						.legend-item__text
+							span Выгодные цены
+						.legend-item__image
+							i.icon.icon__purse
+					.legend-item.legend-item--gifts
+						.legend-item__text
+							span Подарки
+						.legend-item__image
+							i.icon.icon__box
+					.legend-item.legend-item--discount
+						.legend-item__text
+							span Скидки
+						.legend-item__image
+							i.icon.icon__discount
+					.legend-item.legend-item--hits
+						.legend-item__text
+							span Хиты
+						.legend-item__image
+							i.icon.icon__star--white
+					.legend-item.legend-item--exclusive
+						.legend-item__text
+							span эксклюзивно
+						.legend-item__image
+							i.icon.icon__exclamation-point						
+			.catalog-section__right
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					a.breadcrumbs-item(href="#") Каталог
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Уход
+				h1.catalog-section__title Косметика для ухода
+				.show-by
+					select.select.select--showBy.js-select(name="showBy")
+						option(value="20") 20
+						option(value="16") 16
+						option(value="12") 12
+						option(value="8") 8
+				.catalog-filter
+					.catalog-filter__brands
+						select.select.select--brands.js-select(name="brands")
+							option(value="20") 111
+							option(value="16") 222
+							option(value="12") 333
+							option(value="8") 444
+				section.catalog-products
+					.products-list.row
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+									.products-list-item__rating
+										.rating
+											.rating__item.active
+											.rating__item.active
+											.rating__item
+											.rating__item
+											.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									.products-list-item__status
+										.e-status.e-status--discount
+											i.icon.icon__discount
+										.e-status.e-status--novetly
+											span new
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__2.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									.products-list-item__status
+										.e-status.e-status--novetly
+											span new
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__3.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__4.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									.products-list-item__status
+										.e-status.e-status--discount
+											i.icon.icon__discount
+										.e-status.e-status--novetly
+											span new
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__5.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.js-add-basket
+											.icon.icon__basket--large
+										.text 14 оттенков					
+						.col-md-3
+							.products-list-item
+								.instagram-slider-item__image(style="background-image: url('img/inst-list.png')")
+								.instagram-slider-item__title
+									i.icon.icon__inst--large
+									span #podrygkashop					
+						.col-md-3
+							.products-list-item
+								a.products-list-item__action(href="#" style="background-image: url('img/products-list-action.png')")
+		include templates/components/section-journal.jade				
+		include templates/footer.jade

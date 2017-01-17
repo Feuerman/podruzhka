@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
   <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -46,112 +48,125 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="js-modal-search"><i class="icon icon__loop"></i></button>
-          <button class="js-modal-callback"><i class="icon icon__phone"></i></button>
-          <button class="js-modal-auth"><i class="icon icon__auth"></i></button>
-        </div>
-        <div class="header-basket header-panel__item">
+          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a><a href="#" class="item js-modal-auth"><i class="icon icon__auth"></i></a>
+        </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
-          <div class="header-basket__count"><span>99</span></div>
-        </div>
+          <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
           <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
         </div>
       </div>
     </header>
     <section class="top-slider-wrap">
-      <section class="top-slider owl-carousel js-slider-top">
-        <picture>
-          <!--[if IE 9]><!-->
-          <video style="display: none;">
-            <!--<![endif]-->
+      <section class="top-slider owl-carousel js-slider-top"><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
             <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
             <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
             <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
             <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
             <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
-          </video>
-          <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
-          <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
-          <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
-          <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
-          <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-          <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
-        </picture>
-        <picture>
-          <!--[if IE 9]><!-->
-          <video style="display: none;">
-            <!--<![endif]-->
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
             <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
             <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
             <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
             <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
             <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
-          </video>
-          <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
-          <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
-          <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
-          <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
-          <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-          <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
-        </picture>
-        <picture>
-          <!--[if IE 9]><!-->
-          <video style="display: none;">
-            <!--<![endif]-->
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
             <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
             <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
             <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
             <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
             <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
-          </video>
-          <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
-          <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
-          <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
-          <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
-          <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-          <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
-        </picture>
-        <picture>
-          <!--[if IE 9]><!-->
-          <video style="display: none;">
-            <!--<![endif]-->
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
             <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
             <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
             <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
             <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
             <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
-          </video>
-          <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
-          <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
-          <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
-          <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
-          <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-          <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
-        </picture>
-        <picture>
-          <!--[if IE 9]><!-->
-          <video style="display: none;">
-            <!--<![endif]-->
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
             <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
             <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
             <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
             <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
             <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
-          </video>
-          <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
-          <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
-          <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
-          <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
-          <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
-          <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
-        </picture>
-      </section>
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a><a href="#">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+              <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+              <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+              <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+              <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+              <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)">
+            </video>
+            <source srcset="img/slider-top__1.jpg" media="(min-width: 1366px)">
+            <source srcset="img/slider-top__1--1366.jpg" media="(min-width: 1024px)">
+            <source srcset="img/slider-top__1--1024.jpg" media="(min-width: 800px)">
+            <source srcset="img/slider-top__1--800.jpg" media="(min-width: 520px)">
+            <source srcset="img/slider-top__1--480.jpg" media="(min-width: 340px)">
+            <source srcset="img/slider-top__1--320.jpg" media="(max-width: 340px)"><img srcset="img/slider-top__1.jpg">
+          </picture></a></section>
       <div class="top-slider-nav">
         <button class="top-slider-nav__left arrow arrow--left"></button>
         <button class="top-slider-nav__right arrow arrow--right"></button>
@@ -224,12 +239,12 @@
         </div>
         <div class="section-novetly__slider">
           <div class="novetly-slider owl-carousel js-slider-novetly">
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
+            <div class="products-list-item">
+              <div class="products-list-item__header"><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div></a>
+                <div class="products-list-item__rating">
                   <div class="rating">
                     <div class="rating__item active"></div>
                     <div class="rating__item active"></div>
@@ -239,166 +254,164 @@
                   </div>
                 </div>
               </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
             </div>
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__status">
+            <div class="products-list-item">
+              <div class="products-list-item__header">
+                <div class="products-list-item__status">
                   <div class="e-status e-status--discount"><i class="icon icon__discount"></i></div>
                   <div class="e-status e-status--novetly"><span>new</span></div>
-                </div>
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__2.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
-                  <div class="rating">
-                    <div class="rating__item active"></div>
-                    <div class="rating__item active"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                  </div>
-                </div>
+                </div><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__2.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div></a>
               </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
             </div>
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__status">
+            <div class="products-list-item">
+              <div class="products-list-item__header">
+                <div class="products-list-item__status">
                   <div class="e-status e-status--novetly"><span>new</span></div>
-                </div>
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
-                  <div class="rating">
-                    <div class="rating__item active"></div>
-                    <div class="rating__item active"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                  </div>
-                </div>
+                </div><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div></a>
               </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
             </div>
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
-                  <div class="rating">
-                    <div class="rating__item active"></div>
-                    <div class="rating__item active"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+            <div class="products-list-item">
+              <div class="products-list-item__header"><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div></a></div>
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
             </div>
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__status">
+            <div class="products-list-item">
+              <div class="products-list-item__header">
+                <div class="products-list-item__status">
                   <div class="e-status e-status--discount"><i class="icon icon__discount"></i></div>
                   <div class="e-status e-status--novetly"><span>new</span></div>
-                </div>
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
-                  <div class="rating">
-                    <div class="rating__item active"></div>
-                    <div class="rating__item active"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                  </div>
-                </div>
+                </div><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div></a>
               </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
             </div>
-            <div class="novetly-slider-item">
-              <div class="novetly-slider-item__header">
-                <div class="novetly-slider-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                <div class="novetly-slider-item__title">PERFECT MAT LIPSTICK second line test</div>
-                <div class="novetly-slider-item__category">помада</div>
-                <div class="novetly-slider-item__rating">
-                  <div class="rating">
-                    <div class="rating__item active"></div>
-                    <div class="rating__item active"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                    <div class="rating__item"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="novetly-slider-item__footer">
-                <div class="novetly-slider-item__price">
+            <div class="products-list-item">
+              <div class="products-list-item__header"><a href="#">
+                  <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                  <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                  <div class="products-list-item__category">помада</div>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div></a></div>
+              <div class="products-list-item__footer">
+                <div class="products-list-item__price">
                   <div class="value value--current"> <span>1346</span><span class="rouble">&#x20bd;</span></div>
                   <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
                 </div>
-                <div class="novetly-slider-item__shades">
-                  <div class="image">
+                <div class="products-list-item__shades">
+                  <button class="image js-add-basket">
                     <div class="icon icon__basket--large"></div>
-                  </div>
+                  </button>
                   <div class="text">14 оттенков</div>
                 </div>
               </div>
@@ -422,8 +435,7 @@
           <h2>эксклюзивно</h2>
         </div>
         <div class="section-exclusive__slider">
-          <div class="exclusive-slider owl-carousel js-slider-exclusive">
-            <div class="exclusive-slider-item">
+          <div class="exclusive-slider owl-carousel js-slider-exclusive"><a href="#" class="exclusive-slider-item">
               <div class="exclusive-slider-item__sub">
                 <div class="exclusive-slider-item__logo"><img src="img/company-logo__1.jpg" alt=""></div>
                 <div class="exclusive-slider-item__desc">
@@ -435,9 +447,7 @@
                 <div class="exclusive-slider-item__desc">
                   <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
                 </div>
-              </div>
-            </div>
-            <div class="exclusive-slider-item">
+              </div></a><a href="#" class="exclusive-slider-item">
               <div class="exclusive-slider-item__sub">
                 <div class="exclusive-slider-item__logo"><img src="img/company-logo__3.jpg" alt=""></div>
                 <div class="exclusive-slider-item__desc">
@@ -449,9 +459,7 @@
                 <div class="exclusive-slider-item__desc">
                   <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
                 </div>
-              </div>
-            </div>
-            <div class="exclusive-slider-item">
+              </div></a><a href="#" class="exclusive-slider-item">
               <div class="exclusive-slider-item__sub">
                 <div class="exclusive-slider-item__logo"><img src="img/company-logo__5.jpg" alt=""></div>
                 <div class="exclusive-slider-item__desc">
@@ -463,9 +471,7 @@
                 <div class="exclusive-slider-item__desc">
                   <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
                 </div>
-              </div>
-            </div>
-            <div class="exclusive-slider-item">
+              </div></a><a href="#" class="exclusive-slider-item">
               <div class="exclusive-slider-item__sub">
                 <div class="exclusive-slider-item__logo"><img src="img/company-logo__7.jpg" alt=""></div>
                 <div class="exclusive-slider-item__desc">
@@ -477,9 +483,7 @@
                 <div class="exclusive-slider-item__desc">
                   <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
                 </div>
-              </div>
-            </div>
-            <div class="exclusive-slider-item">
+              </div></a><a href="#" class="exclusive-slider-item">
               <div class="exclusive-slider-item__sub">
                 <div class="exclusive-slider-item__logo"><img src="img/company-logo__1.jpg" alt=""></div>
                 <div class="exclusive-slider-item__desc">
@@ -491,9 +495,7 @@
                 <div class="exclusive-slider-item__desc">
                   <p>Корейский косметический бренд, созданный специалистами эстетической медицины!</p>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div></a></div>
           <div class="exclusive-slider-nav">
             <button class="exclusive-slider-nav__left arrow arrow--left"></button>
             <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
@@ -519,6 +521,7 @@
           <div class="text"> <span>Скидка по<br>социальной карте</span></div></a></div>
     </section>
     <section class="section-instagram">
+      <div class="section-instagram__bg"></div>
       <div class="section-instagram-header">
         <div class="section-instagram-header__title"><i class="icon icon__inst--middle"></i><span>podrygkashop</span></div>
         <div class="section-instagram-header__button">
@@ -665,7 +668,7 @@
       <div class="footer__logo-section">
         <div class="image"><img src="img/logo--large.png" alt=""></div>
       </div>
-      <div class="footer__social visible-xs">
+      <div class="footer__social">
         <div class="title">Мы в соц.сетях:</div>
         <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
       </div>

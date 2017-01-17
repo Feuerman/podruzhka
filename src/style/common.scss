@@ -25,8 +25,8 @@
 			display: inline-block;
 		}
 		&__actions {
-			button {
-				& + button {
+			.item {
+				& + .item {
 					margin-left: 14px;
 				}
 				.icon {
@@ -185,6 +185,7 @@
 	background-image: url('../img/section-bg__2.png');
 	background-position: left calc(100% - 80px);
 	background-repeat: no-repeat;
+	background-size: auto 50%;
 	&::before {
 		content: '';
 		position: absolute;
@@ -218,6 +219,21 @@
 	&__slider {
 		position: relative;
 		height: calc(100% - 63px);
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 20%;
+			width: 20%;
+			height: 20%;
+			max-width: 250px;
+			background-image: url('../img/section-bg__12.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: center bottom;
+		}
+
 	}
 	&__journal {
 		display: block;
@@ -297,10 +313,25 @@
 }
 
 .section-instagram {
+	position: relative;
 	padding-top: 30px;
 	padding-bottom: 25px;
 	padding-left: 83px;
 	padding-right: 83px;
+	background: url('../img/section-bg__5.png') left bottom no-repeat, url('../img/section-bg__4.png') right -130px no-repeat;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 16px rgb(248, 248, 248) solid;
+	&__bg {
+		position: absolute;
+		top: 50px;
+		right: 7px;
+		width: 54px;
+		height: 54px;
+		background-image: url('../img/section-bg__3.png');
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
 	&-header {
 		overflow: hidden;
 		margin-bottom: 20px;
@@ -413,6 +444,22 @@
 		margin-left: 2%;
 	}
 }
+
+.catalog-section {
+	overflow: hidden;
+	padding-left: 83px;
+	padding-right: 83px;
+	background-color: rgb(248, 248, 248);
+	&__left {
+		width: 224px;
+		float: left;
+	}
+	&__right {
+		width: calc(100% - 224px);
+		float: right;
+	}
+}
+
 .footer {
 	position: relative;
 	overflow: hidden;
@@ -487,6 +534,7 @@
 		}
 	}
 	&__social {
+		display: none;
 		position: absolute;
 		bottom: 65px;
 		left: 15px;
@@ -503,6 +551,12 @@
 	}
 }
 
+.catalog-header {
+	img {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1600px) {
 	.header {
 		&-logo {
@@ -510,8 +564,8 @@
 		}
 		&-panel {
 			&__actions {
-				button {
-					& + button {
+				.item {
+					& + .item {
 						margin-left: 10px;
 					}
 				}
@@ -574,7 +628,7 @@
 			}
 		}
 		&-basket {
-			margin-left: 15px;
+			margin-left: 20px;
 		}
 		&-social {
 			margin-left: 20px;
@@ -585,6 +639,7 @@
 		padding-right: 15px;
 	}
 	.section-novetly {
+		background-position: calc(100% + 85px) 35px;
 		&-col {
 			&--left {
 				width: 240px;
@@ -613,6 +668,10 @@
 		}
 	}
 	.section-exclusive {
+		background-position: left calc(100% + 100px);
+		&::before {
+			display: none;
+		}
 		&-col {
 			&--left {
 				position: relative;
@@ -638,6 +697,11 @@
 	.section-instagram {
 		padding-left: 55px;
 		padding-right: 55px;
+		background: url('../img/section-bg__13.png') right calc(100% + 110px) no-repeat;
+		background-color: rgb(255, 255, 255);
+		&__bg {
+			display: none;
+		}
 	}
 	.section-discount {
 		&-list {
@@ -668,6 +732,8 @@
 			}
 		}
 		&-bottom {
+			padding-left: 20%;
+			padding-right: 17px;
 			&__container {
 				width: 100%;
 				margin: 0;
@@ -678,14 +744,13 @@
 	.section-winner {
 		padding: 20px 15px;
 		&__item {
-			width: 100%;
-			text-align: center;
-			.timer {
-				display: inline-block;
+			p {
+				font-size: 1.7rem;
 			}
 		}
 		&__timer {
-			margin: 20px 0 10px 0;
+			margin-right: 20px;
+			margin-left: 20px;
 		}
 	}
 	.footer {
@@ -693,7 +758,20 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
+	.catalog-section {
+		padding-left: 35px;
+		padding-right: 15px;
+		&__left {
+			width: 190px;
+		}
+		&__right {
+			width: calc(100% - 190px);
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
 	.header {
 		&-menu {
 			display: none;
@@ -714,8 +792,38 @@
 			display: none;
 		}
 	}
+	.section-winner {
+		position: relative;
+		&__item {
+		}
+		&__left, &__right {
+			position: absolute;
+			width: 50%;
+		}
+		&__left {
+			right: 0;
+			bottom: 20px;
+			text-align: left;
+		}
+		&__right {
+			top: 50px;
+			left: 0;
+			margin: auto;
+			p {
+				font-size: 1.9rem;
+			}
+		}
+		&__timer {
+			width: 50%;
+			margin-left: 50%;
+			margin-right: 0;
+			margin-bottom: 30px;
+			padding-left: 15px;
+		}
+	}
 	.section-journal {
 		&-container {
+			position: relative;
 			padding: 20px 50px;
 			background: rgb(35, 190, 190);
 		}
@@ -733,9 +841,14 @@
 				font-size: 1.7rem;
 			}
 		}
+		.block-shop-app {
+			position: absolute;
+			right: 60px;
+			bottom: 35px;
+		}
 		&-bottom {
-			padding-left: 50px;
-			padding-right: 50px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 	.section-exclusive {
@@ -748,7 +861,25 @@
 			}
 		}
 	}
+	.section-discount {
+		&-list {
+			width: 100%;
+		}
+	}
+	.section-instagram {
+
+		&__bg {
+			display: none;
+		}
+	}
+	.section-novetly {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: rgb(248, 248, 248);
+		background-image: none;
+	}
 	.footer {
+		padding-bottom: 150px;
 		padding-left: 15px;
 		padding-right: 15px;
 		background: url('../img/ellipse-white.png') calc(100% + 50px) calc(100% + 30px) / 550px auto no-repeat;
@@ -766,10 +897,52 @@
 			bottom: 10px;
 			right: 10px;
 		}
+		&__social {
+			display: block;
+			bottom: 30px;
+		}
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.catalog-section {
+		padding-left: 15px;
+		&__left {
+			display: none;
+		}
+		&__right {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.section-winner {
+		position: relative;
+		&__item {
+		}
+		&__left, &__right {
+			position: relative;
+			width: 100%;
+		}
+		&__left {
+			bottom: 0;
+			text-align: center;
+		}
+		&__right {
+			top: 0;
+			left: 0;
+		}
+		&__timer {
+			width: 100%;
+			margin: 20px 0 15px 0;
+			padding: 0;
+			text-align: center;
+			.timer {
+				display: inline-block;
+			}
+		}
+	}
 	.section-action {
 		padding-left: 0;
 		padding-right: 0;
@@ -798,12 +971,19 @@
 		}
 	}
 	.section-exclusive {
+		background-image: none;
 		&-col {
 			&--left {
 				max-width: 100%;
 			}
 			&--right {
 				display: none;
+			}
+		}
+		&__slider {
+			&::before {
+				right: -80px;
+				width: 180px;
 			}
 		}
 	}
@@ -842,9 +1022,20 @@
 		border-style: solid;
 		border-color: rgb(248, 248, 248);
 		border-width: 20px 0 20px 0;
+		background: url('../img/section-bg__5.png') left bottom no-repeat, url('../img/section-bg__4.png') right -190px no-repeat;
+		background-color: rgb(255, 255, 255);
+		&__bg {
+			display: block;
+			top: 15px;
+			right: -10px;
+		}
+	}
+	.section-discount {
+		&-list {
+			width: calc(100% - 80px);
+		}
 	}
 	.footer {
-		padding-bottom: 150px;
 		&-menu-section {
 			&__item {
 				overflow: hidden;
@@ -895,12 +1086,23 @@
 			}
 		}
 		&__social {
+			bottom: 65px;
 			left: 10px;
 		}
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
+	.section-journal {
+		.block-shop-app {
+			position: relative;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width:479px) {
 	.footer {
 		background: url("../img/ellipse-white.png") bottom right / 90% auto no-repeat;
 		background-color: $color-links-primary-active;
@@ -909,34 +1111,30 @@
 		padding-top: 10px;
 		padding-bottom: 15px;
 		&-logo {
-			margin-right: 15px;
-		}
-		&-panel {
-			&__actions {
-				button {
-					display: none;
-					&.js-modal-callback {
-						display: inline-block;
-					}
-				}
-			}
+			margin-right: 10px;
 		}
 	}
 	.section-winner, .section-action, .section-novetly, .section-image-main, .section-exclusive__slider, .section-discount, .section-instagram, .section-journal-container, .section-journal-bottom, .footer {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.section-instagram-header {
-		&__title {
-			margin-right: 15px;
-			span {
-				font-size: 1.8rem;
-			}
+	.section-instagram {
+		background: rgb(255, 255, 255);
+		&__bg {
+			display: none;
 		}
-		&__button {
-			.button {
-				padding-left: 10px;
-				padding-right: 10px;
+		&-header {
+			&__title {
+				margin-right: 15px;
+				span {
+					font-size: 1.8rem;
+				}
+			}
+			&__button {
+				.button {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
 			}
 		}
 	}
@@ -944,6 +1142,28 @@
 		&__left, &__right {
 			p {
 				font-size: 1.7rem;
+			}
+		}
+	}
+	.section-exclusive {
+		&__slider {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header {
+		&-panel {
+			&__actions {
+				.item {
+					display: none;
+					&.js-modal-callback {
+						display: inline-block;
+					}
+				}
 			}
 		}
 	}

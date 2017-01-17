@@ -86,7 +86,6 @@
 }
 
 .owl-dots {
-	padding-left: 35%;
 	.owl-dot {
 		display: inline-block;
 		span {
@@ -135,6 +134,7 @@
 		}
 	}
 	.owl-dots {
+		padding-left: 38%;
 		position: absolute;
 		bottom: 11px;
 		left: 0;
@@ -295,21 +295,91 @@
 }
 
 .novetly-slider {
+	.products-list {
+		&-item {
+			margin: 0;
+			&__header {
+				margin: 0;
+				padding-top: 25px;
+				padding-left: 17px;
+				padding-right: 17px;
+			}
+			&__image {
+				margin: 0;
+				height: 180px;
+				line-height: 180px;
+			}
+			&__title {
+				margin-bottom: 5px;
+				font-size: 1.6rem;
+				line-height: 1.2;
+				font-weight: 300;
+				color: rgb(80, 80, 80);
+				text-transform: uppercase;
+			}
+			&__footer {
+				margin: 0;
+				padding-top: 10px;
+				padding-bottom: 26px;
+				padding-left: 17px;
+				padding-right: 17px;
+				border-top: 1px rgb(236, 226, 233) solid;
+			}
+		}
+	}
+	&-nav {
+		.arrow {
+			position: absolute;
+			bottom: 45%;
+		}
+		&__left {
+			left: 30px;
+		}
+		&__right {
+			right: 30px;
+		}
+	}
+}
+
+.products-list {
+	margin-left: -10px;
+	margin-right: -10px;
+	[class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.products-list-item {
+		height: 380px;
+	}
 	&-item {
+		position: relative;
+		margin-bottom: 20px;
+		background: rgb(255, 255, 255);
+		a {
+			&:focus, &:visited {
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 		&__header {
+			overflow: hidden;
 			position: relative;
-			padding-top: 25px;
+			margin-left: 14px;
+			margin-right: 14px;
+			padding-top: 10px;
 			padding-left: 17px;
-			padding-right: 17px;
 		}
 		&__status {
 			position: absolute;
 			top: 0;
-			right: 10px;
+			right: 0;
 		}
 		&__image {
-			height: 180px;
-			line-height: 180px;
+			height: 190px;
+			margin-bottom: 10px;
+			line-height: 190px;
 			text-align: center;
 			img {
 				max-width: 90%;
@@ -321,6 +391,7 @@
 			font-size: 1.6rem;
 			line-height: 1.2;
 			font-weight: 300;
+			color: rgb(80, 80, 80);
 			text-transform: uppercase;
 		}
 		&__category {
@@ -335,11 +406,12 @@
 			float: right;
 		}
 		&__footer {
-			clear: both;
-			padding-top: 10px;
-			padding-bottom: 26px;
+			overflow: hidden;
+			margin-left: 14px;
+			margin-right: 14px;
+			padding-top: 22px;
+			padding-bottom: 15px;
 			padding-left: 17px;
-			padding-right: 17px;
 			border-top: 1px rgb(236, 226, 233) solid;
 		}
 		&__price {
@@ -401,17 +473,21 @@
 				text-transform: uppercase;
 			}
 		}
-	}
-	&-nav {
-		.arrow {
+		&__action {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-position: top right;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.instagram-slider-item__image {
 			position: absolute;
-			bottom: 45%;
-		}
-		&__left {
-			left: 30px;
-		}
-		&__right {
-			right: 30px;
+			width: 100%;
+			height: 100%;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 	}
 }
@@ -478,6 +554,14 @@
 				line-height: 1.2;
 				color: rgb(255, 255, 255);
 				font-weight: 300;
+			}
+		}
+		@media screen and (min-width: 1920px) {
+			&__desc {
+				padding: 60px;
+				p {
+					font-size: 2.5rem;
+				}
 			}
 		}
 	}
@@ -637,6 +721,18 @@
 			}
 		}
 	}
+	.products-list {
+		margin-left: -6px;
+		margin-right: -6px;
+		[class*="col-"] {
+			width: calc(100% / 3);
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+		.products-list-item {
+			margin-bottom: 12px;
+		}
+	}
 }
 
 @media screen and (max-width: 1366px) {
@@ -648,25 +744,32 @@
 
 		}
 	}
+	.top-slider {
+		.owl-dots {
+			padding-left: 0;
+			text-align: center;
+		}
+	}
 	.novetly-slider {
-		&-item {
-			&__image {
-				height: 140px;
-				line-height: 140px;
-				img {
-					max-width: 50%;
-					max-height: 100%;
+		.products-list {
+			&-item {
+				&__image {
+					height: 140px;
+					line-height: 140px;
+					img {
+						max-width: 50%;
+						max-height: 100%;
+					}
 				}
-			}
-			&__title {
-				margin-bottom: 0;
-			}
-			&__category {
-				margin-bottom: 5px;
-			}
-			&__footer {
-				padding-top: 5px;
-				padding-bottom: 0;
+				&__title {
+					margin-bottom: 0;
+				}
+				&__category {
+					margin-bottom: 5px;
+				}
+				&__footer {
+					padding-bottom: 0;
+				}
 			}
 		}
 		&-nav {
@@ -707,6 +810,20 @@
 				p {
 					font-size: 1.5vw;
 				}
+			}
+			&__logo {
+				img {
+					max-height: 50%;
+					max-width: 60%;
+				}
+			}
+		}
+		&-nav {
+			&__left {
+				left: 25px;
+			}
+			&__right {
+				right: 25px;
 			}
 		}
 	}
@@ -754,6 +871,18 @@
 	}
 }
 @media screen and (max-width: 1024px) {
+	.top-menu {
+		&__link {
+			font-size: 1.2rem;
+		}
+	}
+	.products-list {
+		[class*="col-"] {
+			width: calc(100% / 2);
+		}
+	}
+}
+@media screen and (max-width: 991px) {
 	.exclusive-slider {
 		&-nav {
 			&__left {
@@ -782,9 +911,14 @@
 			}
 		}
 	}
+	.products-list {
+		[class*="col-"] {
+			float: left;
+		}
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.exclusive-slider {
 		height: 62vw;
 		&-item {
@@ -841,14 +975,6 @@
 		margin-bottom: 40px;
 		padding-bottom: 15px;
 		border-bottom: 1px rgb(236, 226, 233) solid;
-		&-item {
-			&__title {
-				margin-bottom: 10px;
-			}
-			&__footer {
-				padding-top: 15px;
-			}
-		}
 		&-nav {
 			.arrow {
 				position: absolute;
@@ -861,6 +987,16 @@
 			}
 			&__right {
 				right: calc(50% - (170px / 2) - 23px);
+			}
+		}
+	}
+	.products-list {
+		&-item {
+			&__title {
+				margin-bottom: 10px;
+			}
+			&__footer {
+				padding-top: 15px;
 			}
 		}
 	}
@@ -900,7 +1036,21 @@
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
+	.products-list {
+		[class*="col-"] {
+			width: 100%;
+		}
+		&-item {
+			&__header, &__footer {
+				max-width: 320px;
+				margin: 0 auto!important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
 	.journal-slider {
 		&-item {
 			&__image {
@@ -930,10 +1080,15 @@
 			}
 		}
 	}
-	.novetly-slider {
+}
+
+@media screen and (max-width: 400px) {
+	.products-list {
 		&-item {
-			padding-left: 12vw;
-			padding-right: 12vw;
+			&__header, &__footer {
+				max-width: 100%;
+				margin: 0 10px;
+			}
 		}
 	}
 }
