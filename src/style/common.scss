@@ -198,6 +198,7 @@
 	}
 	&-col {
 		&--left {
+			position: relative;
 			background-color: rgb(255, 255, 255);
 			width: 76%;
 		}
@@ -217,8 +218,12 @@
 		}
 	}
 	&__slider {
-		position: relative;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
 		height: calc(100% - 63px);
+		width: 100%;
 		&::before {
 			content: '';
 			display: block;
@@ -447,16 +452,59 @@
 
 .catalog-section {
 	overflow: hidden;
+	padding-top: 12px;
 	padding-left: 83px;
 	padding-right: 83px;
 	background-color: rgb(248, 248, 248);
 	&__left {
-		width: 224px;
+		width: 240px;
 		float: left;
+		border-right: 1px rgb(230, 220, 227) solid;
 	}
 	&__right {
-		width: calc(100% - 224px);
+		width: calc(100% - 240px);
 		float: right;
+	}
+}
+
+.page-content-header {
+	position: relative;
+	padding-left: 260px;
+	.show-by {
+		position: absolute;
+		right: 0;
+		top: 7px;
+	}
+}
+
+.catalog-products {
+	padding-left: 35px;
+	padding-top: 23px;
+	border-top: 1px rgb(230, 220, 227) solid;
+}
+
+.catalog-products-header {
+	&__left {
+		width: calc(100% - 220px);
+		float: left;
+		margin-bottom: 25px;
+		.catalog-filter {
+			width: 100%;
+			display: table;
+		}
+	}
+	&__right {
+		float: right;
+	}
+	.filter-list {
+		display: table-cell;
+		min-width: 190px;
+	}
+	.filter-price {
+		padding-left: 65px;
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -753,6 +801,9 @@
 			margin-left: 20px;
 		}
 	}
+	.catalog-products {
+		padding-left: 12px;
+	}
 	.footer {
 		padding-bottom: 100px;
 	}
@@ -763,11 +814,14 @@
 		padding-left: 35px;
 		padding-right: 15px;
 		&__left {
-			width: 190px;
+			width: 200px;
 		}
 		&__right {
-			width: calc(100% - 190px);
+			width: calc(100% - 200px);
 		}
+	}
+	.page-content-header {
+		padding-left: 220px;
 	}
 }
 
@@ -791,6 +845,18 @@
 		&-social {
 			display: none;
 		}
+	}
+	.catalog-section {
+		padding-left: 0;
+		&__left {
+			display: none;
+		}
+		&__right {
+			width: 100%;
+		}
+	}
+	.page-content-header {
+		padding-left: 15px;
 	}
 	.section-winner {
 		position: relative;
@@ -905,18 +971,19 @@
 }
 
 @media screen and (max-width: 768px) {
-	.catalog-section {
-		padding-left: 15px;
-		&__left {
-			display: none;
-		}
-		&__right {
-			width: 100%;
-		}
+	.catalog-products {
+		padding-left: 0;
 	}
 }
 
 @media screen and (max-width: 767px) {
+	.catalog-section {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.page-content-header {
+		padding-left: 0;
+	}
 	.section-winner {
 		position: relative;
 		&__item {
@@ -981,6 +1048,7 @@
 			}
 		}
 		&__slider {
+			position: relative;
 			&::before {
 				right: -80px;
 				width: 180px;

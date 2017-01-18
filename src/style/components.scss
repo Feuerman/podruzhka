@@ -54,14 +54,151 @@
 		}
 	}
 }
+.left-menu {
+	margin-right: 10px;
+	padding-left: 18px;
+	padding-bottom: 30px;
+	border-bottom: 1px rgb(230, 220, 227) solid;
+	a {
+		font-size: 1.3rem;
+		color: rgb(96, 96, 96);
+		text-transform: uppercase;
+		transition: all 0.3s;
+		&:hover {
+			text-decoration: none;
+			color: rgb(237, 38, 144);
+		}
+		&:visited, &:focus {
+			text-decoration: none;
+		}
+	}
+	.active {
+		& > a {
+			color: rgb(237, 38, 144);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.icon {
+			transform: rotate(180deg);
+		}
+		& > .left-menu-sub {
+			opacity: 1;
+			max-height: 500px;
+			&--level-1 {
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+			&--level-2 {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&__item + &__item {
+		margin-top: 10px;
+	}
+	&__item {
+		&.active {
+			.left-menu__link {
+				font-size: 1.6rem;
+				font-weight: 600;
+			}
+		}
+	}
+	&__link {
+		position: relative;
+		display: block;
+		.icon {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 10px;
+			margin: auto;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+	&-sub {
+		opacity: 0;
+		max-height: 0px;
+		overflow: hidden;
+		transition: all 0.3s ease-in-out;
+		&--level-1 {
+			padding-left: 9px;
+		}
+		&--level-2 {
+			padding-left: 20px;
+			.left-menu-sub__item {
+				line-height: 1;
+			}
+			.left-menu-sub__item  + .left-menu-sub__item {
+				margin-top: 5px;
+			}
+			.left-menu-sub__link {
+				font-size: 1.2rem;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
 .mobile-menu {
 	width: 100%;
+	&-header {
+		display: table-cell;
+		width: 245px;
+		height: 85px;
+		vertical-align: middle;
+		padding: 0 23px;
+		border-bottom: 1px rgb(230, 220, 227) solid;
+		&__item {
+			position: relative;
+			&--auth {
+				a {
+					position: relative;
+					padding-bottom: 2px;
+					color: rgb(113, 113, 113);
+					font-size: 1.4rem;
+				}
+				a + a {
+					margin-left: 12px;
+					padding-left: 12px;
+					border-left: 1px rgb(230, 220, 227) solid;
+				}
+				.icon {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					margin: auto;
+				}
+			}
+			&--back-to {
+				display: none;
+			}
+		}
+	}
+	&__social {
+		padding: 18px 23px;
+		background-color: rgb(237, 38, 144);
+		color: rgb(255, 255, 255);
+		.title {
+			margin-bottom: 12px;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+		.social {
+			&__item + .social__item {
+				margin-left: 22px;
+			}
+		}
+	}
 	&__item {
 		border-bottom: 1px rgb(231, 220, 228) solid;
 	}
 	&__link {
+		position: relative;
 		display: block;
-		padding: 18px 25px;
+		padding: 14px 23px;
 		font-size: 1.8rem;
 		color: rgb(113, 113, 113);
 		text-transform: uppercase;
@@ -74,6 +211,41 @@
 		&:focus, &:visited {
 			text-decoration: none;
 			color: inherit;
+		}
+		.icon {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 23px;
+			margin: auto;
+		}
+	}
+	&--pink &__item {
+		background-color: rgb(237, 38, 144);
+		border-bottom-color: rgb(233, 129, 186);
+	}
+	&--pink &__link {
+		color: rgb(255, 255, 255);
+		&:hover {
+			background-color: rgb(233, 129, 186);
+		}
+	}
+	&-blocks {
+		position: absolute;
+		top: 85px;
+		right: 0;
+		left: 0;
+		width: 100%;
+		transform: scale(1, 0);
+		transition: all 0.4s;
+		transform-origin: 50% 0;
+		opacity: 0;
+		&.active {
+			transform: scale(1);
+			opacity: 1;
+			& + .mobile-menu-blocks {
+				transform-origin: 0 0;
+			}
 		}
 	}
 }
@@ -301,8 +473,8 @@
 			&__header {
 				margin: 0;
 				padding-top: 25px;
-				padding-left: 17px;
-				padding-right: 17px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 			&__image {
 				margin: 0;
@@ -321,8 +493,8 @@
 				margin: 0;
 				padding-top: 10px;
 				padding-bottom: 26px;
-				padding-left: 17px;
-				padding-right: 17px;
+				padding-left: 10px;
+				padding-right: 10px;
 				border-top: 1px rgb(236, 226, 233) solid;
 			}
 		}
@@ -342,6 +514,7 @@
 }
 
 .products-list {
+	clear: both;
 	margin-left: -10px;
 	margin-right: -10px;
 	[class*="col-"] {
@@ -369,7 +542,7 @@
 			margin-left: 14px;
 			margin-right: 14px;
 			padding-top: 10px;
-			padding-left: 17px;
+			padding-left: 10px;
 		}
 		&__status {
 			position: absolute;
@@ -384,9 +557,12 @@
 			img {
 				max-width: 90%;
 				width: auto!important;
+				vertical-align: bottom;
 			}
 		}
 		&__title {
+			max-width: 300px;
+			height: 38px;
 			margin-bottom: 5px;
 			font-size: 1.6rem;
 			line-height: 1.2;
@@ -411,7 +587,7 @@
 			margin-right: 14px;
 			padding-top: 22px;
 			padding-bottom: 15px;
-			padding-left: 17px;
+			padding-left: 10px;
 			border-top: 1px rgb(236, 226, 233) solid;
 		}
 		&__price {
@@ -510,6 +686,7 @@
 	border-width: 1px 0 0 1px;
 	&-item {
 		height: 100%;
+		text-decoration: none;
 		&__sub {
 			position: relative;
 			height: 50%;
@@ -538,6 +715,7 @@
 		}
 		&__desc {
 			display: table-cell;
+			padding: 20px;
 			padding: 3vw;
 			position: absolute;
 			top: 0;
@@ -550,6 +728,7 @@
 			transition: all 0.3s ease-in-out;
 			p {
 				text-align: left;
+				font-size: 20px;
 				font-size: 1.17vw;
 				line-height: 1.2;
 				color: rgb(255, 255, 255);
@@ -870,6 +1049,11 @@
 		}
 	}
 }
+@media screen and (max-width: 1199px) {
+	.left-menu {
+		padding-left: 0;
+	}
+}
 @media screen and (max-width: 1024px) {
 	.top-menu {
 		&__link {
@@ -1087,7 +1271,7 @@
 		&-item {
 			&__header, &__footer {
 				max-width: 100%;
-				margin: 0 10px;
+				margin: 0 10px!important;
 			}
 		}
 	}

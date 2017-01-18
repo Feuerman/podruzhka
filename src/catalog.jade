@@ -1,7 +1,7 @@
 include templates/head.jade
 body
 	.page-wrapper
-		include templates/components/menu/mobile-top-menu.jade		
+		include templates/components/menu/mobile-top-menu--catalog.jade
 		include templates/header.jade
 		section.catalog-header
 			picture
@@ -20,17 +20,33 @@ body
 				source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
 				source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
 				source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
-				img(srcset='img/catalog-banner--1920.jpg')
+				img(srcset='img/catalog-banner--1920.jpg')		
 		section.catalog-section
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					a.breadcrumbs-item(href="#") Каталог
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Уход
+				h1.page-title Косметика для ухода
+				.show-by
+					select.select.select--showBy.js-select(name="showBy")
+						option(value="20") 20
+						option(value="16") 16
+						option(value="12") 12
+						option(value="8") 8
 			.catalog-section__left
 				ul.left-menu
-					li.left-menu__item.active
-						a.left-menu__link(href="#") Макияж
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Макияж
+							i.icon.icon__arrow--violet
 						ul.left-menu-sub.left-menu-sub--level-1
-							li.left-menu-sub__item.active
+							li.left-menu-sub__item
 								a.left-menu-sub__link(href="#") Лицо
 								ul.left-menu-sub.left-menu-sub--level-2
-									li.left-menu-sub__item.active
+									li.left-menu-sub__item
 										a.left-menu-sub__link(href="#") Корректор
 									li.left-menu-sub__item
 										a.left-menu-sub__link(href="#") Тональные средства
@@ -45,70 +61,134 @@ body
 							li.left-menu-sub__item
 								a.left-menu-sub__link(href="#") Ногти
 					li.left-menu__item
-						a.left-menu__link(href="#") Парфюмерия
+						a.left-menu__link(href="#")
+							span Парфюмерия
+							i.icon.icon__arrow--violet
 					li.left-menu__item
-						a.left-menu__link(href="#") Уход
+						a.left-menu__link(href="#")
+							span Уход
+							i.icon.icon__arrow--violet
 					li.left-menu__item
-						a.left-menu__link(href="#") Для любимых
+						a.left-menu__link(href="#")
+							span Для любимых
+							i.icon.icon__arrow--violet
 					li.left-menu__item
-						a.left-menu__link(href="#") Дамские штучки
+						a.left-menu__link(href="#")
+							span Дамские штучки
+							i.icon.icon__arrow--violet
 					li.left-menu__item
-						a.left-menu__link(href="#") Для дома
+						a.left-menu__link(href="#")
+							span Для дома
+							i.icon.icon__arrow--violet
 					li.left-menu__item
-						a.left-menu__link(href="#") Бренды
+						a.left-menu__link(href="#")
+							span Бренды
+							i.icon.icon__arrow--violet
 				.legend
-					.legend-item.legend-item--novetly
+					.legend-item.color-green
 						.legend-item__text
 							span Новинки
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__new
-					.legend-item.legend-item--prices
+					.legend-item.color-rose
 						.legend-item__text
 							span Выгодные цены
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__purse
-					.legend-item.legend-item--gifts
+					.legend-item.color-blue
 						.legend-item__text
 							span Подарки
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__box
-					.legend-item.legend-item--discount
+					.legend-item.color-red
 						.legend-item__text
 							span Скидки
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__discount
-					.legend-item.legend-item--hits
+					.legend-item.color-yellow
 						.legend-item__text
 							span Хиты
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__star--white
-					.legend-item.legend-item--exclusive
+					.legend-item.color-orange
 						.legend-item__text
 							span эксклюзивно
-						.legend-item__image
+						.legend-item__image.bg-inherit
 							i.icon.icon__exclamation-point						
 			.catalog-section__right
-				section.breadcrumbs
-					a.breadcrumbs-item(href="#") Главная
-					span.breadcrumbs-sep >
-					a.breadcrumbs-item(href="#") Каталог
-					span.breadcrumbs-sep >
-					span.breadcrumbs-item Уход
-				h1.catalog-section__title Косметика для ухода
-				.show-by
-					select.select.select--showBy.js-select(name="showBy")
-						option(value="20") 20
-						option(value="16") 16
-						option(value="12") 12
-						option(value="8") 8
-				.catalog-filter
-					.catalog-filter__brands
-						select.select.select--brands.js-select(name="brands")
-							option(value="20") 111
-							option(value="16") 222
-							option(value="12") 333
-							option(value="8") 444
 				section.catalog-products
+					.catalog-products-header
+						.catalog-products-header__left
+							.catalog-filter
+								.filter-list.filter-list--white
+									.filter-list__title
+										span Все бренды
+										i.icon.icon__triangle--grey
+									.filter-list-items
+										.filter-list-item
+											input#brend-all(type="checkbox" value="all")
+											label(for="brend-all") Все бренды
+										.filter-list-item
+											input#brend-vox(type="checkbox" value="vox")
+											label(for="brend-vox") Vox
+										.filter-list-item
+											input#brend-ladypink(type="checkbox" value="ladypink")
+											label(for="brend-ladypink") Lady Pink
+										.filter-list-item
+											input#brend-tonymoly(type="checkbox" value="tonymoly")
+											label(for="brend-tonymoly") Tony Moly
+										.filter-list-item
+											input#brend-deco(type="checkbox" value="deco")
+											label(for="brend-deco") Deco
+								.filter-price
+									img(src="img/filter-price.png", alt="")
+								.filter-list.filter-list--grey
+									.filter-list__title
+										span Все цвета
+										i.icon.icon__triangle--white
+									.filter-list-items
+										.filter-list-item
+											input#brend-all(type="checkbox" value="all")
+											label(for="color-all") Все цвета
+										.filter-list-item
+											input#brend-green(type="checkbox" value="green")
+											label(for="color-green") Зеленый
+										.filter-list-item
+											input#brend-red(type="checkbox" value="red")
+											label(for="color-red") Красный
+										.filter-list-item
+											input#brend-blue(type="checkbox" value="blue")
+											label(for="color-blue") Синий
+										.filter-list-item
+											input#brend-yellow(type="checkbox" value="yellow")
+											label(for="color-yellow") Желтый
+						.catalog-products-header__right
+							.catalog-sort
+								.filter-list.filter-list--grey
+									.filter-list__title
+										span Сортировка
+										i.icon.icon__triangle--white
+									.filter-list-items
+										.filter-list-item
+											input#ratingUp(type="checkbox" value="ratingUp")
+											label(for="ratingUp")
+												span По рейтингу
+												i.icon.icon__arrow--grey.rotate
+										.filter-list-item
+											input#ratingDown(type="checkbox" value="ratingDown")
+											label(for="ratingDown")
+												span По рейтингу
+												i.icon.icon__arrow--grey
+										.filter-list-item
+											input#priceUp(type="checkbox" value="priceUp")
+											label(for="priceUp")
+												span По цене
+												i.icon.icon__arrow--grey.rotate
+										.filter-list-item
+											input#priceDown(type="checkbox" value="priceDown")
+											label(for="priceDown")
+												span По цене
+												i.icon.icon__arrow--grey
 					.products-list.row
 						.col-md-3
 							.products-list-item
@@ -134,8 +214,10 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков
 						.col-md-3
 							.products-list-item
@@ -166,8 +248,10 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков
 						.col-md-3
 							.products-list-item
@@ -196,8 +280,10 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков
 						.col-md-3
 							.products-list-item
@@ -223,8 +309,10 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков
 						.col-md-3
 							.products-list-item
@@ -255,8 +343,10 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков
 						.col-md-3
 							.products-list-item
@@ -282,9 +372,40 @@ body
 											span 1346
 											span.rouble &#x20bd;
 									.products-list-item__shades
-										button.image.js-add-basket
+										button.image.image--basket.js-add-basket
 											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
 										.text 14 оттенков					
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
 						.col-md-3
 							.products-list-item
 								.instagram-slider-item__image(style="background-image: url('img/inst-list.png')")
@@ -294,5 +415,92 @@ body
 						.col-md-3
 							.products-list-item
 								a.products-list-item__action(href="#" style="background-image: url('img/products-list-action.png')")
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
 		include templates/components/section-journal.jade				
 		include templates/footer.jade

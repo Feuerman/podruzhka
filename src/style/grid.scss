@@ -4,7 +4,7 @@ body {
 	transition: all 0.5s ease-in-out;
 	&.open-menu-panel {
 		position: relative;
-		transform: translateX(300px);
+		transform: translateX(245px);
 		overflow-x: hidden;
 	}
 }
@@ -49,9 +49,9 @@ body {
 .mobile-menu-container {
 	z-index: 0;
 	position: absolute;
-	left: -300px;
+	left: -245px;
 	top: 0;
-	width: 300px;
+	width: 245px;
 	min-height: 100vh;
 	height: 100%;
 	background-color: rgb(255, 255, 255);
