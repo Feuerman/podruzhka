@@ -1,5 +1,5 @@
 include templates/head.jade
-body
+body.page-inner
 	.page-wrapper
 		include templates/components/menu/mobile-top-menu--catalog.jade
 		include templates/header.jade
@@ -31,7 +31,8 @@ body
 					span.breadcrumbs-item Уход
 				h1.page-title Косметика для ухода
 				.show-by
-					select.select.select--showBy.js-select(name="showBy")
+					span.show-by__title Показывать: 
+					select.show-by__select.js-select(name="showBy")
 						option(value="20") 20
 						option(value="16") 16
 						option(value="12") 12
@@ -83,7 +84,7 @@ body
 					li.left-menu__item
 						a.left-menu__link(href="#")
 							span Бренды
-							i.icon.icon__arrow--violet
+							i.icon.icon__arrow--violet							
 				.legend
 					.legend-item.color-green
 						.legend-item__text
@@ -105,7 +106,7 @@ body
 							span Скидки
 						.legend-item__image.bg-inherit
 							i.icon.icon__discount
-					.legend-item.color-yellow
+					.legend-item.color-gold
 						.legend-item__text
 							span Хиты
 						.legend-item__image.bg-inherit
@@ -119,76 +120,146 @@ body
 				section.catalog-products
 					.catalog-products-header
 						.catalog-products-header__left
+							button.button--default.catalog-filter-toggle.js-toggle-filters
+								span Фильтры
 							.catalog-filter
-								.filter-list.filter-list--white
-									.filter-list__title
-										span Все бренды
-										i.icon.icon__triangle--grey
-									.filter-list-items
-										.filter-list-item
-											input#brend-all(type="checkbox" value="all")
-											label(for="brend-all") Все бренды
-										.filter-list-item
-											input#brend-vox(type="checkbox" value="vox")
-											label(for="brend-vox") Vox
-										.filter-list-item
-											input#brend-ladypink(type="checkbox" value="ladypink")
-											label(for="brend-ladypink") Lady Pink
-										.filter-list-item
-											input#brend-tonymoly(type="checkbox" value="tonymoly")
-											label(for="brend-tonymoly") Tony Moly
-										.filter-list-item
-											input#brend-deco(type="checkbox" value="deco")
-											label(for="brend-deco") Deco
-								.filter-price
-									img(src="img/filter-price.png", alt="")
-								.filter-list.filter-list--grey
-									.filter-list__title
-										span Все цвета
-										i.icon.icon__triangle--white
-									.filter-list-items
-										.filter-list-item
-											input#brend-all(type="checkbox" value="all")
-											label(for="color-all") Все цвета
-										.filter-list-item
-											input#brend-green(type="checkbox" value="green")
-											label(for="color-green") Зеленый
-										.filter-list-item
-											input#brend-red(type="checkbox" value="red")
-											label(for="color-red") Красный
-										.filter-list-item
-											input#brend-blue(type="checkbox" value="blue")
-											label(for="color-blue") Синий
-										.filter-list-item
-											input#brend-yellow(type="checkbox" value="yellow")
-											label(for="color-yellow") Желтый
+								.catalog-filter__item.catalog-filter__item--spec
+									.filter-list__mobile-title
+										span спецпредложения
+										i.icon.icon__plus--black
+									.filter-list.filter-list--grey.filter-list--mobile										
+										.filter-list-items
+											.filter-list-item
+												input#cat-all(type="checkbox" value="all")
+												label(for="cat-all") Все предложения
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-1(type="checkbox" value="all")
+												label.color-green(for="cat-1") НОВИНКИ
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#cat-2(type="checkbox" value="all")
+												label.color-rose(for="cat-2") ВЫГОДНЫЕ ЦЕНЫ
+													span.filter-list-item__count (2)
+											.filter-list-item
+												input#cat-3(type="checkbox" value="all")
+												label.color-blue(for="cat-3") ПОДАРКИ
+													span.filter-list-item__count (1)
+											.filter-list-item
+												input#cat-4(type="checkbox" value="all")
+												label.color-red(for="cat-4") СКИДКИ
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-5(type="checkbox" value="all")
+												label.color-gold(for="cat-5") ХИТЫ
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-6(type="checkbox" value="all")
+												label.color-orange(for="cat-6") ЭКСКЛЮЗИВНО
+													span.filter-list-item__count (5)
+								.catalog-filter__item
+									.filter-list__mobile-title
+										span Бренд
+										i.icon.icon__plus--black
+									.filter-list.filter-list--white.filter-list--mobile
+										.filter-list__title
+											span Все бренды
+											i.icon.icon__triangle--grey
+										.filter-list-items
+											.filter-list-item
+												input#brend-all(type="checkbox" value="all")
+												label(for="brend-all") Все бренды
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#brend-vox(type="checkbox" value="vox")
+												label(for="brend-vox") Vox
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#brend-ladypink(type="checkbox" value="ladypink")
+												label(for="brend-ladypink") Lady Pink
+													span.filter-list-item__count (10)
+											.filter-list-item
+												input#brend-tonymoly(type="checkbox" value="tonymoly")
+												label(for="brend-tonymoly") Tony Moly
+													span.filter-list-item__count (25)
+											.filter-list-item
+												input#brend-deco(type="checkbox" value="deco")
+												label(for="brend-deco") Deco
+													span.filter-list-item__count (9)
+								//- .filter-price
+								//- 	img(src="img/filter-price.png", alt="")
+								.catalog-filter__item.text-right
+									.filter-list__mobile-title
+										span Цвет
+										i.icon.icon__plus--black
+									.filter-list.filter-list--grey.filter-list--mobile
+										.filter-list__title
+											span Цвет
+											i.icon.icon__triangle--white
+										.filter-list-items
+											.filter-list-item
+												input#color-all(type="checkbox" value="all")
+												label(for="color-all") Все цвета
+													span.filter-list-item__count (50)
+											.filter-list-item
+												input#color-green(type="checkbox" value="green")
+												label.color-green(for="color-green") Зеленый
+													span.filter-list-item__count (12)
+											.filter-list-item
+												input#color-gold(type="checkbox" value="gold")
+												label.color-gold(for="color-gold") Золотой
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#color-braun(type="checkbox" value="braun")
+												label.color-braun(for="color-braun") Коричневый
+													span.filter-list-item__count (7)
+											.filter-list-item
+												input#color-red(type="checkbox" value="red")
+												label.color-red(for="color-red") Красный
+													span.filter-list-item__count (3)
+											.filter-list-item
+												input#color-blue(type="checkbox" value="blue")
+												label.color-blue(for="color-blue") Синий
+													span.filter-list-item__count (15)
+											.filter-list-item
+												input#color-rose(type="checkbox" value="rose")
+												label.color-rose(for="color-rose") Розовый
+													span.filter-list-item__count (15)								
+								.catalog-filter-footer
+									button.button.button--grey Закрыть фильтры										
+									button.button.button--default Показать 16 товаров										
+									button.button.button--transparent Очистить фильтры										
 						.catalog-products-header__right
 							.catalog-sort
-								.filter-list.filter-list--grey
-									.filter-list__title
-										span Сортировка
-										i.icon.icon__triangle--white
-									.filter-list-items
-										.filter-list-item
-											input#ratingUp(type="checkbox" value="ratingUp")
-											label(for="ratingUp")
+								span.catalog-sort__label Сортировать по:
+								.catalog-sort__item
+									.filter-list.filter-list--grey.filter-list--sort.dropdown
+										.filter-list__title
+											span
 												span По рейтингу
 												i.icon.icon__arrow--grey.rotate
-										.filter-list-item
-											input#ratingDown(type="checkbox" value="ratingDown")
-											label(for="ratingDown")
-												span По рейтингу
-												i.icon.icon__arrow--grey
-										.filter-list-item
-											input#priceUp(type="checkbox" value="priceUp")
-											label(for="priceUp")
-												span По цене
-												i.icon.icon__arrow--grey.rotate
-										.filter-list-item
-											input#priceDown(type="checkbox" value="priceDown")
-											label(for="priceDown")
-												span По цене
-												i.icon.icon__arrow--grey
+											i.icon.icon__triangle--white
+										.filter-list-items
+											.filter-list-item
+												input#ratingUp(type="checkbox" value="ratingUp")
+												label(for="ratingUp")
+													span По рейтингу
+													i.icon.icon__arrow--grey.rotate
+											.filter-list-item
+												input#ratingDown(type="checkbox" value="ratingDown")
+												label(for="ratingDown")
+													span По рейтингу
+													i.icon.icon__arrow--grey
+											.filter-list-item
+												input#priceUp(type="checkbox" value="priceUp")
+												label(for="priceUp")
+													span По цене
+													i.icon.icon__arrow--grey.rotate
+											.filter-list-item
+												input#priceDown(type="checkbox" value="priceDown")
+												label(for="priceDown")
+													span По цене
+													i.icon.icon__arrow--grey
 					.products-list.row
 						.col-md-3
 							.products-list-item
@@ -223,10 +294,12 @@ body
 							.products-list-item
 								.products-list-item__header
 									.products-list-item__status
-										.e-status.e-status--discount
-											i.icon.icon__discount
-										.e-status.e-status--novetly
-											span new
+										.legend-item.color-red
+											.legend-item__image.bg-inherit
+												i.icon.icon__discount
+										.legend-item.color-green
+											.legend-item__image.bg-inherit
+												i.icon.icon__new
 									a(href="#")
 										.products-list-item__image
 											img(src="img/novetly-slider__2.jpg", alt="")
@@ -257,8 +330,9 @@ body
 							.products-list-item
 								.products-list-item__header
 									.products-list-item__status
-										.e-status.e-status--novetly
-											span new
+										.legend-item.color-green
+											.legend-item__image.bg-inherit
+												i.icon.icon__new
 									a(href="#")
 										.products-list-item__image
 											img(src="img/novetly-slider__3.jpg", alt="")
@@ -318,10 +392,12 @@ body
 							.products-list-item
 								.products-list-item__header
 									.products-list-item__status
-										.e-status.e-status--discount
-											i.icon.icon__discount
-										.e-status.e-status--novetly
-											span new
+										.legend-item.color-red
+											.legend-item__image.bg-inherit
+												i.icon.icon__discount
+										.legend-item.color-green
+											.legend-item__image.bg-inherit
+												i.icon.icon__new
 									a(href="#")
 										.products-list-item__image
 											img(src="img/novetly-slider__5.jpg", alt="")
@@ -502,5 +578,130 @@ body
 										button.image.image--like.js-like
 											.icon.icon__heart
 										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+						.col-md-3
+							.products-list-item
+								.products-list-item__header
+									a(href="#")
+										.products-list-item__image
+											img(src="img/novetly-slider__1.jpg", alt="")
+										.products-list-item__title PERFECT MAT LIPSTICK second line test
+										.products-list-item__category помада
+										.products-list-item__rating
+											.rating
+												.rating__item.active
+												.rating__item.active
+												.rating__item
+												.rating__item
+												.rating__item
+								.products-list-item__footer
+									.products-list-item__price
+										.value.value--current 
+											span 1346
+											span.rouble &#x20bd;
+										.value.value--old
+											span 1346
+											span.rouble &#x20bd;
+									.products-list-item__shades
+										button.image.image--basket.js-add-basket
+											.icon.icon__basket--large
+										button.image.image--like.js-like
+											.icon.icon__heart
+										.text 14 оттенков
+					.show-more
+						button ПОКАЗАТЬ ЕЩЕ
+						.show-more__count
+							| <
+							span.current 1
+							| /
+							span.total 34
+							| >
+							
 		include templates/components/section-journal.jade				
 		include templates/footer.jade

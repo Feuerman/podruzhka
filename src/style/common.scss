@@ -455,6 +455,7 @@
 	padding-top: 12px;
 	padding-left: 83px;
 	padding-right: 83px;
+	background: url('../img/section-bg__3.png') 50px 850px no-repeat, url('../img/catalog-bg-1.png') left 580px no-repeat, url('../img/catalog-bg-2.png') -20px calc(100% + 210px) no-repeat;
 	background-color: rgb(248, 248, 248);
 	&__left {
 		width: 240px;
@@ -483,22 +484,57 @@
 	border-top: 1px rgb(230, 220, 227) solid;
 }
 
+.catalog-filter {
+	width: 100%;
+	display: table;
+	&__item {
+		display: table-cell;
+		&--spec {
+			display: none;
+		}
+	}
+	&-toggle {
+		display: none;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		width: 320px;
+		max-width: 100%;
+		background-color: rgb(237, 38, 144);
+		border-radius: 3px;
+		font-size: 1.6rem;
+		color: rgb(255, 255, 255);
+		text-align: center;
+	}
+	&-footer {
+		display: none;
+		.button {
+			width: 320px;
+			margin-right: 23px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.catalog-sort {
+	&__label {
+		display: none;
+		line-height: 45px;
+		color: rgb(161, 161, 161);
+		font-size: 1.37rem;
+	}
+}
+
 .catalog-products-header {
 	&__left {
 		width: calc(100% - 220px);
 		float: left;
-		margin-bottom: 25px;
-		.catalog-filter {
-			width: 100%;
-			display: table;
-		}
+		margin-bottom: 15px;
 	}
 	&__right {
 		float: right;
 	}
 	.filter-list {
-		display: table-cell;
-		min-width: 190px;
+		display: inline-block;
 	}
 	.filter-price {
 		padding-left: 65px;
@@ -682,6 +718,11 @@
 			margin-left: 20px;
 		}
 	}
+	.catalog-products-header {
+		&__left {
+			width: calc(100% - 200px);
+		}
+	}
 	.section-novetly, .section-exclusive, .section-action, .section-discount {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -846,8 +887,82 @@
 			display: none;
 		}
 	}
+	.page-content-header {
+		.show-by {
+			display: none;
+		}
+	}
+	.catalog-filter {
+		display: block;
+		border-top: 1px rgb(230, 220, 227) solid;
+		max-height: 0;
+		opacity: 0;
+		transition: all 0.3s;
+		&.active {
+			max-height: 1000px;
+			margin-top: 10px;
+			opacity: 1;
+		}
+		&__item {
+			display: block;
+			margin-top: 18px;
+			margin-bottom: 15px;
+			padding: 0 10px;
+			border-bottom: 1px rgb(230, 220, 227) solid;
+			text-align: left;
+			&--spec {
+				display: block;
+			}
+		}
+		.filter-list {
+			overflow: hidden;
+			max-height: 0;
+			opacity: 0;
+			transition: all 0.3s;
+		}
+		.active {
+			.filter-list__mobile-title {
+				margin-bottom: 20px;
+				.icon {
+					width: $icon-minus-black-width;
+					height: $icon-minus-black-height;
+					background-position: $icon-minus-black-offset-x $icon-minus-black-offset-y;
+				}
+			}
+			.filter-list {
+				max-height: 300px;
+				opacity: 1;
+			}
+		}
+		&-toggle {
+			display: block;
+		}
+		&-footer {
+			display: block;
+		}
+	}
+	.catalog-sort {
+		&__label {
+			display: inline-block;
+		}
+	}
+	.catalog-products-header {
+		position: relative;
+		&__left {
+			width: 100%;
+			float: none;
+		}
+		&__right {
+			position: absolute;
+			right: 0;
+			top: 0;
+			.catalog-sort__item {
+				float: right;
+			}
+		}
+	}
 	.catalog-section {
-		padding-left: 0;
+		padding-left: 15px;
 		&__left {
 			display: none;
 		}
@@ -855,8 +970,11 @@
 			width: 100%;
 		}
 	}
+	.catalog-products {
+		padding-left: 0;
+	}
 	.page-content-header {
-		padding-left: 15px;
+		padding-left: 0;
 	}
 	.section-winner {
 		position: relative;
@@ -974,12 +1092,40 @@
 	.catalog-products {
 		padding-left: 0;
 	}
+	.catalog-section {
+		background: url('../img/catalog-bg-2.png') -210px calc(100% + 240px) no-repeat;
+		background-color: rgb(248, 248, 248);
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.catalog-section {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.catalog-sort {
+		&__label {
+			display: inline-block;
+		}
+	}
+	.catalog-products-header {
+		&__left {
+			margin-bottom: 15px;
+		}
+		&__right {
+			position: relative;
+			margin-bottom: 20px;
+			float: none;
+			.catalog-sort {
+				&__item {
+					float: none;
+				}
+				&__label {
+					line-height: 1;
+					padding-bottom: 10px;
+				}
+			}
+		}
 	}
 	.page-content-header {
 		padding-left: 0;
@@ -1170,6 +1316,23 @@
 	}
 }
 
+@media screen and (max-width: 480px) {
+	.catalog-filter {
+		&-toggle {
+			width: 100%;
+		}
+		&-footer {
+			.button {
+				width: 100%;
+			}
+		}
+	}
+	.catalog-section {
+		background: url('../img/catalog-bg-2.png') -350px calc(100% + 240px) no-repeat;
+		background-color: rgb(248, 248, 248);
+	}
+}
+
 @media screen and (max-width:479px) {
 	.footer {
 		background: url("../img/ellipse-white.png") bottom right / 90% auto no-repeat;
@@ -1234,5 +1397,9 @@
 				}
 			}
 		}
+	}
+	.catalog-section {
+		background: none;
+		background-color: rgb(248, 248, 248);
 	}
 }

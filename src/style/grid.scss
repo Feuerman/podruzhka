@@ -55,6 +55,10 @@ body {
 	min-height: 100vh;
 	height: 100%;
 	background-color: rgb(255, 255, 255);
+	transition: all 0.3s;
+	&.color-pink {
+		background-color: rgb(237, 38, 144);
+	}
 }
 
 @media screen and (max-width: 520px) {
