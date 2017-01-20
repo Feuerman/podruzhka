@@ -570,6 +570,13 @@ a {}
 			padding-left: 4px;
 		}
 	}
+	&__show-all {
+		display: none;
+		margin-bottom: 20px;
+		font-size: 1.4rem;
+		color: rgb(162, 162, 162);
+		border-bottom: 1px rgb(162, 162, 162) dashed;
+	}
 }
 
 .show-more {
@@ -577,6 +584,9 @@ a {}
 	margin-bottom: 30px;
 	text-align: center;
 	font-size: 1.6rem;
+	button, &__count {
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	}
 	button {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -711,10 +721,23 @@ a {}
 		&--sort {
 			width: 100%;
 		}
+		&__show-all {
+			display: block;
+		}
 	}
 	.filter-list--mobile {
+		.filter-list-items {
+			max-height: 190px;
+			overflow: hidden;
+			transition: all 0.3s;
+			&.active {
+				max-height: 700px;
+			}
+		}
 		.filter-list-item {
 			width: 100%;
+			float: none;
+			margin-bottom: 12px;
 		}
 	}
 }

@@ -785,12 +785,20 @@ p {
     .filter-list-item__count {
       display: none;
       padding-left: 4px; }
+  .filter-list__show-all {
+    display: none;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #a2a2a2;
+    border-bottom: 1px #a2a2a2 dashed; }
 
 .show-more {
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 1.6rem; }
+  .show-more button, .show-more__count {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
   .show-more button {
     font-weight: bold;
     text-transform: uppercase;
@@ -881,8 +889,19 @@ p {
 @media screen and (max-width: 480px) {
   .filter-list--sort {
     width: 100%; }
+  .filter-list__show-all {
+    display: block; }
+  .filter-list--mobile .filter-list-items {
+    max-height: 190px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .filter-list--mobile .filter-list-items.active {
+      max-height: 700px; }
   .filter-list--mobile .filter-list-item {
-    width: 100%; } }
+    width: 100%;
+    float: none;
+    margin-bottom: 12px; } }
 
 body {
   background-color: #dedede;
@@ -2251,12 +2270,22 @@ body {
   padding-top: 12px;
   padding-left: 83px;
   padding-right: 83px;
-  background: url("../img/section-bg__3.png") 50px 850px no-repeat, url("../img/catalog-bg-1.png") left 580px no-repeat, url("../img/catalog-bg-2.png") -20px calc(100% + 210px) no-repeat;
+  background: url("../img/catalog-bg-2.png") -20px calc(100% + 210px) no-repeat;
   background-color: #f8f8f8; }
   .catalog-section__left {
+    position: relative;
     width: 240px;
     float: left;
     border-right: 1px #e6dce3 solid; }
+    .catalog-section__left::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 20px);
+      left: -83px;
+      display: block;
+      width: 148px;
+      height: 400px;
+      background: url("../img/section-bg__3.png") 50px 270px no-repeat, url("../img/catalog-bg-1.png") 0 0 no-repeat; }
   .catalog-section__right {
     width: calc(100% - 240px);
     float: right; }
@@ -2414,7 +2443,7 @@ body {
       padding-left: 0;
       text-align: center; }
   .section-journal-container {
-    background: url("../img/section-bg__6.png") -80px -90px no-repeat, url("../img/section-bg__8.png") calc(100% + 120px) calc(100% + 170px) no-repeat;
+    background: url("../img/section-bg__3.png") 20px 130px no-repeat, url("../img/section-bg__6.png") 0 -90px no-repeat, url("../img/section-bg__7.png") right 85px no-repeat, url("../img/section-bg__8.png") right calc(100% + 120px) no-repeat;
     background-color: #23bebe; }
   .section-journal__slider {
     width: 50%;
@@ -2533,10 +2562,15 @@ body {
     padding-right: 15px; }
     .catalog-section__left {
       width: 200px; }
+      .catalog-section__left::before {
+        left: -35px; }
     .catalog-section__right {
       width: calc(100% - 200px); }
   .page-content-header {
-    padding-left: 220px; } }
+    padding-left: 220px; }
+  .section-journal-container {
+    background: url("../img/section-bg__6.png") -90px -90px no-repeat, url("../img/section-bg__8.png") calc(100% + 160px) calc(100% + 150px) no-repeat;
+    background-color: #23bebe; } }
 
 @media screen and (max-width: 991px) {
   .header-menu {
@@ -2560,7 +2594,7 @@ body {
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
     .catalog-filter.active {
-      max-height: 1000px;
+      max-height: 3000px;
       margin-top: 10px;
       opacity: 1; }
     .catalog-filter__item {
@@ -2585,7 +2619,7 @@ body {
         height: 4px;
         background-position: -1038px -10px; }
     .catalog-filter .active .filter-list {
-      max-height: 300px;
+      max-height: 700px;
       opacity: 1; }
     .catalog-filter-toggle {
       display: block; }
@@ -2637,8 +2671,7 @@ body {
       padding-left: 15px; }
   .section-journal-container {
     position: relative;
-    padding: 20px 50px;
-    background: #23bebe; }
+    padding: 20px 50px; }
   .section-journal__slider {
     width: 90%;
     padding-right: 0; }
@@ -2692,7 +2725,10 @@ body {
     padding-left: 0; }
   .catalog-section {
     background: url("../img/catalog-bg-2.png") -210px calc(100% + 240px) no-repeat;
-    background-color: #f8f8f8; } }
+    background-color: #f8f8f8; }
+  .section-journal-container {
+    background: none;
+    background-color: #23bebe; } }
 
 @media screen and (max-width: 767px) {
   .catalog-section {
@@ -2882,4 +2918,6 @@ body {
       display: inline-block; }
   .catalog-section {
     background: none;
-    background-color: #f8f8f8; } }
+    background-color: #f8f8f8; }
+  .section-journal-bottom {
+    display: none; } }

@@ -368,6 +368,11 @@ $(document).ready(function () {
 		$(this).parents('.catalog-filter__item').toggleClass('active');
 	});
 
+	$('.filter-list__show-all').on('click', function(e) {
+		$(this).siblings('.filter-list-items').addClass('active');
+		$(this).hide();
+	});
+
 	$('.js-toggle-filters').on('click', function(e) {
 		$('.catalog-filter').toggleClass('active');
 	});

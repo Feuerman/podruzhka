@@ -455,12 +455,23 @@
 	padding-top: 12px;
 	padding-left: 83px;
 	padding-right: 83px;
-	background: url('../img/section-bg__3.png') 50px 850px no-repeat, url('../img/catalog-bg-1.png') left 580px no-repeat, url('../img/catalog-bg-2.png') -20px calc(100% + 210px) no-repeat;
+	background: url('../img/catalog-bg-2.png') -20px calc(100% + 210px) no-repeat;
 	background-color: rgb(248, 248, 248);
 	&__left {
+		position: relative;
 		width: 240px;
 		float: left;
 		border-right: 1px rgb(230, 220, 227) solid;
+		&::before {
+			content: '';
+			position: absolute;
+			top: calc(100% + 20px);
+			left: -83px;
+			display: block;
+			width: 148px;
+			height: 400px;
+			background: url('../img/section-bg__3.png') 50px 270px no-repeat, url('../img/catalog-bg-1.png') 0 0 no-repeat;
+		}
 	}
 	&__right {
 		width: calc(100% - 240px);
@@ -688,7 +699,7 @@
 
 	.section-journal {
 		&-container {
-			background: url("../img/section-bg__6.png") -80px -90px no-repeat, url("../img/section-bg__8.png") calc(100% + 120px) calc(100% + 170px) no-repeat;
+			background: url('../img/section-bg__3.png') 20px 130px no-repeat, url('../img/section-bg__6.png') 0 -90px no-repeat, url('../img/section-bg__7.png') right 85px no-repeat, url('../img/section-bg__8.png') right calc(100% + 120px) no-repeat;
 			background-color: rgb(35, 190, 190);
 		}
 		&__slider {
@@ -856,6 +867,9 @@
 		padding-right: 15px;
 		&__left {
 			width: 200px;
+			&::before {
+				left: -35px;
+			}
 		}
 		&__right {
 			width: calc(100% - 200px);
@@ -863,6 +877,12 @@
 	}
 	.page-content-header {
 		padding-left: 220px;
+	}
+	.section-journal {
+		&-container {
+			background: url('../img/section-bg__6.png') -90px -90px no-repeat, url('../img/section-bg__8.png') calc(100% + 160px) calc(100% + 150px) no-repeat;
+			background-color: rgb(35, 190, 190);
+		}
 	}
 }
 
@@ -899,7 +919,7 @@
 		opacity: 0;
 		transition: all 0.3s;
 		&.active {
-			max-height: 1000px;
+			max-height: 3000px;
 			margin-top: 10px;
 			opacity: 1;
 		}
@@ -930,7 +950,7 @@
 				}
 			}
 			.filter-list {
-				max-height: 300px;
+				max-height: 700px;
 				opacity: 1;
 			}
 		}
@@ -1009,7 +1029,6 @@
 		&-container {
 			position: relative;
 			padding: 20px 50px;
-			background: rgb(35, 190, 190);
 		}
 		&__slider {
 			width: 90%;
@@ -1095,6 +1114,12 @@
 	.catalog-section {
 		background: url('../img/catalog-bg-2.png') -210px calc(100% + 240px) no-repeat;
 		background-color: rgb(248, 248, 248);
+	}
+	.section-journal {
+		&-container {
+			background: none;
+			background-color: rgb(35, 190, 190);
+		}
 	}
 }
 
@@ -1401,5 +1426,10 @@
 	.catalog-section {
 		background: none;
 		background-color: rgb(248, 248, 248);
+	}
+	.section-journal {
+		&-bottom {
+			display: none;
+		}
 	}
 }
