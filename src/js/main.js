@@ -2,7 +2,6 @@ $(document).ready(function () {
 	var topSlider = $('.js-slider-top');
 	topSlider.owlCarousel({
 		items: 1,
-		margin: 20,
 		loop: true,
 		smartSpeed: 800,
 		responsive:{
@@ -213,12 +212,49 @@ $(document).ready(function () {
 		}
 	});
 
+	var actionCategorySlider = $('.js-action-category-slider');
+	actionCategorySlider.each(function(index, item) {
+		$(item).owlCarousel({
+			dots: false,
+			onChanged: customPager,
+			nav: false,
+			margin: 25,
+			responsive:{
+				0: {
+					items: 1
+				},
+				520:{
+					items:2
+				},
+				800:{
+					items:3
+				},
+				1600:{
+					items:4
+				},
+				1750: {
+					items:5
+				}
+			},
+		});
+	});	
+	actionCategorySlider.each(function(index, item) {
+		$(item).siblings('.slider-nav').on('click', function(e) {
+			if ($(e.target).hasClass('left')) {
+				$(item).trigger('prev.owl.carousel');
+			};
+			if ($(e.target).hasClass('right')) {
+				$(item).trigger('next.owl.carousel');
+			};
+		});
+	});
+
 	function customPager(event) {
 		var items  = event.item.count;
 		var item = event.item.index;
 		var size = event.page.size;
-		$(this.$element[0]).parents('section').find('.custom-dots__current').text(item + size);
-		$(this.$element[0]).parents('section').find('.custom-dots__count').text(items);
+		$(this.$element[0]).parents('section').eq(0).find('.custom-dots__current').text(item + size);
+		$(this.$element[0]).parents('section').eq(0).find('.custom-dots__count').text(items);
 	}
 
 	function handlerActiveSlides(initIndex, count) {
