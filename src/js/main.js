@@ -223,10 +223,10 @@ $(document).ready(function () {
 				0: {
 					items: 1
 				},
-				520:{
+				480:{
 					items:2
 				},
-				800:{
+				680:{
 					items:3
 				},
 				1600:{
@@ -393,6 +393,9 @@ $(document).ready(function () {
 			if (!$(e.target).closest(".filter-list").length) {
 				$(".filter-list").removeClass('open');
 			}
+			if (!$(e.target).closest(".dropdown").length) {
+				$(".dropdown").removeClass('open');
+			}
 			e.stopPropagation();
 		});
 	}
@@ -413,4 +416,20 @@ $(document).ready(function () {
 		$('.catalog-filter').toggleClass('active');
 	});
 
+	$('.js-dropdown-actions').on('click', function(e) {
+		var clicked = e.target;
+
+		if($(clicked).closest('.dropdown__title')) {
+			$(this).toggleClass('open');
+
+			return true;
+		};
+
+		if($(clicked).closest('.dropdown-list__item')) {
+			$(this).toggleClass('open');
+
+			return true;
+		};
+	})
+	
 });
