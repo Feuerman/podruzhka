@@ -66,7 +66,7 @@
     <div class="overlay-block overlay-block--open-nav"></div>
     <header class="header">
       <div class="header-logo">
-        <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="/sitemap.html"><img src="img/logo.png" alt=""></a>
+        <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="/podruzhka/sitemap.html"><img src="img/logo.png" alt=""></a>
       </div>
       <div class="header-menu">
         <nav>
@@ -112,26 +112,18 @@
         <source srcset="img/catalog-banner--340.jpg" media="(max-width: 340px)"><img srcset="img/catalog-banner--1920.jpg">
       </picture>
     </section>
-    <section class="page-content">
+    <section class="page-content page-content--product-detail">
       <section class="page-content-header">
         <section class="breadcrumbs"><a href="#" class="breadcrumbs-item">Главная</a><span class="breadcrumbs-sep">></span><a href="#" class="breadcrumbs-item">Каталог</a><span class="breadcrumbs-sep">></span><span class="breadcrumbs-item">Уход</span></section>
         <h1 class="page-title">Косметика для ухода</h1>
-        <div class="show-by"><span class="show-by__title">Показывать:</span>
-          <select name="showBy" class="show-by__select js-select">
-            <option value="20">20</option>
-            <option value="16">16</option>
-            <option value="12">12</option>
-            <option value="8">8</option>
-          </select>
-        </div>
       </section>
       <div class="page-content__left">
         <ul class="left-menu">
-          <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Макияж</span><i class="icon icon__arrow--violet"></i></a>
+          <li class="left-menu__item active"><a href="#" class="left-menu__link"><span>Макияж</span><i class="icon icon__arrow--violet"></i></a>
             <ul class="left-menu-sub left-menu-sub--level-1">
-              <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Лицо</a>
+              <li class="left-menu-sub__item active"><a href="#" class="left-menu-sub__link">Лицо</a>
                 <ul class="left-menu-sub left-menu-sub--level-2">
-                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Корректор</a></li>
+                  <li class="left-menu-sub__item active"><a href="#" class="left-menu-sub__link">Корректор</a></li>
                   <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Тональные средства</a></li>
                   <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">пудра</a></li>
                   <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Румяна</a></li>
@@ -177,637 +169,563 @@
         </div>
       </div>
       <div class="page-content__right">
-        <section class="catalog-products">
-          <div class="catalog-products-header">
-            <div class="catalog-products-header__left">
-              <button class="button--default catalog-filter-toggle js-toggle-filters"><span>Фильтры</span></button>
-              <div class="catalog-filter">
-                <div class="catalog-filter__item catalog-filter__item--spec">
-                  <div class="filter-list__mobile-title"><span>спецпредложения</span><i class="icon icon__plus--black"></i></div>
-                  <div class="filter-list filter-list--grey filter-list--mobile">
-                    <div class="filter-list-items">
-                      <div class="filter-list-item">
-                        <input id="cat-all" type="checkbox" value="all">
-                        <label for="cat-all">Все предложения<span class="filter-list-item__count">(16)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-1" type="checkbox" value="all">
-                        <label for="cat-1" class="color-green">НОВИНКИ<span class="filter-list-item__count">(8)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-2" type="checkbox" value="all">
-                        <label for="cat-2" class="color-rose">ВЫГОДНЫЕ ЦЕНЫ<span class="filter-list-item__count">(2)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-3" type="checkbox" value="all">
-                        <label for="cat-3" class="color-blue">ПОДАРКИ<span class="filter-list-item__count">(1)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-4" type="checkbox" value="all">
-                        <label for="cat-4" class="color-red">СКИДКИ<span class="filter-list-item__count">(16)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-5" type="checkbox" value="all">
-                        <label for="cat-5" class="color-gold">ХИТЫ<span class="filter-list-item__count">(16)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="cat-6" type="checkbox" value="all">
-                        <label for="cat-6" class="color-orange">ЭКСКЛЮЗИВНО<span class="filter-list-item__count">(5)</span></label>
-                      </div>
-                    </div>
-                    <button class="filter-list__show-all">Развернуть +</button>
-                  </div>
-                </div>
-                <div class="catalog-filter__item">
-                  <div class="filter-list__mobile-title"><span>Бренд</span><i class="icon icon__plus--black"></i></div>
-                  <div class="filter-list filter-list--white filter-list--mobile">
-                    <div class="filter-list__title"><span>Все бренды</span><i class="icon icon__triangle--grey"></i></div>
-                    <div class="filter-list-items">
-                      <div class="filter-list-item">
-                        <input id="brend-all" type="checkbox" value="all">
-                        <label for="brend-all">Все бренды<span class="filter-list-item__count">(16)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="brend-vox" type="checkbox" value="vox">
-                        <label for="brend-vox">Vox<span class="filter-list-item__count">(8)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="brend-ladypink" type="checkbox" value="ladypink">
-                        <label for="brend-ladypink">Lady Pink<span class="filter-list-item__count">(10)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="brend-tonymoly" type="checkbox" value="tonymoly">
-                        <label for="brend-tonymoly">Tony Moly<span class="filter-list-item__count">(25)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="brend-deco" type="checkbox" value="deco">
-                        <label for="brend-deco">Deco<span class="filter-list-item__count">(9)</span></label>
-                      </div>
-                    </div>
-                    <button class="filter-list__show-all">Развернуть +</button>
-                  </div>
-                </div>
-                <div class="catalog-filter__item text-right">
-                  <div class="filter-list__mobile-title"><span>Цвет</span><i class="icon icon__plus--black"></i></div>
-                  <div class="filter-list filter-list--grey filter-list--mobile">
-                    <div class="filter-list__title"><span>Цвет</span><i class="icon icon__triangle--white"></i></div>
-                    <div class="filter-list-items">
-                      <div class="filter-list-item">
-                        <input id="color-all" type="checkbox" value="all">
-                        <label for="color-all">Все цвета<span class="filter-list-item__count">(50)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-green" type="checkbox" value="green">
-                        <label for="color-green" class="color-green">Зеленый<span class="filter-list-item__count">(12)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-gold" type="checkbox" value="gold">
-                        <label for="color-gold" class="color-gold">Золотой<span class="filter-list-item__count">(8)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-braun" type="checkbox" value="braun">
-                        <label for="color-braun" class="color-braun">Коричневый<span class="filter-list-item__count">(7)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-red" type="checkbox" value="red">
-                        <label for="color-red" class="color-red">Красный<span class="filter-list-item__count">(3)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-blue" type="checkbox" value="blue">
-                        <label for="color-blue" class="color-blue">Синий<span class="filter-list-item__count">(15)</span></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="color-rose" type="checkbox" value="rose">
-                        <label for="color-rose" class="color-rose">Розовый<span class="filter-list-item__count">(15)</span></label>
-                      </div>
-                    </div>
-                    <button class="filter-list__show-all">Развернуть +</button>
-                  </div>
-                </div>
-                <div class="catalog-filter-footer">
-                  <button class="button button--grey">Закрыть фильтры</button>
-                  <button class="button button--default">Показать 16 товаров</button>
-                  <button class="button button--transparent">Очистить фильтры</button>
-                </div>
-              </div>
+        <section class="product-detail">
+          <div class="product-detail__top">
+            <div class="product-detail__brand">
+              <div class="image"><img src="img/nouba.jpg" alt=""></div><a href="#" class="link">Все товары бренда</a>
             </div>
-            <div class="catalog-products-header__right">
-              <div class="catalog-sort"><span class="catalog-sort__label">Сортировать по:</span>
-                <div class="catalog-sort__item">
-                  <div class="filter-list filter-list--grey filter-list--sort dropdown">
-                    <div class="filter-list__title"><span><span>По рейтингу</span><i class="icon icon__arrow--grey rotate"></i></span><i class="icon icon__triangle--white"></i></div>
-                    <div class="filter-list-items">
-                      <div class="filter-list-item">
-                        <input id="ratingUp" type="checkbox" value="ratingUp">
-                        <label for="ratingUp"><span>По рейтингу</span><i class="icon icon__arrow--grey rotate"></i></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="ratingDown" type="checkbox" value="ratingDown">
-                        <label for="ratingDown"><span>По рейтингу</span><i class="icon icon__arrow--grey"></i></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="priceUp" type="checkbox" value="priceUp">
-                        <label for="priceUp"><span>По цене</span><i class="icon icon__arrow--grey rotate"></i></label>
-                      </div>
-                      <div class="filter-list-item">
-                        <input id="priceDown" type="checkbox" value="priceDown">
-                        <label for="priceDown"><span>По цене</span><i class="icon icon__arrow--grey"></i></label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="product-detail__title">PERFECT MAT LIPSTICK second line test</div>
+            <div class="product-detail__category"><span>помада</span></div>
+            <div class="product-detail__articul"><span>Артикул</span><span class="value">107568</span></div>
+            <div class="product-detail__reviews">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+              </div><a href="#">6 отзывов</a>
             </div>
-          </div>
-          <div class="products-list row">
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div></a>
-                  <div class="products-list-item__rating">
-                    <div class="rating">
-                      <div class="rating__item active"></div>
-                      <div class="rating__item active"></div>
-                      <div class="rating__item"></div>
-                      <div class="rating__item"></div>
-                      <div class="rating__item"></div>
-                    </div>
+            <div class="product-detail__desc"><span>ПОМАДА-БАЛЬЗАМ ДЛЯ ГУБ LOREAL INFAILLIBLE SEXY BALM ТОН 103</span></div>
+            <div class="product-detail__gallery">
+              <div class="image"><a href="img/product-detail.jpg" class="gallery-item"><img src="img/product-detail.jpg" alt=""></a></div>
+              <div class="thumbs">
+                <div class="thumbs__item"><a href="img/product-thumbs-1.jpg" class="gallery-item"><img src="img/product-thumbs-1.jpg" alt=""></a></div>
+                <div class="thumbs__item"><a href="img/product-thumbs-2.jpg" class="gallery-item"><img src="img/product-thumbs-2.jpg" alt=""></a></div>
+              </div>
+              <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+            </div>
+            <div class="product-detail-shades">
+              <div class="product-detail-shades__slider">
+                <div class="shades-slider owl-carousel owl-nav--light js-slider-shades">
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-1.png" alt="" class="image"></button>
                   </div>
-                </div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-2.png" alt="" class="image"></button>
                   </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-3.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-4.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-5.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-6.png" alt="" class="image">
+                      <div class="legend-item color-green">
+                        <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                      </div>
                     </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-7.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-8.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-9.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-10.png" alt="" class="image">
+                      <div class="legend-item color-red">
+                        <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
+                      </div>
                     </button>
-                    <div class="text">14 оттенков</div>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-1.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-2.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-3.png" alt="" class="image"></button>
+                  </div>
+                  <div class="shades-slider__item">
+                    <button><img src="img/shade-4.png" alt="" class="image"></button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header">
-                  <div class="products-list-item__status">
+              <button class="view-all-shades js-modal-shades">ПОКАЗАТЬ ВСЕ ОТТЕНКИ</button>
+              <div class="shades-modal">
+                <button class="shades-modal__close"><i class="icon icon__close--violet"></i></button>
+                <div class="shades-modal__title">ВСЕ ОТТЕНКИ</div>
+                <div class="shades-modal-items">
+                  <button class="item"><img src="img/shade-1.png" alt="" class="image">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-2.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-3.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-4.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-5.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-6.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-7.png" alt="" class="image">
                     <div class="legend-item color-red">
                       <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
                     </div>
+                  </button>
+                  <button class="item"><img src="img/shade-8.png" alt="" class="image">
                     <div class="legend-item color-green">
                       <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
                     </div>
-                  </div><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__2.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a>
-                </div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header">
-                  <div class="products-list-item__status">
+                  </button>
+                  <button class="item"><img src="img/shade-9.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-10.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-1.png" alt="" class="image">
                     <div class="legend-item color-green">
                       <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
                     </div>
-                  </div><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a>
-                </div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header">
-                  <div class="products-list-item__status">
+                  </button>
+                  <button class="item"><img src="img/shade-2.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-3.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-4.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-5.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-6.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-7.png" alt="" class="image">
                     <div class="legend-item color-red">
                       <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
                     </div>
+                  </button>
+                  <button class="item"><img src="img/shade-8.png" alt="" class="image">
                     <div class="legend-item color-green">
                       <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
                     </div>
-                  </div><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a>
+                  </button>
+                  <button class="item"><img src="img/shade-9.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-10.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-1.png" alt="" class="image">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-2.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-3.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-4.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-5.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-6.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-7.png" alt="" class="image">
+                    <div class="legend-item color-red">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-8.png" alt="" class="image">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-9.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-10.png" alt="" class="image"></button>
                 </div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
+                <div class="clearfix"></div>
+                <div class="shades-modal__current">
+                  <div class="image"><img src="img/shade-1.png" alt=""></div>
+                  <div class="desc">
+                    <div class="desc__title">Жемчужина рассвета</div>
+                    <div class="desc__articul">Артикул 107568</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            <div class="product-detail__panel">
+              <div class="articul-select">
+                <div class="articul-select__title">
+                  <div class="item__content"><img src="img/shade-1.png" alt=""><span>Артикул 107568</span></div><i class="icon icon__triangle-black"></i>
+                </div>
+                <div class="articul-select-list">
+                  <div class="item">
+                    <div class="item__content"><img src="img/shade-1.png" alt=""><span>Артикул 107568</span></div>
                   </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
+                  <div class="item">
+                    <div class="item__content"><img src="img/shade-2.png" alt=""><span>Артикул 234675</span></div>
+                  </div>
+                  <div class="item">
+                    <div class="item__content"><img src="img/shade-3.png" alt=""><span>Артикул 123567</span></div>
+                  </div>
+                  <div class="item">
+                    <div class="item__content"><img src="img/shade-4.png" alt=""><span>Артикул 678745</span></div>
+                  </div>
+                  <div class="item">
+                    <div class="item__content"><img src="img/shade-5.png" alt=""><span>Артикул 753353</span></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div style="background-image: url('img/inst-list.png')" class="instagram-slider-item__image"></div>
-                <div class="instagram-slider-item__title"><i class="icon icon__inst--large"></i><span>#podrygkashop</span></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item"><a href="#" style="background-image: url('img/products-list-action.png')" class="products-list-item__action"></a></div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
+              <div class="prices-block">
+                <div class="input-count">
+                  <button class="input-count__button"><i class="icon icon__minus--grey"></i></button>
+                  <input type="text" value="1">
+                  <button class="input-count__button"><i class="icon icon__plus--grey"></i></button>
                 </div>
+                <div class="price"><span class="price__item price__item--current">
+                     
+                    1346<span class="rouble">&#x20bd;</span></span><span class="price__item price__item--old">1346<span class="rouble">&#x20bd;</span></span></div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="products-list-item">
-                <div class="products-list-item__header"><a href="#">
-                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
-                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
-                    <div class="products-list-item__category">помада</div>
-                    <div class="products-list-item__rating">
-                      <div class="rating">
-                        <div class="rating__item active"></div>
-                        <div class="rating__item active"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                        <div class="rating__item"></div>
-                      </div>
-                    </div></a></div>
-                <div class="products-list-item__footer">
-                  <div class="products-list-item__price">
-                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
-                  </div>
-                  <div class="products-list-item__shades">
-                    <button class="image image--basket js-add-basket">
-                      <div class="icon icon__basket--large"></div>
-                    </button>
-                    <button class="image image--like js-like">
-                      <div class="icon icon__heart"></div>
-                    </button>
-                    <div class="text">14 оттенков</div>
-                  </div>
-                </div>
+              <div class="buttons-block">
+                <button class="buttons-block__buy"><span>купить</span><i class="icon icon__basket--large"></i></button>
+                <button class="buttons-block__like"><i class="icon icon__heart"></i></button>
               </div>
             </div>
           </div>
-          <div class="show-more">
-            <button>ПОКАЗАТЬ ЕЩЕ</button>
-            <div class="show-more__count"><<span class="current">1</span>/<span class="total">34</span>></div>
+          <div class="product-detail__tabs">
+            <ul class="tabs">
+              <li class="tabs__item"><span>Описание</span></li>
+              <li class="tabs__item"><span>отзывы (999)</span></li>
+              <li class="tabs__item"><span>доставка</span></li>
+              <li class="tabs__item"><span>оплата</span></li>
+              <li class="tabs__item"><span>наличие в магазинах</span></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="tabs-content__item">
+                <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>222</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>333</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>444</p>
+              </div>
+              <div class="tabs-content__item">
+                <p>555</p>
+              </div>
+            </div>
           </div>
         </section>
+      </div>
+    </section>
+    <section class="section-products-slider">
+      <div class="title">Рекомендуем вам</div>
+      <div class="products-slider owl-carousel js-slider-products">
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-1.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-2.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-2.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <button class="left arrow arrow--left"></button>
+        <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
+        <button class="right arrow arrow--right"></button>
+      </div>
+    </section>
+    <section class="section-products-slider">
+      <div class="title">Недавно просмотренные товары</div>
+      <div class="products-slider owl-carousel js-slider-products">
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-3.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-3.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-4.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-5.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-6.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/product-image-7.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-list-item">
+          <div class="products-list-item__header"><a href="#">
+              <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+              <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+              <div class="products-list-item__category">помада</div></a></div>
+          <div class="products-list-item__footer">
+            <div class="products-list-item__price">
+              <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+              <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+            </div>
+            <div class="products-list-item__shades">
+              <div class="rating">
+                <div class="rating__item active"></div>
+                <div class="rating__item active"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+                <div class="rating__item"></div>
+              </div>
+              <div class="text">14 оттенков</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <button class="left arrow arrow--left"></button>
+        <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
+        <button class="right arrow arrow--right"></button>
       </div>
     </section>
     <section class="section-journal owl-nav--light">

@@ -1,0 +1,169 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.catalog-header
+			picture
+				//[if IE 9]><!
+				video(style='display: none;')
+					//<![endif]
+					source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+					source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+					source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+					source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+					source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+					source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+				source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+				source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+				source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+				source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+				source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				img(srcset='img/catalog-banner--1920.jpg')
+		section.page-content
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					a.breadcrumbs-item(href="#") Каталог
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Уход
+				h1.page-title Косметика для ухода				
+			.page-content__left
+				ul.left-menu
+					li.left-menu__item.active
+						a.left-menu__link(href="#")
+							span Макияж
+							i.icon.icon__arrow--violet
+						ul.left-menu-sub.left-menu-sub--level-1
+							li.left-menu-sub__item.active
+								a.left-menu-sub__link(href="#") Лицо
+								ul.left-menu-sub.left-menu-sub--level-2
+									li.left-menu-sub__item.active
+										a.left-menu-sub__link(href="#") Корректор
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Тональные средства
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") пудра
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Румяна
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Глаза
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Губы
+							li.left-menu-sub__item
+								a.left-menu-sub__link(href="#") Ногти
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Парфюмерия
+							i.icon.icon__arrow--violet
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Уход
+							i.icon.icon__arrow--violet
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Для любимых
+							i.icon.icon__arrow--violet
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Дамские штучки
+							i.icon.icon__arrow--violet
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Для дома
+							i.icon.icon__arrow--violet
+					li.left-menu__item
+						a.left-menu__link(href="#")
+							span Бренды
+							i.icon.icon__arrow--violet
+				.legend
+					.legend-item.color-green
+						.legend-item__text
+							span Новинки
+						.legend-item__image.bg-inherit
+							i.icon.icon__new
+					.legend-item.color-rose
+						.legend-item__text
+							span Выгодные цены
+						.legend-item__image.bg-inherit
+							i.icon.icon__purse
+					.legend-item.color-blue
+						.legend-item__text
+							span Подарки
+						.legend-item__image.bg-inherit
+							i.icon.icon__box
+					.legend-item.color-red
+						.legend-item__text
+							span Скидки
+						.legend-item__image.bg-inherit
+							i.icon.icon__discount
+					.legend-item.color-gold
+						.legend-item__text
+							span Хиты
+						.legend-item__image.bg-inherit
+							i.icon.icon__star--white
+					.legend-item.color-orange
+						.legend-item__text
+							span эксклюзивно
+						.legend-item__image.bg-inherit
+							i.icon.icon__exclamation-point
+			.page-content__right
+				section.product-detail
+					.product-detail__brand
+						.image
+							img(src="img/nouba.jpg", alt="")
+						a.link(href="#") Все товары бренда
+					.product-detail__title
+						h2 PERFECT MAT LIPSTICK second line test
+					.product-detail__category
+						span помада
+					.product-detail__articul 
+						span Артикул
+						span.value 107568
+					.product-detail__reviews
+						.rating
+							.rating__item.active
+							.rating__item.active
+							.rating__item.active
+							.rating__item.active
+							.rating__item.active
+						a(href="#") 6 отзывов
+					.products-detail__desc
+						span ПОМАДА-БАЛЬЗАМ ДЛЯ ГУБ LOREAL INFAILLIBLE SEXY BALM ТОН 103
+					.products-detail__shades
+						.shades-slider.owl-carousel.js-slider-shades
+							.shades-slider__item
+								button
+									img.image(src="img/shade-1.png", alt="")
+									.legend-item.color-green
+            							.legend-item__image.bg-inherit
+											i.icon.icon__new
+							.shades-slider__item
+								button
+									img.image(src="img/shade-2.png", alt="")
+									.legend-item.color-green
+            							.legend-item__image.bg-inherit
+											i.icon.icon__new
+							.shades-slider__item
+								button
+									img.image(src="img/shade-3.png", alt="")
+									.legend-item.color-green
+            							.legend-item__image.bg-inherit
+											i.icon.icon__new
+							.shades-slider__item
+								button
+									img.image(src="img/shade-4.png", alt="")
+									.legend-item.color-green
+            							.legend-item__image.bg-inherit
+											i.icon.icon__new
+							.shades-slider__item
+								button
+									img.image(src="img/shade-5.png", alt="")
+									.legend-item.color-green
+            							.legend-item__image.bg-inherit
+											i.icon.icon__new
+		include templates/components/section-journal.jade
+		include templates/footer.jade
