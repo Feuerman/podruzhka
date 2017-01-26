@@ -176,20 +176,27 @@
             </div>
             <div class="product-detail__title">PERFECT MAT LIPSTICK second line test</div>
             <div class="product-detail__category"><span>помада</span></div>
-            <div class="product-detail__articul"><span>Артикул</span><span class="value">107568</span></div>
-            <div class="product-detail__reviews">
-              <div class="rating">
-                <div class="rating__item active"></div>
-                <div class="rating__item active"></div>
-                <div class="rating__item active"></div>
-                <div class="rating__item active"></div>
-                <div class="rating__item"></div>
-              </div><a href="#">6 отзывов</a>
+            <div class="product-detail--head-flex">
+              <div class="product-detail__articul"><span>Артикул</span><span class="value">107568</span></div>
+              <div class="product-detail__reviews">
+                <div class="rating">
+                  <div class="rating__item active"></div>
+                  <div class="rating__item active"></div>
+                  <div class="rating__item active"></div>
+                  <div class="rating__item active"></div>
+                  <div class="rating__item"></div>
+                </div><a href="#">6 отзывов</a>
+              </div>
             </div>
             <div class="product-detail__desc"><span>ПОМАДА-БАЛЬЗАМ ДЛЯ ГУБ LOREAL INFAILLIBLE SEXY BALM ТОН 103</span></div>
             <div class="product-detail__gallery">
-              <div class="image"><a href="img/product-detail.jpg" class="gallery-item"><img src="img/product-detail.jpg" alt=""></a></div>
+              <div class="js-product-image-slider owl-carousel">
+                <div class="image"><a href="img/product-detail.jpg" class="gallery-item"><img src="img/product-detail.jpg" alt=""></a></div>
+                <div class="image"><a href="img/product-thumbs-1.jpg" class="gallery-item"><img src="img/product-thumbs-1.jpg" alt=""></a></div>
+                <div class="item-video"><a href="https://www.youtube.com/watch?v=lseC59xeb0Y" class="owl-video"></a></div>
+              </div>
               <div class="thumbs">
+                <div class="thumbs__item"><a href="img/product-detail.jpg" class="gallery-item"><img src="img/product-detail.jpg" alt=""></a></div>
                 <div class="thumbs__item"><a href="img/product-thumbs-1.jpg" class="gallery-item"><img src="img/product-thumbs-1.jpg" alt=""></a></div>
                 <div class="thumbs__item"><a href="img/product-thumbs-2.jpg" class="gallery-item"><img src="img/product-thumbs-2.jpg" alt=""></a></div>
               </div>
@@ -333,9 +340,9 @@
               </div>
             </div>
             <div class="product-detail__panel">
-              <div class="articul-select">
+              <div class="articul-select js-dropdown-article">
                 <div class="articul-select__title">
-                  <div class="item__content"><img src="img/shade-1.png" alt=""><span>Артикул 107568</span></div><i class="icon icon__triangle-black"></i>
+                  <div class="item__content"><img src="img/shade-1.png" alt=""><span>Артикул 107568</span></div><i class="icon icon__triangle--black"></i>
                 </div>
                 <div class="articul-select-list">
                   <div class="item">
@@ -356,10 +363,10 @@
                 </div>
               </div>
               <div class="prices-block">
-                <div class="input-count">
-                  <button class="input-count__button"><i class="icon icon__minus--grey"></i></button>
+                <div class="input-count js-input-count">
+                  <button class="input-count__button count-minus"><i class="icon icon__minus--grey"></i></button>
                   <input type="text" value="1">
-                  <button class="input-count__button"><i class="icon icon__plus--grey"></i></button>
+                  <button class="input-count__button count-plus"><i class="icon icon__plus--grey"></i></button>
                 </div>
                 <div class="price"><span class="price__item price__item--current">
                      
@@ -371,7 +378,7 @@
               </div>
             </div>
           </div>
-          <div class="product-detail__tabs">
+          <div class="product-detail__tabs js-tabs">
             <ul class="tabs">
               <li class="tabs__item"><span>Описание</span></li>
               <li class="tabs__item"><span>отзывы (999)</span></li>
@@ -381,18 +388,23 @@
             </ul>
             <div class="tabs-content">
               <div class="tabs-content__item">
-                <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.</p>
+                <div class="tabs__item--mobile"><span>Описание</span><i class="icon icon__plus--violet"></i></div>
+                <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.								</p>
               </div>
               <div class="tabs-content__item">
+                <div class="tabs__item--mobile"> <span>отзывы (999)</span><i class="icon icon__plus--violet"></i></div>
                 <p>222</p>
               </div>
               <div class="tabs-content__item">
+                <div class="tabs__item--mobile"><span>доставка</span><i class="icon icon__plus--violet"></i></div>
                 <p>333</p>
               </div>
               <div class="tabs-content__item">
+                <div class="tabs__item--mobile"><span>оплата</span><i class="icon icon__plus--violet"></i></div>
                 <p>444</p>
               </div>
               <div class="tabs-content__item">
+                <div class="tabs__item--mobile"><span>наличие в магазинах</span><i class="icon icon__plus--violet"></i></div>
                 <p>555</p>
               </div>
             </div>
@@ -558,10 +570,12 @@
           </div>
         </div>
       </div>
-      <div class="slider-nav">
-        <button class="left arrow arrow--left"></button>
-        <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
-        <button class="right arrow arrow--right"></button>
+      <div class="slider-nav owl-nav--light">
+        <div class="owl-nav">
+          <button class="owl-prev"></button>
+          <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
+          <button class="owl-next"></button>
+        </div>
       </div>
     </section>
     <section class="section-products-slider">
@@ -722,10 +736,12 @@
           </div>
         </div>
       </div>
-      <div class="slider-nav">
-        <button class="left arrow arrow--left"></button>
-        <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
-        <button class="right arrow arrow--right"></button>
+      <div class="slider-nav owl-nav--light">
+        <div class="owl-nav">
+          <button class="owl-prev"></button>
+          <div class="custom-dots"><span class="custom-dots__current"></span><span>из</span><span class="custom-dots__count"></span></div>
+          <button class="owl-next"></button>
+        </div>
       </div>
     </section>
     <section class="section-journal owl-nav--light">

@@ -249,6 +249,26 @@ $(document).ready(function () {
 		});
 	});
 
+	var productSlider = $('.js-product-image-slider');
+	$(productSlider).owlCarousel({
+		items: 1,
+		dots: false,
+		nav: false,
+		margin: 5,
+		video:true,
+		videoHeight: 380,
+		responsive:{
+			0: {
+				autoWidth:true,
+				videoWidth: 300			
+			},
+			767: {
+				autoWidth:false,
+				videoWidth: 330
+			}
+		}
+	});
+
 	var shadesSlider = $('.js-slider-shades');
 	$(shadesSlider).owlCarousel({
 		dots: false,
@@ -256,18 +276,15 @@ $(document).ready(function () {
 		margin: 7,
 		responsive:{
 			0: {
-				items: 1
+				items: 4
 			},
-			480:{
-				items:2
-			},
-			992:{
+			767:{
 				items:4
 			},
-			1300:{
+			1100:{
 				items:6
 			},
-			1400: {
+			1350: {
 				items:8
 			},
 			1500:{
@@ -284,8 +301,8 @@ $(document).ready(function () {
 		$(item).owlCarousel({
 			dots: false,
 			onChanged: customPager,
-			nav: false,
 			margin: 20,
+			nav: false,
 			responsive:{
 				0: {
 					items: 1
@@ -293,11 +310,14 @@ $(document).ready(function () {
 				480:{
 					items:2
 				},
-				680:{
-					items:6
+				850:{
+					items:3
 				},
-				1600:{
-					items:6
+				1300:{
+					items:4
+				},
+				1500:{
+					items:5
 				},
 				1750: {
 					items:6
@@ -307,10 +327,10 @@ $(document).ready(function () {
 	});	
 	productsSlider.each(function(index, item) {
 		$(item).siblings('.slider-nav').on('click', function(e) {
-			if ($(e.target).hasClass('left')) {
+			if ($(e.target).hasClass('owl-prev')) {
 				$(item).trigger('prev.owl.carousel');
 			};
-			if ($(e.target).hasClass('right')) {
+			if ($(e.target).hasClass('owl-next')) {
 				$(item).trigger('next.owl.carousel');
 			};
 		});
@@ -462,10 +482,7 @@ $(document).ready(function () {
 			}
 			if (!$(e.target).closest(".dropdown").length) {
 				$(".dropdown").removeClass('open');
-			}
-			if (!$(e.target).closest(".shades-modal, .js-modal-shades").length) {
-				$(".shades-modal").removeClass('open');
-			}
+			}			
 			e.stopPropagation();
 		});
 	}
@@ -500,7 +517,26 @@ $(document).ready(function () {
 
 			return true;
 		};		
-	})
+	});
+
+	var dropdownArticle = $('.js-dropdown-article');
+	dropdownArticle.on('click', function(e) {
+		if ($(e.target).closest(".articul-select__title").length) {
+			$(this).toggleClass('open');
+		}
+	});	
+
+	var countBlock = $('.js-input-count');
+	countBlock.on('click', function(e) {
+		var currentValue = $(this).find('input').val();
+		if ($(e.target).closest(".count-minus").length) {
+			if (currentValue == 1) return false;
+			$(this).find('input').val(+currentValue - 1);
+		}
+		if ($(e.target).closest(".count-plus").length) {
+			$(this).find('input').val(+currentValue + 1);
+		}
+	});
 
 	var modalShadesBtn = $('.js-modal-shades');
 	var modalShadesBtnClose = $('.shades-modal__close');
@@ -510,6 +546,46 @@ $(document).ready(function () {
 	modalShadesBtnClose.on('click', function() {
 		$('.shades-modal').removeClass('open');		
 	});
+
+
+	$(document).on('click', function(e) {		
+		if (!$(e.target).closest(".shades-modal, .js-modal-shades").length) {
+			$(".shades-modal").removeClass('open');
+		}
+		if (!$(e.target).closest(".js-dropdown-article").length) {
+			$(".js-dropdown-article").removeClass('open');
+		}			
+		e.stopPropagation();
+	});
+
+	var tabsSelector = $('.js-tabs');
+	tabsInit(tabsSelector);
+
+	function tabsInit(tabs) {
+		$(tabs).each(function(index, el) {
+			var tabsLink = $(el).find('.tabs__item');
+			var tabsLinkMobile = $(el).find('.tabs__item--mobile');
+			var tabsContent = $(el).find('.tabs-content__item');
+
+			tabsLink.eq(0).addClass('active');
+			tabsContent.eq(0).addClass('active');
+
+			tabsLink.on('click', function() {
+				var currentIndex = $(this).index();
+
+				tabsLink.removeClass('active');
+				$(this).addClass('active');
+
+				tabsContent.removeClass('active');
+				tabsContent.eq(currentIndex).addClass('active');
+			});
+
+			tabsLinkMobile.on('click', function() {
+				$(this).parents('.tabs-content__item').toggleClass('active');
+			});
+		});
+	}
+	
 
 	$('.gallery-item').fancybox();	
 });
