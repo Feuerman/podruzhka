@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
   <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
+  <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
   <script src="vendor/picturefill/picturefill.min.js" async></script>
   <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
+  <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body class="page-inner">
@@ -328,6 +330,28 @@
                   </button>
                   <button class="item"><img src="img/shade-9.png" alt="" class="image"></button>
                   <button class="item"><img src="img/shade-10.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-1.png" alt="" class="image">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-2.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-3.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-4.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-5.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-6.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-7.png" alt="" class="image">
+                    <div class="legend-item color-red">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-8.png" alt="" class="image">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </button>
+                  <button class="item"><img src="img/shade-9.png" alt="" class="image"></button>
+                  <button class="item"><img src="img/shade-10.png" alt="" class="image"></button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="shades-modal__current">
@@ -378,7 +402,7 @@
               </div>
             </div>
           </div>
-          <div class="product-detail__tabs js-tabs">
+          <div class="product-detail-tabs js-tabs">
             <ul class="tabs">
               <li class="tabs__item"><span>Описание</span></li>
               <li class="tabs__item"><span>отзывы (999)</span></li>
@@ -389,23 +413,198 @@
             <div class="tabs-content">
               <div class="tabs-content__item">
                 <div class="tabs__item--mobile"><span>Описание</span><i class="icon icon__plus--violet"></i></div>
-                <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.								</p>
+                <div class="tabs-content-toggle">
+                  <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.</p><a href="#" class="readmore">Побробнее		</a>
+                </div>
               </div>
               <div class="tabs-content__item">
                 <div class="tabs__item--mobile"> <span>отзывы (999)</span><i class="icon icon__plus--violet"></i></div>
-                <p>222</p>
+                <div class="tabs-content-toggle">
+                  <section class="section-reviews">
+                    <div class="section-reviews__sort">
+                      <div class="show-by"><span class="show-by__title">Сортировать:</span>
+                        <select name="sortReviews" class="show-by__select js-select">
+                          <option value="rating">Рейтингу</option>
+                          <option value="date">Дате</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="section-reviews__items">
+                      <div class="reviews-item">
+                        <div class="reviews-item__head">
+                          <div class="avatar"><img src="img/avatar-default.png" alt=""></div>
+                          <div class="title"><span class="title__name">Ирина</span><span class="title__geo">Москва, Россия</span></div>
+                          <div class="info">
+                            <div class="info-item"><span>Возраст:</span><span class="info-item__value">25-35</span></div>
+                            <div class="info-item"><span>Тон кожи:</span><span class="info-item__value">светлый</span></div>
+                            <div class="info-item"><span>Цвет глаз:</span><span class="info-item__value">голубой</span></div>
+                            <div class="info-item"><span>Тип кожи:</span><span class="info-item__value">чувствительный</span></div>
+                          </div>
+                        </div>
+                        <div class="reviews-item__content">
+                          <div class="title">хороший тональный крем!!!</div>
+                          <div class="info">
+                            <div class="rating">
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                            </div><span class="info__date">2 дня назад</span>
+                          </div>
+                          <div class="text">Качество помады действительно очень радует. Нежная шелковистая текстура, красивые оттенки и очень вкусный сладковатый аромат - это все о ней. Наносится помада идеально. Губы с ней чувствуют себя очень комфортно. Стойкость хорошая...</div><a href="#" class="link">Читать дальше</a>
+                        </div>
+                      </div>
+                      <div class="reviews-item">
+                        <div class="reviews-item__head">
+                          <div class="avatar"><img src="img/avatar-default.png" alt=""></div>
+                          <div class="title"><span class="title__name">Ирина</span><span class="title__geo">Москва, Россия</span></div>
+                          <div class="info">
+                            <div class="info-item"><span>Возраст:</span><span class="info-item__value">25-35</span></div>
+                            <div class="info-item"><span>Тон кожи:</span><span class="info-item__value">светлый</span></div>
+                            <div class="info-item"><span>Цвет глаз:</span><span class="info-item__value">голубой</span></div>
+                            <div class="info-item"><span>Тип кожи:</span><span class="info-item__value">чувствительный</span></div>
+                          </div>
+                        </div>
+                        <div class="reviews-item__content">
+                          <div class="title">хороший тональный крем!!!</div>
+                          <div class="info">
+                            <div class="rating">
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                            </div><span class="info__date">2 дня назад</span>
+                          </div>
+                          <div class="text">Качество помады действительно очень радует. Нежная шелковистая текстура, красивые оттенки и очень вкусный сладковатый аромат - это все о ней. Наносится помада идеально. Губы с ней чувствуют себя очень комфортно. Стойкость хорошая...</div><a href="#" class="link">Читать дальше</a>
+                        </div>
+                      </div>
+                      <div class="reviews-item">
+                        <div class="reviews-item__head">
+                          <div class="avatar"><img src="img/avatar-default.png" alt=""></div>
+                          <div class="title"><span class="title__name">Ирина</span><span class="title__geo">Москва, Россия</span></div>
+                          <div class="info">
+                            <div class="info-item"><span>Возраст:</span><span class="info-item__value">25-35</span></div>
+                            <div class="info-item"><span>Тон кожи:</span><span class="info-item__value">светлый</span></div>
+                            <div class="info-item"><span>Цвет глаз:</span><span class="info-item__value">голубой</span></div>
+                            <div class="info-item"><span>Тип кожи:</span><span class="info-item__value">чувствительный</span></div>
+                          </div>
+                        </div>
+                        <div class="reviews-item__content">
+                          <div class="title">хороший тональный крем!!!</div>
+                          <div class="info">
+                            <div class="rating">
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                              <div class="rating__item active"></div>
+                            </div><span class="info__date">2 дня назад</span>
+                          </div>
+                          <div class="text">Качество помады действительно очень радует. Нежная шелковистая текстура, красивые оттенки и очень вкусный сладковатый аромат - это все о ней. Наносится помада идеально. Губы с ней чувствуют себя очень комфортно. Стойкость хорошая...</div><a href="#" class="link">Читать дальше</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination">
+                      <button class="pagination__text">В НАЧАЛО</button>
+                      <div class="pagination__pages">
+                        <button class="pagination__button pagination__button--left"><i class="icon icon__arrow--grey--right"></i></button>
+                        <div class="pagination__items">
+                          <button class="item">1</button>
+                          <button class="item active">2</button>
+                          <button class="item">3</button>
+                          <button class="item">4</button>
+                          <button class="item">5</button>
+                        </div>
+                        <button class="pagination__button pagination__button--right"><i class="icon icon__arrow--grey--right"></i></button>
+                      </div>
+                      <button class="pagination__text">В КОНЕЦ</button>
+                    </div>
+                  </section>
+                  <section class="add-reviews">
+                    <div class="add-reviews__title">добавить отзыв</div>
+                    <div class="add-reviews__text">Ваш отзыв поможет кому-то сделать выбор. Спасибо, что делитесь опытом!</div>
+                    <div class="add-reviews__auth">
+                      <div class="text">Добавьте отзыв, заполнив личные данные, или сначала войдите на сайт, тогда информация будет автоматически взята из профиля.</div>
+                      <div class="link"><a href="#">войти</a></div>
+                    </div>
+                    <div class="add-reviews__help">
+                      <div class="title">Как добавить отзыв:</div>
+                      <ul>
+                        <li>- Заполните поля, в поле «Отзыв» опишите плюсы и минусы товара и общие впечатления от него;</li>
+                        <li>- Нажмите кнопку «Отправить отзыв». Если она неактивна, заполните поля, которые отмечены звездочкой. Уведомление о публикации отзыва на сайте придет на e-mail, указанный при регистрации (если вы авторизованы);</li>
+                        <li>- Если у вас вопрос или жалоба, напишите на нашу почту для быстрой связи <a href="mailto:info@podrygka.ru ">info@podrygka.ru</a></li>
+                      </ul>
+                      <p>Отзывы публикуются после модерации, поэтому появляются на сайте не сразу.</p>
+                    </div>
+                    <form action="" class="form-reviews">
+                      <div class="form-reviews__input-group">
+                        <input type="text" placeholder="Имя*" class="input-text">
+                        <select data-placeholder="Город" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Москва</option>
+                          <option value="2">Самара</option>
+                        </select>
+                        <input type="text" placeholder="Возраст" class="input-text">
+                        <select data-placeholder="Тон кожи" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Светлый</option>
+                          <option value="2">Темный</option>
+                        </select>
+                        <select data-placeholder="Цвет глаз" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Голубой</option>
+                          <option value="2">Зеленый</option>
+                        </select>
+                        <select data-placeholder="Тип кожи" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Жирный</option>
+                          <option value="2">Нормальный</option>
+                        </select>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="form-reviews__rating">
+                        <div class="title"> <strong>Рейтинг*</strong>(оцените товар, указав количество звезд от 1 до 5) тогда информация будет автоматически взята из профиля.</div>
+                        <div class="rating">
+                          <div class="rating__item active"></div>
+                          <div class="rating__item active"></div>
+                          <div class="rating__item active"></div>
+                          <div class="rating__item active"></div>
+                          <div class="rating__item"></div>
+                        </div>
+                      </div>
+                      <textarea name="" cols="30" rows="1" id="review-theme" placeholder="Тема (коротко о товаре)" class="input-text"></textarea>
+                      <textarea name="" cols="30" rows="8" id="review-text" placeholder="Отзыв*
+
+- Опишите плюсы: что вам понравилось, как вам это помогает?
+- Опишите минусы: что заметили сразу, а что проявилось в процессе использования?
+- Опишите общие впечатления: срок использования, критерии при выборе, рекомендовали бы вы этот товар к покупке?" class="input-text"></textarea>
+                      <div class="form-reviews__footer">
+                        <div class="links"><a href="#" class="links__item">Ознакомиться с правилами модерации</a><a href="#" class="links__item">Как написать полезный отзыв</a></div>
+                        <input type="submit" value="добавить отзыв" class="form-reviews__submit button button--default">
+                      </div>
+                    </form>
+                  </section>
+                </div>
               </div>
               <div class="tabs-content__item">
                 <div class="tabs__item--mobile"><span>доставка</span><i class="icon icon__plus--violet"></i></div>
-                <p>333</p>
+                <div class="tabs-content-toggle">
+                  <p>333</p>
+                </div>
               </div>
               <div class="tabs-content__item">
                 <div class="tabs__item--mobile"><span>оплата</span><i class="icon icon__plus--violet"></i></div>
-                <p>444</p>
+                <div class="tabs-content-toggle">
+                  <p>444</p>
+                </div>
               </div>
               <div class="tabs-content__item">
                 <div class="tabs__item--mobile"><span>наличие в магазинах</span><i class="icon icon__plus--violet"></i></div>
-                <p>555</p>
+                <div class="tabs-content-toggle">
+                  <p>555</p>
+                </div>
               </div>
             </div>
           </div>

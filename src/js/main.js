@@ -257,14 +257,14 @@ $(document).ready(function () {
 		margin: 5,
 		video:true,
 		videoHeight: 380,
+		videoWidth: 330,
 		responsive:{
 			0: {
 				autoWidth:true,
 				videoWidth: 300			
 			},
 			767: {
-				autoWidth:false,
-				videoWidth: 330
+				autoWidth:false
 			}
 		}
 	});
@@ -547,6 +547,17 @@ $(document).ready(function () {
 		$('.shades-modal').removeClass('open');		
 	});
 
+	$(".shades-modal-items").mCustomScrollbar();
+
+	$('.shades-slider__item').on('click', function() {
+		$('.shades-slider__item').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.shades-modal .item').on('click', function() {
+		$('.shades-modal .item').removeClass('active');
+		$(this).addClass('active');
+	});
 
 	$(document).on('click', function(e) {		
 		if (!$(e.target).closest(".shades-modal, .js-modal-shades").length) {
@@ -585,7 +596,8 @@ $(document).ready(function () {
 			});
 		});
 	}
-	
+
+	// $('#review-theme').watermark('Тема (коротко о товаре)', {color: '#333', left: -2, top: 10, fallback: true});	
 
 	$('.gallery-item').fancybox();	
 });
