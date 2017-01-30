@@ -46,371 +46,437 @@ The `sprites` mixin generates identical output to the CSS template
 .icon {
   display: inline-block; }
   .icon__arrow--grey--right:hover {
-    background-position: -984px -226px; }
+    background-position: -1003px -360px; }
 
 .icon__arrow--grey--right {
   background-image: url(../img/sprite.png);
-  background-position: -972px -245px;
+  background-position: -991px -379px;
   width: 12px;
   height: 19px; }
 
 .icon__arrow--grey {
   background-image: url(../img/sprite.png);
-  background-position: -902px -304px;
+  background-position: -937px -421px;
   width: 16px;
   height: 17px; }
 
 .icon__arrow--lightgrey--left {
   background-image: url(../img/sprite.png);
-  background-position: -36px -1157px;
+  background-position: 0px -1359px;
   width: 36px;
   height: 49px; }
 
 .icon__arrow--lightgrey--right {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1206px;
+  background-position: -36px -1310px;
   width: 36px;
   height: 49px; }
 
 .icon__arrow--pink--right {
   background-image: url(../img/sprite.png);
-  background-position: -984px -226px;
+  background-position: -1003px -360px;
   width: 12px;
   height: 19px; }
 
 .icon__arrow--vinous {
   background-image: url(../img/sprite.png);
-  background-position: -1106px -86px;
+  background-position: -1264px -91px;
   width: 9px;
   height: 15px; }
 
 .icon__arrow--violet {
   background-image: url(../img/sprite.png);
-  background-position: -1191px -16px;
+  background-position: -1340px -36px;
   width: 13px;
   height: 9px; }
 
 .icon__arrow--white--right {
   background-image: url(../img/sprite.png);
-  background-position: -1115px -71px;
+  background-position: -1255px -106px;
   width: 9px;
   height: 15px; }
 
 .icon__arrow--white {
   background-image: url(../img/sprite.png);
-  background-position: -918px -287px;
+  background-position: -921px -438px;
   width: 16px;
   height: 17px; }
 
 .icon__auth {
   background-image: url(../img/sprite.png);
-  background-position: -677px -524px;
+  background-position: -677px -677px;
   width: 21px;
   height: 20px; }
 
 .icon__basket--large {
   background-image: url(../img/sprite.png);
-  background-position: -475px -731px;
+  background-position: -475px -884px;
   width: 25px;
   height: 25px; }
 
 .icon__basket {
   background-image: url(../img/sprite.png);
-  background-position: -748px -436px;
+  background-position: -748px -589px;
   width: 18px;
   height: 20px; }
 
 .icon__box {
   background-image: url(../img/sprite.png);
-  background-position: -842px -346px;
+  background-position: -842px -497px;
   width: 19px;
   height: 17px; }
 
 .icon__calendar-date--active {
   background-image: url(../img/sprite.png);
-  background-position: -297px -907px;
+  background-position: -331px -1025px;
   width: 34px;
   height: 35px; }
 
 .icon__calendar-date {
   background-image: url(../img/sprite.png);
-  background-position: -331px -872px;
+  background-position: -297px -1060px;
   width: 34px;
   height: 35px; }
 
 .icon__check {
   background-image: url(../img/sprite.png);
-  background-position: -1136px -49px;
+  background-position: -1285px -69px;
   width: 13px;
   height: 10px; }
 
 .icon__clock--active {
   background-image: url(../img/sprite.png);
-  background-position: -229px -977px;
+  background-position: -196px -1167px;
   width: 33px;
   height: 37px; }
 
 .icon__clock {
   background-image: url(../img/sprite.png);
-  background-position: -196px -1014px;
+  background-position: -229px -1130px;
   width: 33px;
   height: 37px; }
 
 .icon__close--violet {
   background-image: url(../img/sprite.png);
-  background-position: -823px -363px;
+  background-position: -861px -480px;
   width: 19px;
   height: 17px; }
 
 .icon__discount-card--active {
   background-image: url(../img/sprite.png);
-  background-position: -114px -1083px;
+  background-position: -114px -1236px;
   width: 41px;
   height: 32px; }
 
 .icon__discount-card {
   background-image: url(../img/sprite.png);
-  background-position: -155px -1051px;
+  background-position: -155px -1204px;
   width: 41px;
   height: 32px; }
 
 .icon__discount {
   background-image: url(../img/sprite.png);
-  background-position: -766px -417px;
+  background-position: -785px -551px;
   width: 19px;
   height: 19px; }
 
 .icon__exclamation-point {
   background-image: url(../img/sprite.png);
-  background-position: -1089px -117px;
+  background-position: -1238px -137px;
   width: 6px;
   height: 19px; }
 
 .icon__favorit {
   background-image: url(../img/sprite.png);
-  background-position: -573px -638px;
+  background-position: -573px -791px;
   width: 24px;
   height: 21px; }
 
 .icon__fb--white {
   background-image: url(../img/sprite.png);
-  background-position: -698px -500px;
+  background-position: -698px -653px;
   width: 16px;
   height: 24px; }
 
 .icon__fb--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -660px -544px;
+  background-position: -660px -697px;
   width: 17px;
   height: 24px; }
 
 .icon__fb {
   background-image: url(../img/sprite.png);
-  background-position: -1095px -101px;
+  background-position: -1244px -121px;
   width: 11px;
   height: 16px; }
 
+.icon__flower--grey {
+  background-image: url(../img/sprite.png);
+  background-position: -1393px -8px;
+  width: 10px;
+  height: 10px; }
+
+.icon__flower--vinous {
+  background-image: url(../img/sprite.png);
+  background-position: -1383px -18px;
+  width: 10px;
+  height: 10px; }
+
+.icon__geo--grey {
+  background-image: url(../img/sprite.png);
+  background-position: -1136px -246px;
+  width: 12px;
+  height: 18px; }
+
+.icon__geo--pink {
+  background-image: url(../img/sprite.png);
+  background-position: -1148px -228px;
+  width: 12px;
+  height: 18px; }
+
 .icon__heart {
   background-image: url(../img/sprite.png);
-  background-position: -525px -683px;
+  background-position: -525px -836px;
   width: 24px;
   height: 24px; }
 
 .icon__icecream--active {
   background-image: url(../img/sprite.png);
-  background-position: -454px -756px;
+  background-position: -454px -909px;
   width: 21px;
   height: 35px; }
 
 .icon__icecream {
   background-image: url(../img/sprite.png);
-  background-position: -433px -791px;
+  background-position: -433px -944px;
   width: 21px;
   height: 35px; }
 
 .icon__inst--large {
   background-image: url(../img/sprite.png);
-  background-position: -72px -1115px;
+  background-position: -72px -1268px;
   width: 42px;
   height: 42px; }
 
 .icon__inst--middle {
   background-image: url(../img/sprite.png);
-  background-position: -638px -568px;
+  background-position: -638px -721px;
   width: 22px;
   height: 22px; }
 
 .icon__inst--white {
   background-image: url(../img/sprite.png);
-  background-position: -549px -659px;
+  background-position: -549px -812px;
   width: 24px;
   height: 24px; }
 
 .icon__inst--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -500px -707px;
+  background-position: -500px -860px;
   width: 25px;
   height: 24px; }
 
 .icon__inst {
   background-image: url(../img/sprite.png);
-  background-position: -956px -264px;
+  background-position: -975px -398px;
   width: 16px;
   height: 16px; }
 
+.icon__list--grey {
+  background-image: url(../img/sprite.png);
+  background-position: -1177px -202px;
+  width: 17px;
+  height: 13px; }
+
+.icon__list--pink {
+  background-image: url(../img/sprite.png);
+  background-position: -1160px -215px;
+  width: 17px;
+  height: 13px; }
+
 .icon__list-bg--flower {
   background-image: url(../img/sprite.png);
-  background-position: -262px -942px;
+  background-position: -262px -1095px;
   width: 35px;
   height: 35px; }
 
-.icon__loop {
+.icon__loop--grey {
   background-image: url(../img/sprite.png);
-  background-position: -785px -398px;
+  background-position: -766px -570px;
   width: 19px;
   height: 19px; }
 
+.icon__loop {
+  background-image: url(../img/sprite.png);
+  background-position: -804px -532px;
+  width: 19px;
+  height: 19px; }
+
+.icon__metro--green {
+  background-image: url(../img/sprite.png);
+  background-position: -1051px -321px;
+  width: 18px;
+  height: 13px; }
+
+.icon__metro--grey {
+  background-image: url(../img/sprite.png);
+  background-position: -1033px -334px;
+  width: 18px;
+  height: 13px; }
+
+.icon__metro--pink {
+  background-image: url(../img/sprite.png);
+  background-position: -1015px -347px;
+  width: 18px;
+  height: 13px; }
+
+.icon__metro--yellow {
+  background-image: url(../img/sprite.png);
+  background-position: -1069px -308px;
+  width: 18px;
+  height: 13px; }
+
 .icon__minus--black {
   background-image: url(../img/sprite.png);
-  background-position: -1204px -12px;
+  background-position: -1353px -32px;
   width: 15px;
   height: 4px; }
 
 .icon__minus--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1234px -6px;
+  background-position: -1403px -6px;
   width: 12px;
   height: 2px; }
 
 .icon__minus--violet {
   background-image: url(../img/sprite.png);
-  background-position: -879px -321px;
+  background-position: -898px -455px;
   width: 23px;
   height: 7px; }
 
 .icon__minus {
   background-image: url(../img/sprite.png);
-  background-position: -1219px -8px;
+  background-position: -1368px -28px;
   width: 15px;
   height: 4px; }
 
 .icon__new {
   background-image: url(../img/sprite.png);
-  background-position: -934px -280px;
+  background-position: -953px -414px;
   width: 22px;
   height: 7px; }
 
 .icon__phone {
   background-image: url(../img/sprite.png);
-  background-position: -861px -328px;
+  background-position: -880px -462px;
   width: 18px;
   height: 18px; }
 
 .icon__plus--black {
   background-image: url(../img/sprite.png);
-  background-position: -1074px -136px;
+  background-position: -1223px -156px;
   width: 15px;
   height: 15px; }
 
 .icon__plus--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1124px -59px;
+  background-position: -1273px -79px;
   width: 12px;
   height: 12px; }
 
 .icon__plus--violet {
   background-image: url(../img/sprite.png);
-  background-position: -714px -480px;
+  background-position: -714px -633px;
   width: 20px;
   height: 20px; }
 
 .icon__plus {
   background-image: url(../img/sprite.png);
-  background-position: -1059px -151px;
+  background-position: -1208px -171px;
   width: 15px;
   height: 15px; }
 
 .icon__purse {
   background-image: url(../img/sprite.png);
-  background-position: -996px -212px;
+  background-position: -1087px -294px;
   width: 17px;
   height: 14px; }
 
 .icon__social-card--active {
   background-image: url(../img/sprite.png);
-  background-position: -399px -826px;
+  background-position: -399px -979px;
   width: 34px;
   height: 23px; }
 
 .icon__social-card {
   background-image: url(../img/sprite.png);
-  background-position: -365px -849px;
+  background-position: -365px -1002px;
   width: 34px;
   height: 23px; }
 
 .icon__star--violet {
   background-image: url(../img/sprite.png);
-  background-position: -1029px -182px;
+  background-position: -1104px -279px;
   width: 16px;
   height: 15px; }
 
 .icon__star--white {
   background-image: url(../img/sprite.png);
-  background-position: -804px -380px;
+  background-position: -823px -514px;
   width: 19px;
   height: 18px; }
 
 .icon__star {
   background-image: url(../img/sprite.png);
-  background-position: -1013px -197px;
+  background-position: -1120px -264px;
   width: 16px;
   height: 15px; }
 
 .icon__triangle--black {
   background-image: url(../img/sprite.png);
-  background-position: -1177px -25px;
+  background-position: -1326px -45px;
   width: 14px;
   height: 8px; }
 
 .icon__triangle--grey--small {
   background-image: url(../img/sprite.png);
-  background-position: -1246px 0px;
+  background-position: -1415px 0px;
   width: 10px;
   height: 6px; }
 
 .icon__triangle--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1163px -33px;
+  background-position: -1312px -53px;
   width: 14px;
   height: 8px; }
 
 .icon__triangle--white--large {
   background-image: url(../img/sprite.png);
-  background-position: -734px -456px;
+  background-position: -734px -609px;
   width: 14px;
   height: 24px; }
 
 .icon__triangle--white {
   background-image: url(../img/sprite.png);
-  background-position: -1149px -41px;
+  background-position: -1298px -61px;
   width: 14px;
   height: 8px; }
 
 .icon__vk--white {
   background-image: url(../img/sprite.png);
-  background-position: -618px -590px;
+  background-position: -618px -743px;
   width: 20px;
   height: 24px; }
 
 .icon__vk--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -597px -614px;
+  background-position: -597px -767px;
   width: 21px;
   height: 24px; }
 
 .icon__vk {
   background-image: url(../img/sprite.png);
-  background-position: -1045px -166px;
+  background-position: -1194px -186px;
   width: 14px;
   height: 16px; }
 
@@ -484,7 +550,7 @@ a:hover {
     height: 10px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -1136px -49px;
+    background-position: -1285px -69px;
     background-color: white;
     box-shadow: none;
     border-radius: 0; }
@@ -591,12 +657,12 @@ a:hover {
 .owl-nav--light .owl-nav .owl-prev {
   width: 36px;
   height: 49px;
-  background-position: -36px -1157px; }
+  background-position: 0px -1359px; }
 
 .owl-nav--light .owl-nav .owl-next {
   width: 36px;
   height: 49px;
-  background-position: 0px -1206px; }
+  background-position: -36px -1310px; }
 
 .custom-dots {
   display: none;
@@ -618,10 +684,10 @@ a:hover {
   width: 16px;
   height: 15px;
   background-repeat: no-repeat;
-  background-position: -1013px -197px;
+  background-position: -1120px -264px;
   background-image: url("../img/sprite.png"); }
   .rating__item.active {
-    background-position: -1029px -182px; }
+    background-position: -1104px -279px; }
 
 .dropdown {
   position: relative; }
@@ -800,7 +866,7 @@ a:hover {
       margin: auto;
       width: 35px;
       height: 35px;
-      background-position: -262px -942px;
+      background-position: -262px -1095px;
       background-repeat: no-repeat;
       background-image: url("../img/sprite.png"); }
     .list-bg--flower .list-bg__item span {
@@ -947,7 +1013,7 @@ a:hover {
         position: relative;
         top: 3px; }
         .filter-list__title span .icon__arrow--grey {
-          background-position: -918px -287px;
+          background-position: -921px -438px;
           right: 0;
           margin-left: 10px; }
         .filter-list__title span .icon.rotate {
@@ -989,7 +1055,7 @@ a:hover {
       .filter-list-item.active label {
         color: white !important; }
       .filter-list-item.active .icon__arrow--grey {
-        background-position: -918px -287px; }
+        background-position: -921px -438px; }
     .filter-list-item input {
       display: none; }
     .filter-list-item .jq-checkbox {
@@ -1083,6 +1149,20 @@ a:hover {
       text-align: center; }
       .pagination__items .item.active {
         color: #ed2690; }
+
+.availability {
+  overflow: hidden; }
+  .availability__item {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1393px -8px; }
+    .availability__item.active {
+      background-position: -1383px -18px; }
+  .availability__item + .availability__item {
+    margin-left: 3px; }
 
 @media screen and (max-width: 1366px) {
   .filter-list {
@@ -2003,7 +2083,8 @@ body {
     right: -5px; }
   .shades-slider__item button {
     position: relative;
-    outline: none; }
+    outline: none;
+    max-width: calc(100% - 12px); }
     .shades-slider__item button::before {
       display: none;
       content: '';
@@ -2014,6 +2095,10 @@ body {
       left: -5px;
       border: 2px #ed2690 solid;
       border-radius: 50%; }
+    .shades-slider__item button .image {
+      display: block;
+      width: 100%;
+      margin: 0 auto; }
 
 .shades-modal {
   opacity: 0;
@@ -2131,8 +2216,8 @@ body {
     cursor: pointer;
     display: none;
     position: relative;
-    height: 62px;
-    line-height: 62px;
+    height: 55px;
+    line-height: 55px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
     .tabs__item--mobile::after {
@@ -2174,10 +2259,15 @@ body {
           right: -2px;
           width: 23px;
           height: 7px;
-          background-position: -879px -321px; }
+          background-position: -898px -455px; }
 
-.section-reviews__sort {
-  margin-bottom: 20px; }
+.section-reviews {
+  display: none;
+  padding-top: 20px; }
+  .section-reviews.active {
+    display: block; }
+  .section-reviews__sort {
+    margin-bottom: 20px; }
 
 .reviews-item {
   overflow: hidden;
@@ -2239,10 +2329,14 @@ body {
         text-decoration: none; }
 
 .add-reviews {
+  display: none;
   position: relative;
+  padding-top: 20px;
   padding-right: 370px;
   font-size: 1.3rem;
   color: #505050; }
+  .add-reviews.active {
+    display: block; }
   .add-reviews__title {
     margin-bottom: 25px;
     color: #ed2690;
@@ -2273,7 +2367,7 @@ body {
       text-transform: uppercase; }
   .add-reviews__help {
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 30px;
     width: 325px;
     max-width: calc(100% - 650px);
@@ -2342,6 +2436,94 @@ body {
     padding-right: 20px;
     font-size: 1.3rem;
     text-transform: uppercase; }
+
+.reviews-block-btn {
+  z-index: 200;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  background-color: #ed2690; }
+  .reviews-block-btn span {
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase; }
+    .reviews-block-btn span.modified {
+      display: none;
+      font-size: 1.4rem;
+      color: #ed2690;
+      text-transform: none;
+      text-decoration: underline; }
+      .reviews-block-btn span.modified:hover {
+        text-decoration: none; }
+  .reviews-block-btn.active {
+    background-color: white; }
+    .reviews-block-btn.active span {
+      display: none; }
+      .reviews-block-btn.active span.modified {
+        display: inline-block; }
+
+.shops-list {
+  position: relative;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #606060; }
+  .shops-list__scroll-block {
+    max-height: 500px;
+    overflow: auto; }
+  .shops-list span {
+    display: inline-block; }
+  .shops-list__head {
+    overflow: hidden;
+    width: calc(100% - 30px);
+    margin-bottom: 20px; }
+    .shops-list__head > div {
+      float: left; }
+    .shops-list__head span {
+      color: #a1a1a1 !important;
+      font-weight: normal !important;
+      text-transform: none !important; }
+  .shops-list-item {
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .shops-list-item__col {
+      float: left; }
+    .shops-list-item__name, .shops-list-item__address, .shops-list-item__metro {
+      width: 25%;
+      padding-right: 10px; }
+    .shops-list-item__availability {
+      width: 10%; }
+    .shops-list-item__mode {
+      width: 15%; }
+    .shops-list-item__name span {
+      max-width: 190px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .shops-list-item__address span {
+      max-width: 190px; }
+    .shops-list-item__metro {
+      overflow: hidden; }
+      .shops-list-item__metro .icon {
+        display: block;
+        float: left;
+        margin-top: 3px;
+        margin-right: 6px;
+        margin-bottom: 20px; }
+      .shops-list-item__metro .text {
+        float: left;
+        max-width: calc(100% - 25px); }
+        .shops-list-item__metro .text span {
+          display: block; }
+        .shops-list-item__metro .text__desc {
+          color: #a1a1a1; }
+    .shops-list-item__availability .availability {
+      margin-top: 7px; }
+    .shops-list-item__mode span {
+      display: block;
+      max-width: 140px; }
 
 @media screen and (max-width: 1600px) {
   .top-menu__item + .top-menu__item {
@@ -2425,7 +2607,40 @@ body {
   .journal-slider-item__desc span {
     font-size: 1.5rem; }
     .journal-slider-item__desc span.strong {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  .shops-list-item__name, .shops-list-item__address, .shops-list-item__metro {
+    width: 23%;
+    padding-right: 10px; }
+  .shops-list-item__availability {
+    width: 11%; }
+  .shops-list-item__mode {
+    width: 20%; }
+  .shops-list-item__name span {
+    max-width: 190px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .shops-list-item__address span {
+    max-width: 190px; }
+  .shops-list-item__metro {
+    overflow: hidden; }
+    .shops-list-item__metro .icon {
+      display: block;
+      float: left;
+      margin-top: 3px;
+      margin-right: 6px;
+      margin-bottom: 20px; }
+    .shops-list-item__metro .text {
+      float: left;
+      max-width: calc(100% - 25px); }
+      .shops-list-item__metro .text span {
+        display: block; }
+      .shops-list-item__metro .text__desc {
+        color: #a1a1a1; }
+  .shops-list-item__availability .availability {
+    margin-top: 7px; }
+  .shops-list-item__mode span {
+    display: block;
+    max-width: 140px; } }
 
 @media screen and (max-width: 1366px) {
   .exclusive-slider-item__desc {
@@ -2602,8 +2817,13 @@ body {
       max-height: 0;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
+  .section-reviews {
+    padding-top: 0; }
   .add-reviews {
-    padding-right: 0; }
+    padding-right: 0;
+    padding-top: 0; }
+    .add-reviews__title {
+      margin-top: 3px; }
     .add-reviews__auth {
       width: 100%; }
       .add-reviews__auth .text, .add-reviews__auth .link {
@@ -2613,6 +2833,7 @@ body {
     .add-reviews__help {
       position: relative;
       width: 100%;
+      top: 0;
       right: 0;
       margin-bottom: 20px; }
   .form-reviews__input-group {
@@ -2632,7 +2853,13 @@ body {
     padding-left: 75px;
     padding-right: 75px; }
   .form-reviews textarea#review-text {
-    height: 220px; } }
+    height: 220px; }
+  .reviews-block-btn {
+    top: 75px;
+    height: 25px; }
+  .tabs-content__item {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media screen and (max-width: 600px) {
   .products-list [class*="col-"] {
@@ -2688,7 +2915,14 @@ body {
   .reviews-item__content {
     width: 100%;
     margin-top: 25px;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .reviews-block-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 400px) {
   .products-list-item__header, .products-list-item__footer {
@@ -3584,12 +3818,12 @@ body {
         width: 15px;
         height: 15px;
         background-repeat: no-repeat;
-        background-position: -1059px -151px;
+        background-position: -1208px -171px;
         background-image: url("../img/sprite.png"); }
     .footer-menu-section__item.active .title .icon {
       width: 15px;
       height: 4px;
-      background-position: -1219px -8px; }
+      background-position: -1368px -28px; }
   .footer__logo-section {
     position: absolute;
     bottom: 10px;
@@ -3622,6 +3856,100 @@ body {
 
 .catalog-header img {
   width: 100%; }
+
+.section-shops__header {
+  overflow: hidden;
+  margin-bottom: 40px; }
+
+.section-shops .shops-tabs {
+  overflow: hidden;
+  float: left;
+  margin-top: 10px;
+  margin-right: 80px;
+  color: #606060;
+  font-size: 1.2rem; }
+  .section-shops .shops-tabs__item {
+    position: relative;
+    float: left;
+    padding-left: 22px; }
+    .section-shops .shops-tabs__item .icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      opacity: 1;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+      .section-shops .shops-tabs__item .icon.is-active {
+        opacity: 0; }
+    .section-shops .shops-tabs__item span {
+      text-transform: uppercase;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    .section-shops .shops-tabs__item.active .icon {
+      opacity: 0; }
+      .section-shops .shops-tabs__item.active .icon.is-active {
+        opacity: 1; }
+    .section-shops .shops-tabs__item.active span {
+      color: #ed0a95; }
+  .section-shops .shops-tabs__item + .shops-tabs__item {
+    margin-left: 20px; }
+  .section-shops .shops-tabs__content {
+    display: none; }
+    .section-shops .shops-tabs__content.active {
+      display: block; }
+
+.section-shops .shops-search {
+  float: left; }
+  .section-shops .shops-search__input {
+    position: relative;
+    float: left; }
+    .section-shops .shops-search__input::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 12px;
+      margin: auto;
+      width: 19px;
+      height: 19px;
+      background-repeat: no-repeat;
+      background-image: url("../img/sprite.png");
+      background-position: -766px -570px; }
+    .section-shops .shops-search__input input {
+      width: 100%;
+      height: 35px;
+      padding-left: 15px;
+      padding-right: 40px;
+      line-height: 35px;
+      border-width: 2px;
+      border-color: gainsboro;
+      border-style: solid;
+      border-radius: 20px; }
+      .section-shops .shops-search__input input::-webkit-input-placeholder {
+        font-size: 1.2rem;
+        color: #b2b2b2;
+        text-transform: uppercase; }
+      .section-shops .shops-search__input input:-moz-placeholder {
+        font-size: 1.2rem;
+        color: #b2b2b2;
+        text-transform: uppercase; }
+      .section-shops .shops-search__input input::-moz-placeholder {
+        font-size: 1.2rem;
+        color: #b2b2b2;
+        text-transform: uppercase; }
+      .section-shops .shops-search__input input:-ms-input-placeholder {
+        font-size: 1.2rem;
+        color: #b2b2b2;
+        text-transform: uppercase; }
+    .section-shops .shops-search__input--city {
+      width: 230px; }
+    .section-shops .shops-search__input--metro {
+      width: 300px; }
+  .section-shops .shops-search__input + .shops-search__input {
+    margin-left: 12px; }
 
 @media screen and (max-width: 1600px) {
   .header-logo {
@@ -3823,6 +4151,13 @@ body {
     .product-detail .buttons-block__buy {
       width: 320px;
       max-width: calc(100% - 85px); }
+  .section-shops .shops-tabs {
+    float: none;
+    margin-top: 0;
+    margin-right: 0; }
+  .section-shops .shops-search {
+    float: none;
+    margin-top: 20px; }
   .footer {
     padding-bottom: 100px;
     background: url("../img/ellipse-white.png") bottom right/550px auto no-repeat;
@@ -3921,7 +4256,7 @@ body {
       .catalog-filter .active .filter-list__mobile-title .icon {
         width: 15px;
         height: 4px;
-        background-position: -1204px -12px; }
+        background-position: -1353px -32px; }
     .catalog-filter .active .filter-list {
       max-height: 700px;
       opacity: 1; }
@@ -4363,7 +4698,10 @@ body {
       margin-bottom: 10px; }
   .action-header__desc {
     float: none;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .product-detail-shades .shades-slider {
+    padding-left: 35px;
+    padding-right: 35px; } }
 
 @media screen and (max-width: 400px) {
   .header-panel__actions .item {

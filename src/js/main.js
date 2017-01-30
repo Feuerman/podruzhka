@@ -547,7 +547,7 @@ $(document).ready(function () {
 		$('.shades-modal').removeClass('open');		
 	});
 
-	$(".shades-modal-items").mCustomScrollbar();
+	$(".shades-modal-items, .shops-list__scroll-block").mCustomScrollbar();
 
 	$('.shades-slider__item').on('click', function() {
 		$('.shades-slider__item').removeClass('active');
@@ -596,6 +596,29 @@ $(document).ready(function () {
 			});
 		});
 	}
+
+	var shopsTabsLink = $('.shops-tabs__item');
+	var shopsTabsContent = $('.shops-tabs__content');
+
+	shopsTabsLink.eq(0).addClass('active');
+	shopsTabsContent.eq(0).addClass('active');
+
+	shopsTabsLink.on('click', function() {
+		var currentIndex = $(this).index();
+
+		shopsTabsLink.removeClass('active');
+		$(this).addClass('active');
+
+		shopsTabsContent.removeClass('active');
+		shopsTabsContent.eq(currentIndex).addClass('active');
+	});
+
+	var reviewsBlockBtn = $('.js-reviews-toggle');
+	reviewsBlockBtn.on('click', function() {
+		$(this).toggleClass('active');
+		$('.js-reviews-block').toggleClass('active');
+		$('.js-reviews-add').toggleClass('active');
+	});
 
 	// $('#review-theme').watermark('Тема (коротко о товаре)', {color: '#333', left: -2, top: 10, fallback: true});	
 
