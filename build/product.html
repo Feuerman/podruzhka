@@ -66,6 +66,16 @@
       </div>
     </div>
     <div class="overlay-block overlay-block--open-nav"></div>
+    <section class="action-header">
+      <div class="action-header__container">
+        <div class="action-header-list"><a href="#" class="action-header-list__item"><img src="img/action-list-1.jpg" alt="">
+            <div class="desc">Фестиваль с 1 по 30 июня</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-2.jpg" alt="">
+            <div class="desc">3 по цене 2</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-3.jpg" alt="">
+            <div class="desc">ПОдарок за покупку</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-4.jpg" alt="">
+            <div class="desc">выгодная цена</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-5.jpg" alt="">
+            <div class="desc">-50% выгодная пара</div></a></div>
+      </div>
+    </section>
     <header class="header">
       <div class="header-logo">
         <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="/podruzhka/sitemap.html"><img src="img/logo.png" alt=""></a>
@@ -74,7 +84,7 @@
         <nav>
           <ul class="top-menu">
             <li class="top-menu__item"><a href="#" class="top-menu__link">Каталог</a></li>
-            <li class="top-menu__item"><a href="#" class="top-menu__link">Акции</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link js-show-action-block">Акции</a></li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Только у нас</a></li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Новинки</a></li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Хочу скидки</a></li>
@@ -616,7 +626,7 @@
                           <input type="text" placeholder="введите город">
                         </div>
                         <div class="shops-search__input shops-search__input--metro">
-                          <input type="text" placeholder="введите адрес или станцию метро">
+                          <input type="text" placeholder="адрес или метро">
                         </div>
                       </div>
                     </div>
@@ -632,12 +642,15 @@
                           </div>
                           <div class="shops-list__scroll-block">
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -649,12 +662,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -666,12 +682,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -683,12 +702,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -700,12 +722,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -717,12 +742,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -734,12 +762,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -751,12 +782,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -768,12 +802,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ  </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -785,12 +822,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -802,12 +842,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -819,12 +862,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -836,12 +882,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -853,12 +902,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -870,12 +922,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -887,12 +942,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -904,12 +962,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -921,12 +982,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -938,12 +1002,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА» НА ФЕСТИВАЛЬНОЙ</span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ФЕСТИВАЛЬНОЙ</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Фестивальная ул.,  д. 53А</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--grey"></i>
                                 <div class="text"><span class="text__name">Бульвар Дмитрия Донского</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -955,12 +1022,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА владимирской </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА владимирской</span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Владимирская  3-я ул., д. 24Г</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--yellow"></i>
                                 <div class="text"><span class="text__name">Перово</span><span class="text__desc">2 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item active"></div>
                                   <div class="availability__item active"></div>
@@ -972,12 +1042,15 @@
                               <div class="shops-list-item__mode shops-list-item__col"><span>пн.–пт. 09:00–21:00</span><span>сб. 10:00–19:00</span><span>вс. 12:00–17:00</span></div>
                             </div>
                             <div class="shops-list-item">
-                              <div class="shops-list-item__name shops-list-item__col"><span>МАГАЗИН «ПОДРУЖКА»  НА ЕРЕВАНСКОЙ </span></div>
+                              <div class="shops-list-item__toggle js-shops-item-toggle">
+                                <button><i class="icon icon__plus--violet"></i></button>
+                              </div>
+                              <div class="shops-list-item__name shops-list-item__col"><span class="template-name">МАГАЗИН «ПОДРУЖКА» </span><span>НА ЕРЕВАНСКОЙ </span></div>
                               <div class="shops-list-item__address shops-list-item__col"><span>г. Москва, Ереванская ул.,  д. 24, корп. 1</span></div>
                               <div class="shops-list-item__metro shops-list-item__col"><i class="icon icon__metro--green"></i>
                                 <div class="text"><span class="text__name">Царицыно</span><span class="text__desc">4 мин. пешком</span></div>
                               </div>
-                              <div class="shops-list-item__availability shops-list-item__col">
+                              <div class="shops-list-item__availability shops-list-item__col"><span>Наличие</span>
                                 <div class="availability">
                                   <div class="availability__item"></div>
                                   <div class="availability__item"></div>
@@ -990,6 +1063,7 @@
                             </div>
                           </div>
                         </div>
+                        <button class="shops-list__more"><span>ЕЩЕ МАГАЗИНЫ</span><i class="icon icon__arrow--pink--right"></i></button>
                       </div>
                       <div class="shops-tabs__content"><img src="img/shops-map.jpg" alt="" width="100%"></div>
                       <div class="shops-tabs__content"><img src="img/shops-metro.jpg" alt="" width="100%"></div>

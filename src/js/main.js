@@ -336,6 +336,42 @@ $(document).ready(function () {
 		});
 	});
 
+	var productsSliderInContent = $('.js-slider-products-in-content');
+	productsSliderInContent.each(function(index, item) {
+		$(item).owlCarousel({
+			dots: false,
+			margin: 20,
+			nav: false,
+			responsive:{
+				0: {
+					items: 1
+				},
+				520:{
+					items:2
+				},
+				800:{
+					items:3
+				},
+				1600:{
+					items:4
+				},
+				1800: {
+					items:5
+				}
+			},
+		});
+	});	
+	productsSliderInContent.each(function(index, item) {
+		$(item).siblings('.slider-nav').on('click', function(e) {
+			if ($(e.target).hasClass('owl-prev')) {
+				$(item).trigger('prev.owl.carousel');
+			};
+			if ($(e.target).hasClass('owl-next')) {
+				$(item).trigger('next.owl.carousel');
+			};
+		});
+	});	
+
 	function customPager(event) {
 		var items  = event.item.count;
 		var item = event.item.index;
@@ -613,6 +649,11 @@ $(document).ready(function () {
 		shopsTabsContent.eq(currentIndex).addClass('active');
 	});
 
+	var shopsItemBtn = $('.js-shops-item-toggle');
+	shopsItemBtn.on('click', function() {
+		$(this).parents('.shops-list-item').toggleClass('active');
+	});
+
 	var reviewsBlockBtn = $('.js-reviews-toggle');
 	reviewsBlockBtn.on('click', function() {
 		$(this).toggleClass('active');
@@ -620,7 +661,37 @@ $(document).ready(function () {
 		$('.js-reviews-add').toggleClass('active');
 	});
 
+	var topMenuLink = $('.top-menu__link');
+	var actionBlock = $('.action-header');
+	$(topMenuLink).on({
+		mouseenter: function (e) {
+			if ($(e.target).hasClass('js-show-action-block')) {
+				$(actionBlock).addClass('active');	
+			} else {
+				$(actionBlock).removeClass('active');
+			}			
+		}
+	});
+
+	$(actionBlock).on({
+		mouseleave: function () {
+			$(actionBlock).removeClass('active');
+		}
+	});
+
 	// $('#review-theme').watermark('Тема (коротко о товаре)', {color: '#333', left: -2, top: 10, fallback: true});	
 
 	$('.gallery-item').fancybox();	
+
+	$(function(){
+		var topPos = $('.left-menu').offset().top;
+		$(window).scroll(function() { 
+			var top = $(document).scrollTop(),
+				pip = $('.section-journal').offset().top,
+				height = $('.left-menu').outerHeight();
+			if (top > topPos && top < pip - (height + 100)) {$('.left-menu').addClass('fixed').removeAttr("style");} 
+			else if (top > pip - height) {$('.left-menu').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+			else {$('.left-menu').removeClass('fixed');}
+		});
+	});
 });
