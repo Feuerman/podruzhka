@@ -37,8 +37,8 @@ body.page-inner
 					span.breadcrumbs-sep >
 					a.breadcrumbs-item(href="#") Промо июня
 					span.breadcrumbs-sep >
-					span.breadcrumbs-item 2=3
-				h1.page-title L’oreal
+					span.breadcrumbs-item Фестиваль
+				h1.page-title vivienne sabo
 			.page-content__left.page-content__left--no-border
 				ul.left-menu
 					li.left-menu__item.active
@@ -46,9 +46,9 @@ body.page-inner
 							span Промо ИЮНя
 							i.icon.icon__arrow--violet
 						ul.left-menu-sub.left-menu-sub--level-1
-							li.left-menu-sub__item
-								a.left-menu-sub__link(href="#") Фестиваль
 							li.left-menu-sub__item.active
+								a.left-menu-sub__link(href="#") Фестиваль
+							li.left-menu-sub__item
 								a.left-menu-sub__link(href="#") 2=3
 								ul.left-menu-sub.left-menu-sub--level-2
 									li.left-menu-sub__item.active
@@ -94,26 +94,29 @@ body.page-inner
 							i.icon.icon__vk
 						a.social__item(href="#")
 							i.icon.icon__inst
-					h2.title При покупке 3-х средств по уходу за лицом** L’Oreal Paris одно из них покупатель получает бесплатно*!
+					h2.title При покупке продукции Vivienne Sabo на сумму от 449 rub — получай гарантированные подарки — тушь для ресниц или подводку для глаз! 
+					p 
+						| Успей провести это лето по-французски с Vivienne Sabo! 
+						strong C 1 по 31 августа 
+						| при покупке продукции 
+						strong Vivienne Sabo 
+						| на сумму от 449 rub — получай гарантированныеподарки — 
+						strong тушь для ресниц или подводку для глаз Vivienne Sabo!
+					p 
+						| Владельцы дисконтной карты «Подружка», совершившие акционную покупку, получают возможность выиграть каждый день один из двух сертификатов в магазин 
+						strong «БЮСТЬЕ» на 30 000 рублей!
+					p 
+						| Номер твоего чека, в котором выполнены все условия акции, 
+						strong АВТОМАТИЧЕСКИ 
+						| становится претендентом на 
+						strong ГЛАВНЫЙ ПРИЗ! ЕЖЕДНЕВНО 
+						| номера чеков-победителей публикуются на этой странице!
 					p
-						| При покупке 3-х любых средств по уходу за лицом**
-						strong  L’Oreal Paris 
-						| – одно из них покупатель получает бесплатно* в период
-						strong  c 1 по 30 июня!
-					p L’Oreal Paris – один из ведущих мировых брендов косметики, которую поддерживают посланники красоты, среди которых Дженнифер Лопес, Джулианна Мур, Ева Лонгория и другие. Посланники марки воплощают в себе определенный идеал красоты, заложенный в легендарном слогане: «Ведь ты этого достойна». 
-					p
-						| Ознакомиться с частичным ассортиментом косметики по уходу за лицом L’Oreal Paris ты можешь 
-						a(href="#") на сайте
-						| . Полный ассортимент представлен 
-						a(href="#") в магазинах «Подружка»
-						| .
-					p Акция проходит во всей сети магазинов «Подружка».
-					p ВНИМАНИЕ! *Один из трех товаров (с наименьшей или равной стоимостью) покупатель получает бесплатно. На остальные два товара другие скидки (по дисконтной карте, по социальной карте, утренняя скидка 5%, скидка 15% 15-го числа, по купонам и другим акциям сети) НЕ ДЕЙСТВУЮТ. **Товары со скидкой, подарочные наборы в акции не участвуют. Сеть магазинов «Подружка» оставляет за собой право изменять условия и сроки проведения акции по своему усмотрению.
-					p Возврат товара, участвующего в проводимой акции, не производится согласно Постановлению Правительства РФ от 19 января 1998г. № 55 «об утверждении Правил продажи отдельных видов товаров, перечня товаров длительного пользования, на которые не распространяется требование покупателя о безвозмездном предоставлении ему на период ремонта или замены аналогичного товара, и перечня непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других размеров, формы, габарита, фасона, расцветки или комплектации».
-					p Подробности акции по телефонам Call-центра: 8 800 707-47-47 (звонок бесплатный), 8 495 926-80-82.
-					p Ждем тебя в магазинах «Подружка»!
+						a.detail(href="#") Полные правила акции
 				section.section-products-slider.section-products-slider--inContent
-					.title товары, участвующие в акции
+					.title
+						span товары, участвующие в фестивале
+						a(href="#") Показать все
 					.products-slider.owl-carousel.js-slider-products-in-content
 						.products-list-item
 							.products-list-item__header
@@ -270,6 +273,47 @@ body.page-inner
 								span из
 								span.custom-dots__count
 							button.owl-next
-				include templates/components/product-tabs.jade
+				section.section-winner-slider
+					.title
+						i.icon.icon__crown
+						span победители дня
+						a(href="#") < 15 ноября >
+					.winner-slider.js-slider-winner
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--1.png", alt="")
+							.desc
+								span.desc__name александра
+								span.desc__check чек 10756489
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--2.png", alt="")
+							.desc
+								span.desc__name Мария
+								span.desc__check чек 10756489
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--1.png", alt="")
+							.desc
+								span.desc__name александра
+								span.desc__check чек 10756489
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--2.png", alt="")
+							.desc
+								span.desc__name Мария
+								span.desc__check чек 10756489
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--1.png", alt="")
+							.desc
+								span.desc__name александра
+								span.desc__check чек 10756489
+						.winner-slider__item
+							.avatar
+								img(src="img/festival-slider__user--2.png", alt="")
+							.desc
+								span.desc__name Мария
+								span.desc__check чек 10756489
 		include templates/components/section-journal.jade
 		include templates/footer.jade

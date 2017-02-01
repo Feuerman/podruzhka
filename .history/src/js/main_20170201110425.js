@@ -373,34 +373,6 @@ $(document).ready(function () {
 		});
 	});	
 
-
-	var winnerSlider = $('.js-slider-winner');
-	winnerSlider.each(function(index, item) {
-		$(item).owlCarousel({
-			dots: false,
-			margin: 10,
-			nav: false,
-			responsive:{
-				0: {
-					items: 1
-				},
-				520:{
-					items:2
-				},
-				800:{
-					items:3,
-					margin: 10
-				},
-				1600:{
-					items:3
-				},
-				1800: {
-					items:2
-				}
-			},
-		});
-	});		
-
 	function customPager(event) {
 		var items  = event.item.count;
 		var item = event.item.index;

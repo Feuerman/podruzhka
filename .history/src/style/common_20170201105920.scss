@@ -2168,7 +2168,6 @@
 			bottom: 14px;
 		}
 		&--inContent {
-			margin-bottom: 10px;
 			padding-bottom: 0;
 			.products-slider {
 				border: none;
@@ -2620,14 +2619,6 @@
 			}
 		}
 	}
-	.page-content {
-		&--action-detail {
-			.product-detail-tabs {
-				margin-left: 10px;
-				margin-right: 10px;
-			}
-		}
-	} 
 }
 
 @media screen and (max-width: 400px) {
