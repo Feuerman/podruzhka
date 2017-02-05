@@ -118,7 +118,7 @@ gulp.task('build', [
 	'jade',
 	'jsbuild',
 	'stylebuild',
-	'imagebuild',
+	// 'imagebuild',
 	// 'sprite',
 	'fonts',
 	'vendor'

@@ -25,13 +25,19 @@ $(document).ready(function () {
 	actionSlider.owlCarousel({
 		items: 9,
 		dots: false,
+		loop: true,			
 		onChanged: customPager,
 		responsive:{
 			0: {
-				items: 2
+				items: 2,
+				loop: false	
 			},
 			480: {
-				items: 3
+				items: 3,				
+				loop: false,	
+			},
+			768: {
+				items: 3,
 			},
 			850: {
 				items: 4
@@ -43,7 +49,7 @@ $(document).ready(function () {
 				items: 6
 			},
 			1366:{
-				items:7
+				items:7		
 			},
 			1550:{
 				items:8
@@ -65,18 +71,21 @@ $(document).ready(function () {
 	novetlySlider.owlCarousel({
 		items: 5,
 		dots: false,
+		loop: true,
 		margin: 25,
 		onChanged: customPager,
 		responsive:{
 			0: {
-				items: 1
+				items: 1,
+				loop: false
 			},
 			480: {
 				items: 2,
-				margin: 15
+				margin: 15,
+				loop: false
 			},
 			767: {
-				loop: false,
+				
 				items: 2
 			},
 			991:{
@@ -86,7 +95,6 @@ $(document).ready(function () {
 				items:4
 			},
 			1750:{
-				loop: true,
 				items:5
 			}
 		}
@@ -102,19 +110,20 @@ $(document).ready(function () {
 	var exclusiveSlider = $('.js-slider-exclusive');
 	exclusiveSlider.owlCarousel({
 		dots: false,
+		loop: true,
 		onChanged: customPager,
 		responsive:{
 			0: {
 				items: 2
 			},
 			480: {
-				items: 3
+				items: 3,
+				loop: false
 			},
 			767: {
-				loop: false,
+				items: 3
 			},
 			991: {
-				loop: true,
 				items: 4
 			}
 		}
@@ -125,6 +134,7 @@ $(document).ready(function () {
 	$('.exclusive-slider-nav__right').click(function() {
 		exclusiveSlider.trigger('next.owl.carousel');
 	})
+	
 
 
 	var discountSlider = $('.js-slider-discount');
@@ -150,17 +160,19 @@ $(document).ready(function () {
 	var instagramSlider = $('.js-slider-instagram');
 	instagramSlider.owlCarousel({
 		dots: false,
+		loop: true,
 		margin: 15,
 		onChanged: customPager,
 		responsive:{
 			0: {
-				items:1
+				items:1,
+				loop: false,
 			},
 			480: {
-				items:2
+				items:2,
+				loop: false,
 			},
 			767: {
-				loop: false,
 				items:3
 			},
 			991: {
@@ -216,17 +228,24 @@ $(document).ready(function () {
 	actionCategorySlider.each(function(index, item) {
 		$(item).owlCarousel({
 			dots: false,
+			loop: true,
 			onChanged: customPager,
 			nav: false,
 			margin: 25,
 			responsive:{
 				0: {
-					items: 1
+					items: 1,
+					loop: false
 				},
 				480:{
-					items:2
+					items:2,
+					loop: false
 				},
 				680:{
+					items:3,
+					loop: false
+				},
+				767:{
 					items:3
 				},
 				1600:{
@@ -251,22 +270,29 @@ $(document).ready(function () {
 
 	var productSlider = $('.js-product-image-slider');
 	$(productSlider).owlCarousel({
+		thumbsPrerendered: true,
 		items: 1,
 		dots: false,
 		nav: false,
 		margin: 5,
-		video:true,
-		videoHeight: 380,
-		videoWidth: 330,
 		responsive:{
 			0: {
 				autoWidth:true,
-				videoWidth: 300			
 			},
 			767: {
 				autoWidth:false
 			}
 		}
+	});
+
+	var productSliderThumbs = $('.owl-thumbs');
+	$(productSliderThumbs).owlCarousel({
+		thumbItemClass: 'owl-item',
+		thumbsPrerendered: true,
+		items: 3,
+		dots: false,
+		nav: false,
+		margin: 5
 	});
 
 	var shadesSlider = $('.js-slider-shades');
@@ -300,15 +326,21 @@ $(document).ready(function () {
 	productsSlider.each(function(index, item) {
 		$(item).owlCarousel({
 			dots: false,
+			loop: true,
 			onChanged: customPager,
 			margin: 20,
 			nav: false,
 			responsive:{
 				0: {
-					items: 1
+					items: 1,
+					loop: false,
 				},
 				480:{
-					items:2
+					items:2,
+					loop: false,
+				},
+				767:{
+					items:3
 				},
 				850:{
 					items:3
@@ -340,11 +372,12 @@ $(document).ready(function () {
 	productsSliderInContent.each(function(index, item) {
 		$(item).owlCarousel({
 			dots: false,
+			loop: true,
 			margin: 20,
 			nav: false,
 			responsive:{
 				0: {
-					items: 1
+					items: 1,
 				},
 				520:{
 					items:2
@@ -552,7 +585,7 @@ $(document).ready(function () {
 		});
 	}
 
-	$('.filter-list--mobile input').styler();
+	$('.filter-list--mobile input, .input-checkbox').styler();
 	$('.js-select').styler();
 
 	$('.filter-list__mobile-title').on('click', function(e) {
@@ -708,19 +741,50 @@ $(document).ready(function () {
 		}
 	});
 
-	// $('#review-theme').watermark('Тема (коротко о товаре)', {color: '#333', left: -2, top: 10, fallback: true});	
+	$('.gallery-item').fancybox();
 
-	$('.gallery-item').fancybox();	
+	$(".video-item").fancybox({
+		padding: 0,
+        type : "iframe",
+        onComplete : function () {
+            $("#fancybox-frame").attr("allowfullscreen", "allowfullscreen")
+        }
+    });
 
 	$(function(){
-		var topPos = $('.left-menu').offset().top;
+		var topPos = $('.left-block-float').offset().top,
+			leftPos = $('.left-block-float').offset().left,
+			floatWidth = $('.left-block-float').width();
+		$(window).on('resize', function() {
+				$('.left-block-float').removeClass('fixed').removeAttr('style');
+				topPos = $('.left-block-float').offset().top;
+				leftPos = $('.left-block-float').offset().left;
+				floatWidth = $('.left-block-float').width();
+		});
 		$(window).scroll(function() { 
 			var top = $(document).scrollTop(),
-				pip = $('.section-journal').offset().top,
-				height = $('.left-menu').outerHeight();
-			if (top > topPos && top < pip - (height + 100)) {$('.left-menu').addClass('fixed').removeAttr("style");} 
-			else if (top > pip - height) {$('.left-menu').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
-			else {$('.left-menu').removeClass('fixed');}
+				bottom = $('.section-journal').offset().top,
+				heightHeader = $('header').outerHeight();
+				height = $('.left-block-float').outerHeight(),
+				windowHeight = $(window).height();
+
+			if ((windowHeight - heightHeader - height) <= 0) {
+				$('.left-block-float').removeClass('fixed').removeAttr('style');
+				return false;
+			}			
+
+
+			if ((top + heightHeader) > topPos && top < bottom - height) {
+				$('.left-block-float').addClass('fixed').css({
+					width: floatWidth + 20,
+					left: leftPos - 10,
+					padding: 10,
+				});;
+			} else if (top > bottom - height) {
+				$('.left-block-float').removeClass('fixed').removeAttr('style');
+			} else {
+				$('.left-block-float').removeClass('fixed').removeAttr('style');
+			}
 		});
 	});
 });

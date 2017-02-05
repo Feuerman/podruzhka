@@ -42,10 +42,13 @@ body {
 .header {
 	position: fixed;
 	width: 100%;
+	max-width: 1920px;
 	z-index: 400;
 	overflow: hidden;
 	top: 0;
 	left: 0;
+	right: 0;
+	margin: auto;
 	padding-left: 83px;
 	padding-right: 83px;
 	& + section, & + div {

@@ -885,6 +885,12 @@ p {
 	}
 }
 
+@media screen and (max-width: 1198px) {
+	.legend {
+		padding-left: 0;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.filter-list {
 		&__title {

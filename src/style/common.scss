@@ -146,6 +146,7 @@
 		&--right {
 			position: relative;
 			background-color: rgb(255, 255, 255);
+			min-width: 76%;
 			max-width: calc(100% - 310px);
 		}
 		&__title {
@@ -361,6 +362,8 @@
 				line-height: 25px;
 				padding-left: 18px;
 				padding-right: 18px;
+				padding-top: 0;
+				padding-bottom: 0;
 				border: 1px $color-links-primary-active solid;
 				border-radius: 4px;
 				font-size: 1.2rem;
@@ -500,7 +503,25 @@
 		position: relative;
 		top: -12px;
 		margin-bottom: 8px;
-	}	
+	}
+	&--product-detail {
+		.left-block-float {
+			.fixed {
+				width: 205px;
+			}	
+		}
+	}
+	&--shops-list {
+		.page-content__left {
+			padding-left: 20px;
+			padding-right: 30px;
+		}
+		.page-content__right {
+			padding-left: 30px;
+			padding-top: 30px;
+			border-top: 1px rgb(230, 220, 227) solid;
+		}
+	}
 }
 
 .action {
@@ -715,21 +736,66 @@
 			background-color: rgb(255, 255, 255);
 			border: 1px rgb(230, 220, 227) solid;
 			text-align: center;
+			&--video {
+				position: relative;
+				&::before {
+					pointer-events: none;
+					z-index: 200;
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					width: 80px;
+					height: 80px;
+					background: url('../img/owl.video.play.png') 0 0 no-repeat;	
+					transition: all 0.1s ease-in-out;			
+				}
+				&:hover {
+					&::before {
+						transform: scale(1.1);
+					}
+				}
+			}	
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
 			img {
 				max-height: 90%;
 				max-width: 90%;
 			}
 		}
-		.thumbs {
+		.owl-thumbs {
 			overflow: hidden;
 			margin-top: 10px;
-			&__item {
+			&-item {
 				position: relative;
 				width: 106px;
 				height: 106px;
 				float: left;
 				border: 1px rgb(230, 220, 227) solid;
 				background-color: rgb(255, 255, 255);
+				&--video {
+					position: relative;
+					&::before {
+						pointer-events: none;
+						z-index: 200;
+						content: '';
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+						width: 80px;
+						height: 80px;
+						background: url('../img/owl.video.play.png') 0 0 no-repeat;
+					}
+				}
 				img {
 					position: absolute;
 					top: 0;
@@ -1390,15 +1456,23 @@
 		padding-left: 83px;
 		padding-right: 83px;		
 	}
-	.page-content--product-detail {
-		.page-content-header {
-			padding-left: 210px;
+	.page-content {
+		&--shops-list {
+			.page-content__right {
+				padding-left: 15px;
+				padding-top: 25px;
+			}	
 		}
-		.page-content__left {
-			width: 190px;
-		}
-		.page-content__right {
-			width: calc(100% - 190px);
+		&--product-detail {
+			.page-content-header {
+				padding-left: 210px;
+			}
+			.page-content__left {
+				width: 190px;
+			}
+			.page-content__right {
+				width: calc(100% - 190px);
+			}		
 		}
 	}
 	.product-detail {
@@ -1461,7 +1535,20 @@
 	.page-content {
 		&--actions {
 			padding-right: 0;
-		}	
+		}
+		&--shops-list {
+			.page-content__left {
+				width: 200px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.page-content__right {
+				width: calc(100% - 200px);
+			}
+			.page-content-header {
+				padding-left: 220px;
+			}
+		}
 	}	
 	.catalog-products-header {
 		&__left {
@@ -1477,11 +1564,14 @@
 		&-col {
 			&--left {
 				width: 240px;
+				margin-right: 10px;
 			}
 			&--right {
 				position: relative;
 				background-color: rgb(255, 255, 255);
-				max-width: calc(100% - 250px);
+				min-width: auto;
+				max-width: none;
+				width: calc(100% - 240px);
 			}
 			&__title {
 				height: 63px;
@@ -1686,6 +1776,20 @@
 		&--product-detail {
 			.legend {
 				padding-left: 0;
+			}
+		}
+		&--shops-list {
+			.page-content__left {
+				width: 180px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			.page-content__right {
+				width: calc(100% - 180px);
+				padding-left: 10px;
+			}
+			.page-content-header {
+				padding-left: 210px;
 			}
 		}
 	}
@@ -2125,6 +2229,9 @@
 			.owl-stage {
 				min-width: 10*100vw;
 			}
+			.owl-thumbs {
+				display: none;
+			}
 		}
 		&-shades {
 			margin-bottom: 20px;
@@ -2296,7 +2403,7 @@
 				display: none;
 			}
 			&--right {
-				max-width: 100%;
+				width: 100%;
 			}
 		}
 		&__slider {
