@@ -771,7 +771,9 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.gallery-item').fancybox();
+	$('.gallery-item').fancybox({
+		padding: 0
+	});
 
 	$(".video-item").fancybox({
 		padding: 0,

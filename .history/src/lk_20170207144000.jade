@@ -1,0 +1,44 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.personal-page
+			.personal-page__left
+				.title здравствуй, Константин!
+				.avatar
+					.avatar__image
+						img(src="img/avatar-default.jpg", alt="")
+				.panel
+					.panel-avatar
+						button.panel-avatar__add Добавить аватарку
+						button.panel-avatar__edit Редактировать аватарку
+					button.panel-button
+						i.icon.icon__post
+						span Обратная связь
+					button.panel-button
+						i.icon.icon__auth--pink
+						span Выход
+			.personal-page__right
+				.product-detail-tabs.js-tabs
+					ul.tabs
+						li.tabs__item
+							span список желаний
+						li.tabs__item
+							span мой профиль
+						li.tabs__item
+							span моя скидка
+						li.tabs__item
+							span история заказов
+					.tabs-content
+						.tabs-content__item
+							p 111
+						.tabs-content__item
+							p 222
+						.tabs-content__item
+							p 333
+						.tabs-content__item
+							p 444
+		include templates/components/section-journal.jade
+		include templates/footer.jade

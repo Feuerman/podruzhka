@@ -1,0 +1,202 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.personal-page
+			.personal-page__left
+				.title здравствуй, Константин!
+				.avatar
+					.avatar__image
+						img(src="img/avatar-default.jpg", alt="")
+				.panel-buttons
+					.panel-buttons-avatar
+						button.panel-buttons-avatar__add Добавить аватарку
+						button.panel-buttons-avatar__edit Редактировать аватарку
+					button.panel-buttons-button
+						i.icon.icon__post
+						span Обратная связь
+					button.panel-buttons-button
+						i.icon.icon__auth--pink
+						span Выход
+			.personal-page__right
+				.product-detail-tabs.js-tabs
+					ul.tabs
+						li.tabs__item
+							span список желаний
+						li.tabs__item
+							span мой профиль
+						li.tabs__item
+							span моя скидка
+						li.tabs__item
+							span история заказов
+					.tabs-content
+						.tabs-content__item
+							p 111
+						.tabs-content__item
+							p 222
+						.tabs-content__item
+							p 333
+						.tabs-content__item
+							p 444
+				section.section-products-slider.section-products-slider--inContent
+					.title товары, участвующие в акции
+					.products-slider.owl-carousel.js-slider-products-in-content
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__2.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__3.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__2.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__3.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+					.slider-nav.owl-nav--light
+						.owl-nav
+							button.owl-prev
+							.custom-dots
+								span.custom-dots__current
+								span из
+								span.custom-dots__count
+							button.owl-next
+		include templates/components/section-journal.jade
+		include templates/footer.jade

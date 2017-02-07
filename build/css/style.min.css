@@ -46,493 +46,553 @@ The `sprites` mixin generates identical output to the CSS template
 .icon {
   display: inline-block; }
   .icon__arrow--grey--right:hover {
-    background-position: -1129px -433px; }
+    background-position: -1287px -443px; }
 
 .icon__3d {
   background-image: url(../img/sprite.png);
-  background-position: -515px -1046px;
+  background-position: -515px -1214px;
   width: 30px;
   height: 27px; }
 
 .icon__arrow--grey--right {
   background-image: url(../img/sprite.png);
-  background-position: -1141px -414px;
+  background-position: -1275px -462px;
   width: 12px;
   height: 19px; }
 
 .icon__arrow--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1059px -492px;
+  background-position: -1191px -538px;
   width: 16px;
   height: 17px; }
 
 .icon__arrow--lightgrey--left {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1549px;
+  background-position: 0px -1717px;
   width: 36px;
   height: 49px; }
 
 .icon__arrow--lightgrey--right {
   background-image: url(../img/sprite.png);
-  background-position: -36px -1500px;
+  background-position: -36px -1668px;
   width: 36px;
   height: 49px; }
 
 .icon__arrow--pink--right {
   background-image: url(../img/sprite.png);
-  background-position: -1129px -433px;
+  background-position: -1287px -443px;
   width: 12px;
   height: 19px; }
 
 .icon__arrow--vinous {
   background-image: url(../img/sprite.png);
-  background-position: -1440px -116px;
+  background-position: -1597px -126px;
   width: 9px;
   height: 15px; }
 
 .icon__arrow--violet {
   background-image: url(../img/sprite.png);
-  background-position: -1525px -46px;
+  background-position: -1682px -56px;
   width: 13px;
   height: 9px; }
 
 .icon__arrow--white--right {
   background-image: url(../img/sprite.png);
-  background-position: -1449px -101px;
+  background-position: -1606px -111px;
   width: 9px;
   height: 15px; }
 
 .icon__arrow--white {
   background-image: url(../img/sprite.png);
-  background-position: -1075px -475px;
+  background-position: -1175px -555px;
   width: 16px;
   height: 17px; }
 
+.icon__auth--pink {
+  background-image: url(../img/sprite.png);
+  background-position: -1243px -497px;
+  width: 16px;
+  height: 16px; }
+
 .icon__auth {
   background-image: url(../img/sprite.png);
-  background-position: -815px -731px;
+  background-position: -839px -876px;
   width: 21px;
   height: 20px; }
 
 .icon__basket--large {
   background-image: url(../img/sprite.png);
-  background-position: -613px -938px;
+  background-position: -613px -1106px;
   width: 25px;
   height: 25px; }
 
 .icon__basket {
   background-image: url(../img/sprite.png);
-  background-position: -886px -643px;
+  background-position: -910px -788px;
   width: 18px;
   height: 20px; }
 
 .icon__box {
   background-image: url(../img/sprite.png);
-  background-position: -980px -551px;
+  background-position: -1004px -696px;
   width: 19px;
   height: 17px; }
 
 .icon__calendar-date--active {
   background-image: url(../img/sprite.png);
-  background-position: -331px -1215px;
+  background-position: -331px -1383px;
   width: 34px;
   height: 35px; }
 
 .icon__calendar-date {
   background-image: url(../img/sprite.png);
-  background-position: -297px -1250px;
+  background-position: -297px -1418px;
   width: 34px;
   height: 35px; }
 
 .icon__check-1 {
   background-image: url(../img/sprite.png);
-  background-position: -1578px -18px;
+  background-position: -1735px -28px;
+  width: 10px;
+  height: 10px; }
+
+.icon__check-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -1745px -18px;
   width: 10px;
   height: 10px; }
 
 .icon__check {
   background-image: url(../img/sprite.png);
-  background-position: -1470px -79px;
+  background-position: -1627px -89px;
   width: 13px;
   height: 10px; }
 
 .icon__clock--active {
   background-image: url(../img/sprite.png);
-  background-position: -196px -1357px;
+  background-position: -229px -1488px;
   width: 33px;
   height: 37px; }
 
 .icon__clock {
   background-image: url(../img/sprite.png);
-  background-position: -229px -1320px;
+  background-position: -196px -1525px;
   width: 33px;
   height: 37px; }
 
 .icon__close--violet {
   background-image: url(../img/sprite.png);
-  background-position: -999px -534px;
+  background-position: -1023px -679px;
   width: 19px;
   height: 17px; }
 
 .icon__crown {
   background-image: url(../img/sprite.png);
-  background-position: -365px -1189px;
+  background-position: -365px -1357px;
   width: 40px;
   height: 26px; }
 
 .icon__discount-card--active {
   background-image: url(../img/sprite.png);
-  background-position: -155px -1394px;
+  background-position: -155px -1562px;
   width: 41px;
   height: 32px; }
 
 .icon__discount-card {
   background-image: url(../img/sprite.png);
-  background-position: -114px -1426px;
+  background-position: -114px -1594px;
   width: 41px;
   height: 32px; }
 
 .icon__discount {
   background-image: url(../img/sprite.png);
-  background-position: -942px -586px;
+  background-position: -928px -769px;
   width: 19px;
   height: 19px; }
 
 .icon__exclamation-point {
   background-image: url(../img/sprite.png);
-  background-position: -1423px -147px;
+  background-position: -1580px -157px;
   width: 6px;
   height: 19px; }
 
 .icon__favorit {
   background-image: url(../img/sprite.png);
-  background-position: -711px -845px;
+  background-position: -756px -966px;
   width: 24px;
   height: 21px; }
 
 .icon__fb--white {
   background-image: url(../img/sprite.png);
-  background-position: -836px -707px;
+  background-position: -860px -852px;
   width: 16px;
   height: 24px; }
 
 .icon__fb--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -798px -751px;
+  background-position: -822px -896px;
   width: 17px;
   height: 24px; }
 
 .icon__fb {
   background-image: url(../img/sprite.png);
-  background-position: -1429px -131px;
+  background-position: -1586px -141px;
   width: 11px;
   height: 16px; }
 
 .icon__flacon {
   background-image: url(../img/sprite.png);
-  background-position: -565px -989px;
+  background-position: -565px -1157px;
   width: 24px;
   height: 26px; }
 
 .icon__flower--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1568px -28px;
+  background-position: -1755px -8px;
   width: 10px;
   height: 10px; }
 
 .icon__flower--vinous {
   background-image: url(../img/sprite.png);
-  background-position: -1588px -8px;
+  background-position: -1725px -38px;
   width: 10px;
   height: 10px; }
 
 .icon__geo--blue {
   background-image: url(../img/sprite.png);
-  background-position: -545px -1015px;
+  background-position: -545px -1183px;
   width: 20px;
   height: 31px; }
 
 .icon__geo--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1292px -287px;
+  background-position: -1449px -297px;
   width: 12px;
   height: 18px; }
 
 .icon__geo--pink {
   background-image: url(../img/sprite.png);
-  background-position: -1316px -251px;
+  background-position: -1461px -279px;
   width: 12px;
   height: 18px; }
 
 .icon__geo--white {
   background-image: url(../img/sprite.png);
-  background-position: -1304px -269px;
+  background-position: -1473px -261px;
   width: 12px;
   height: 18px; }
 
 .icon__heart {
   background-image: url(../img/sprite.png);
-  background-position: -687px -866px;
+  background-position: -663px -1058px;
   width: 24px;
   height: 24px; }
 
 .icon__icecream--active {
   background-image: url(../img/sprite.png);
-  background-position: -494px -1073px;
+  background-position: -473px -1276px;
   width: 21px;
   height: 35px; }
 
 .icon__icecream {
   background-image: url(../img/sprite.png);
-  background-position: -473px -1108px;
+  background-position: -494px -1241px;
   width: 21px;
   height: 35px; }
 
+.icon__info {
+  background-image: url(../img/sprite.png);
+  background-position: -1096px -607px;
+  width: 18px;
+  height: 18px; }
+
 .icon__inst--large {
   background-image: url(../img/sprite.png);
-  background-position: -72px -1458px;
+  background-position: -72px -1626px;
   width: 42px;
   height: 42px; }
 
 .icon__inst--middle {
   background-image: url(../img/sprite.png);
-  background-position: -776px -775px;
+  background-position: -800px -920px;
   width: 22px;
   height: 22px; }
 
 .icon__inst--white {
   background-image: url(../img/sprite.png);
-  background-position: -663px -890px;
+  background-position: -687px -1034px;
   width: 24px;
   height: 24px; }
 
 .icon__inst--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -638px -914px;
+  background-position: -638px -1082px;
   width: 25px;
   height: 24px; }
 
 .icon__inst {
   background-image: url(../img/sprite.png);
-  background-position: -1113px -452px;
+  background-position: -1259px -481px;
   width: 16px;
   height: 16px; }
 
 .icon__list--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1362px -212px;
+  background-position: -1485px -248px;
   width: 17px;
   height: 13px; }
 
 .icon__list--pink {
   background-image: url(../img/sprite.png);
-  background-position: -1345px -225px;
+  background-position: -1502px -235px;
   width: 17px;
   height: 13px; }
 
 .icon__list--white {
   background-image: url(../img/sprite.png);
-  background-position: -1328px -238px;
+  background-position: -1519px -222px;
   width: 17px;
   height: 13px; }
 
 .icon__list-bg--flower {
   background-image: url(../img/sprite.png);
-  background-position: -262px -1285px;
+  background-position: -262px -1453px;
   width: 35px;
   height: 35px; }
 
 .icon__loop--grey {
   background-image: url(../img/sprite.png);
-  background-position: -923px -605px;
+  background-position: -966px -731px;
   width: 19px;
   height: 19px; }
+
+.icon__loop--minus {
+  background-image: url(../img/sprite.png);
+  background-position: -1042px -661px;
+  width: 18px;
+  height: 18px; }
+
+.icon__loop--plus {
+  background-image: url(../img/sprite.png);
+  background-position: -1060px -643px;
+  width: 18px;
+  height: 18px; }
 
 .icon__loop {
   background-image: url(../img/sprite.png);
-  background-position: -904px -624px;
+  background-position: -947px -750px;
   width: 19px;
   height: 19px; }
 
+.icon__mail {
+  background-image: url(../img/sprite.png);
+  background-position: -711px -1011px;
+  width: 24px;
+  height: 23px; }
+
 .icon__metro--green {
   background-image: url(../img/sprite.png);
-  background-position: -1153px -401px;
+  background-position: -1335px -404px;
   width: 18px;
   height: 13px; }
 
 .icon__metro--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1189px -375px;
+  background-position: -1353px -391px;
   width: 18px;
   height: 13px; }
 
 .icon__metro--pink {
   background-image: url(../img/sprite.png);
-  background-position: -1171px -388px;
+  background-position: -1317px -417px;
   width: 18px;
   height: 13px; }
 
 .icon__metro--white {
   background-image: url(../img/sprite.png);
-  background-position: -1225px -349px;
+  background-position: -1299px -430px;
   width: 18px;
   height: 13px; }
 
 .icon__metro--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -1207px -362px;
+  background-position: -1371px -378px;
   width: 18px;
   height: 13px; }
 
 .icon__minus--black {
   background-image: url(../img/sprite.png);
-  background-position: -1538px -42px;
+  background-position: -1695px -52px;
   width: 15px;
   height: 4px; }
 
 .icon__minus--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1598px -6px;
+  background-position: -1765px -6px;
   width: 12px;
   height: 2px; }
 
 .icon__minus--violet {
   background-image: url(../img/sprite.png);
-  background-position: -1036px -509px;
+  background-position: -1114px -600px;
   width: 23px;
   height: 7px; }
 
 .icon__minus {
   background-image: url(../img/sprite.png);
-  background-position: -1553px -38px;
+  background-position: -1710px -48px;
   width: 15px;
   height: 4px; }
 
 .icon__new {
   background-image: url(../img/sprite.png);
-  background-position: -1091px -468px;
+  background-position: -1207px -531px;
   width: 22px;
   height: 7px; }
 
+.icon__ok {
+  background-image: url(../img/sprite.png);
+  background-position: -1406px -345px;
+  width: 11px;
+  height: 19px; }
+
 .icon__phone {
   background-image: url(../img/sprite.png);
-  background-position: -1018px -516px;
+  background-position: -1078px -625px;
   width: 18px;
   height: 18px; }
 
 .icon__plus--black {
   background-image: url(../img/sprite.png);
-  background-position: -1408px -166px;
+  background-position: -1565px -176px;
   width: 15px;
   height: 15px; }
 
 .icon__plus--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1458px -89px;
+  background-position: -1615px -99px;
   width: 12px;
   height: 12px; }
 
 .icon__plus--violet {
   background-image: url(../img/sprite.png);
-  background-position: -852px -687px;
+  background-position: -876px -832px;
   width: 20px;
   height: 20px; }
 
 .icon__plus {
   background-image: url(../img/sprite.png);
-  background-position: -1393px -181px;
+  background-position: -1550px -191px;
   width: 15px;
   height: 15px; }
 
+.icon__post {
+  background-image: url(../img/sprite.png);
+  background-position: -1137px -587px;
+  width: 20px;
+  height: 13px; }
+
 .icon__print {
   background-image: url(../img/sprite.png);
-  background-position: -589px -963px;
+  background-position: -589px -1131px;
   width: 24px;
   height: 26px; }
 
 .icon__purse {
   background-image: url(../img/sprite.png);
-  background-position: -1243px -335px;
+  background-position: -1389px -364px;
   width: 17px;
   height: 14px; }
 
+.icon__refresh {
+  background-image: url(../img/sprite.png);
+  background-position: -1157px -572px;
+  width: 18px;
+  height: 15px; }
+
 .icon__social-card--active {
   background-image: url(../img/sprite.png);
-  background-position: -439px -1143px;
+  background-position: -439px -1311px;
   width: 34px;
   height: 23px; }
 
 .icon__social-card {
   background-image: url(../img/sprite.png);
-  background-position: -405px -1166px;
+  background-position: -405px -1334px;
   width: 34px;
   height: 23px; }
 
 .icon__star--violet {
   background-image: url(../img/sprite.png);
-  background-position: -1276px -305px;
+  background-position: -1433px -315px;
   width: 16px;
   height: 15px; }
 
 .icon__star--white {
   background-image: url(../img/sprite.png);
-  background-position: -961px -568px;
+  background-position: -985px -713px;
   width: 19px;
   height: 18px; }
 
 .icon__star {
   background-image: url(../img/sprite.png);
-  background-position: -1260px -320px;
+  background-position: -1417px -330px;
   width: 16px;
   height: 15px; }
 
 .icon__triangle--black {
   background-image: url(../img/sprite.png);
-  background-position: -1483px -71px;
+  background-position: -1668px -65px;
   width: 14px;
   height: 8px; }
 
 .icon__triangle--grey--small {
   background-image: url(../img/sprite.png);
-  background-position: -1610px 0px;
+  background-position: -1777px 0px;
   width: 10px;
   height: 6px; }
 
 .icon__triangle--grey {
   background-image: url(../img/sprite.png);
-  background-position: -1511px -55px;
+  background-position: -1654px -73px;
   width: 14px;
   height: 8px; }
 
 .icon__triangle--white--large {
   background-image: url(../img/sprite.png);
-  background-position: -872px -663px;
+  background-position: -896px -808px;
   width: 14px;
   height: 24px; }
 
 .icon__triangle--white {
   background-image: url(../img/sprite.png);
-  background-position: -1497px -63px;
+  background-position: -1640px -81px;
   width: 14px;
   height: 8px; }
 
 .icon__vk--white {
   background-image: url(../img/sprite.png);
-  background-position: -756px -797px;
+  background-position: -780px -942px;
   width: 20px;
   height: 24px; }
 
 .icon__vk--yellow {
   background-image: url(../img/sprite.png);
-  background-position: -735px -821px;
+  background-position: -735px -987px;
   width: 21px;
   height: 24px; }
 
 .icon__vk {
   background-image: url(../img/sprite.png);
-  background-position: -1379px -196px;
+  background-position: -1536px -206px;
   width: 14px;
   height: 16px; }
+
+.icon__wastebasket {
+  background-image: url(../img/sprite.png);
+  background-position: -1229px -513px;
+  width: 14px;
+  height: 18px; }
 
 button {
   padding: 0;
@@ -602,7 +662,7 @@ p {
     height: 10px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -1470px -79px;
+    background-position: -1627px -89px;
     background-color: white;
     box-shadow: none;
     border-radius: 0; }
@@ -716,12 +776,12 @@ p {
 .owl-nav--light .owl-nav .owl-prev {
   width: 36px;
   height: 49px;
-  background-position: 0px -1549px; }
+  background-position: 0px -1717px; }
 
 .owl-nav--light .owl-nav .owl-next {
   width: 36px;
   height: 49px;
-  background-position: -36px -1500px; }
+  background-position: -36px -1668px; }
 
 .custom-dots {
   display: none;
@@ -743,10 +803,10 @@ p {
   width: 16px;
   height: 15px;
   background-repeat: no-repeat;
-  background-position: -1260px -320px;
+  background-position: -1417px -330px;
   background-image: url("../img/sprite.png"); }
   .rating__item.active {
-    background-position: -1276px -305px; }
+    background-position: -1433px -315px; }
 
 .dropdown {
   position: relative; }
@@ -925,7 +985,7 @@ p {
       margin: auto;
       width: 35px;
       height: 35px;
-      background-position: -262px -1285px;
+      background-position: -262px -1453px;
       background-repeat: no-repeat;
       background-image: url("../img/sprite.png"); }
     .list-bg--flower .list-bg__item span {
@@ -1019,6 +1079,7 @@ p {
   margin: 0 0 12px 0;
   color: #e1058c;
   font-size: 1.8rem;
+  line-height: 1.3em;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -1072,7 +1133,7 @@ p {
         position: relative;
         top: 3px; }
         .filter-list__title span .icon__arrow--grey {
-          background-position: -1075px -475px;
+          background-position: -1175px -555px;
           right: 0;
           margin-left: 10px; }
         .filter-list__title span .icon.rotate {
@@ -1114,7 +1175,7 @@ p {
       .filter-list-item.active label {
         color: white !important; }
       .filter-list-item.active .icon__arrow--grey {
-        background-position: -1075px -475px; }
+        background-position: -1175px -555px; }
     .filter-list-item input {
       display: none; }
     .filter-list-item .jq-checkbox {
@@ -1217,9 +1278,9 @@ p {
     height: 10px;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -1568px -28px; }
+    background-position: -1755px -8px; }
     .availability__item.active {
-      background-position: -1588px -8px; }
+      background-position: -1725px -38px; }
   .availability__item + .availability__item {
     margin-left: 3px; }
 
@@ -2086,7 +2147,8 @@ body {
 
 .journal-slider .owl-nav button {
   position: absolute;
-  top: 45%; }
+  top: 45%;
+  opacity: 0.7; }
   .journal-slider .owl-nav button.disabled {
     display: none; }
 
@@ -2345,7 +2407,7 @@ body {
           right: -2px;
           width: 23px;
           height: 7px;
-          background-position: -1036px -509px; }
+          background-position: -1114px -600px; }
 
 .section-reviews {
   display: none;
@@ -2658,7 +2720,7 @@ body {
     top: -6px;
     width: 23px;
     height: 7px;
-    background-position: -1036px -509px; }
+    background-position: -1114px -600px; }
   .shops-list--inTabs .shops-list-item__toggle {
     display: none;
     position: absolute;
@@ -2676,7 +2738,7 @@ body {
     top: -6px;
     width: 15px;
     height: 4px;
-    background-position: -1538px -42px; }
+    background-position: -1695px -52px; }
   .shops-list--inPage .shops-list-item__toggle {
     display: none;
     position: absolute;
@@ -2880,15 +2942,17 @@ body {
         text-decoration: underline; }
         .shop-detail__panel p a:hover {
           text-decoration: none; }
+  .shop-detail__geo .shop-detail-cols__left {
+    height: 575px; }
   .shop-detail__geo .title {
     margin-top: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: #e1058c;
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase; }
   .shop-detail__geo p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #606060; }
   .shop-detail__geo .metro {
     overflow: hidden;
@@ -2912,8 +2976,290 @@ body {
       .shop-detail__geo .print button:hover {
         text-decoration: none; }
 
-.shop-slider__item img {
-  width: 100%; }
+.shop-slider .owl-item {
+  height: 575px; }
+
+.shop-slider__item {
+  display: block;
+  height: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.brand-detail {
+  margin-bottom: 40px; }
+  .brand-detail__header img {
+    width: 100%; }
+  .brand-detail__desc {
+    position: relative;
+    padding: 25px 20px;
+    background-color: white; }
+    .brand-detail__desc .social {
+      position: absolute;
+      right: 20px;
+      top: 25px; }
+    .brand-detail__desc p {
+      max-width: calc(100% - 100px);
+      font-size: 1.542rem;
+      color: #606060; }
+      .brand-detail__desc p + p {
+        margin-top: 15px; }
+
+.personal-page {
+  overflow: hidden;
+  padding: 65px 100px 0 75px;
+  background-color: #f8f8f8; }
+  .personal-page__left {
+    width: 245px;
+    float: left;
+    font-size: 1.4rem; }
+    .personal-page__left .title {
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ed2690; }
+    .personal-page__left .avatar {
+      margin-bottom: 30px; }
+      .personal-page__left .avatar__image img {
+        border-radius: 50%; }
+    .personal-page__left .panel-buttons-avatar {
+      margin-bottom: 15px; }
+      .personal-page__left .panel-buttons-avatar button {
+        color: #ed2690;
+        text-decoration: underline; }
+        .personal-page__left .panel-buttons-avatar button:hover {
+          text-decoration: none; }
+    .personal-page__left .panel-buttons-button {
+      position: relative;
+      display: block;
+      height: 25px;
+      padding-left: 27px;
+      line-height: 25px; }
+      .personal-page__left .panel-buttons-button .icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
+      .personal-page__left .panel-buttons-button span {
+        text-transform: uppercase; }
+  .personal-page__right {
+    width: calc(100% - 300px);
+    float: right;
+    font-size: 1.3rem; }
+
+.whishlist {
+  overflow: hidden;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+  .whishlist__info {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    text-decoration: underline;
+    color: #ed2690; }
+    .whishlist__info .icon {
+      float: left;
+      margin-right: 5px; }
+    .whishlist__info span {
+      position: relative;
+      top: -2px;
+      font-size: 1.3rem;
+      font-weight: 600; }
+    .whishlist__info:hover {
+      text-decoration: none; }
+  .whishlist-content {
+    width: calc(100% - 300px);
+    max-width: 970px;
+    float: left; }
+    .whishlist-content__header {
+      overflow: hidden;
+      margin-bottom: 15px;
+      color: #ed2690; }
+      .whishlist-content__header .title {
+        float: left;
+        margin-right: 25px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .whishlist-content__header .control__button {
+        float: left;
+        margin-right: 15px;
+        text-decoration: underline; }
+        .whishlist-content__header .control__button:hover {
+          text-decoration: none; }
+    .whishlist-content__footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      float: right;
+      margin-top: 30px; }
+      .whishlist-content__footer .button-icon {
+        margin-right: 20px;
+        color: #ed2690;
+        text-decoration: underline; }
+        .whishlist-content__footer .button-icon .icon {
+          float: left;
+          margin-right: 10px; }
+        .whishlist-content__footer .button-icon span {
+          position: relative;
+          top: 3px;
+          font-weight: 600; }
+        .whishlist-content__footer .button-icon:hover {
+          text-decoration: none; }
+      .whishlist-content__footer .button--default {
+        height: 39px;
+        width: 200px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-transform: uppercase; }
+  .whishlist-shops {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 45px; }
+    .whishlist-shops span {
+      padding-right: 10px; }
+    .whishlist-shops__panel .jq-selectbox {
+      display: block !important;
+      float: left;
+      margin-right: 10px; }
+      .whishlist-shops__panel .jq-selectbox__select {
+        width: 340px;
+        height: 32px;
+        line-height: 32px; }
+        .whishlist-shops__panel .jq-selectbox__select-text {
+          min-width: 80%;
+          line-height: 29px; }
+          .whishlist-shops__panel .jq-selectbox__select-text.placeholder {
+            font-weight: bold; }
+      .whishlist-shops__panel .jq-selectbox__dropdown {
+        top: 32px !important; }
+      .whishlist-shops__panel .jq-selectbox__trigger-arrow {
+        top: 12px; }
+    .whishlist-shops__panel .button {
+      height: 32px;
+      width: 100px;
+      padding-top: 0;
+      padding-bottom: 0; }
+  .whishlist-table__header {
+    overflow: hidden;
+    border-bottom: 1px #ece2e9 solid;
+    padding-bottom: 6px; }
+    .whishlist-table__header span {
+      font-weight: 600; }
+  .whishlist-table__item {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px #ece2e9 solid; }
+  .whishlist-table .col {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .whishlist-table .col-check {
+      width: 10%;
+      text-align: left; }
+      .whishlist-table .col-check .jq-checkbox {
+        margin-left: 18px;
+        width: 15px;
+        height: 15px; }
+        .whishlist-table .col-check .jq-checkbox.checked .jq-checkbox__div {
+          width: 10px;
+          height: 10px;
+          background-position: -1745px -18px;
+          right: auto;
+          bottom: auto; }
+    .whishlist-table .col-product {
+      width: 50%;
+      text-align: left; }
+      .whishlist-table .col-product__image {
+        float: left; }
+      .whishlist-table .col-product__desc {
+        height: 50px;
+        display: table-cell;
+        vertical-align: middle; }
+    .whishlist-table .col-count {
+      width: 12.5%; }
+    .whishlist-table .col-availability {
+      width: 12.5%; }
+    .whishlist-table .col-price {
+      width: 15%; }
+  .whishlist-table__footer {
+    margin-top: 25px;
+    color: #505050; }
+    .whishlist-table__footer .group {
+      overflow: hidden;
+      margin-bottom: 3px; }
+      .whishlist-table__footer .group span {
+        font-weight: 600; }
+      .whishlist-table__footer .group__title {
+        float: left; }
+      .whishlist-table__footer .group__value {
+        float: right; }
+  .whishlist-panel {
+    width: 280px;
+    float: right; }
+    .whishlist-panel .title {
+      margin-bottom: 15px;
+      color: #ed2690;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .whishlist-panel .button--default {
+      height: 33px;
+      width: 150px;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-transform: uppercase; }
+    .whishlist-panel__lists {
+      margin-bottom: 30px; }
+      .whishlist-panel__lists ul li + li {
+        margin-top: 7px; }
+      .whishlist-panel__lists ul li button {
+        text-decoration: underline; }
+        .whishlist-panel__lists ul li button:hover {
+          text-decoration: none; }
+    .whishlist-panel__add-list {
+      margin-bottom: 40px; }
+    .whishlist-panel__add-product p {
+      margin-bottom: 10px;
+      color: #505050; }
+    .whishlist-panel__add-product .input-group {
+      margin-bottom: 25px;
+      overflow: hidden; }
+      .whishlist-panel__add-product .input-group .input-text {
+        height: 33px;
+        line-height: 33px;
+        float: left;
+        border-radius: 3px; }
+        .whishlist-panel__add-product .input-group .input-text::-webkit-input-placeholder {
+          font-weight: 600; }
+        .whishlist-panel__add-product .input-group .input-text:-moz-placeholder {
+          font-weight: 600; }
+        .whishlist-panel__add-product .input-group .input-text::-moz-placeholder {
+          font-weight: 600; }
+        .whishlist-panel__add-product .input-group .input-text:-ms-input-placeholder {
+          font-weight: 600; }
+      .whishlist-panel__add-product .input-group .input--name {
+        width: 65%;
+        margin-right: 2%; }
+      .whishlist-panel__add-product .input-group .input--count {
+        width: 33%; }
 
 @media screen and (max-width: 1600px) {
   .top-menu__item + .top-menu__item {
@@ -2949,13 +3295,20 @@ body {
   .shop-detail {
     padding: 35px 25px; }
     .shop-detail-cols__left {
-      width: calc(100% - 290px);
-      margin-right: 20px; }
+      width: calc(100% - 330px);
+      margin-right: 30px; }
     .shop-detail-cols__right {
-      width: 270px; }
+      width: 300px;
+      max-width: none; }
     .shop-detail__hr {
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; }
+    .shop-detail__geo .title {
+      margin-top: 0; }
+    .shop-detail__geo .shop-detail-cols__left {
+      height: 500px; }
+  .shop-slider .owl-item {
+    height: 400px; } }
 
 @media screen and (max-width: 1366px) {
   .top-menu__item + .top-menu__item {
@@ -3042,7 +3395,13 @@ body {
     margin-top: 7px; }
   .shops-list-item__mode span {
     display: block;
-    max-width: 140px; } }
+    max-width: 140px; }
+  .shop-detail__tour {
+    float: right;
+    margin-bottom: 25px; }
+  .shop-detail__perfume {
+    clear: both;
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 1366px) {
   .exclusive-slider-item__desc {
@@ -3084,7 +3443,18 @@ body {
     left: 20px;
     width: 210px; }
   .left-menu {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .shop-detail {
+    padding: 35px 10px; }
+    .shop-detail-cols__left {
+      width: calc(100% - 255px);
+      margin-right: 15px; }
+    .shop-detail-cols__right {
+      width: 240px; }
+    .shop-detail-info__group .title {
+      float: none; }
+  .shop-slider .owl-item {
+    height: 450px; } }
 
 @media screen and (max-width: 1024px) {
   .top-menu__link {
@@ -3362,7 +3732,69 @@ body {
       margin-top: 0; }
     .search-shop .button--default {
       margin-top: 20px;
-      width: 45%; } }
+      width: 45%; }
+  .shop-detail {
+    margin-top: 0 !important;
+    padding: 10px 20px;
+    background-color: transparent; }
+    .shop-detail-cols {
+      position: relative;
+      padding-bottom: 60px; }
+    .shop-detail__tour {
+      float: none; }
+    .shop-detail__perfume {
+      margin-bottom: 35px; }
+    .shop-detail-info__group {
+      margin-bottom: 15px; }
+    .shop-detail__panel {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .shop-detail__panel .button {
+        margin-bottom: 0;
+        margin-right: 15px;
+        width: calc((100% - 240px)/2 - 15px);
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    .shop-detail__geo {
+      padding-bottom: 0; }
+      .shop-detail__geo .shop-detail-cols__left, .shop-detail__geo .shop-detail-cols__right {
+        width: 100%;
+        float: none; }
+      .shop-detail__geo .shop-detail-cols__left {
+        height: 490px;
+        margin-bottom: 25px; }
+      .shop-detail__geo .shop-detail-cols__right {
+        position: relative; }
+      .shop-detail__geo .print {
+        position: absolute;
+        top: -10px;
+        right: 0; }
+      .shop-detail__geo p {
+        max-width: 500px; }
+  .shop-slider .owl-item {
+    height: 340px; }
+  .brand-detail {
+    margin-top: -30px;
+    margin-bottom: 20px; }
+    .brand-detail__desc .social {
+      position: relative;
+      right: 0;
+      top: 0;
+      margin-top: 20px; }
+    .brand-detail__desc p {
+      max-width: 100%;
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 767px) {
   .exclusive-slider {
@@ -3612,7 +4044,62 @@ body {
       padding-right: 20px; }
     .search-shop__group, .search-shop__group-bottom, .search-shop .button--default {
       width: 320px;
-      max-width: 100%; } }
+      max-width: 100%; }
+  .shop-detail-cols {
+    padding-bottom: 0; }
+    .shop-detail-cols__left, .shop-detail-cols__right {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      float: none; }
+    .shop-detail-cols__left {
+      margin-bottom: 25px; }
+  .shop-detail__tour {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .shop-detail__tour a {
+      width: auto; }
+    .shop-detail__tour br {
+      display: none; }
+  .shop-detail__perfume {
+    margin-bottom: 20px; }
+  .shop-detail-info__group {
+    margin-bottom: 10px; }
+    .shop-detail-info__group .title {
+      float: left; }
+  .shop-detail__panel {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .shop-detail__panel .button {
+      width: 100%;
+      margin: 0 0 10px 0; }
+  .shop-detail__geo .shop-detail-cols__left {
+    height: 350px; }
+  .shop-detail__geo .print {
+    position: relative;
+    top: 0;
+    margin-bottom: 15px; }
+  .shop-slider .owl-item {
+    height: 80vw; }
+  .brand-detail {
+    margin-left: -10px;
+    margin-right: -10px; } }
 
 @media screen and (max-width: 600px) {
   .products-list [class*="col-"] {
@@ -3684,7 +4171,17 @@ body {
     .shops-list--inPage .shops-list-item__col {
       padding-left: 0; }
     .shops-list--inPage .shops-list-item__name {
-      padding-left: 10px; } }
+      padding-left: 10px; }
+  .shop-detail-cols__left {
+    margin-bottom: 15px; }
+  .shop-detail__tour {
+    position: relative;
+    top: -10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .shop-slider .owl-item {
+    height: 110vw; } }
 
 @media screen and (max-width: 400px) {
   .products-list-item__header, .products-list-item__footer {
@@ -4065,6 +4562,9 @@ body {
   .page-content--catalog {
     background: url("../img/catalog-bg-2.png") -20px calc(100% + 210px) no-repeat;
     background-color: #f8f8f8; }
+  .page-content--shop-detail {
+    background: url("../img/catalog-bg-2.png") -20px calc(100% + 210px) no-repeat;
+    background-color: #f8f8f8; }
   .page-content--actions {
     background: url("../img/catalog-bg-2.png") -200px calc(100% + 280px) no-repeat;
     background-color: #f8f8f8; }
@@ -4153,6 +4653,8 @@ body {
   padding-left: 35px;
   padding-top: 23px;
   border-top: 1px #e6dce3 solid; }
+  .catalog-products .pagination {
+    margin-bottom: 30px; }
 
 .catalog-filter {
   width: 100%;
@@ -4200,6 +4702,25 @@ body {
   padding-left: 65px; }
   .catalog-products-header .filter-price img {
     max-width: 100%; }
+
+.catalog-products-header--brand {
+  margin-bottom: 20px; }
+  .catalog-products-header--brand .catalog-products-header__left {
+    width: calc(100% - 440px); }
+  .catalog-products-header--brand .catalog-products-header__right .catalog-sort {
+    float: left;
+    margin-right: 50px; }
+  .catalog-products-header--brand .catalog-products-header__right .show-by {
+    float: right; }
+  .catalog-products-header--brand .catalog-products-header__right .jq-selectbox__select {
+    height: 36px;
+    line-height: 33px; }
+  .catalog-products-header--brand .catalog-products-header__right .jq-selectbox__trigger-arrow {
+    top: 14px; }
+  .catalog-products-header--brand .catalog-products-header__right .jq-selectbox__select-text {
+    font-size: 1.4rem; }
+  .catalog-products-header--brand .catalog-products-header__right .jq-selectbox__dropdown {
+    top: 35px !important; }
 
 .product-detail {
   border-top: 1px #e6dce3 solid;
@@ -4691,12 +5212,12 @@ body {
         width: 15px;
         height: 15px;
         background-repeat: no-repeat;
-        background-position: -1393px -181px;
+        background-position: -1550px -191px;
         background-image: url("../img/sprite.png"); }
     .footer-menu-section__item.active .title .icon {
       width: 15px;
       height: 4px;
-      background-position: -1553px -38px; }
+      background-position: -1710px -48px; }
   .footer__logo-section {
     position: absolute;
     bottom: 10px;
@@ -4832,7 +5353,7 @@ body {
         height: 19px;
         background-repeat: no-repeat;
         background-image: url("../img/sprite.png");
-        background-position: -923px -605px; }
+        background-position: -966px -731px; }
       .section-shops .shops-search__input input {
         width: 100%;
         height: 35px;
@@ -4957,6 +5478,8 @@ body {
     width: calc(100% - 200px); }
   .page-content--shops-list .page-content-header {
     padding-left: 220px; }
+  .page-content--shop-detail {
+    background: #f8f8f8; }
   .catalog-products-header__left {
     width: calc(100% - 200px); }
   .section-novetly, .section-exclusive, .section-action, .section-discount {
@@ -5134,6 +5657,10 @@ body {
     width: 90px; }
     .product-detail__brand .link {
       display: none; }
+  .catalog-products-header--brand .catalog-products-header__left {
+    width: calc(100% - 375px); }
+  .catalog-products-header--brand .catalog-products-header__right .catalog-sort {
+    margin-right: 15px; }
   .section-products-slider {
     padding-left: 15px;
     padding-right: 15px; }
@@ -5219,7 +5746,7 @@ body {
       .catalog-filter .active .filter-list__mobile-title .icon {
         width: 15px;
         height: 4px;
-        background-position: -1538px -42px; }
+        background-position: -1695px -52px; }
     .catalog-filter .active .filter-list {
       max-height: 700px;
       opacity: 1; }
@@ -5240,6 +5767,14 @@ body {
       top: 0; }
       .catalog-products-header__right .catalog-sort__item {
         float: right; }
+    .catalog-products-header--brand {
+      margin-bottom: 5px; }
+      .catalog-products-header--brand .catalog-products-header__left {
+        width: 100%; }
+      .catalog-products-header--brand .catalog-products-header__right .catalog-sort {
+        margin-right: 0; }
+      .catalog-products-header--brand .catalog-products-header__right .show-by {
+        display: none; }
   .page-content {
     padding-left: 15px; }
     .page-content__left {
@@ -5387,7 +5922,7 @@ body {
   .catalog-filter-footer .button {
     width: 100%; }
   .page-content {
-    overflow: visible;
+    overflow: auto;
     padding-left: 10px;
     padding-right: 10px; }
     .page-content .page-content__right, .page-content .page-content__left {
@@ -5497,6 +6032,8 @@ body {
         opacity: 0; }
   .catalog-sort__label {
     display: inline-block; }
+  .catalog-products {
+    overflow: visible; }
   .catalog-products-header__left {
     margin-bottom: 15px; }
   .catalog-products-header__right {
@@ -5508,6 +6045,8 @@ body {
     .catalog-products-header__right .catalog-sort__label {
       line-height: 1;
       padding-bottom: 10px; }
+  .catalog-products-header--brand .catalog-products-header__right .catalog-sort {
+    float: none; }
   .page-content-header {
     padding-left: 0; }
   .section-winner {

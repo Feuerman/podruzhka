@@ -1,0 +1,85 @@
+.whishlist
+    button.whishlist__info 
+        i.icon.icon__info
+        span Зачем это надо?
+    .whishlist-content
+        .whishlist-content__header
+            .title Список желаний №1
+            .control
+                button.control__button Переименовать
+                button.control__button Удалить
+        .whishlist-table
+            .whishlist-table__header
+                .col.col-check
+                    span Выбрать
+                .col.col-product
+                    span Товар 
+                .col.col-count
+                    span Количество
+                .col.col-availability
+                    span Наличие в магазине
+                .col.col-price
+                    span Общая цена
+            .whishlist-table__content
+                .col.col-check
+                    input.input-checkbox(type="checkbox")
+                .col.col-product
+                    .col-product__image
+                        img(src="img/product-small.jpg", alt="")
+                    .col-product__desc Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая
+                .col.col-count
+                    span 10
+                .col.col-availability
+                    button детали
+                .col.col-price
+                    span 1 546
+            .whishlist-table__footer
+                .group
+                    .group__title
+                        span Общая сумма
+                    .group__value
+                        span 3 500 руб.
+                .group
+                    .group__title
+                        span Скидка по карте
+                    .group__value
+                        span 15%
+                .group
+                    .group__title
+                        span ЦЕНА С УЧЕТОМ СКИДКИ
+                    .group__value
+                        span 3 000 Руб.
+        .whishlist-content__footer
+            button.button-icon
+                .icon.icon__print
+                span Распечатать
+            button.button-icon
+                .icon.icon__mail
+                span Отправить на email
+            button.button.button--default в корзину
+    .whishlist-panel
+        .whishlist-panel__lists
+            .title Мои списки
+            ul
+                li
+                    button Список №1 (5)
+                li
+                    button Список №2 (10)
+                li
+                    button Список №3 (2)
+                li
+                    button Список №4 (6)
+                li
+                    button Список №5 (4)
+        .whishlist-panel__add-list
+            .title Создать новый список
+            button.button.button--default создать
+        .whishlist-panel__add-product
+            .title добавить товар
+            p Добавьте товар, введя артикульный номер и количество
+            .input-group
+                input.input-text.input--name(type="text" placeholder="Артикул")
+                input.input-text.input--count(type="text" placeholder="1")
+            button.button.button--default добавить
+                
+        
