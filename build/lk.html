@@ -109,9 +109,12 @@
       <div class="personal-page__left">
         <div class="title">здравствуй, Константин!</div>
         <div class="avatar">
-          <div class="avatar__image"><img src="img/avatar-default.jpg" alt=""></div>
+          <div class="avatar__image"><img src="img/avatar-default.jpg" alt="">
+            <div class="avatar__image--element"></div>
+          </div>
         </div>
         <div class="panel-buttons">
+          <div class="title">здравствуй, Константин!</div>
           <div class="panel-buttons-avatar">
             <button class="panel-buttons-avatar__add">Добавить аватарку</button>
           </div>
@@ -120,7 +123,7 @@
         </div>
       </div>
       <div class="personal-page__right">
-        <div class="product-detail-tabs js-tabs">
+        <div class="product-detail-tabs product-detail-tabs--mode2 js-tabs">
           <ul class="tabs">
             <li class="tabs__item"><span>список желаний</span></li>
             <li class="tabs__item"><span>мой профиль</span></li>
@@ -129,188 +132,475 @@
           </ul>
           <div class="tabs-content">
             <div class="tabs-content__item">
-              <div class="whishlist">
-                <button class="whishlist__info"> <i class="icon icon__info"></i><span>Зачем это надо?</span></button>
-                <div class="whishlist-content">
-                  <div class="whishlist-content__header">
-                    <div class="title">Список желаний №1</div>
-                    <div class="control">
-                      <button class="control__button">Переименовать</button>
-                      <button class="control__button">Удалить</button>
+              <div class="tabs__item--mobile">
+                <div class="icon icon__plus--violet"></div><span>список желаний</span>
+              </div>
+              <div class="tabs-content-toggle">
+                <div class="whishlist">
+                  <button class="whishlist__info"> <i class="icon icon__info"></i><span>Зачем это надо?</span></button>
+                  <div class="whishlist-panel">
+                    <div class="whishlist-panel__lists">
+                      <div class="title">Мои списки</div>
+                      <ul>
+                        <li>
+                          <button>Список №1 (5)</button>
+                        </li>
+                        <li>
+                          <button>Список №2 (10)</button>
+                        </li>
+                        <li>
+                          <button>Список №3 (2)</button>
+                        </li>
+                        <li>
+                          <button>Список №4 (6)</button>
+                        </li>
+                        <li>
+                          <button>Список №5 (4)</button>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                  <div class="whishlist-shops"><span>Выберите ближайший магазин для проверки наличия товара</span>
-                    <div class="whishlist-shops__panel">
-                      <select data-placeholder="Выберите из списка" class="js-select">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                      </select>
-                      <button class="button button--default">ок</button>
+                    <div class="whishlist-panel__add-list">
+                      <div class="title">Создать новый список</div>
+                      <button class="button button--default">создать</button>
                     </div>
-                  </div>
-                  <div class="whishlist-table">
-                    <div class="whishlist-table__header">
-                      <div class="col col-check"><span>Выбрать</span></div>
-                      <div class="col col-product"><span>Товар </span></div>
-                      <div class="col col-count"><span>Количество</span></div>
-                      <div class="col col-availability"><span>Наличие в магазине</span></div>
-                      <div class="col col-price"><span>Общая цена</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__item">
-                      <div class="col col-check">
-                        <input type="checkbox" class="input-checkbox">
-                      </div>
-                      <div class="col col-product">
-                        <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
-                        <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
-                      </div>
-                      <div class="col col-count"><span>10</span></div>
-                      <div class="col col-availability">
-                        <button>детали</button>
-                      </div>
-                      <div class="col col-price"><span>1 546</span></div>
-                    </div>
-                    <div class="whishlist-table__footer">
-                      <div class="group">
-                        <div class="group__title"><span>Общая сумма</span></div>
-                        <div class="group__value"><span>3 500 руб.</span></div>
-                      </div>
-                      <div class="group">
-                        <div class="group__title"><span>Скидка по карте</span></div>
-                        <div class="group__value"><span>15%</span></div>
-                      </div>
-                      <div class="group">
-                        <div class="group__title"><span>ЦЕНА С УЧЕТОМ СКИДКИ</span></div>
-                        <div class="group__value"><span>3 000 Руб.</span></div>
+                    <div class="whishlist-panel__add-product">
+                      <div class="title">добавить товар</div>
+                      <div>
+                        <p>Добавьте товар, введя артикульный номер и количество</p>
+                        <div class="input-group">
+                          <input type="text" placeholder="Артикул" class="input-text input--name">
+                          <input type="text" placeholder="1" class="input-text input--count">
+                        </div>
+                        <button class="button button--default">добавить</button>
                       </div>
                     </div>
                   </div>
-                  <div class="whishlist-content__footer">
-                    <button class="button-icon">
-                      <div class="icon icon__print"></div><span>Распечатать</span>
-                    </button>
-                    <button class="button-icon">
-                      <div class="icon icon__mail"></div><span>Отправить на email</span>
-                    </button>
-                    <button class="button button--default">в корзину</button>
-                  </div>
-                </div>
-                <div class="whishlist-panel">
-                  <div class="whishlist-panel__lists">
-                    <div class="title">Мои списки</div>
-                    <ul>
-                      <li>
-                        <button>Список №1 (5)</button>
-                      </li>
-                      <li>
-                        <button>Список №2 (10)</button>
-                      </li>
-                      <li>
-                        <button>Список №3 (2)</button>
-                      </li>
-                      <li>
-                        <button>Список №4 (6)</button>
-                      </li>
-                      <li>
-                        <button>Список №5 (4)</button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="whishlist-panel__add-list">
-                    <div class="title">Создать новый список</div>
-                    <button class="button button--default">создать</button>
-                  </div>
-                  <div class="whishlist-panel__add-product">
-                    <div class="title">добавить товар</div>
-                    <p>Добавьте товар, введя артикульный номер и количество</p>
-                    <div class="input-group">
-                      <input type="text" placeholder="Артикул" class="input-text input--name">
-                      <input type="text" placeholder="1" class="input-text input--count">
+                  <div class="whishlist-content">
+                    <div class="whishlist-content__header">
+                      <div class="title">Список желаний №1</div>
+                      <div class="control">
+                        <button class="control__button">Переименовать</button>
+                        <button class="control__button">Удалить</button>
+                      </div>
                     </div>
-                    <button class="button button--default">добавить</button>
+                    <div class="whishlist-shops"><span>Выберите ближайший магазин для проверки наличия товара</span>
+                      <div class="whishlist-shops__panel">
+                        <select data-placeholder="Выберите из списка" class="js-select">
+                          <option value=""></option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                        <button class="button button--default">ок</button>
+                      </div>
+                    </div>
+                    <div class="whishlist-table">
+                      <div class="whishlist-table__header">
+                        <div class="col col-check"><span>Выбрать</span></div>
+                        <div class="col col-product"><span>Товар </span></div>
+                        <div class="col col-count"><span>Количество</span></div>
+                        <div class="col col-availability"><span>Наличие в магазине</span></div>
+                        <div class="col col-price"><span>Общая цена</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__item">
+                        <div class="col col-check">
+                          <input type="checkbox" class="input-checkbox">
+                        </div>
+                        <div class="col col-product">
+                          <div class="col-product__image"><img src="img/product-small.jpg" alt=""></div>
+                          <div>
+                            <div class="col-product__desc">Помада для губ EVELINE VELVET MATT тон 413 матовая жидкая</div>
+                            <div class="mobile-block">
+                              <div class="mobile-block__group">
+                                <div class="title">Количество</div>
+                                <div class="value">10</div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Наличие в магазине</div>
+                                <div class="value">
+                                  <button>детали</button>
+                                </div>
+                              </div>
+                              <div class="mobile-block__group">
+                                <div class="title">Общая цена</div>
+                                <div class="value">1 546</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col-count"><span>10</span></div>
+                        <div class="col col-availability">
+                          <button>детали</button>
+                        </div>
+                        <div class="col col-price"><span>1 546</span></div>
+                      </div>
+                      <div class="whishlist-table__footer">
+                        <div class="group">
+                          <div class="group__title"><span>Общая сумма</span></div>
+                          <div class="group__value"><span>3 500 руб.</span></div>
+                        </div>
+                        <div class="group">
+                          <div class="group__title"><span>Скидка по карте</span></div>
+                          <div class="group__value"><span>15%</span></div>
+                        </div>
+                        <div class="group">
+                          <div class="group__title"><span>ЦЕНА С УЧЕТОМ СКИДКИ</span></div>
+                          <div class="group__value"><span>3 000 Руб.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whishlist-content__footer">
+                      <button class="button-icon">
+                        <div class="icon icon__print"></div><span>Распечатать</span>
+                      </button>
+                      <button class="button-icon">
+                        <div class="icon icon__mail"></div><span>Отправить на email</span>
+                      </button>
+                      <button class="button button--default">в корзину    </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tabs-content__item">
-              <p>222</p>
+              <div class="tabs__item--mobile">
+                <div class="icon icon__plus--violet"></div><span>моя скидка</span>
+              </div>
+              <div class="tabs-content-toggle">
+                <div class="profile-block">
+                  <button class="profile-block__delete"><i class="icon icon__wastebasket"></i><span>Удалить данные</span></button>
+                  <div class="profile-block__right">
+                    <p><strong>Как изменить данные:</strong></p>
+                    <p>Для того, чтобы изменить свои данные, пожалуйста, внимательно и аккуратно заполни те поля, которые ты хочешь поменять.</p>
+                    <p>При выборе адреса ты можешь указать или индекс, или название населенного пункта.</p>
+                    <p>При вводе первых букв улицы система сама предложит тебе подходящие варианты.  </p>
+                  </div>
+                  <div class="profile-block__left">
+                    <form class="profile-form">
+                      <div class="profile-form__title">Персональная информация</div>
+                      <div class="profile-form__group profile-form__group--mode1">
+                        <div class="col">
+                          <div class="input-container">
+                            <input type="text" placeholder="Фамилия*" class="input-text">
+                          </div>
+                          <div class="input-container">
+                            <input type="text" placeholder="Имя*" class="input-text">
+                          </div>
+                          <div class="input-container">
+                            <input type="text" placeholder="Отчество" class="input-text">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="date"><span>Дата рождения*</span>
+                            <div class="date__input">
+                              <select data-placeholder=" " class="js-select input--day">
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">22</option>
+                              </select>
+                              <select data-placeholder=" " class="js-select input--month">
+                                <option value=""></option>
+                                <option value="1">январь</option>
+                                <option value="2">февраль</option>
+                              </select>
+                              <select data-placeholder=" " class="js-select input--year">
+                                <option value=""></option>
+                                <option value="1">1988</option>
+                                <option value="2">2000</option>
+                              </select>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="gender"><span>Пол*</span>
+                            <div class="gender__input">
+                              <input type="radio" name="gender" id="female" class="input-radio">
+                              <label for="female">женский</label>
+                            </div>
+                            <div class="gender__input">
+                              <input type="radio" name="gender" id="male" class="input-radio">
+                              <label for="male">мужской</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="input-container">
+                            <input type="text" placeholder="Контактный email*" class="input-text">
+                          </div>
+                          <div class="input-container">
+                            <input type="text" placeholder="Мобильный телефон*" class="input-text">
+                          </div>
+                          <div class="input-container input-container--with-two">
+                            <div>
+                              <input type="text" placeholder="Введи пароль" class="input-text input-password">
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Повтори пароль" class="input-text input-password">
+                            </div>
+                          </div>
+                          <button class="button button--default">ок</button>
+                        </div>
+                      </div>
+                      <div class="profile-form__title">Адресные данные</div>
+                      <div class="profile-form__group profile-form__group--mode2">
+                        <div class="col">
+                          <div class="input-container">
+                            <input type="text" placeholder="Населенный пункт/индекс*" class="input-text">
+                            <button>не могу найти</button>
+                          </div>
+                          <div class="input-container">
+                            <input type="text" placeholder="Улица*" class="input-text">
+                          </div>
+                          <select data-placeholder="Тип улицы*" class="js-select">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <div class="input-container input-container--with-two">
+                            <div class="house">
+                              <input type="text" placeholder="Дом*" class="input-text">
+                              <button>это владение</button>
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Корпус" class="input-text">
+                            </div>
+                          </div>
+                          <div class="input-container input-container--with-two">
+                            <div>
+                              <input type="text" placeholder="Строение" class="input-text">
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Квартира" class="input-text">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <textarea name="" cols="30" rows="10" placeholder="Дополнительная информация" class="input-text"></textarea>
+                        </div>
+                      </div>
+                      <div class="profile-form__title">Типаж<span>Пожалуйста, ответьте на 3 вопроса, чтобы мы могли рекомендовать лучшее для вас:</span></div>
+                      <div class="profile-form__group profile-form__group--mode3">
+                        <div class="col">
+                          <select data-placeholder="Тон кожи" class="js-select">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select data-placeholder="Цвет глаз" class="js-select">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select data-placeholder="Тип кожи" class="js-select">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="profile-form__annotation"><span>*Поля обязательные для регистрации</span></div>
+                      <div class="profile-form__subscribe">
+                        <div class="title">Подписки</div>
+                        <div class="col">
+                          <div class="col__input">
+                            <input type="checkbox" checked class="input-checkbox"><span>Я хочу получать новости и спецпредложения</span>
+                          </div><span>Вы будете всегда в курсе наших новинок и спецпредложений</span>
+                        </div>
+                        <div class="col">
+                          <div class="col__input">
+                            <input type="checkbox" class="input-checkbox"><span>Оповещать о новинках, моей корзине</span>
+                          </div><span>Этими сообщениями мы напоминаем о том, что товары, которые вы хотели купить, снова появились в продаже</span>
+                        </div>
+                      </div>
+                      <div class="profile-form__footer">
+                        <button class="button button--default button--cancel">отмена</button>
+                        <button class="button button--default">сохранить изменения    </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tabs-content__item">
-              <p>333</p>
+              <div class="tabs__item--mobile">
+                <div class="icon icon__plus--violet"></div><span>моя скидка</span>
+              </div>
+              <div class="tabs-content-toggle">
+                <p>333</p>
+              </div>
             </div>
             <div class="tabs-content__item">
-              <p>444</p>
+              <div class="tabs__item--mobile">
+                <div class="icon icon__plus--violet"></div><span>история заказов</span>
+              </div>
+              <div class="tabs-content-toggle">
+                <p>444</p>
+              </div>
             </div>
           </div>
         </div>

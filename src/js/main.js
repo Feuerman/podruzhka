@@ -600,7 +600,7 @@ $(document).ready(function () {
 		});
 	}
 
-	$('.filter-list--mobile input, .input-checkbox').styler();
+	$('.filter-list--mobile input, .input-checkbox, .input-radio').styler();
 	$('.js-select').styler();
 
 	$('.filter-list__mobile-title').on('click', function(e) {

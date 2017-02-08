@@ -1,0 +1,120 @@
+.profile-block
+    button.profile-block__delete
+        i.icon.icon__wastebasket
+        span Удалить данные
+    .profile-block__left
+        form.profile-form
+            .profile-form__title Персональная информация
+            .profile-form__group.profile-form__group--mode1
+                .col
+                    .input-container
+                        input.input-text(type="text" placeholder="Фамилия*")
+                    .input-container
+                        input.input-text(type="text" placeholder="Имя*")
+                    .input-container
+                        input.input-text(type="text" placeholder="Отчество")
+                .col
+                    .date
+                        span Дата рождения*
+                        .date__input
+                            select.js-select.input--day(data-placeholder=" ")
+                                option(value="")
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="2") 22
+                            select.js-select.input--month(data-placeholder=" ")
+                                option(value="")
+                                option(value="1") январь
+                                option(value="2") февраль
+                            select.js-select.input--year(data-placeholder=" ")
+                                option(value="")
+                                option(value="1") 1988
+                                option(value="2") 2000
+                        .clearfix
+                    .gender
+                        span Пол*
+                        .gender__input
+                            input.input-radio(type="radio" name="gender" id="female")
+                            label(for="female") женский
+                        .gender__input
+                            input.input-radio(type="radio" name="gender" id="male")
+                            label(for="male") мужской
+                .col
+                    .input-container
+                        input.input-text(type="text" placeholder="Контактный email*")
+                    .input-container
+                        input.input-text(type="text" placeholder="Мобильный телефон*")
+                    .input-container.input-container--with-two
+                        div
+                            input.input-text.input-password(type="text" placeholder="Введи пароль")
+                        div
+                            input.input-text.input-password(type="text" placeholder="Повтори пароль")
+                    button.button.button--default ок
+            .profile-form__title Адресные данные
+            .profile-form__group.profile-form__group--mode2
+                .col
+                    .input-container
+                        input.input-text(type="text" placeholder="Населенный пункт/индекс*")
+                        button не могу найти
+                    .input-container
+                        input.input-text(type="text" placeholder="Улица*")
+                    select.js-select(data-placeholder="Тип улицы*")
+                        option(value="")
+                        option(value="1") 1
+                        option(value="2") 2
+                .col
+                    .input-container.input-container--with-two
+                        div
+                            input.input-text(type="text" placeholder="Дом*")
+                            button это владение
+                        div
+                            input.input-text(type="text" placeholder="Корпус")
+                    .input-container.input-container--with-two
+                        div
+                            input.input-text(type="text" placeholder="Строение")
+                        div
+                            input.input-text(type="text" placeholder="Квартира")
+                .col
+                    textarea.input-text(name="", cols="30", rows="10" placeholder="Дополнительная информация")
+            .profile-form__title
+                | Типаж
+                span Пожалуйста, ответьте на 3 вопроса, чтобы мы могли рекомендовать лучшее для вас:
+            .profile-form__group.profile-form__group--mode3
+                .col
+                    select.js-select(data-placeholder="Тон кожи")
+                        option(value="")
+                        option(value="1") 1
+                        option(value="2") 2
+                .col
+                    select.js-select(data-placeholder="Цвет глаз")
+                        option(value="")
+                        option(value="1") 1
+                        option(value="2") 2
+                .col
+                    select.js-select(data-placeholder="Тип кожи")
+                        option(value="")
+                        option(value="1") 1
+                        option(value="2") 2
+            .profile-form__annotation
+                span *Поля обязательные для регистрации
+            .profile-form__subscribe
+                .title Подписки
+                .col
+                    .col__input
+                        input.input-checkbox(type="checkbox" checked)
+                        span Я хочу получать новости и спецпредложения
+                    span Вы будете всегда в курсе наших новинок и спецпредложений
+                .col
+                    .col__input
+                        input.input-checkbox(type="checkbox")
+                        span Оповещать о новинках, моей корзине
+                    span Этими сообщениями мы напоминаем о том, что товары, которые вы хотели купить, снова появились в продаже
+            .profile-form__footer
+                button.button.button--default.button--cancel отмена
+                button.button.button--default сохранить изменения
+    .profile-block__right
+        p
+            strong Как изменить данные:
+        p Для того, чтобы изменить свои данные, пожалуйста, внимательно и аккуратно заполни те поля, которые ты хочешь поменять.
+        p При выборе адреса ты можешь указать или индекс, или название населенного пункта.
+        p При вводе первых букв улицы система сама предложит тебе подходящие варианты.  

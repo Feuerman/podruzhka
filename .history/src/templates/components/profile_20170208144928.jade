@@ -1,0 +1,45 @@
+.profile-block
+    button.profile-block__delete
+        i.icon.icon__wastebasket
+        span Удалить данные
+    .profile-block__left
+        .profile-form
+            .profile-form__title Персональная информация
+            .profile-form__group
+                .col
+                    input.input-text(type="text" placeholder="Фамилия*")
+                    input.input-text(type="text" placeholder="Имя*")
+                    input.input-text(type="text" placeholder="Отчество")
+                .col
+                    .date
+                        span Дата рождения*
+                        .date__input
+                            select.js-select.input--day(data-placeholder="")
+                                option(value="1") 1
+                                option(value="2") 2
+                            select.js-select.input--month(data-placeholder="")
+                                option(value="1") 1
+                                option(value="2") 2
+                            select.js-select.input--year(data-placeholder="")
+                                option(value="1") 1
+                                option(value="2") 2
+                    .gender
+                        span Пол*
+                        .gender__input
+                            input(type="radio" name="gender" id="female")
+                            label(for="female") женский
+                        .gender__input
+                            input(type="radio" name="gender" id="male")
+                            label(for="male") мужской
+                .col
+                    input.input-text(type="text" placeholder="Контактный email*")
+                    input.input-text(type="text" placeholder="Мобильный телефон*")
+                    input.input-text.input-password(type="text" placeholder="Введи пароль")
+                    input.input-text.input-password(type="text" placeholder="Повтори пароль")
+                    button.button.button--default ок
+    .profile-block__right
+        p
+            strong Как изменить данные:
+        p Для того, чтобы изменить свои данные, пожалуйста, внимательно и аккуратно заполни те поля, которые ты хочешь поменять.
+        p При выборе адреса ты можешь указать или индекс, или название населенного пункта.
+        p При вводе первых букв улицы система сама предложит тебе подходящие варианты.  
