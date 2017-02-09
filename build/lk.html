@@ -22,7 +22,10 @@
   <div class="page-wrapper">
     <div class="mobile-menu-container">
       <div class="mobile-menu-header">
-        <div class="mobile-menu-header__item mobile-menu-header__item--auth"><a href="#">Вход</a><a href="#">Регистрация</a><i class="icon icon__auth"></i></div>
+        <div class="mobile-menu-header__item mobile-menu-header__item--auth">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal js-modal-inMenu">Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal js-modal-inMenu">Регистрация</button><i class="icon icon__auth"></i>
+        </div>
         <div class="mobile-menu-header__item mobile-menu-header__item--back-to">
           <button class="js-menu-parent"><i class="icon icon__arrow--vinous"></i><span>Назад</span></button>
         </div>
@@ -96,7 +99,8 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a><a href="#" class="item js-modal-auth"><i class="icon icon__auth"></i></a>
+          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
@@ -116,7 +120,52 @@
         <div class="panel-buttons">
           <div class="title">здравствуй, Константин!</div>
           <div class="panel-buttons-avatar">
-            <button class="panel-buttons-avatar__add">Добавить аватарку</button>
+            <button data-popup-href="#popup-avatar-add" class="panel-buttons-avatar__add js-popup">Добавить аватарку</button>
+            <button data-popup-href="#popup-avatar-edit" class="panel-buttons-avatar__edit js-popup">Редактировать аватарку</button>
+            <div id="popup-avatar-add" class="popup-block">
+              <button class="popup-block__close"></button>
+              <div class="avatar-edit">
+                <div class="avatar-edit__header">
+                  <div class="title">Редактировать аватар</div>
+                  <div class="file">
+                    <input type="file" data-placeholder="Загрузить новое фото" class="input-file">
+                  </div>
+                </div>
+                <div class="avatar-edit__body">
+                  <div class="image"><img src="img/avatar-default.jpg" alt=""></div><span>Перетащите выбранное изображение с компьютера в эту область</span>
+                </div>
+                <div class="avatar-edit__footer">
+                  <div>
+                    <button class="zoom zoom--minus"><i class="icon icon__loop--plus"></i></button>
+                    <input type="range" value="50">
+                    <button class="zoom zoom--plus"><i class="icon icon__loop--minus"></i></button>
+                  </div>
+                  <button class="button button--default">сохранить</button>
+                </div>
+              </div>
+            </div>
+            <div id="popup-avatar-edit" class="popup-block">
+              <button class="popup-block__close"></button>
+              <div class="avatar-edit">
+                <div class="avatar-edit__header">
+                  <div class="title">Редактировать аватар</div>
+                  <div class="file">
+                    <input type="file" data-placeholder="Загрузить новое фото" class="input-file">
+                  </div>
+                </div>
+                <div class="avatar-edit__body">
+                  <div class="image"><img src="img/avatar-default.jpg" alt=""></div><span>Перетащите выбранное изображение с компьютера в эту область</span>
+                </div>
+                <div class="avatar-edit__footer">
+                  <div>
+                    <button class="zoom zoom--minus"><i class="icon icon__loop--plus"></i></button>
+                    <input type="range" value="50">
+                    <button class="zoom zoom--plus"><i class="icon icon__loop--minus"></i></button>
+                  </div>
+                  <button class="button button--default">сохранить</button>
+                </div>
+              </div>
+            </div>
           </div>
           <button class="panel-buttons-button"><i class="icon icon__post"></i><span>Обратная связь</span></button>
           <button class="panel-buttons-button"><i class="icon icon__auth--pink"></i><span>Выход</span></button>
@@ -137,7 +186,13 @@
               </div>
               <div class="tabs-content-toggle">
                 <div class="whishlist">
-                  <button class="whishlist__info"> <i class="icon icon__info"></i><span>Зачем это надо?</span></button>
+                  <button data-popup-href="#popup-info" class="whishlist__info js-popup"> <i class="icon icon__info"></i><span>Зачем это надо?</span></button>
+                  <div id="popup-info" class="popup-block">
+                    <button class="popup-block__close"></button>
+                    <div class="popup-block__title">Подготовьтесь к посещению магазина</div>
+                    <p>Сохраните список или распечатайте его и возьмите с собой в магазин. Не забудьте предварительно  проверить наличие выбранных товаров в магазине.</p>
+                    <p><strong>ВНИМАНИЕ! Цены в магазинах могут отличаться от представленных на сайте. </strong>Точную цену товара узнавайте в магазине.</p>
+                  </div>
                   <div class="whishlist-panel">
                     <div class="whishlist-panel__lists">
                       <div class="title">Мои списки</div>
@@ -161,7 +216,13 @@
                     </div>
                     <div class="whishlist-panel__add-list">
                       <div class="title">Создать новый список</div>
-                      <button class="button button--default">создать</button>
+                      <button data-popup-href="#popup-add-list" class="button button--default js-popup">создать</button>
+                      <div id="popup-add-list" class="popup-block">
+                        <button class="popup-block__close"></button>
+                        <div class="popup-block__title">Создать список</div>
+                        <input type="text" placeholder="Название" class="input-text">
+                        <button class="button button--default">создать</button>
+                      </div>
                     </div>
                     <div class="whishlist-panel__add-product">
                       <div class="title">добавить товар</div>
@@ -415,25 +476,26 @@
                       <button class="button-icon">
                         <div class="icon icon__mail"></div><span>Отправить на email</span>
                       </button>
-                      <button class="button button--default">в корзину    </button>
+                      <button class="button button--default">в корзину</button>
                     </div>
                   </div>
+                  <div class="clearfix"></div>
                 </div>
               </div>
             </div>
             <div class="tabs-content__item">
               <div class="tabs__item--mobile">
-                <div class="icon icon__plus--violet"></div><span>моя скидка</span>
+                <div class="icon icon__plus--violet"></div><span>мой профиль</span>
               </div>
               <div class="tabs-content-toggle">
-                <div class="profile-block">
-                  <button class="profile-block__delete"><i class="icon icon__wastebasket"></i><span>Удалить данные</span></button>
+                <div class="profile-block">   
                   <div class="profile-block__right">
                     <p><strong>Как изменить данные:</strong></p>
                     <p>Для того, чтобы изменить свои данные, пожалуйста, внимательно и аккуратно заполни те поля, которые ты хочешь поменять.</p>
                     <p>При выборе адреса ты можешь указать или индекс, или название населенного пункта.</p>
                     <p>При вводе первых букв улицы система сама предложит тебе подходящие варианты.  </p>
                   </div>
+                  <button class="profile-block__delete"><i class="icon icon__wastebasket"></i><span>Удалить данные</span></button>
                   <div class="profile-block__left">
                     <form class="profile-form">
                       <div class="profile-form__title">Персональная информация</div>
@@ -842,7 +904,7 @@
           </ul>
         </div>
         <div class="footer-menu-section__item">
-          <div class="title"> <span>промо</span>
+          <div class="title"><span>промо</span>
             <div class="icon"></div>
           </div>
           <ul class="footer-menu">
@@ -872,5 +934,133 @@
         <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
       </div>
     </footer>
+    <div class="modal-hide">
+      <div id="js-modal-reg" class="modal-container">
+        <div class="modal-container__title"><span>регистрация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Зарегистрируйтесь, если у вас нет учетной записи, или <a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">авторизуйтесь</a></p>
+            <div class="input-container">
+              <input type="text" placeholder="Имя*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Контактный email*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Номер карты" class="input-text">
+            </div>
+            <div class="date"><span>Дата рождения*</span>
+              <div class="date__input">
+                <select data-placeholder=" " class="js-select input--day">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">22</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--month">
+                  <option value=""></option>
+                  <option value="1">январь</option>
+                  <option value="2">февраль</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--year">
+                  <option value=""></option>
+                  <option value="1">1988</option>
+                  <option value="2">2000</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="gender"><span>Пол*</span>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="female" class="input-radio">
+                <label for="female">женский</label>
+              </div>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="male" class="input-radio">
+                <label for="male">мужской</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="input-container input-container--with-two">
+              <input type="text" placeholder="Введи пароль*" class="input-text">
+              <input type="text" placeholder="Повтори пароль*" class="input-text">
+            </div>
+            <div class="form-modal__annotaiton"><span>*Поля обязательные для регистрации</span></div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__terms">
+              <input type="checkbox" class="input-checkbox small"><span>Я согласен с <a href="#">правилами пользования сайтом</a></span>
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="зарегистрироваться" class="button button--default">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-auth" class="modal-container">
+        <div class="modal-container__title"><span>авторизация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Авторизуйтесь, если у вас уже есть учетная запись, либо <a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">зарегистрируйтесь</a></p>
+            <div class="input-container">
+              <label>Логин</label>
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="input-container">
+              <label>Пароль</label>
+              <input type="text" placeholder="Не менее 6 символов" class="input-text">
+              <div class="recovery"><a data-fancybox-href="#js-modal-recovery" href="#" class="js-modal">Забыли пароль?</a></div>
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="войти" class="button button--default">
+              <div class="remember">
+                <input type="checkbox" class="input-checkbox small"><span>Запомнить меня</span>
+              </div>
+            </div>
+            <div class="form-modal__social">
+              <div class="title">Войти с помощью</div>
+              <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__ok"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-recovery" class="modal-container">
+        <div class="modal-container__title"><span>восстановление пароля</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Для того, чтобы восстановить свой пароль, введи указанный ранее при регистрации e-mail и нажми «восстановить»</p>
+            <div class="input-container">
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="восстановить" class="button button--default"><a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">Регистрация</a><a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">Вернуться к авторизации</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>

@@ -1,0 +1,59 @@
+.modal-hide
+	.modal-container#js-modal-reg
+		.modal-container__title
+			span регистрация
+		.modal-container-content
+			.form-modal.form-modal--auth
+				p
+					| Зарегистрируйтесь, если у вас нет учетной записи, или 
+					a.js-modal(data-fancybox-href="#js-modal-auth" href="#") авторизуйтесь
+				.input-container
+					input.input-text(type="text" placeholder="Имя*")
+				.input-container
+					input.input-text(type="text" placeholder="Контактный email*")
+				.input-container
+					input.input-text(type="text" placeholder="Номер карты")
+				.date
+					span Дата рождения*
+					.date__input
+						select.js-select.input--day(data-placeholder=" ")
+							option(value="")
+							option(value="1") 1
+							option(value="2") 2
+							option(value="2") 22
+						select.js-select.input--month(data-placeholder=" ")
+							option(value="")
+							option(value="1") январь
+							option(value="2") февраль
+						select.js-select.input--year(data-placeholder=" ")
+							option(value="")
+							option(value="1") 1988
+							option(value="2") 2000
+					.clearfix
+				.gender
+					span Пол*
+					.gender__input
+						input.input-radio(type="radio" name="gender" id="female")
+						label(for="female") женский
+					.gender__input
+						input.input-radio(type="radio" name="gender" id="male")
+						label(for="male") мужской
+					.clearfix
+				.input-container.input-container--with-two
+					input.input-text(type="text" placeholder="Введи пароль*")
+					input.input-text(type="text" placeholder="Повтори пароль*")
+				.form-modal__annotaiton
+					span *Поля обязательные для регистрации
+				.form-modal__capcha
+					span Введи число с картинки*:
+					.code
+					button
+						.icon.icon__refresh
+					input.input-text(type="text" placeholder="")
+				.form-modal__terms
+					input.input-checkbox.small(type="checkbox")
+					span
+						| Я согласен с 
+						a(href="#") правилами пользования сайтом
+				.form-modal__footer
+					input.button.button--default(type="submit" value="зарегистрироваться")

@@ -1,0 +1,19 @@
+.modal-hide
+	.modal-container#js-modal-recovery
+		.modal-container__title
+			span восстановление пароля
+		.modal-container-content
+			.form-modal.form-modal--auth
+				p Для того, чтобы восстановить свой пароль, введи указанный ранее при регистрации e-mail и нажми «восстановить»
+				.input-container
+					input.input-text(type="text" placeholder="Адрес e-mail")
+				.form-modal__capcha
+					span Введи число с картинки*:
+					.code
+					button
+						.icon.icon__refresh
+					input.input-text(type="text" placeholder="")
+				.form-modal__footer
+					input.button.button--default(type="submit" value="восстановить")
+					a.js-modal(data-fancybox-href="#js-modal-reg" href="#") Регистрация
+					a.js-modal(data-fancybox-href="#js-modal-auth" href="#") Вернуться к авторизации

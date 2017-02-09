@@ -170,13 +170,13 @@
 		&__item {
 			position: relative;
 			&--auth {
-				a {
+				button, button {
 					position: relative;
 					padding-bottom: 2px;
 					color: rgb(113, 113, 113);
 					font-size: 1.4rem;
 				}
-				a + a {
+				button + button {
 					margin-left: 12px;
 					padding-left: 12px;
 					border-left: 1px rgb(230, 220, 227) solid;
@@ -2023,6 +2023,7 @@
 	padding: 65px 100px 0 75px;
 	background-color: rgb(248, 248, 248);
 	&__left {
+		position: relative;
 		width: 245px;
 		float: left;
 		font-size: 1.4rem;
@@ -2079,6 +2080,13 @@
 				}
 			}
 		}
+		.popup-block {
+			width: 490px;
+			max-width: none;
+			right: auto;
+			left: 0;
+			top: 50px;
+		}
 		.panel-buttons {
 			.title {
 				display: none;
@@ -2126,7 +2134,6 @@
 }
 
 .whishlist {
-	overflow: hidden;
 	position: relative;
 	padding-top: 40px;
 	padding-bottom: 30px;
@@ -2239,6 +2246,12 @@
 				&__trigger {
 					&-arrow {
 						top: 12px;
+					}
+				}
+				ul {
+					li {
+						padding-top: 5px;
+						padding-bottom: 5px;
 					}
 				}
 			}
@@ -2380,6 +2393,7 @@
 					button {
 						text-decoration: underline;
 						&:hover {
+							color: rgb(237, 38, 144);
 							text-decoration: none;
 						}
 					}
@@ -2387,6 +2401,7 @@
 			}
 		}
 		&__add-list {
+			position: relative;
 			margin-bottom: 40px;
 		}
 		&__add-product {
@@ -2663,6 +2678,224 @@
 				margin-right: 15px;
 				background-color: rgb(35, 190, 190);
 				border-color: rgb(35, 190, 190);
+			}
+		}
+	}
+}
+
+.modal-hide {
+	display: none;
+}
+
+.modal-container {
+	width: 410px;
+	max-width: 100%;
+	padding: 18px 18px 35px 18px;
+	&__title {
+		margin-bottom: 25px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: rgb(237, 38, 144);
+		text-transform: uppercase;
+		span {
+
+		}
+	}
+	&-content {
+
+	}
+}
+
+.form-modal {
+	font-size: 1.3rem;
+	color: rgb(80, 80, 80);
+	&--auth {
+
+	}
+	p {
+		margin-bottom: 20px;		
+	}
+	a {
+		color: rgb(237, 38, 144);
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.button--default {
+		width: 200px;
+		height: 38px;
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 35px;
+		text-transform: uppercase;
+		font-size: 1.3rem;
+	}
+	.input-text {
+		height: 32px;
+		line-height: 30px;
+		border-radius: 3px;
+		background-color: transparent;
+		@include placeholder {
+			font-weight: 600;
+		}
+	}
+	.jq-selectbox {
+		&__select {
+			height: 32px;
+			line-height: 29px;
+			padding-right: 12px;
+			&-text {
+				max-width: 100%;
+			}
+		}
+		&__trigger {
+			&-arrow {
+				top: 12px;
+			}
+		}
+		&__dropdown {
+			top: 32px !important;
+		}
+	}
+	.input-container {
+		margin-bottom: 10px;
+		& + .input-container {
+			margin-top: 10px;
+		}
+		input {
+			display: block;
+			width: 100%;
+		}
+		&--with-two {
+			overflow: hidden;
+			input {
+				float: left;
+				width: 49%;
+				& + input {
+					margin-left: 2%;
+				}
+			}
+		}
+		label {
+			width: 50px;
+			float: left;
+			padding-top: 8px;
+			font-weight: normal;
+			color: rgb(80, 80, 80);
+		}
+		label + input {
+			width: calc(100% - 50px);
+		}
+		.recovery {
+			margin-bottom: 20px;
+			padding-left: 50px;
+		}
+	}
+	.date {
+		margin-bottom: 15px;
+		span {
+			width: 135px;
+			float: left;
+			padding-top: 5px;
+			color: rgb(161, 161, 161);
+			font-weight: 600;
+		}
+		&__input {
+			display: flex;
+			justify-content: space-between;
+			width: calc(100% - 135px);
+			float: right;
+			.input--month {
+				width: 46%;
+			}
+			.input--day, .input--year {
+				width: 25%;
+			}
+		}
+	}
+	.gender {
+		margin-bottom: 15px;
+		span, &__input {
+			float: left;			
+		}
+		&__input {
+			margin-left: 10px;
+		}
+		label, span {
+			color: rgb(161, 161, 161);
+			font-weight: 600;
+		}
+	}
+	&__annotaiton {
+		padding-top: 5px;
+		margin-bottom: 15px;
+		span {
+
+		}
+	}
+	&__capcha {	
+		margin-bottom: 15px;	
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		span {
+			padding-right: 5px;
+		}
+		.code {
+			height: 43px;
+			width: 90px;
+			background-color: rgb(222, 222, 222);
+		}
+		button {
+			margin-left: 10px;
+			margin-right: 10px;
+			.icon {
+
+			}
+		}
+		.input-text {
+			width: 80px;
+		}
+	}
+	&__terms {
+		margin-bottom: 25px;
+		.input-checkbox {
+
+		}
+		span {
+
+		}
+	}
+	&__footer {
+		overflow: hidden;
+		.button {
+			float: left;
+			margin-right: 12px;
+		}
+		.remember {
+			margin-top: 8px;
+		}
+		a {
+			display: inline-block;
+		}
+	}
+	&__social {
+		margin-top: 40px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-top: 1px rgb(236, 226, 233) solid;
+		.title {
+			float: left;
+			margin-right: 30px;
+			font-size: 1.6rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: rgb(237, 38, 144);			
+		}
+		.social {
+			&__item + .social__item {
+				margin-left: 15px;
 			}
 		}
 	}
@@ -4229,15 +4462,25 @@
 	.profile-form {	
 		&__title {
 			padding-top: 30px !important;
-		}	
+		}
 		&__group {	
 			.col {
 				position: relative!important;
 				width: 100%!important;
 				margin-right: 0!important;
+				.button--default {
+					height: 40px;
+					line-height: 36px;
+					width: 100px;
+				}				
 				&:last-child {
 					.input-container--with-two {
-						margin-top: 17px;
+						margin-top: 0;
+						div {
+							width: calc((100% - 110px) / 2);
+							float: left;
+							margin-right: 5px;
+						}
 					}
 				}					
 			}		
@@ -4250,11 +4493,35 @@
 				}
 			}
 			&--mode2 {
-
+				.col {
+					&:nth-child(1) {
+						button {
+							margin-bottom: 10px;
+						}
+					}
+					.input-container--with-two {
+						div, div.house {
+							width: 23%;
+							float: left;
+							margin-left: calc(8% / 3)!important;
+						}
+						div.house {
+							margin-left: 0!important;
+							input {
+								width: 100%;
+								margin-bottom: 0;
+							}
+							button {
+								margin-left: 0;
+								margin-bottom: 18px;
+							}
+						}
+					}					
+				}
 			}
 		}
 		textarea.input-text {
-			height: 77px;
+			height: 100px;
 		}
 		.date {
 			span {
@@ -4273,8 +4540,18 @@
 		.input-text {		
 			height: 40px;
 			line-height: 40px;
+			font-size: 1.6rem;
 			@include placeholder {
 				font-size: 1.6rem;
+			}
+		}
+		.jq-radio {
+			width: 27px;
+			height: 27px;
+			&__div, &.checked .jq-radio__div {
+				width: 19px;
+				height: 19px;
+				margin: 2px !important;
 			}
 		}
 		.jq-selectbox {
@@ -4282,6 +4559,7 @@
 				height: 40px;
 				line-height: 36px;
 				&-text {
+					font-size: 1.6rem;
 					&.placeholder {
 						font-size: 1.6rem;
 					}
@@ -4299,6 +4577,7 @@
 				li {
 					padding-top: 8px;
 					padding-bottom: 8px;
+					font-size: 1.6rem;
 				}
 			}
 		}	
@@ -4484,6 +4763,116 @@
 			}
 		}
 	} 
+	.profile-block {
+		&__right {
+			margin-bottom: 10px;
+		}
+		&__delete {
+			position: relative;
+		}
+	}
+	.profile-form {			
+		&__group {	
+			.col {
+				position: relative!important;
+				width: 100%!important;
+				margin-right: 0!important;								
+				&:last-child {
+					.input-container--with-two {
+						margin-top: 0;
+						div {
+							width: calc((100% - 110px) / 2);
+							float: left;
+							margin-right: 5px;
+						}
+					}
+				}					
+			}		
+			&--mode1 {
+				.col {
+					&:last-child {
+						top: 0;
+						padding-top: 10px;
+					}
+				}
+			}
+			&--mode2 {
+				.col {					
+					.input-container--with-two {
+						div {
+							width: 32%;
+							margin-left: calc(4% / 2)!important;
+						}
+						div.house {
+							width: 100%;
+							margin-left: 0!important;
+							margin-bottom: 10px;
+							& + div {
+								margin-left: 0!important;
+							}
+							input {
+								width: 32%;
+							}
+							button {
+								margin-left: 7px;
+							}
+						}
+					}					
+				}
+			}
+		}
+		textarea.input-text {
+			height: 100px;
+		}
+		.date {
+			span {
+				width: 100%;
+			}
+			&__input {
+				width: 100%;
+			}
+		}	
+		.gender {
+			&__input {
+				margin-bottom: 10px;
+			}
+		}	
+		.jq-checkbox {
+			width: 19px;
+			height: 19px;
+			&.checked .jq-checkbox__div {
+				top: 2px;
+				left: 2px;
+			}
+		}
+		&__subscribe {
+			.col {
+				&__input {
+					display: flex;
+					justify-content: flex-start;
+					align-items: flex-start;
+				}
+				.jq-checkbox {
+					flex-shrink: 0;
+					margin-right: 10px;
+				}
+				span {
+					position: relative;
+					top: -2px;
+					line-height: 1.2;
+				}
+			}
+		}	
+		&__footer {
+			.button {
+				width: 100%;
+				margin: 0;
+				&--cancel {
+					margin-bottom: 10px;
+				}
+			}
+		}	
+	}
 	.whishlist {
 		padding-bottom: 10px;
 		padding-top: 0;
@@ -4596,6 +4985,151 @@
 			&-content-toggle {
 				max-height: 0;
 				transition: all 0.3s;
+			}
+		}
+	}
+	.modal-container {
+		&__title {
+			font-size: 1.95rem;
+		}
+	}
+	.form-modal {
+		font-size: 1.6rem;
+		.button--default {
+			width: 100%;
+			margin-bottom: 10px;
+			height: 50px;
+			line-height: 45px;
+			font-size: 1.6rem;
+		}
+		.input-text {
+			height: 40px;
+			line-height: 36px;
+			font-size: 1.6rem;
+			@include placeholder {
+				font-size: 1.6rem;
+			}
+		}
+		.jq-radio {
+			width: 20px;
+			height: 20px;
+			&.checked .jq-radio__div {
+				height: 12px;
+				width: 12px;
+				margin: 2px!important;
+			}
+		}
+		.jq-checkbox {
+			width: 19px;
+			height: 19px;
+			&.checked .jq-checkbox__div {
+				top: 1px;
+				left: 2px;
+			}
+		}
+		.jq-selectbox {
+			&__select {
+				height: 40px;
+				line-height: 36px;
+				&-text, &-text.placeholder {
+					font-size: 1.6rem;
+				}
+			}
+			&__trigger {
+				&-arrow {
+					top: 15px;
+				}
+			}
+			&__dropdown {
+				top: 40px !important;
+			}
+			ul {
+				li {
+					font-size: 1.6rem;
+					padding-top: 8px;
+					padding-bottom: 8px;
+				}
+			}
+		}
+		.input-container {
+			&--with-two {
+				input {
+					float: none;
+					width: 100%;
+					& + input {
+						margin-left: 0;
+						margin-top: 10px;
+					}
+				}
+			}
+			label {
+				width: 100%;
+				float: none;
+				padding-top: 0;
+			}
+			label + input {
+				width: 100%;
+				margin-top: 5px;
+			}
+			.recovery {
+				padding-left: 0;
+			}
+		}
+		.date {
+			margin-bottom: 15px;
+			span {
+				width: 100%;
+				float: none;
+				padding-top: 0;
+			}
+			&__input {
+				margin-top: 5px;
+				width: 100%;
+				float: none;
+			}
+		}
+		&__annotaiton {
+			padding-top: 0;
+			font-size: 1.5rem;
+		}
+		&__capcha {	
+			flex-wrap: wrap;
+			justify-content: flex-start;			
+			span {
+				width: 100%;
+				padding-right: 0;
+				padding-bottom: 8px;
+			}	
+			.input-text {
+				flex-grow: 2;
+			}
+		}
+		&__terms {
+			display: flex;
+			justify-content: flex-start;
+			.input-checkbox {
+				flex-shrink: 0;
+				margin-right: 7px;
+				margin-top: 5px;
+			}
+			span {
+
+			}
+		}
+		&__footer {
+			overflow: hidden;			
+			a {
+				display: block;
+			}
+		}
+		&__social {
+			margin-top: 15px;
+			padding-top: 10px;
+			padding-bottom: 0;
+			.title {
+				float: none;
+				margin-right: 0;
+				margin-bottom: 10px;			
 			}
 		}
 	}

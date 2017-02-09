@@ -1,0 +1,37 @@
+.modal-hide
+	.modal-container#js-modal-auth
+		.modal-container__title
+			span авторизация
+		.modal-container-content
+			.form-modal.form-modal--auth
+				p
+					| Авторизуйтесь, если у вас уже есть учетная запись, либо 
+					a.js-modal(data-fancybox-href="#js-modal-reg" href="#") зарегистрируйтесь
+				.input-container
+					label Логин
+					input.input-text(type="text" placeholder="Адрес e-mail")
+				.input-container
+					label Пароль
+					input.input-text(type="text" placeholder="Не менее 6 символов")
+					.recovery
+						a.js-modal(data-fancybox-href="#js-modal-recovery" href="#") Забыли пароль?
+				.form-modal__capcha
+					span Введи число с картинки*:
+					.code
+					button
+						.icon.icon__refresh
+					input.input-text(type="text" placeholder="")
+				.form-modal__footer
+					input.button.button--default(type="submit" value="войти")
+					.remember
+						input.input-checkbox.small(type="checkbox")
+						span Запомнить меня
+				.form-modal__social
+					.title Войти с помощью
+					.social
+						a.social__item(href="#")
+							i.icon.icon__fb
+						a.social__item(href="#")
+							i.icon.icon__vk
+						a.social__item(href="#")
+							i.icon.icon__ok

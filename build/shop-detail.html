@@ -22,7 +22,10 @@
   <div class="page-wrapper">
     <div class="mobile-menu-container">
       <div class="mobile-menu-header">
-        <div class="mobile-menu-header__item mobile-menu-header__item--auth"><a href="#">Вход</a><a href="#">Регистрация</a><i class="icon icon__auth"></i></div>
+        <div class="mobile-menu-header__item mobile-menu-header__item--auth">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal js-modal-inMenu">Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal js-modal-inMenu">Регистрация</button><i class="icon icon__auth"></i>
+        </div>
         <div class="mobile-menu-header__item mobile-menu-header__item--back-to">
           <button class="js-menu-parent"><i class="icon icon__arrow--vinous"></i><span>Назад</span></button>
         </div>
@@ -96,7 +99,8 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a><a href="#" class="item js-modal-auth"><i class="icon icon__auth"></i></a>
+          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
@@ -287,7 +291,7 @@
           </ul>
         </div>
         <div class="footer-menu-section__item">
-          <div class="title"> <span>промо</span>
+          <div class="title"><span>промо</span>
             <div class="icon"></div>
           </div>
           <ul class="footer-menu">
@@ -317,5 +321,133 @@
         <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
       </div>
     </footer>
+    <div class="modal-hide">
+      <div id="js-modal-reg" class="modal-container">
+        <div class="modal-container__title"><span>регистрация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Зарегистрируйтесь, если у вас нет учетной записи, или <a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">авторизуйтесь</a></p>
+            <div class="input-container">
+              <input type="text" placeholder="Имя*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Контактный email*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Номер карты" class="input-text">
+            </div>
+            <div class="date"><span>Дата рождения*</span>
+              <div class="date__input">
+                <select data-placeholder=" " class="js-select input--day">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">22</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--month">
+                  <option value=""></option>
+                  <option value="1">январь</option>
+                  <option value="2">февраль</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--year">
+                  <option value=""></option>
+                  <option value="1">1988</option>
+                  <option value="2">2000</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="gender"><span>Пол*</span>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="female" class="input-radio">
+                <label for="female">женский</label>
+              </div>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="male" class="input-radio">
+                <label for="male">мужской</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="input-container input-container--with-two">
+              <input type="text" placeholder="Введи пароль*" class="input-text">
+              <input type="text" placeholder="Повтори пароль*" class="input-text">
+            </div>
+            <div class="form-modal__annotaiton"><span>*Поля обязательные для регистрации</span></div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__terms">
+              <input type="checkbox" class="input-checkbox small"><span>Я согласен с <a href="#">правилами пользования сайтом</a></span>
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="зарегистрироваться" class="button button--default">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-auth" class="modal-container">
+        <div class="modal-container__title"><span>авторизация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Авторизуйтесь, если у вас уже есть учетная запись, либо <a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">зарегистрируйтесь</a></p>
+            <div class="input-container">
+              <label>Логин</label>
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="input-container">
+              <label>Пароль</label>
+              <input type="text" placeholder="Не менее 6 символов" class="input-text">
+              <div class="recovery"><a data-fancybox-href="#js-modal-recovery" href="#" class="js-modal">Забыли пароль?</a></div>
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="войти" class="button button--default">
+              <div class="remember">
+                <input type="checkbox" class="input-checkbox small"><span>Запомнить меня</span>
+              </div>
+            </div>
+            <div class="form-modal__social">
+              <div class="title">Войти с помощью</div>
+              <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__ok"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-recovery" class="modal-container">
+        <div class="modal-container__title"><span>восстановление пароля</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Для того, чтобы восстановить свой пароль, введи указанный ранее при регистрации e-mail и нажми «восстановить»</p>
+            <div class="input-container">
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="восстановить" class="button button--default"><a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">Регистрация</a><a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">Вернуться к авторизации</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
