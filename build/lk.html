@@ -122,11 +122,11 @@
           <div class="panel-buttons-avatar">
             <button data-popup-href="#popup-avatar-add" class="panel-buttons-avatar__add js-popup">Добавить аватарку</button>
             <button data-popup-href="#popup-avatar-edit" class="panel-buttons-avatar__edit js-popup">Редактировать аватарку</button>
-            <div id="popup-avatar-add" class="popup-block">
+            <div id="popup-avatar-add" class="popup-block popup-block--nopadding">
               <button class="popup-block__close"></button>
               <div class="avatar-edit">
                 <div class="avatar-edit__header">
-                  <div class="title">Редактировать аватар</div>
+                  <div class="title">Добавить аватар</div>
                   <div class="file">
                     <input type="file" data-placeholder="Загрузить новое фото" class="input-file">
                   </div>
@@ -137,14 +137,14 @@
                 <div class="avatar-edit__footer">
                   <div>
                     <button class="zoom zoom--minus"><i class="icon icon__loop--plus"></i></button>
-                    <input type="range" value="50">
+                    <input type="range" value="50" class="input-range">
                     <button class="zoom zoom--plus"><i class="icon icon__loop--minus"></i></button>
                   </div>
                   <button class="button button--default">сохранить</button>
                 </div>
               </div>
             </div>
-            <div id="popup-avatar-edit" class="popup-block">
+            <div id="popup-avatar-edit" class="popup-block popup-block--nopadding">
               <button class="popup-block__close"></button>
               <div class="avatar-edit">
                 <div class="avatar-edit__header">
@@ -153,9 +153,7 @@
                     <input type="file" data-placeholder="Загрузить новое фото" class="input-file">
                   </div>
                 </div>
-                <div class="avatar-edit__body">
-                  <div class="image"><img src="img/avatar-default.jpg" alt=""></div><span>Перетащите выбранное изображение с компьютера в эту область</span>
-                </div>
+                <div class="avatar-edit__body avatar-edit__body--edit"><img src="img/avatar-edit.jpg" alt=""></div>
                 <div class="avatar-edit__footer">
                   <div>
                     <button class="zoom zoom--minus"><i class="icon icon__loop--plus"></i></button>

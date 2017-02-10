@@ -16,11 +16,11 @@ body.page-inner
 					.panel-buttons-avatar
 						button.panel-buttons-avatar__add.js-popup(data-popup-href="#popup-avatar-add") Добавить аватарку
 						button.panel-buttons-avatar__edit.js-popup(data-popup-href="#popup-avatar-edit") Редактировать аватарку
-						.popup-block#popup-avatar-add
+						.popup-block.popup-block--nopadding#popup-avatar-add
 							button.popup-block__close
 							.avatar-edit
 								.avatar-edit__header
-									.title Редактировать аватар
+									.title Добавить аватар
 									.file
 										input.input-file(type="file" data-placeholder="Загрузить новое фото")
 								.avatar-edit__body
@@ -31,21 +31,19 @@ body.page-inner
 									div
 										button.zoom.zoom--minus
 											i.icon.icon__loop--plus
-										input(type="range" value="50")
+										input.input-range(type="range" value="50")
 										button.zoom.zoom--plus
 											i.icon.icon__loop--minus
 									button.button.button--default сохранить
-						.popup-block#popup-avatar-edit
+						.popup-block.popup-block--nopadding#popup-avatar-edit
 							button.popup-block__close
 							.avatar-edit
 								.avatar-edit__header
 									.title Редактировать аватар
 									.file
 										input.input-file(type="file" data-placeholder="Загрузить новое фото")
-								.avatar-edit__body
-									.image
-										img(src="img/avatar-default.jpg", alt="")
-									span Перетащите выбранное изображение с компьютера в эту область
+								.avatar-edit__body.avatar-edit__body--edit
+									img(src="img/avatar-edit.jpg", alt="")
 								.avatar-edit__footer
 									div
 										button.zoom.zoom--minus

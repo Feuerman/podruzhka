@@ -564,10 +564,28 @@
 				}
 			}
 		}
+		& > a {
+			display: inline-block;
+			padding-top: 15px;
+			color: rgb(225, 5, 140);
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 	&__top-banner {
 		img {
 			width: 100%;
+		}
+		&--sertificate {
+			padding-top: 20px;
+			padding-bottom: 30px;
+			background-color: rgb(255, 255, 255);
+			text-align: center;
+			img {
+				max-width: 80%;
+			}
 		}
 	}
 }
@@ -1974,6 +1992,13 @@
 			margin-left: 15px;
 		}
 	}
+	.action {
+		&__top-banner--sertificate {
+			img {
+				max-width: 95%;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -2288,7 +2313,7 @@
 				margin-top: 8px;
 			}
 		}
-	}
+	}	
 }
 
 @media screen and (max-width: 768px) {
