@@ -826,7 +826,8 @@ $(document).ready(function () {
 
 		var topPos = floatBlock.offset().top,
 			leftPos = floatBlock.offset().left,
-			floatWidth = floatBlock.width();
+			floatWidth = floatBlock.width(),
+			leftSideH = $('.page-content__left').outerHeight();
 		$(window).on('resize', function() {
 				floatBlock.removeClass('fixed').removeAttr('style');
 				topPos = floatBlock.offset().top;
@@ -846,16 +847,19 @@ $(document).ready(function () {
 			}			
 
 
-			if ((top + heightHeader + 10) > topPos && top < bottom - height) {
+			if ((top + heightHeader) > topPos  && (top + heightHeader) < bottom - height) {
 				floatBlock.addClass('fixed').css({
 					width: floatWidth + 4,
-					left: leftPos - 2,
+					left: leftPos - 10,
 					padding: '10px 2px 10px 2px',
-				});;
+				});
+				$('.page-content__left').css('height', leftSideH);
 			} else if (top > bottom - height) {
 				floatBlock.removeClass('fixed').removeAttr('style');
+				$('.page-content__left').removeAttr('style');
 			} else {
 				floatBlock.removeClass('fixed').removeAttr('style');
+				$('.page-content__left').removeAttr('style');
 			}
 		});
 	});

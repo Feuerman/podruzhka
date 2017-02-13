@@ -1,0 +1,58 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.page-content.page-content--action-detail
+			.page-content__left.page-content__left--no-border.page-content__left--page-discount
+				ul.discount-menu
+					li.discount-menu__item
+						a.discount-menu__link(href="#")
+							span дисконтная  карта
+							i.icon.icon__percent--grey
+							i.icon.icon__percent--pink.is-active
+						ul.discount-menu-sub
+							li.discount-menu-sub__item
+								a.discount-menu-sub__link(href="#") регистрация карты
+							li.discount-menu-sub__item.active
+								a.discount-menu-sub__link(href="#") проверить скидку
+					li.discount-menu__item
+						a.discount-menu__link(href="#")
+							span спецпредложения для держателей дисконтных карт
+							i.icon.icon__icecream--grey
+							i.icon.icon__icecream--pink.is-active
+					li.discount-menu__item.active
+						a.discount-menu__link(href="#")
+							span скидка 15% 15-го числа
+							i.icon.icon__calendar-date--grey
+							i.icon.icon__calendar-date--pink.is-active
+					li.discount-menu__item
+						a.discount-menu__link(href="#")
+							span утренняя скидка
+							i.icon.icon__clock--grey
+							i.icon.icon__clock--pink.is-active
+					li.discount-menu__item
+						a.discount-menu__link(href="#")
+							span скидка по социальной карте
+							i.icon.icon__card--grey
+							i.icon.icon__card--pink.is-active
+			.page-content__right
+				section.page-discount.page-discount--15percent
+					.cols
+						.col.col__left
+							.title
+								| День, когда
+								br
+								span можно&nbsp;
+									strong всё!
+							p
+								| Каждый день&nbsp;
+								strong с 9:00 до 12:00&nbsp;
+								| во всех магазинах «Подружка» действует дополнительная скидка&nbsp;
+								strong 5%.
+							p Утренняя скидка суммируется со скидкой по дисконтной карте «Подружка».
+						.col.col__right
+							img(src="img/discount-page-3.png", alt="")
+		include templates/components/section-journal.jade
+		include templates/footer.jade

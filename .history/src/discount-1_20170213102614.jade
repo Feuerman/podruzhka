@@ -1,0 +1,85 @@
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade		
+		section.page-content.page-content--action-detail
+			.page-content__left.page-content__left--no-border
+				.left-block-float
+					ul.discount-menu
+						li.discount-menu__item.active
+							a.discount-menu__link
+								span дисконтная  карта
+								i.icon.icon__percent--grey
+								i.icon.icon__percent--pink.is-active
+							ul.discount-menu-sub
+								li.discount-menu-sub__item
+									a.discount-menu-sub__link регистрация карты
+								li.discount-menu-sub__item.active
+									a.discount-menu-sub__link проверить скидку
+						li.discount-menu__item
+							a.discount-menu__link
+								span спецпредложения для держателей дисконтных карт
+								i.icon.icon__icecream--grey
+								i.icon.icon__icecream--pink.is-active
+						li.discount-menu__item
+							a.discount-menu__link
+								span скидка 15% 15-го числа
+								i.icon.icon__calendar-date--grey
+								i.icon.icon__calendar-date--pink.is-active
+						li.discount-menu__item
+							a.discount-menu__link
+								span утренняя скидка
+								i.icon.icon__clock--grey
+								i.icon.icon__clock--pink.is-active
+						li.discount-menu__item
+							a.discount-menu__link
+								span скидка по социальной карте
+								i.icon.icon__card--grey
+								i.icon.icon__card--pink.is-active
+			.page-content__right
+				section.section-discount-card
+					.col.col__left
+						.desc
+							.desc__title
+								| Выгодно
+								br
+								span всегда!
+							p Размер скидки на следующий месяц по дисконтной картезависит от Ваших покупок в текущем месяце!
+							a(href="#") Правила получения карты
+						.image
+							img(src="img/discount-page-1.png", alt="")
+						.buttons-panel
+							button Регистрация карты
+							button Проверить скидку
+					.col.col__right
+						ul.discount-list
+							li.discount-list__item
+								.circle.circle--small
+									span
+										| 3
+										span %
+								.desc
+									span Всегда на карте
+							li.discount-list__item
+								.circle.circle--medium
+									span
+										| 10
+										span %
+								.desc
+									span
+										| Покупки в прошлом месяце на
+										strong 1000
+										span.rouble &#x20bd;
+							li.discount-list__item
+								.circle.circle--large
+									span
+										| 15
+										span %
+								.desc
+									span
+										| Покупки в прошлом месяце на
+										strong 1500
+										span.rouble &#x20bd;
+		include templates/components/section-journal.jade
+		include templates/footer.jade

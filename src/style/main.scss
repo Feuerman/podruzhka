@@ -11,3 +11,21 @@
 @import 'components.scss';
 
 @import 'common.scss';
+
+.catalog-filter {
+    &__item {
+		&--price {
+			img {
+                max-width: 95%;
+				@media screen and (max-width: 991px) {
+					margin-top: 20px;
+                    margin-bottom: 30px;
+				}
+				@media screen and (max-width: 767px) {
+					width: 100%;
+				}
+			}
+			
+		}
+    }
+}
