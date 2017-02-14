@@ -86,7 +86,8 @@ body.page-inner
 											strong 1500
 											span.rouble &#x20bd;
 					.buttons-panel
-						button Регистрация карты
-						button Проверить скидку
-		include templates/components/section-journal.jade
+						button.js-popup(data-popup-href="#popup-reg-card") Регистрация карты
+						button.js-popup(data-popup-href="#popup-check-discount") Проверить скидку
+		include templates/components/popup-discount/index.jade
+		include templates/components/section-journal.jade		
 		include templates/footer.jade

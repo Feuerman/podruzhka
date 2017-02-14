@@ -411,24 +411,16 @@ $(document).ready(function () {
 	winnerSlider.each(function(index, item) {
 		$(item).owlCarousel({
 			dots: false,
-			margin: 10,
-			nav: false,
+			nav: true,
 			responsive:{
 				0: {
 					items: 1
 				},
-				520:{
-					items:2
-				},
-				800:{
-					items:3,
-					margin: 10
-				},
-				1600:{
-					items:3
-				},
-				1800: {
-					items:2
+				768:{
+					items: 3
+				},				
+				1601:{
+					items: 2
 				}
 			},
 		});
@@ -811,13 +803,19 @@ $(document).ready(function () {
 
 	var popupBtn = $('.js-popup');
 	popupBtn.on('click', function() {
-		var target = $(this).data('popup-href');
+		var target = $(this).data('popup-href'),
+			offsetTarget = $(target).offset().top,
+			offsetDoc = $(document).scrollTop();
 		$('.overlay-block').addClass('active');
-		$(target).addClass('active');		
+		$(target).addClass('active');
+		if(offsetTarget < offsetDoc) {
+			$(target).css('top', offsetDoc + 30);
+		}	
 	});
 
-	$('.popup-block__close, .overlay-block').on('click', function() {
-		$('.popup-block').removeClass('active');
+	$('.popup-close, .overlay-block').on('click', function() {		
+		$('.popup-block.active, .popup-discount.active').removeAttr('style');
+		$('.popup-block.active, .popup-discount.active').removeClass('active');
 		$('.overlay-block').removeClass('active');
 	});
 

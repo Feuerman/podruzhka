@@ -134,12 +134,12 @@ gulp.task('watch', function(){
 	watch([path.watch.js], function() {
 		gulp.start('jsbuild');
 	});
-	watch([path.watch.img], function() {
-		gulp.start('imagebuild');
-	});
-	watch([path.watch.sprite], function() {
-		gulp.start('sprite');
-	});
+	// watch([path.watch.img], function() {
+	// 	gulp.start('imagebuild');
+	// });
+	// watch([path.watch.sprite], function() {
+	// 	gulp.start('sprite');
+	// });
 });
 
 gulp.task('webserver', function () {
