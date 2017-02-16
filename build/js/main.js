@@ -807,6 +807,7 @@ $(document).ready(function () {
 			offsetTarget = $(target).offset().top,
 			offsetDoc = $(document).scrollTop();
 		$('.overlay-block').addClass('active');
+		$('.popup-block.active, .popup-discount.active').removeClass('active');
 		$(target).addClass('active');
 		if(offsetTarget < offsetDoc) {
 			$(target).css('top', offsetDoc + 30);
@@ -860,5 +861,12 @@ $(document).ready(function () {
 				$('.page-content__left').removeAttr('style');
 			}
 		});
+	});
+
+	$(".product-detail__gallery .image:not([class*='video']) img").imagezoomsl({				
+        zoomrange: [1, 3],
+        magnifiereffectanimate: "fadeIn",
+        magnifierborder: "none",
+		innerzoom: true	
 	});
 });

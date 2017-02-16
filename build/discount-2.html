@@ -16,6 +16,7 @@
   <script src="vendor/picturefill/picturefill.min.js" async></script>
   <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
   <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="vendor/zoomsl/zoomsl-3.0.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body class="page-inner">
@@ -129,19 +130,178 @@
           <div class="cols">
             <div class="col col__left">
               <div class="title">День рождения</div>
-              <p>В честь Вашего Дня рождения мы увеличиваем скидку по дисконтной карте&nbsp;<strong>на 1 уровень!</strong></p><a href="#">Подробнее</a>
+              <p>В честь Вашего Дня рождения мы увеличиваем скидку по дисконтной карте&nbsp;<strong>на 1 уровень!</strong></p>
+              <button data-popup-href="#popup-birthday" class="js-popup">Подробнее</button>
             </div>
             <div class="col col__center">
               <div class="image"><img src="img/discount-page-2.png" alt=""></div>
             </div>
             <div class="col col__right">
               <div class="title">Именины</div>
-              <p>Каждый месяц&nbsp;<strong>25 числа&nbsp;</strong>для покупательниц с определенными именами действует эксклюзивная скидка по дисконтной карте — &nbsp;<strong>20% на весь ассортимент!</strong></p><a href="#">Подробнее</a>
+              <p>Каждый месяц&nbsp;<strong>25 числа&nbsp;</strong>для покупательниц с определенными именами действует эксклюзивная скидка по дисконтной карте — &nbsp;<strong>20% на весь ассортимент!</strong></p>
+              <button data-popup-href="#popup-name-day" class="js-popup">Подробнее</button>
             </div>
           </div>
         </section>
       </div>
     </section>
+    <div id="popup-reg-card" class="popup-discount popup-discount--reg">
+      <button class="popup-close"></button>
+      <div class="title">Регистрация карты</div>
+      <div class="cols">
+        <div class="col col__left">
+          <picture>
+            <!--[if IE 9]><!-->
+            <video style="display: none;">
+              <!--<![endif]-->
+              <source srcset="img/discount-card.png" media="(min-width: 768px)">
+              <source srcset="img/discount-card--520.png" media="(min-width: 480px)">
+              <source srcset="img/discount-card--340.png" media="(min-width: 300px)">
+            </video>
+            <source srcset="img/discount-card.png" media="(min-width: 768px)">
+            <source srcset="img/discount-card--520.png" media="(min-width: 480px)">
+            <source srcset="img/discount-card--340.png" media="(min-width: 300px)"><img srcset="img/discount-card.png">
+          </picture>
+        </div>
+        <div class="col col__right">
+          <form class="reg-cart-form">
+            <div class="reg-cart-form__group">
+              <label>Имя*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>Фамилия*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>Номер карты*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>Дата рождения*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>E-mail адрес*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>Телефон*</label>
+              <input type="text">
+            </div>
+            <div class="reg-cart-form__group">
+              <label>Хочу получать</label>
+              <div class="checkbox-block">
+                <div class="checkbox-block__item">
+                  <input type="checkbox" class="input-checkbox">
+                  <label>e-mail рассылка</label>
+                </div>
+                <div class="checkbox-block__item">
+                  <input type="checkbox" class="input-checkbox">
+                  <label>смс-рассылка</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Зарегистрировать карту</button>
+            <div class="reg-cart-form__annotation"><span>*Поля, обязательные для заполнения</span></div>
+          </form>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div id="popup-check-discount" class="popup-discount popup-discount--check-discount">
+      <button class="popup-close"></button>
+      <div class="title">Проверка скидки</div>
+      <div class="check-discount__info"><i class="icon icon__info--bg"></i>
+        <p>Информация по накоплениям на карте обновляется в течение 2-3 рабочих дней после совершения покупки. Вы всегда можете проверить актуальный баланс, позвонив в call-центр по тел. +7 495 926-80-82 и +7 800 707-47-47 (звонок бесплатный).</p>
+      </div>
+      <div class="check-discount__list">
+        <ul class="discount-list">
+          <li class="discount-list__item">
+            <div class="image">
+              <div class="circle circle--small"><span>3<span>%</span></span></div>
+            </div>
+            <div class="desc"><span>Всегда на карте</span></div>
+          </li>
+          <li class="discount-list__item">
+            <div class="image">
+              <div class="circle circle--medium"><span>10<span>%</span></span></div>
+            </div>
+            <div class="desc"><span>Покупки в прошлом месяце на<strong>1000</strong><span class="rouble">&#x20bd;</span></span></div>
+          </li>
+          <li class="discount-list__item">
+            <div class="image">
+              <div class="circle circle--large"><span>15<span>%</span></span></div>
+            </div>
+            <div class="desc"><span>Покупки в прошлом месяце на<strong>1500</strong><span class="rouble">&#x20bd;</span></span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="check-discount__table">
+        <div class="title">Пример</div>
+        <div class="left"><span><strong>Ваши покупки в мае</strong></span><span>Нет покупок</span><span>До 1000<span class="rouble">&#x20bd;</span></span><span>От 1000<span class="rouble">&#x20bd;</span>&nbsp;до 1500<span class="rouble">&#x20bd;</span></span><span>От 1500<span class="rouble">&#x20bd;</span></span></div>
+        <div class="right"><span><strong>Скидка на июнь</strong></span><span>3%</span><span>3%</span><span>10%</span><span>15%</span></div>
+      </div>
+      <div class="check-discount__image">
+        <picture>
+          <!--[if IE 9]><!-->
+          <video style="display: none;">
+            <!--<![endif]-->
+            <source srcset="img/check-discount.png" media="(min-width: 768px)">
+            <source srcset="img/check-discount--520.png" media="(min-width: 480px)">
+            <source srcset="img/discount-card--340.png" media="(min-width: 300px)">
+          </video>
+          <source srcset="img/check-discount.png" media="(min-width: 768px)">
+          <source srcset="img/check-discount--520.png" media="(min-width: 480px)">
+          <source srcset="img/discount-card--340.png" media="(min-width: 300px)"><img srcset="img/check-discount.png">
+        </picture>
+      </div>
+      <form class="check-discount-form">
+        <label>Введите номер карты</label>
+        <input type="text">
+        <button type="submit">Проверить скидку	</button>
+      </form>
+    </div>
+    <div id="popup-birthday" class="popup-discount popup-discount--birthday">
+      <button class="popup-close"></button>
+      <div class="title">День Рождения</div>
+      <p>Приготовьтесь к празднику заранее – совершайте больше покупок за месяц до Вашего рождения и весь следующий месяц радуйте себя большей скидкой:</p>
+      <ul>
+        <li>если сумма покупок&nbsp;<strong>менее 1000 рублей&nbsp;</strong>– скидка увеличивается&nbsp;<strong>до 10%</strong>;</li>
+        <li>если сумма покупок&nbsp;<strong>от 1000 рублей до 1500 рублей&nbsp;</strong>– скидка увеличивается&nbsp;<strong>до 15%</strong>;</li>
+        <li>сумма накоплений на карте&nbsp;<strong>более 1500 рублей&nbsp;</strong>– скидка увеличивается&nbsp;<strong>до 20%</strong>;</li>
+      </ul>
+      <p>Сообщите нам о Вашем Дне рождения за 3 недели до него. Для этого&nbsp;<a href="#">заполните анкету&nbsp;</a>или позвоните в call-центр по бесплатному телефону&nbsp;<strong>+7 800 707-47-47</strong>.</p>
+      <p>Если Вы указали дату рождения при заполнении анкеты на получение карты, дополнительная регистрация не требуется.</p>
+    </div>
+    <div id="popup-name-day" class="popup-discount popup-discount--name-day">
+      <button class="popup-close"></button>
+      <div class="title">Именины</div>
+      <p>Имена, которые получат скидку в текущем месяце, ищите&nbsp;<strong>20-24 числа&nbsp;</strong>каждого месяца на сайте&nbsp;<a href="#">podrygka.ru&nbsp;</a>и в группe&nbsp;<a href="#">vkontakte</a>.</p>
+      <p>Для получения скидки в День именин:</p>
+      <ul>
+        <li>зарегистрируйте Вашу дисконтную карту в разделе
+          <button data-popup-href="#popup-reg-card" class="js-popup">Регистрация карты&nbsp;</button>или позвоните в call-центр по тел.&nbsp;<strong>+7 495 926-80-82, +7 800 707-47-47.</strong>
+        </li>
+        <li>ждите SMS с приглашением на Ваши именины!</li>
+      </ul>
+    </div>
+    <div id="popup-discount-conditions" class="popup-discount popup-discount--conditions">
+      <button class="popup-close"></button>
+      <div class="title">Как получить карту?</div>
+      <p>Совершите покупку в магазине «Подружка» на сумму от 600 рублей в г. Москва или от 500 рублей в г. Санкт-Петербург, заполните анкету на кассе, и дисконтная карта Ваша!</p>
+      <div class="title">Как восстановить потерянную карту?</div>
+      <p>Для восстановления накоплений по утерянной дисконтной карте необходимо обратиться к сотруднику любого магазина «Подружка», и сообщить номер утерянной карты. Номер утерянной карты можно узнать следующими способами:</p>
+      <ul>
+        <li><span>если Вы сохранили товарный чек, то номер дисконтной карты указан в верхнем правом углу в поле «Клиент»;</span></li>
+        <li><span>
+             
+            если Ваша дисконтная карта была зарегистрирована, и Вы получаете смс-рассылки от нашей компании, то необходимо позвонить в сall-центр по телефону:&nbsp;<strong>+7 495 926-80-82, +7 800 707-47-47.&nbsp;</strong>Вам потребуется сообщить оператору номер Вашего мобильного телефона, фамилию, имя и дату рождения. В случае наличия соответствующей информации в нашей базе данных, Вам будет выслан номер утерянной карты. После того, как Вы сообщите номер утерянной карты сотруднику магазина, Вам будет выдана новая дисконтная карта, и в течение 3-х рабочих дней на нее будут перенесены все Ваши предыдущие накопления.</span></li>
+      </ul>
+      <p><strong>Обмен и восстановление карт производится во всех магазинах «Подружка».</strong></p>
+      <div class="title">Как узнать размер скидки?</div>
+      <p>Накопления на карте можно проверить самостоятельно: на сайте, в любом магазине «Подружка», предъявив дисконтную карту,  или по телефону Call-центра:&nbsp;<strong>+7 495 926-80-82, +7 800 707-47-47.</strong></p>
+    </div>
     <section class="section-journal owl-nav--light">
       <div class="section-journal-container">
         <div class="section-journal__slider">

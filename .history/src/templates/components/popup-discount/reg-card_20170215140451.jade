@@ -1,0 +1,48 @@
+.popup-discount.popup-discount--reg#popup-reg-card
+    button.popup-close
+    .title Регистрация карты
+    .cols
+        .col.col__left
+            .reg-cart-info
+                picture
+                    //[if IE 9]><!
+                    video(style='display: none;')
+                        //<![endif]
+                        source(srcset='img/discount-card.png', media='(min-width: 768px)')
+                        source(srcset='img/discount-card--520.jpg', media='(min-width: 480px)')
+                        source(srcset='img/discount-card--340.jpg', media='(min-width: 320px)')
+                    source(srcset='img/discount-card.png', media='(min-width: 768px)')
+                    source(srcset='img/discount-card--520.jpg', media='(min-width: 480px)')
+                    source(srcset='img/discount-card--340.jpg', media='(min-width: 320px)')
+                    img(srcset='img/discount-card.png')
+        .col.col__right
+            .reg-cart-form
+                .reg-cart-form__group
+                    label Имя*
+                    input(type="text")
+                .reg-cart-form__group
+                    label Фамилия*
+                    input(type="text")
+                .reg-cart-form__group
+                    label Номер карты*
+                    input(type="text")
+                .reg-cart-form__group
+                    label Дата рождения*
+                    input(type="text")
+                .reg-cart-form__group
+                    label E-mail адрес*
+                    input(type="text")
+                .reg-cart-form__group
+                    label Телефон*
+                    input(type="text")
+                .reg-cart-form__group
+                    label Хочу получать
+                    .checkbox
+                        input.input-checkbox(type="checkbox")
+                        label e-mail рассылка
+                    .checkbox
+                        input.input-checkbox(type="checkbox")
+                        label смс-рассылка
+                button(type="submit") Зарегистрировать карту
+                .reg-cart-form__annotation
+                    span *Поля, обязательные для заполнения

@@ -1095,19 +1095,20 @@
 	z-index: 400;
 	position: fixed;
 	top: 85px;
-	left: 0;
+	left: 50%;
 	width: 100%;
+	max-width: 1920px;
 	opacity: 0;
 	padding-left: 323px;
 	padding-right: 83px;
 	background-color: rgb(106, 31, 69);
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-	transform: translateY(-100%);
+	transform: translate(-50%, -100%);
 	transition: all 0.3s ease-in-out;
 	&.active {
 		pointer-events: all;
 		opacity: 1;	
-		transform: translateY(0);
+		transform: translate(-50%, 0);
 	}
 	&--mobile {
 		overflow: hidden;
@@ -1947,6 +1948,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+	.tracker {
+		z-index: -1!important;
+	}
 	.page-content {
 		padding-left: 35px;
 		padding-right: 15px;

@@ -1,0 +1,73 @@
+.popup-discount.popup-discount--reg#popup-check-discount
+    button.popup-close
+    .title Проверка скидки    
+    .ckeck-discount__info
+        i.icon.icon__info--bg
+        p Информация по накоплениям на карте обновляется в течение 2-3 рабочих дней после совершения покупки. Вы всегда можете проверить актуальный баланс, позвонив в call-центр по тел. +7 495 926-80-82 и +7 800 707-47-47 (звонок бесплатный).
+    .ckeck-discount__list
+        ul.discount-list
+            li.discount-list__item
+                .image
+                    .circle.circle--small
+                        span
+                            | 3
+                            span %
+                .desc
+                    span Всегда на карте
+            li.discount-list__item
+                .image
+                    .circle.circle--medium
+                        span
+                            | 10
+                            span %
+                .desc
+                    span
+                        | Покупки в прошлом месяце на
+                        strong 1000
+                        span.rouble &#x20bd;
+            li.discount-list__item
+                .image
+                    .circle.circle--large
+                        span
+                            | 15
+                            span %
+    .ckeck-discount__table
+        .title Пример 
+        .left
+            span
+                strong  Ваши покупки в мае
+            span Нет покупок
+            span
+                | До 1000
+                span.rouble &#x20bd;
+            span
+                | От 1000
+                span.rouble &#x20bd;
+                | &nbsp;до 1500
+                span.rouble &#x20bd;
+            span
+                | От 1500
+                span.rouble &#x20bd;
+        .right
+            span
+                strong Скидка на июнь
+            span 3%
+            span 3%
+            span 10%
+            span 15%
+    form.check-discount-form
+        label Введите номер карты
+        input(type="text")
+        button(type="submit") Проверить скидку
+    .check-discount__image
+        picture
+            //[if IE 9]><!
+            video(style='display: none;')
+                //<![endif]
+                source(srcset='img/check-discount.png', media='(min-width: 768px)')
+                source(srcset='img/check-discount--520.png', media='(min-width: 480px)')
+                source(srcset='img/discount-card--340.png', media='(min-width: 300px)')
+            source(srcset='img/check-discount.png', media='(min-width: 768px)')
+            source(srcset='img/check-discount--520.png', media='(min-width: 480px)')
+            source(srcset='img/discount-card--340.png', media='(min-width: 300px)')
+            img(srcset='img/check-discount.png')

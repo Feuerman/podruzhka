@@ -1243,6 +1243,9 @@ input[type=range]::-ms-thumb {
 }
 
 @media screen and (max-width: 767px) {
+	.popup-discount {
+		border-radius: 10px;
+	}
 	.custom-dots {
 		display: block;
 	}
@@ -1333,6 +1336,12 @@ input[type=range]::-ms-thumb {
 			@include placeholder {
 				font-size: 1.6rem;
 			}
+		}
+	}
+	.popup-discount {		
+		.popup-close {
+			top: 18px;
+			right: 10px;
 		}
 	}
 }
