@@ -9306,7 +9306,7 @@ body {
       text-decoration: none; }
 
 .tooltip-custom {
-  opacity: 0;
+  opacity: 2;
   position: absolute;
   z-index: 1000;
   padding: 12px;
