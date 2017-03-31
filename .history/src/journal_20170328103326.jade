@@ -1,0 +1,34 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.journal-page__header
+		section.journal-page__content
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Журнал
+				h1.page-title выпуски 2016
+			.journal-list
+				a.journal-list__item(href="#")
+				.journal-list__item-image
+					img(src="img/journal-2.jpg", alt="")
+				.journal-list__item-desc
+					span.strong 07
+					span /июль
+				a.journal-list__item(href="#")
+				.journal-list__item-image
+					img(src="img/journal-1.jpg", alt="")
+				.journal-list__item-desc
+					span.strong 06
+					span /июнь
+				a.journal-list__item(href="#")
+				.journal-list__item-image
+					img(src="img/journal-3.jpg", alt="")
+				.journal-list__item-desc
+					span.strong 05
+					span /май
+		include templates/footer.jade

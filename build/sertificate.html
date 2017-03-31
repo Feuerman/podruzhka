@@ -48,7 +48,7 @@
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
       <div menu-level="2" class="mobile-menu-blocks level-2">
@@ -100,14 +100,21 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
         </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
       </div>
     </header>
     <section class="page-content page-content--action-detail">
@@ -750,7 +757,7 @@
               <input type="text" placeholder="Контактный email*" class="input-text">
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Номер карты" class="input-text">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
             </div>
             <div class="date"><span>Дата рождения*</span>
               <div class="date__input">

@@ -1,0 +1,44 @@
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.page-content.page-content--subscribe
+			section.page-content-header
+				h1.page-title Подписка на рассылку
+			.page-content__right
+				form.subscribe-form.profile-form(action="")
+					.subscribe-form__info
+						span Будь в курсе всех новостей сети магазинов "Подружка": фестивалей, новинок, акций с подарками, выгодных цен, конкурсов.
+					.subscribe-form__inputs
+						.input-container
+							input.input-text(type="text" placeholder="Имя*")
+						.input-container
+							input.input-text(type="text" placeholder="Фамилия*")
+						.input-container
+							input.input-text(type="text" placeholder="Дата рождения")
+						.input-container
+							input.input-text(type="text" placeholder="E-mail адрес*")
+						.input-container
+							input.input-text(type="text" placeholder="Номер карты*")
+							button.button-info
+								i.icon.icon__question--pink
+						.input-container
+							input.input-text(type="text" placeholder="Мобильный телефон*")
+					.subscribe-form__annotation
+						span *Поля обязательные для заполнения
+					.subscribe-form__panel
+						.title Хочу получать
+						.col
+							.col__input
+								input.input-checkbox(type="checkbox" checked)
+								span E-mail рассылка
+						.col
+							.col__input
+								input.input-checkbox(type="checkbox")
+								span SMS рассылка
+					.subscribe-form__footer
+						button.button.button--default(type="submit") подписаться
+						button.button отписаться
+		include templates/components/section-journal.jade
+		include templates/footer.jade

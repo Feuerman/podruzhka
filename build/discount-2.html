@@ -48,7 +48,7 @@
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
       <div menu-level="2" class="mobile-menu-blocks level-2">
@@ -100,14 +100,21 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
         </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
       </div>
     </header>
     <section class="page-content page-content--action-detail">
@@ -256,10 +263,10 @@
           <source srcset="img/discount-card--340.png" media="(min-width: 300px)"><img srcset="img/check-discount.png">
         </picture>
       </div>
-      <form class="check-discount-form">
+      <form onsubmit="return false;" class="check-discount-form">
         <label>Введите номер карты</label>
         <input type="text">
-        <button type="submit">Проверить скидку	</button>
+        <button type="submit" data-popup-href="#popup-discount-info" class="js-popup">Проверить скидку	</button>
       </form>
     </div>
     <div id="popup-birthday" class="popup-discount popup-discount--birthday">
@@ -301,6 +308,42 @@
       <p><strong>Обмен и восстановление карт производится во всех магазинах «Подружка».</strong></p>
       <div class="title">Как узнать размер скидки?</div>
       <p>Накопления на карте можно проверить самостоятельно: на сайте, в любом магазине «Подружка», предъявив дисконтную карту,  или по телефону Call-центра:&nbsp;<strong>+7 495 926-80-82, +7 800 707-47-47.</strong></p>
+    </div>
+    <div id="popup-discount-info" class="popup-discount popup-discount--discount-info">
+      <button class="popup-close"></button>
+      <div class="title">Скидка</div>
+      <div class="info">
+        <div class="info-row">
+          <div class="info-row__col info-row__col--left">
+            <p>В&nbsp;<span>апреле&nbsp;</span>сумма Ваших покупок составляет&nbsp;<span class="large">600 руб. 80 коп.</span></p><a href="#">Подробнее</a>
+          </div>
+          <div class="info-row__col info-row__col--right">
+            <div class="discount-list__item">
+              <div class="image">
+                <div class="circle circle--large"><span>15<span>%</span></span></div>
+              </div>
+              <div class="desc"><span>Ваша скидка на&nbsp;<strong>май</strong></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-row__col info-row__col--left">
+            <p>В&nbsp;<span>мае&nbsp;</span>сумма Ваших покупок составляет&nbsp;<span class="large">1200 руб. 10 коп.</span></p>
+            <p>Дата последней покупки:&nbsp;<strong>12.05.2016</strong></p><a href="#">Подробнее</a>
+          </div>
+          <div class="info-row__col info-row__col--right">
+            <div class="discount-list__item">
+              <div class="image">
+                <div class="circle circle--medium"><span>10<span>%</span></span></div>
+              </div>
+              <div class="desc"><span>Ваша скидка на&nbsp;<strong>июнь</strong></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info__annotation">
+        <p><span>Внимание:&nbsp;</span>Информация по накоплениям на карте обновляется в течение 2-3 рабочих дней после совершения покупки. Вы всегда можете проверить актуальный баланс, позвонив в колл-центр по тел.&nbsp;<strong>+7 495 926-80-82, +7 800 707-47-47&nbsp;</strong>(звонок бесплатный).</p>
+      </div>
     </div>
     <section class="section-journal owl-nav--light">
       <div class="section-journal-container">
@@ -422,7 +465,7 @@
               <input type="text" placeholder="Контактный email*" class="input-text">
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Номер карты" class="input-text">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
             </div>
             <div class="date"><span>Дата рождения*</span>
               <div class="date__input">

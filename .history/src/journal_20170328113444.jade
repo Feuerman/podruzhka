@@ -1,0 +1,52 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.journal-page__header
+			img.bg.bg--1(src="img/section-bg__23.png", alt="")
+			img.bg.bg--2(src="img/section-bg__3.png", alt="")
+			img.bg.bg--3(src="img/section-bg__29.png", alt="")
+			img.bg.bg--4(src="img/section-bg__27.png", alt="")
+			img.journal-page__header-journal(src="img/journal-header.png", alt="")
+			.journal-page__header-title
+				.left
+					span 07
+				.right
+					span.right__title журнал подружка
+					span /июль
+		section.journal-page__content
+			img.bg.bg--1(src="img/catalog-bg-1.png", alt="")
+			img.bg.bg--2(src="img/section-bg__28.png", alt="")
+			img.bg.bg--3(src="img/section-bg__3.png", alt="")
+			img.bg.bg--4(src="img/section-bg__22.png", alt="")
+			img.bg.bg--5(src="img/section-bg__24.png", alt="")
+			img.bg.bg--6(src="img/section-bg__25.png", alt="")
+			img.bg.bg--7(src="img/section-bg__26.png", alt="")
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Журнал
+				h1.page-title выпуски 2016
+			.journal-list
+				a.journal-list__item(href="#")
+					.journal-list__item-image
+						img(src="img/journal-2.jpg", alt="")
+					.journal-list__item-desc
+						span.strong 07
+						span /июль
+				a.journal-list__item(href="#")
+					.journal-list__item-image
+						img(src="img/journal-1.jpg", alt="")
+					.journal-list__item-desc
+						span.strong 06
+						span /июнь
+				a.journal-list__item(href="#")
+					.journal-list__item-image
+						img(src="img/journal-3.jpg", alt="")
+					.journal-list__item-desc
+						span.strong 05
+						span /май
+		include templates/footer.jade

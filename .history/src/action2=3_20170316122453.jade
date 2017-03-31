@@ -1,0 +1,318 @@
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		//- section.action-header.action-header--mobile
+		//- 	.action-header-menu
+		//- 		.action-header-menu__title Подробнее  об акциях:
+		//- 		.dropdown.js-dropdown-actions
+		//- 			.dropdown__title
+		//- 				span Промо июня
+		//- 				i.icon.icon__triangle--white
+		//- 			.dropdown-list
+		//- 				a.dropdown-list__item(href="#")
+		//- 					span Фестиваль
+		//- 				a.dropdown-list__item(href="#")
+		//- 					span 2=3
+		//- 				a.dropdown-list__item(href="#")
+		//- 					span Подарок за покупку
+		//- 				a.dropdown-list__item(href="#")
+		//- 					span Выгодная цена
+		//- 				a.dropdown-list__item(href="#")
+		//- 					span Выгодная пара
+		//- 		.clearfix
+		//- 	.action-header__desc
+		//- 		span
+		//- 			| ВЫИГРЫВАЙ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ
+		//- 			br
+		//- 			| НА 30 000 В МАГАЗИН CALZEDONIA!
+		//- 			br
+		//- 			| С 1 по 30 июня 2016 г.
+		//- 	.clearfix
+		section.page-content-header
+			section.breadcrumbs
+				a.breadcrumbs-item(href="#") Главная
+				span.breadcrumbs-sep >
+				a.breadcrumbs-item(href="#") Промо июня
+				span.breadcrumbs-sep >
+				span.breadcrumbs-item 2=3
+			h1.page-title L’oreal
+		section.page-content.page-content--action-detail			
+			.page-content__left.page-content__left--no-border
+				.left-block-float
+					ul.left-menu
+						li.left-menu__item.active
+							a.left-menu__link(href="#")
+								span Промо ИЮНя
+								i.icon.icon__arrow--violet
+							ul.left-menu-sub.left-menu-sub--level-1
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Фестиваль
+								li.left-menu-sub__item.active
+									a.left-menu-sub__link(href="#") 
+										span 2=3
+										i.icon.icon__arrow--violet
+									ul.left-menu-sub.left-menu-sub--level-2
+										li.left-menu-sub__item.active
+											a.left-menu-sub__link(href="#") L’oreal
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") sally hanssen
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") черный жемчуг
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") maybelline
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#")
+										span подарок за покупку
+										i.icon.icon__arrow--violet
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Выгодная цена
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Выгодная пара
+					.bottom-text
+						span ВЫИГРЫВАЙ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ НА 30 000  В МАГАЗИН CALZEDONIA! С 1 ПО 30 ИЮНЯ 2016г.
+			.page-content__right
+				section.action__top-banner
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/action2=3.jpg', media='(min-width: 1450px)')
+							source(srcset='img/action2=3__1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/action2=3__1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/action2=3__800.jpg', media='(min-width: 520px)')
+							source(srcset='img/action2=3__480.jpg', media='(min-width: 340px)')
+							source(srcset='img/action2=3__320.jpg', media='(max-width: 340px)')
+						source(srcset='img/action2=3.jpg', media='(min-width: 1450px)')
+						source(srcset='img/action2=3__1366.jpg', media='(min-width: 1024px)')
+						source(srcset='img/action2=3__1024.jpg', media='(min-width: 800px)')
+						source(srcset='img/action2=3__800.jpg', media='(min-width: 520px)')
+						source(srcset='img/action2=3__480.jpg', media='(min-width: 340px)')
+						source(srcset='img/action2=3__320.jpg', media='(max-width: 340px)')
+						img(srcset='img/action2=3.jpg')
+				section.action__detail-text
+					.social
+						a.social__item(href="#")
+							i.icon.icon__fb
+						a.social__item(href="#")
+							i.icon.icon__vk
+						a.social__item(href="#")
+							i.icon.icon__inst
+					h2.title При покупке 3-х средств по уходу за лицом** L’Oreal Paris одно из них покупатель получает бесплатно*!
+					p
+						| При покупке 3-х любых средств по уходу за лицом**
+						strong  L’Oreal Paris 
+						| – одно из них покупатель получает бесплатно* в период
+						strong  c 1 по 30 июня!
+					p L’Oreal Paris – один из ведущих мировых брендов косметики, которую поддерживают посланники красоты, среди которых Дженнифер Лопес, Джулианна Мур, Ева Лонгория и другие. Посланники марки воплощают в себе определенный идеал красоты, заложенный в легендарном слогане: «Ведь ты этого достойна». 
+					p
+						| Ознакомиться с частичным ассортиментом косметики по уходу за лицом L’Oreal Paris ты можешь 
+						a(href="#") на сайте
+						| . Полный ассортимент представлен 
+						a(href="#") в магазинах «Подружка»
+						| .
+					p Акция проходит во всей сети магазинов «Подружка».
+					p ВНИМАНИЕ! *Один из трех товаров (с наименьшей или равной стоимостью) покупатель получает бесплатно. На остальные два товара другие скидки (по дисконтной карте, по социальной карте, утренняя скидка 5%, скидка 15% 15-го числа, по купонам и другим акциям сети) НЕ ДЕЙСТВУЮТ. **Товары со скидкой, подарочные наборы в акции не участвуют. Сеть магазинов «Подружка» оставляет за собой право изменять условия и сроки проведения акции по своему усмотрению.
+					p Возврат товара, участвующего в проводимой акции, не производится согласно Постановлению Правительства РФ от 19 января 1998г. № 55 «об утверждении Правил продажи отдельных видов товаров, перечня товаров длительного пользования, на которые не распространяется требование покупателя о безвозмездном предоставлении ему на период ремонта или замены аналогичного товара, и перечня непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других размеров, формы, габарита, фасона, расцветки или комплектации».
+					p Подробности акции по телефонам Call-центра: 8 800 707-47-47 (звонок бесплатный), 8 495 926-80-82.
+					p Ждем тебя в магазинах «Подружка»!
+				section.section-products-slider.section-products-slider--inContent
+					.title товары, участвующие в акции
+					.products-slider.owl-carousel.js-slider-products-in-content
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__2.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__3.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__2.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__3.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+						.products-list-item
+							.products-list-item__header
+								a(href="#")
+									.products-list-item__image
+										img(src="img/novetly-slider__1.jpg", alt="")
+									.products-list-item__title PERFECT MAT LIPSTICK second line test
+									.products-list-item__category помада
+							.products-list-item__footer
+								.products-list-item__price
+									.value.value--current
+										span 1346
+										span.rouble &#x20bd;
+									.value.value--old
+										span 1346
+										span.rouble &#x20bd;
+								.products-list-item__shades
+									button.image.image--basket.js-add-basket
+										.icon.icon__basket--large
+									button.image.image--like.js-like
+										.icon.icon__heart
+									.text 14 оттенков
+					.slider-nav.owl-nav--light
+						.owl-nav
+							button.owl-prev
+							.custom-dots
+								span.custom-dots__current
+								span из
+								span.custom-dots__count
+							button.owl-next
+				.product-detail-tabs.product-detail-tabs--mode1.js-tabs
+					ul.tabs
+						li.tabs__item
+							span отзывы (999)
+						li.tabs__item
+							span доставка
+						li.tabs__item
+							span оплата
+						li.tabs__item
+							span наличие в магазинах
+					.tabs-content		
+						.tabs-content__item
+							.tabs__item--mobile 
+								span отзывы (999)
+								i.icon.icon__plus--violet
+							.tabs-content-toggle
+								button.reviews-block-btn.js-reviews-toggle
+									span Добавить отзыв
+									span.modified Вернуться к отзывам
+								include templates/components/reviews-block.jade
+								include templates/components/reviews-block-form.jade
+						.tabs-content__item
+							.tabs__item--mobile
+								span доставка
+								i.icon.icon__plus--violet
+							.tabs-content-toggle
+								p 333
+						.tabs-content__item
+							.tabs__item--mobile
+								span оплата
+								i.icon.icon__plus--violet
+							.tabs-content-toggle
+								p 444
+						.tabs-content__item
+							.tabs__item--mobile
+								span наличие в магазинах
+								i.icon.icon__plus--violet
+							.tabs-content-toggle
+								include templates/components/shops-block.jade
+		include templates/components/section-journal.jade
+		include templates/footer.jade

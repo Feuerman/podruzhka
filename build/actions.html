@@ -48,7 +48,7 @@
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
       <div menu-level="2" class="mobile-menu-blocks level-2">
@@ -100,14 +100,21 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
         </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
       </div>
     </header>
     <section class="action-header action-header--mobile">
@@ -123,45 +130,36 @@
       <div class="clearfix"></div>
     </section>
     <section class="page-content page-content--actions">
+      <section class="page-content-header">
+        <section class="breadcrumbs"><a href="#" class="breadcrumbs-item">Главная</a><span class="breadcrumbs-sep">></span><span>Промо июня</span></section>
+        <h1 class="page-title">Акции</h1>
+      </section>
       <div class="page-content__left page-content__left--no-border">
         <div class="left-block-float">
           <ul class="left-menu">
             <li class="left-menu__item active"><a href="#" class="left-menu__link"><span>Промо ИЮНя</span><i class="icon icon__arrow--violet"></i></a>
               <ul class="left-menu-sub left-menu-sub--level-1">
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Фестиваль</a></li>
-                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">2=3</a></li>
-                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">подарок за покупку</a></li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link"><span>2=3</span><i class="icon icon__arrow--violet"></i></a></li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link"><span>подарок за покупку</span><i class="icon icon__arrow--violet"></i></a></li>
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Выгодная цена</a></li>
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Выгодная пара</a></li>
               </ul>
             </li>
           </ul>
-          <div class="legend">
-            <div class="legend-item color-green">
+          <div class="legend"><a href="#" class="legend-item color-green active">
               <div class="legend-item__text"><span>Новинки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
-            </div>
-            <div class="legend-item color-rose">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div></a><a href="#" class="legend-item color-rose">
               <div class="legend-item__text"><span>Выгодные цены</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__purse"></i></div>
-            </div>
-            <div class="legend-item color-blue">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__purse"></i></div></a><a href="#" class="legend-item color-blue">
               <div class="legend-item__text"><span>Подарки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__box"></i></div>
-            </div>
-            <div class="legend-item color-red">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__box"></i></div></a><a href="#" class="legend-item color-red">
               <div class="legend-item__text"><span>Скидки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
-            </div>
-            <div class="legend-item color-gold">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div></a><a href="#" class="legend-item color-gold">
               <div class="legend-item__text"><span>Хиты</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__star--white"></i></div>
-            </div>
-            <div class="legend-item color-orange">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__star--white"></i></div></a><a href="#" class="legend-item color-orange">
               <div class="legend-item__text"><span>эксклюзивно</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__exclamation-point"></i></div>
-            </div>
-          </div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__exclamation-point"></i></div></a></div>
           <div class="bottom-text"><span>ВЫИГРЫВАЙ КАЖДЫЙ ДЕНЬ СЕРТИФИКАТ НА 30 000  В МАГАЗИН CALZEDONIA! С 1 ПО 30 ИЮНЯ 2016г.</span></div>
         </div>
       </div>
@@ -555,7 +553,7 @@
               <input type="text" placeholder="Контактный email*" class="input-text">
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Номер карты" class="input-text">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
             </div>
             <div class="date"><span>Дата рождения*</span>
               <div class="date__input">

@@ -1,0 +1,121 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.shop-page__header(style="background-image: url('img/shops-list__header-bg.jpg');")
+		section.page-content.page-content.page-content--shops-list.page-content--shop-detail
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					a.breadcrumbs-item(href="#") Контакты
+				h1.page-title
+					span ООО «ТАБЕР ТРЕЙД»
+					| СЕТЬ МАГАЗИНОВ КОСМЕТИКИ «ПОДРУЖКА»
+			.search-shop__toggle
+					button.button.button--default.js-toggle-shop-search Поиск магазина
+			.page-content__right
+				.shop-detail.shops-list__container
+					.shop-detail-cols
+						.shop-detail-cols__left
+							.workers-list
+								.workers-list__category
+									.workers-list__category-title
+										span руководство
+										button
+											i.icon.icon__plus--black
+									.workers-list__category-content
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+								.workers-list__category
+									.workers-list__category-title
+										span администрация
+										button
+											i.icon.icon__plus--black
+									.workers-list__category-content
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+										.item
+											.item__position Ассистент генерального директора ООО «Табер Трейд»
+											.item__name Анна Вожжова
+											.item__contacts
+												span (495) 380-28-28, доб. 3136
+												span vozhova@taber.ru
+								.workers-list__category
+									.workers-list__category-title
+										span Департамент закупок
+										button
+											i.icon.icon__plus--black
+									.workers-list__category-content
+										p 123
+								.workers-list__category
+									.workers-list__category-title
+										span Департамент Развития
+										button
+											i.icon.icon__plus--black
+									.workers-list__category-content
+										p 321
+						.shop-detail-cols__right
+							p 115280, г. Москва, ул. Ленинская Слобода, д. 19, Бизнес центр «Омега плаза»
+							.contacts-info
+								.contacts-info__title Телефон:
+								.contacts-info__group
+									span (495) 380-28-28
+									span Многоканальный
+								.contacts-info__group
+									span (495) 380-28-29
+									span Отдел персонала
+								.contacts-info__group
+									span (800) 707-47-47
+									span Call-центр
+							.contacts-info
+								.contacts-info__title E-mail:
+								.contacts-info__group
+									span secretary@taber.ru
+									span Секретариат
+								.contacts-info__group
+									span rabota@taber.ru
+									span Отдел персонала
+							.shop-detail__panel
+								button.button.button--default Обратная связь
+					.shop-detail__hr
+					.shop-detail-cols.shop-detail__geo
+						.shop-detail-cols__left
+							script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=CuYgq9eafhGY9FUXXmm19lkV3fx3nJcX&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true")
+						.shop-detail-cols__right
+								.title как добраться
+								p м. Автозаводская, ул. Ленинская Слобода, д.19, Бизнес Центр «Омега Плаза», 2 этаж налево, офис сети магазинов «Подружка».
+								p Выйти в город из первого вагона по ходу движения поезда из центра в сторону Щелковского автовокзала. Сесть на автобус № 361 и проследовать до остановки «Старая автостанция», перейти через дорогу и пройти в сторону церкви 150 метров. Магазин «Подружка» находится напротив церкви.
+								.print
+									i.icon.icon__print
+									button Распечатать схему
+		include templates/components/section-journal.jade
+		include templates/footer.jade

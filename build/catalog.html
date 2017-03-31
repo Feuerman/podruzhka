@@ -48,7 +48,7 @@
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
       <div menu-level="2" class="mobile-menu-blocks level-2">
@@ -100,14 +100,21 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
         </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
       </div>
     </header>
     <section class="catalog-header">
@@ -166,34 +173,37 @@
             <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Для любимых</span><i class="icon icon__arrow--violet"></i></a></li>
             <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Дамские штучки</span><i class="icon icon__arrow--violet"></i></a></li>
             <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Для дома</span><i class="icon icon__arrow--violet"></i></a></li>
-            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Бренды</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Бренды</span><i class="icon icon__arrow--violet"></i>
+                <ul class="left-menu-sub left-menu-sub--level-1 left-menu-sub--scroll">
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                </ul></a></li>
           </ul>
-          <div class="legend">
-            <div class="legend-item color-green">
+          <div class="legend"><a href="#" class="legend-item color-green active">
               <div class="legend-item__text"><span>Новинки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
-            </div>
-            <div class="legend-item color-rose">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div></a><a href="#" class="legend-item color-rose">
               <div class="legend-item__text"><span>Выгодные цены</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__purse"></i></div>
-            </div>
-            <div class="legend-item color-blue">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__purse"></i></div></a><a href="#" class="legend-item color-blue">
               <div class="legend-item__text"><span>Подарки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__box"></i></div>
-            </div>
-            <div class="legend-item color-red">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__box"></i></div></a><a href="#" class="legend-item color-red">
               <div class="legend-item__text"><span>Скидки</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
-            </div>
-            <div class="legend-item color-gold">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div></a><a href="#" class="legend-item color-gold">
               <div class="legend-item__text"><span>Хиты</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__star--white"></i></div>
-            </div>
-            <div class="legend-item color-orange">
+              <div class="legend-item__image bg-inherit"><i class="icon icon__star--white"></i></div></a><a href="#" class="legend-item color-orange">
               <div class="legend-item__text"><span>эксклюзивно</span></div>
-              <div class="legend-item__image bg-inherit"><i class="icon icon__exclamation-point"></i></div>
-            </div>
-          </div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__exclamation-point"></i></div></a></div>
         </div>
       </div>
       <div class="page-content__right">
@@ -207,31 +217,31 @@
                   <div class="filter-list filter-list--grey filter-list--mobile">
                     <div class="filter-list-items">
                       <div class="filter-list-item">
-                        <input id="cat-all" type="checkbox" value="all">
+                        <input id="cat-all" type="radio" name="spec" value="all">
                         <label for="cat-all">Все предложения<span class="filter-list-item__count">(16)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-1" type="checkbox" value="all">
+                        <input id="cat-1" type="radio" name="spec" value="all">
                         <label for="cat-1" class="color-green">НОВИНКИ<span class="filter-list-item__count">(8)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-2" type="checkbox" value="all">
+                        <input id="cat-2" type="radio" name="spec" value="all">
                         <label for="cat-2" class="color-rose">ВЫГОДНЫЕ ЦЕНЫ<span class="filter-list-item__count">(2)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-3" type="checkbox" value="all">
+                        <input id="cat-3" type="radio" name="spec" value="all">
                         <label for="cat-3" class="color-blue">ПОДАРКИ<span class="filter-list-item__count">(1)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-4" type="checkbox" value="all">
+                        <input id="cat-4" type="radio" name="spec" value="all">
                         <label for="cat-4" class="color-red">СКИДКИ<span class="filter-list-item__count">(16)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-5" type="checkbox" value="all">
+                        <input id="cat-5" type="radio" name="spec" value="all">
                         <label for="cat-5" class="color-gold">ХИТЫ<span class="filter-list-item__count">(16)</span></label>
                       </div>
                       <div class="filter-list-item">
-                        <input id="cat-6" type="checkbox" value="all">
+                        <input id="cat-6" type="radio" name="spec" value="all">
                         <label for="cat-6" class="color-orange">ЭКСКЛЮЗИВНО<span class="filter-list-item__count">(5)</span></label>
                       </div>
                     </div>
@@ -242,7 +252,27 @@
                   <div class="filter-list__mobile-title"><span>Бренд</span><i class="icon icon__plus--black"></i></div>
                   <div class="filter-list filter-list--white filter-list--mobile">
                     <div class="filter-list__title"><span>Все бренды</span><i class="icon icon__triangle--grey"></i></div>
-                    <div class="filter-list-items">
+                    <div class="filter-list-items filter-list-items--scroll">
+                      <div class="filter-list-item">
+                        <input id="brend-all" type="checkbox" value="all">
+                        <label for="brend-all">Все бренды<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-vox" type="checkbox" value="vox">
+                        <label for="brend-vox">Vox<span class="filter-list-item__count">(8)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-ladypink" type="checkbox" value="ladypink">
+                        <label for="brend-ladypink">Lady Pink<span class="filter-list-item__count">(10)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-tonymoly" type="checkbox" value="tonymoly">
+                        <label for="brend-tonymoly">Tony Moly<span class="filter-list-item__count">(25)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-deco" type="checkbox" value="deco">
+                        <label for="brend-deco">Deco<span class="filter-list-item__count">(9)</span></label>
+                      </div>
                       <div class="filter-list-item">
                         <input id="brend-all" type="checkbox" value="all">
                         <label for="brend-all">Все бренды<span class="filter-list-item__count">(16)</span></label>
@@ -950,7 +980,7 @@
               <input type="text" placeholder="Контактный email*" class="input-text">
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Номер карты" class="input-text">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
             </div>
             <div class="date"><span>Дата рождения*</span>
               <div class="date__input">

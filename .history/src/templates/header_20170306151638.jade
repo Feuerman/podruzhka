@@ -1,0 +1,70 @@
+section.action-header
+	.action-header__container
+		.action-header-list
+			a.action-header-list__item(href="#")
+				img(src="img/action-list-1.jpg", alt="")
+				.desc Фестиваль с 1 по 30 июня
+			a.action-header-list__item(href="#")
+				img(src="img/action-list-2.jpg", alt="")
+				.desc 3 по цене 2
+			a.action-header-list__item(href="#")
+				img(src="img/action-list-3.jpg", alt="")
+				.desc ПОдарок за покупку
+			a.action-header-list__item(href="#")
+				img(src="img/action-list-4.jpg", alt="")
+				.desc выгодная цена
+			a.action-header-list__item(href="#")
+				img(src="img/action-list-5.jpg", alt="")
+				.desc -50% выгодная пара
+header.header
+	.header-logo
+		button.top-menu-button.js-top-nav-toggle
+			span
+		a(href="#")
+			img(src="img/logo.png", alt="")
+	.header-menu
+		nav
+			ul.top-menu
+				li.top-menu__item
+					a.top-menu__link(href="#") Каталог
+				li.top-menu__item
+					a.top-menu__link.js-show-action-block(href="#") Акции
+				li.top-menu__item
+					a.top-menu__link(href="#") Только у нас
+				li.top-menu__item
+					a.top-menu__link(href="#") Новинки
+				li.top-menu__item
+					a.top-menu__link(href="#") Хочу скидки
+				li.top-menu__item
+					a.top-menu__link(href="#") Магазины
+				li.top-menu__item
+					a.top-menu__link(href="#") Пообщаемся
+	.header-panel
+		.header-panel__actions.header-panel__item
+			button.item.js-search-panel
+				i.icon.icon__loop
+			a.item.js-modal-callback(href="#")
+				i.icon.icon__phone
+			button.item.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth
+		a.header-basket.header-panel__item(href="#")
+			.header-basket__image
+				i.icon.icon__basket
+			.header-basket__count
+				span 99
+		.header-social.header-panel__item
+			.social
+				a.social__item(href="#")
+					i.icon.icon__fb
+				a.social__item(href="#")
+					i.icon.icon__vk
+				a.social__item(href="#")
+					i.icon.icon__inst
+	.header-search
+		form.form-search
+			input(type="text" placeholder="Напишите, что вы ищете")
+			button(type="submit")
+				i.icon.icon__loop--pink
+		button.header-search__hide
+			span Свернуть
+			i.icon.icon__arrow--white--small

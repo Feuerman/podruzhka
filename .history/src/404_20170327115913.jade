@@ -1,0 +1,22 @@
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.page-not-found
+			img.page-not-found__bg.page-not-found__bg--1(src="img/section-bg__15.png", alt="")
+			img.page-not-found__bg.page-not-found__bg--2(src="img/section-bg__16.png", alt="")
+			.page-not-found__left
+				img(src="img/404-girl.png", alt="")
+			.page-not-found__right
+				img(src="img/404.png", alt="")
+				.title Такой страницы не существует
+				.text
+					| Перейти на&nbsp;
+					a(href="#") главную
+					|, в&nbsp;
+					a(href="#") каталог
+					|, на страницу&nbsp;
+					a(href="#") акций
+		include templates/components/section-journal.jade
+		include templates/footer.jade

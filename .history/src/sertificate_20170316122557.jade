@@ -1,0 +1,78 @@
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.page-content-header
+			section.breadcrumbs
+				a.breadcrumbs-item(href="#") Главная
+			h1.page-title подарочные сертификаты
+		section.page-content.page-content--action-detail			
+			.page-content__left.page-content__left--no-border
+				.left-block-float
+					ul.sertificate-menu
+						li.sertificate-menu__item
+							a.sertificate-menu__link(href="#")
+								.image
+									i.icon.icon__discount-card--white
+								span подарочные сертификаты
+						li.sertificate-menu__item
+							a.sertificate-menu__link(href="#")
+								.image
+									i.icon.icon__discount-card--white-2
+								span электронные подарочные сертификаты
+			.page-content__right
+				section.action__top-banner.action__top-banner--sertificate
+					picture
+						//[if IE 9]><!
+						video(style='display: none;')
+							//<![endif]
+							source(srcset='img/sert-banner.jpg', media='(min-width: 1450px)')
+							source(srcset='img/sert-banner__1366.jpg', media='(min-width: 1024px)')
+							source(srcset='img/sert-banner__1024.jpg', media='(min-width: 800px)')
+							source(srcset='img/sert-banner__800.jpg', media='(min-width: 520px)')
+							source(srcset='img/sert-banner__540.jpg', media='(min-width: 340px)')
+							source(srcset='img/sert-banner__340.jpg', media='(max-width: 340px)')
+						source(srcset='img/sert-banner.jpg', media='(min-width: 1450px)')
+						source(srcset='img/sert-banner__1366.jpg', media='(min-width: 1024px)')
+						source(srcset='img/sert-banner__1024.jpg', media='(min-width: 800px)')
+						source(srcset='img/sert-banner__800.jpg', media='(min-width: 520px)')
+						source(srcset='img/sert-banner__540.jpg', media='(min-width: 340px)')
+						source(srcset='img/sert-banner__340.jpg', media='(max-width: 340px)')
+						img(srcset='img/sert-banner.jpg')
+				section.action__detail-text
+					.social
+						a.social__item(href="#")
+							i.icon.icon__fb
+						a.social__item(href="#")
+							i.icon.icon__vk
+						a.social__item(href="#")
+							i.icon.icon__inst
+					h2.title Подарочные сертификаты номиналом 500 руб., 1000 руб., 1500 руб., 3000 руб. можно приобрести в любом магазине «ПОДРУЖКА».
+					p На сумму Подарочного сертификата сети «ПОДРУЖКА» его обладательница подберет для себя или в подарок любимые ароматы, средства для макияжа и ухода за кожей, подарочные наборы. Подарочные сертификаты номиналом 500 руб., 1000 руб., 1500 руб., 3000 руб. можно приобрести в любом магазине «ПОДРУЖКА». Подарочный сертификат имеет равноценное действие во всех магазинах сети «Подружка».
+					p Срок действия сертификата – 1 год со дня приобретения.
+					p 
+						| Подарочным сертификатом можно оплатить только одну покупку.
+						br 
+						| при покупке Подарочного сертификата скидки не предоставляются;
+						br
+						| при оплате покупки Подарочным сертификатом действуют все скидки сети «Подружка», в том числе скидка по дисконтной карте, и сумма покупки зачисляется на баланс дисконтной карты.
+					p 
+						strong Приобретение подарочных сертификатов для юридических лиц:
+					ul
+						li покупка от 500 000 руб. - тел. Центрального офиса компании ООО «Табер Трейд» 8 (495) 380-28-28 доб. 3106 или тел. Call-центра: 8 (800) 707-47-47
+						li покупка менее 500 000 руб. – обратитесь к нашему дистрибьютору - агентству «Дари Подарки»  тел. 8 (495) 221-10-77 или 8 (800) 775-40-77
+					a(href="#") Правила использования сертификатов				
+				.product-detail-tabs.product-detail-tabs--mode1.js-tabs
+					ul.tabs
+						li.tabs__item
+							span наличие в магазинах
+					.tabs-content
+						.tabs-content__item
+							.tabs__item--mobile
+								span наличие в магазинах
+								i.icon.icon__plus--violet
+							.tabs-content-toggle
+								include templates/components/shops-block.jade
+		include templates/components/section-journal.jade
+		include templates/footer.jade

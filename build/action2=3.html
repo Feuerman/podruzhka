@@ -48,7 +48,7 @@
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
       <div menu-level="2" class="mobile-menu-blocks level-2">
@@ -100,14 +100,21 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-modal-search"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
           <div class="header-basket__count"><span>99</span></div></a>
         <div class="header-social header-panel__item">
-          <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__inst"></i></a></div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
         </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
       </div>
     </header>
     <section class="page-content page-content--action-detail">
@@ -121,7 +128,7 @@
             <li class="left-menu__item active"><a href="#" class="left-menu__link"><span>Промо ИЮНя</span><i class="icon icon__arrow--violet"></i></a>
               <ul class="left-menu-sub left-menu-sub--level-1">
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Фестиваль</a></li>
-                <li class="left-menu-sub__item active"><a href="#" class="left-menu-sub__link">2=3</a>
+                <li class="left-menu-sub__item active"><a href="#" class="left-menu-sub__link"> <span>2=3</span><i class="icon icon__arrow--violet"></i></a>
                   <ul class="left-menu-sub left-menu-sub--level-2">
                     <li class="left-menu-sub__item active"><a href="#" class="left-menu-sub__link">L’oreal</a></li>
                     <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">sally hanssen</a></li>
@@ -129,7 +136,7 @@
                     <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">maybelline</a></li>
                   </ul>
                 </li>
-                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">подарок за покупку</a></li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link"><span>подарок за покупку</span><i class="icon icon__arrow--violet"></i></a></li>
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Выгодная цена</a></li>
                 <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Выгодная пара</a></li>
               </ul>
@@ -332,19 +339,12 @@
         </section>
         <div class="product-detail-tabs product-detail-tabs--mode1 js-tabs">
           <ul class="tabs">
-            <li class="tabs__item"><span>Описание</span></li>
             <li class="tabs__item"><span>отзывы (999)</span></li>
             <li class="tabs__item"><span>доставка</span></li>
             <li class="tabs__item"><span>оплата</span></li>
             <li class="tabs__item"><span>наличие в магазинах</span></li>
           </ul>
           <div class="tabs-content">
-            <div class="tabs-content__item">
-              <div class="tabs__item--mobile"><span>Описание</span><i class="icon icon__plus--violet"></i></div>
-              <div class="tabs-content-toggle">
-                <p>Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.Ухоженные, ультра-глянцевые и мягкие, как бархат губы с помадой Plumping Gloss. Формула обогащена пептидами и увлажняющими активными ингредиентами.</p><a href="#" class="readmore">Побробнее		</a>
-              </div>
-            </div>
             <div class="tabs-content__item">
               <div class="tabs__item--mobile"> <span>отзывы (999)</span><i class="icon icon__plus--violet"></i></div>
               <div class="tabs-content-toggle">
@@ -469,28 +469,40 @@
                   </div>
                   <form action="" class="form-reviews">
                     <div class="form-reviews__input-group">
-                      <input type="text" placeholder="Имя*" class="input-text">
-                      <select data-placeholder="Город" class="js-select">
-                        <option value=""></option>
-                        <option value="1">Москва</option>
-                        <option value="2">Самара</option>
-                      </select>
-                      <input type="text" placeholder="Возраст" class="input-text">
-                      <select data-placeholder="Тон кожи" class="js-select">
-                        <option value=""></option>
-                        <option value="1">Светлый</option>
-                        <option value="2">Темный</option>
-                      </select>
-                      <select data-placeholder="Цвет глаз" class="js-select">
-                        <option value=""></option>
-                        <option value="1">Голубой</option>
-                        <option value="2">Зеленый</option>
-                      </select>
-                      <select data-placeholder="Тип кожи" class="js-select">
-                        <option value=""></option>
-                        <option value="1">Жирный</option>
-                        <option value="2">Нормальный</option>
-                      </select>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="Имя*" data-input-required="true" class="input-text">
+                      </div>
+                      <div class="input-wrap">
+                        <select data-placeholder="Город" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Москва</option>
+                          <option value="2">Самара</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="Возраст" class="input-text">
+                      </div>
+                      <div class="input-wrap">
+                        <select data-placeholder="Тон кожи" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Светлый</option>
+                          <option value="2">Темный</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <select data-placeholder="Цвет глаз" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Голубой</option>
+                          <option value="2">Зеленый</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <select data-placeholder="Тип кожи" class="js-select">
+                          <option value=""></option>
+                          <option value="1">Жирный</option>
+                          <option value="2">Нормальный</option>
+                        </select>
+                      </div>
                       <div class="clearfix"></div>
                     </div>
                     <div class="form-reviews__rating">
@@ -503,12 +515,16 @@
                         <div class="rating__item"></div>
                       </div>
                     </div>
-                    <textarea name="" cols="30" rows="1" id="review-theme" placeholder="Тема (коротко о товаре)" class="input-text"></textarea>
-                    <textarea name="" cols="30" rows="8" id="review-text" placeholder="Отзыв*
+                    <div class="input-wrap">
+                      <textarea name="" cols="30" rows="1" id="review-theme" placeholder="Тема (коротко о товаре)" class="input-text"></textarea>
+                    </div>
+                    <div class="input-wrap">
+                      <textarea name="" cols="30" rows="8" id="review-text" placeholder="Отзыв*
 
 - Опишите плюсы: что вам понравилось, как вам это помогает?
 - Опишите минусы: что заметили сразу, а что проявилось в процессе использования?
-- Опишите общие впечатления: срок использования, критерии при выборе, рекомендовали бы вы этот товар к покупке?" class="input-text"></textarea>
+- Опишите общие впечатления: срок использования, критерии при выборе, рекомендовали бы вы этот товар к покупке?" data-input-required="true" class="input-text"></textarea>
+                    </div>
                     <div class="form-reviews__footer">
                       <div class="links"><a href="#" class="links__item">Ознакомиться с правилами модерации</a><a href="#" class="links__item">Как написать полезный отзыв</a></div>
                       <input type="submit" value="добавить отзыв" class="form-reviews__submit button button--default">
@@ -1113,7 +1129,7 @@
               <input type="text" placeholder="Контактный email*" class="input-text">
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Номер карты" class="input-text">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
             </div>
             <div class="date"><span>Дата рождения*</span>
               <div class="date__input">
