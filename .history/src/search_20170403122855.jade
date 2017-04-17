@@ -1,0 +1,359 @@
+- var owlNavLight = true
+include templates/head.jade
+body.page-inner
+	.page-wrapper
+		include templates/components/menu/mobile-top-menu--catalog.jade
+		include templates/header.jade
+		section.catalog-header
+			picture
+				//[if IE 9]><!
+				video(style='display: none;')
+					//<![endif]
+					source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+					source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+					source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+					source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+					source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+					source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				source(srcset='img/catalog-banner--1920.jpg', media='(min-width: 1366px)')
+				source(srcset='img/catalog-banner--1366.jpg', media='(min-width: 1024px)')
+				source(srcset='img/catalog-banner--1024.jpg', media='(min-width: 800px)')
+				source(srcset='img/catalog-banner--800.jpg', media='(min-width: 520px)')
+				source(srcset='img/catalog-banner--520.jpg', media='(min-width: 340px)')
+				source(srcset='img/catalog-banner--340.jpg', media='(max-width: 340px)')
+				img(srcset='img/catalog-banner--1920.jpg')
+		section.page-content.page-content--catalog
+			section.page-content-header
+				section.breadcrumbs
+					a.breadcrumbs-item(href="#") Главная
+					span.breadcrumbs-sep >
+					span.breadcrumbs-item Поиск
+				h1.page-title Косметика для ухода
+				.show-by
+					span.show-by__title Показывать:
+					select.show-by__select.js-select(name="showBy")
+						option(value="20") 20
+						option(value="16") 16
+						option(value="12") 12
+						option(value="8") 8
+			.page-content__left
+				.left-block-float
+					ul.left-menu
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Макияж
+								i.icon.icon__arrow--violet
+							ul.left-menu-sub.left-menu-sub--level-1
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Лицо
+									ul.left-menu-sub.left-menu-sub--level-2
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") Корректор
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") Тональные средства
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") пудра
+										li.left-menu-sub__item
+											a.left-menu-sub__link(href="#") Румяна
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Глаза
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Губы
+								li.left-menu-sub__item
+									a.left-menu-sub__link(href="#") Ногти
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Парфюмерия
+								i.icon.icon__arrow--violet
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Уход
+								i.icon.icon__arrow--violet
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Для любимых
+								i.icon.icon__arrow--violet
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Дамские штучки
+								i.icon.icon__arrow--violet
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Для дома
+								i.icon.icon__arrow--violet
+						li.left-menu__item
+							a.left-menu__link(href="#")
+								span Бренды
+								i.icon.icon__arrow--violet
+								ul.left-menu-sub.left-menu-sub--level-1.left-menu-sub--scroll
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Vox
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Lady Pink
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Tony Moly
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Deco
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Vox
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Lady Pink
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Tony Moly
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Deco
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Tony Moly
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Deco
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Vox
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Lady Pink
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Tony Moly
+									li.left-menu-sub__item
+										a.left-menu-sub__link(href="#") Deco
+					.legend
+						a(href="#").legend-item.color-green.active
+							.legend-item__text
+								span Новинки
+							.legend-item__image.bg-inherit
+								i.icon.icon__new
+						a(href="#").legend-item.color-rose
+							.legend-item__text
+								span Выгодные цены
+							.legend-item__image.bg-inherit
+								i.icon.icon__purse
+						a(href="#").legend-item.color-blue
+							.legend-item__text
+								span Подарки
+							.legend-item__image.bg-inherit
+								i.icon.icon__box
+						a(href="#").legend-item.color-red
+							.legend-item__text
+								span Скидки
+							.legend-item__image.bg-inherit
+								i.icon.icon__discount
+						a(href="#").legend-item.color-gold
+							.legend-item__text
+								span Хиты
+							.legend-item__image.bg-inherit
+								i.icon.icon__star--white
+						a(href="#").legend-item.color-orange
+							.legend-item__text
+								span эксклюзивно
+							.legend-item__image.bg-inherit
+								i.icon.icon__exclamation-point
+			.page-content__right
+				section.catalog-products
+					.catalog-products-search
+						form
+							input.input-text(type="text" placeholder="Помада")
+							button(type="submit")
+								i.icon.icon--grey-2
+					.catalog-products-header
+						.catalog-products-header__left
+							button.button--default.catalog-filter-toggle.js-toggle-filters
+								span Фильтры
+							.catalog-filter
+								.catalog-filter__item.catalog-filter__item--spec
+									.filter-list__mobile-title
+										span спецпредложения
+										i.icon.icon__plus--black
+									.filter-list.filter-list--grey.filter-list--mobile
+										.filter-list-items
+											.filter-list-item
+												input#cat-all(type="radio" name="spec" value="all")
+												label(for="cat-all") Все предложения
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-1(type="radio" name="spec" value="all")
+												label.color-green(for="cat-1") НОВИНКИ
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#cat-2(type="radio" name="spec" value="all")
+												label.color-rose(for="cat-2") ВЫГОДНЫЕ ЦЕНЫ
+													span.filter-list-item__count (2)
+											.filter-list-item
+												input#cat-3(type="radio" name="spec" value="all")
+												label.color-blue(for="cat-3") ПОДАРКИ
+													span.filter-list-item__count (1)
+											.filter-list-item
+												input#cat-4(type="radio" name="spec" value="all")
+												label.color-red(for="cat-4") СКИДКИ
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-5(type="radio" name="spec" value="all")
+												label.color-gold(for="cat-5") ХИТЫ
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#cat-6(type="radio" name="spec" value="all")
+												label.color-orange(for="cat-6") ЭКСКЛЮЗИВНО
+													span.filter-list-item__count (5)
+										button.filter-list__show-all Развернуть +
+								.catalog-filter__item
+									.filter-list__mobile-title
+										span Бренд
+										i.icon.icon__plus--black
+									.filter-list.filter-list--white.filter-list--mobile
+										.filter-list__title
+											span Все бренды
+											i.icon.icon__triangle--grey
+										.filter-list-items.filter-list-items--scroll
+											.filter-list-item
+												input#brend-all(type="checkbox" value="all")
+												label(for="brend-all") Все бренды
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#brend-vox(type="checkbox" value="vox")
+												label(for="brend-vox") Vox
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#brend-ladypink(type="checkbox" value="ladypink")
+												label(for="brend-ladypink") Lady Pink
+													span.filter-list-item__count (10)
+											.filter-list-item
+												input#brend-tonymoly(type="checkbox" value="tonymoly")
+												label(for="brend-tonymoly") Tony Moly
+													span.filter-list-item__count (25)
+											.filter-list-item
+												input#brend-deco(type="checkbox" value="deco")
+												label(for="brend-deco") Deco
+													span.filter-list-item__count (9)
+											.filter-list-item
+												input#brend-all(type="checkbox" value="all")
+												label(for="brend-all") Все бренды
+													span.filter-list-item__count (16)
+											.filter-list-item
+												input#brend-vox(type="checkbox" value="vox")
+												label(for="brend-vox") Vox
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#brend-ladypink(type="checkbox" value="ladypink")
+												label(for="brend-ladypink") Lady Pink
+													span.filter-list-item__count (10)
+											.filter-list-item
+												input#brend-tonymoly(type="checkbox" value="tonymoly")
+												label(for="brend-tonymoly") Tony Moly
+													span.filter-list-item__count (25)
+											.filter-list-item
+												input#brend-deco(type="checkbox" value="deco")
+												label(for="brend-deco") Deco
+													span.filter-list-item__count (9)
+										button.filter-list__show-all Развернуть +
+								.catalog-filter__item.catalog-filter__item--price
+									.filter-price
+										img(src="img/filter-price.png", alt="")
+								.catalog-filter__item.text-right
+									.filter-list__mobile-title
+										span Акции
+										i.icon.icon__plus--black
+									.filter-list.filter-list--grey.filter-list--mobile
+										.filter-list__title
+											span Все акции
+											i.icon.icon__triangle--white
+										.filter-list-items
+											.filter-list-item
+												input#action-all(type="checkbox" value="all")
+												label(for="action-all") Все акции
+											.filter-list-item
+												input#action-1(type="checkbox" value="action-1")
+												label(for="action-1") Выгодная цена
+											.filter-list-item
+												input#action-2(type="checkbox" value="action-2")
+												label(for="action-2") Выгодная пара
+											.filter-list-item
+												input#action-3(type="checkbox" value="action-3")
+												label(for="action-3") 2=3
+											.filter-list-item
+												input#action-4(type="checkbox" value="action-4")
+												label(for="action-4") Фестиваль
+											.filter-list-item
+												input#action-5(type="checkbox" value="action-5")
+												label(for="action-5") Подарок за покупку
+										button.filter-list__show-all Развернуть +
+								.catalog-filter__item.text-right
+									.filter-list__mobile-title
+										span Цвет
+										i.icon.icon__plus--black
+									.filter-list.filter-list--grey.filter-list--mobile
+										.filter-list__title
+											span Цвет
+											i.icon.icon__triangle--white
+										.filter-list-items
+											.filter-list-item
+												input#color-all(type="checkbox" value="all")
+												label(for="color-all") Все цвета
+													span.filter-list-item__count (50)
+											.filter-list-item
+												input#color-green(type="checkbox" value="green")
+												label.color-green(for="color-green") Зеленый
+													span.filter-list-item__count (12)
+											.filter-list-item
+												input#color-gold(type="checkbox" value="gold")
+												label.color-gold(for="color-gold") Золотой
+													span.filter-list-item__count (8)
+											.filter-list-item
+												input#color-braun(type="checkbox" value="braun")
+												label.color-braun(for="color-braun") Коричневый
+													span.filter-list-item__count (7)
+											.filter-list-item
+												input#color-red(type="checkbox" value="red")
+												label.color-red(for="color-red") Красный
+													span.filter-list-item__count (3)
+											.filter-list-item
+												input#color-blue(type="checkbox" value="blue")
+												label.color-blue(for="color-blue") Синий
+													span.filter-list-item__count (15)
+											.filter-list-item
+												input#color-rose(type="checkbox" value="rose")
+												label.color-rose(for="color-rose") Розовый
+													span.filter-list-item__count (15)
+										button.filter-list__show-all Развернуть +
+								.catalog-filter-footer
+									button.button.button--grey Закрыть фильтры
+									button.button.button--default Показать 16 товаров
+									button.button.button--transparent Очистить фильтры
+						.catalog-products-header__right
+							.catalog-sort
+								span.catalog-sort__label Сортировать по:
+								.catalog-sort__item
+									.filter-list.filter-list--grey.filter-list--sort.dropdown
+										.filter-list__title
+											span
+												span По рейтингу
+												i.icon.icon__arrow--grey.rotate
+											i.icon.icon__triangle--white
+										.filter-list-items
+											.filter-list-item
+												input#ratingUp(type="checkbox" value="ratingUp")
+												label(for="ratingUp")
+													span По рейтингу
+													i.icon.icon__arrow--grey.rotate
+											.filter-list-item
+												input#ratingDown(type="checkbox" value="ratingDown")
+												label(for="ratingDown")
+													span По рейтингу
+													i.icon.icon__arrow--grey
+											.filter-list-item
+												input#priceUp(type="checkbox" value="priceUp")
+												label(for="priceUp")
+													span По цене
+													i.icon.icon__arrow--grey.rotate
+											.filter-list-item
+												input#priceDown(type="checkbox" value="priceDown")
+												label(for="priceDown")
+													span По цене
+													i.icon.icon__arrow--grey
+					include templates/product-list.jade
+					.show-more
+						button ПОКАЗАТЬ ЕЩЕ
+						.show-more__count
+							| <
+							span.current 1
+							| /
+							span.total 34
+							| >
+		include templates/components/section-journal.jade
+		include templates/footer.jade

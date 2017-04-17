@@ -1,0 +1,51 @@
+section.personal-discount.personal-discount--main
+	.cols
+		.col.col__left
+			.desc
+				.desc__title Выгодно всегда!
+				p
+					| Размер скидки на следующий месяц по дисконтной карте зависит от&nbsp;
+					b Ваших покупок&nbsp;
+					| в текущем месяце!
+				button.js-popup(data-popup-href="#popup-discount-conditions") Правила получения карты
+				p
+					small * скидка предоставляется только при предъявлении пластиковой дисконтной карты
+		.col.col__center
+			.image
+				img(src="img/discount-lk.jpg", alt="")
+		.col.col__right
+			.title Ваша скидка в текущем месяце:
+			ul.discount-list
+				li.discount-list__item
+					.image
+						.circle.circle--small
+							span
+								| 3
+								span %
+					.desc
+						span Текущая скидка по Дисконтной карте
+				li.discount-list__item
+					.image
+						.circle.circle--medium
+							span
+								| 10
+								span %
+					.desc
+						span
+							| Покупки в прошлом месяце на
+							strong 1000
+							span.rouble &#x20bd;
+				li.discount-list__item
+					.image
+						.circle.circle--large
+							span
+								| 15
+								span %
+					.desc
+						span
+							| Покупки в прошлом месяце на
+							strong 1500
+							span.rouble &#x20bd;
+	.buttons-panel
+		a(href="#") Регистрация карты
+		a(href="#") Проверить скидку

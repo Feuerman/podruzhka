@@ -1,0 +1,148 @@
+
+	
+header.header
+	.header-logo
+		button.top-menu-button.js-top-nav-toggle
+			span
+		a(href="#")
+			img(src="img/logo.png", alt="")
+	.header-menu
+		nav
+			ul.top-menu
+				li.top-menu__item
+					a.top-menu__link(data-sub-menu="catalog" href="#") Каталог
+					section.header-menu-sub
+						ul.top-menu-sub
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") макияж
+								.child-menu-container
+									.child-menu
+										.child-menu__title лицо
+										ul
+											li
+												a(href="#") корректор
+											li
+												a(href="#") тональные средства
+											li
+												a(href="#") пудра
+											li
+												a(href="#") румяна 
+									.child-menu
+										.child-menu__title глаза
+										ul
+											li
+												a(href="#") база под тени
+											li
+												a(href="#") карандаши и лайнеры
+											li
+												a(href="#") для бровей
+											li
+												a(href="#") тени
+											li
+												a(href="#") тушь
+											li
+												a(href="#") накладные ресницы
+									.child-menu
+										.child-menu__title губы
+										ul
+											li
+												a(href="#") блески
+											li
+												a(href="#") карандаши
+											li
+												a(href="#") помада 
+									.child-menu
+										.child-menu__title ногти
+										ul
+											li
+												a(href="#") инструменты
+											li
+												a(href="#") дизайн ногтей
+											li
+												a(href="#") средства для снятия лака
+											li
+												a(href="#") лаки
+											li
+												a(href="#") уход за ногтями
+									.child-menu
+										.child-menu__title снятие макияжа
+										ul
+											li
+												a(href="#") блески
+											li
+												a(href="#") карандаши
+											li
+												a(href="#") помада
+									.child-menu-banner
+										a(href="#")
+											img(src="img/sub-menu-banner.jpg", alt="")
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") парфюмерия
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") уход
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") для любимых
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") дамские штучки
+							li.top-menu-sub__item
+								a.top-menu-sub__link(href="#") для дома
+				li.top-menu__item
+					a.top-menu__link(data-sub-menu="action" href="#") Акции
+					section.header-menu-sub
+						section.action-header
+							.action-header__container
+								.action-header-list
+									a.action-header-list__item(href="#")
+										img(src="img/action-list-1.jpg", alt="")
+										.desc Фестиваль с 1 по 30 июня
+									a.action-header-list__item(href="#")
+										img(src="img/action-list-2.jpg", alt="")
+										.desc 3 по цене 2
+									a.action-header-list__item(href="#")
+										img(src="img/action-list-3.jpg", alt="")
+										.desc ПОдарок за покупку
+									a.action-header-list__item(href="#")
+										img(src="img/action-list-4.jpg", alt="")
+										.desc выгодная цена
+									a.action-header-list__item(href="#")
+										img(src="img/action-list-5.jpg", alt="")
+										.desc -50% выгодная пара
+				li.top-menu__item
+					a.top-menu__link(href="#") Только у нас
+				li.top-menu__item
+					a.top-menu__link(href="#") Новинки
+				li.top-menu__item
+					a.top-menu__link(href="#") Хочу скидки
+				li.top-menu__item
+					a.top-menu__link(href="#") Магазины
+				li.top-menu__item
+					a.top-menu__link(href="#") Пообщаемся
+	.header-panel
+		.header-panel__actions.header-panel__item
+			button.item.js-search-panel
+				i.icon.icon__loop
+			a.item(data-sub-menu="contacts" href="#")
+				i.icon.icon__phone
+			button.item.js-modal(data-fancybox-href="#js-modal-auth")
+				i.icon.icon__auth
+		a.header-basket.header-panel__item(href="#")
+			.header-basket__image
+				i.icon.icon__basket
+			.header-basket__count
+				span 99
+		.header-social.header-panel__item
+			.social
+				a.social__item(href="#")
+					img(src="img/fb.png", alt="")
+				a.social__item(href="#")
+					img(src="img/vk.png", alt="")
+				a.social__item(href="#")
+					img(src="img/inst.png", alt="")
+	.header-search
+		form.form-search
+			input(type="text" placeholder="Напишите, что вы ищете")
+			button(type="submit")
+				i.icon.icon__loop--pink
+		button.header-search__hide.js-search-panel
+			span Свернуть
+			i.icon.icon__arrow--white--small

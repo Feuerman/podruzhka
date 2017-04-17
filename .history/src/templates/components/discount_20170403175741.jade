@@ -1,0 +1,50 @@
+section.page-discount.page-discount--card
+    .cols
+        .col.col__left
+            .desc
+                .desc__title
+                    | Выгодно
+                    br
+                    span всегда!
+                .image
+                    img(src="img/discount-page-1.png", alt="")
+                p Размер скидки на следующий месяц по дисконтной карте зависит от Ваших покупок в текущем месяце!
+                button.js-popup(data-popup-href="#popup-discount-conditions") Правила получения карты
+        .col.col__center
+            .image
+                img(src="img/discount-page-1.png", alt="")
+        .col.col__right
+            ul.discount-list
+                li.discount-list__item
+                    .image
+                        .circle.circle--small
+                            span
+                                | 3
+                                span %
+                    .desc
+                        span Всегда на карте
+                li.discount-list__item
+                    .image
+                        .circle.circle--medium
+                            span
+                                | 10
+                                span %
+                    .desc
+                        span
+                            | Покупки в прошлом месяце на
+                            strong 1000
+                            span.rouble &#x20bd;
+                li.discount-list__item
+                    .image
+                        .circle.circle--large
+                            span
+                                | 15
+                                span %
+                    .desc
+                        span
+                            | Покупки в прошлом месяце на
+                            strong 1500
+                            span.rouble &#x20bd;
+    .buttons-panel
+        button.js-popup(data-popup-href="#popup-reg-card") Регистрация карты
+        button.js-popup(data-popup-href="#popup-check-discount") Проверить скидку

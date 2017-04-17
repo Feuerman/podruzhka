@@ -1,0 +1,96 @@
+section.personal-discount.personal-discount--main
+	.cols
+		.col.col__left
+			.desc
+				.desc__title Выгодно всегда!
+				.desc__mobile
+					.image
+						img(src="img/discount-lk.png", alt="")
+					a.button.button--default(href="#") Регистрация карты
+				p
+					| Размер скидки на следующий месяц по дисконтной карте зависит от&nbsp;
+					b Ваших покупок&nbsp;
+					| в текущем месяце!
+				button.js-popup(data-popup-href="#popup-discount-conditions") Правила получения карты
+				p
+					small * скидка предоставляется только при предъявлении пластиковой дисконтной карты
+		.col.col__center
+			.image
+				img(src="img/discount-lk.png", alt="")
+		.col.col__right
+			.title Ваша скидка в текущем месяце:
+			ul.discount-list
+				li.discount-list__item
+					.image
+						.circle.circle--small
+							span
+								| 3
+								span %
+					.desc
+						span Текущая скидка по Дисконтной карте
+				li.discount-list__item
+					.image
+						.circle.circle--medium
+							span
+								| 10
+								span %
+					.desc
+						span
+							| Покупки в прошлом месяце на
+							strong 1000
+							span.rouble &#x20bd;
+				li.discount-list__item
+					.image
+						.circle.circle--large
+							span
+								| 15
+								span %
+					.desc
+						span
+							| Покупки в прошлом месяце на
+							strong 1500
+							span.rouble &#x20bd;
+	.buttons-panel
+		a.button.button--default(href="#") Регистрация карты
+section.personal-discount.personal-discount--reg
+	form
+		.cols
+			.col.col__left
+				.input-cols
+					.input-cols__left
+						input.input-text(type="text" placeholder="Имя*")
+						input.input-text(type="text" placeholder="Фамилия*")
+						input.input-text(type="text" placeholder="Номер карты*")
+						span.input-annotation Номер карты должен начинаться с цифр 2977
+					.input-cols__right
+						input.input-text(type="text" placeholder="Дата рождения*")
+						input.input-text(type="text" placeholder="E-mail адрес*")
+						input.input-text(type="text" placeholder="Телефон*")
+						span.input-annotation Номер карты должен начинаться с цифр 2977
+			.col.col__right
+				.subscribe-panel
+					.subscribe-panel__title Подписки
+					.subscribe-panel__input
+						label
+							input(type="checkbox" checked)
+							| E-mail рассылка
+					.subscribe-panel__input
+						label
+							input(type="checkbox")
+							| СМС рассылка
+
+			form
+				.title Проверка скидки
+				.input-group
+					input.input-text(type="text" placeholder="Номер карты*")
+					span.input-annotation Номер карты должен начинаться с цифр 2977
+				button.button.button--default(type="submit") Проверить скидку
+				img(src="img/check-discount.png", alt="")
+				p
+					| Информация по накоплениям на карте обновляется в течение 2-3 рабочих дней после совершения покупки. Вы всегда можете уточнить информацию по Вашей дисконтной карте, позвонив по телефонам колл-центра:
+					br
+					| +7 495 926-80-82,
+					br
+					| +7 800 707-47-47 (звонок бесплатный)
+		.col.col__right
+			img(src="img/check-discount.png", alt="")

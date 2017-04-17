@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+  <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
+  <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link href="vendor/slick/slick.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page-inner">
+  <div class="page-wrapper">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-header__item mobile-menu-header__item--auth">
+          <button data-fancybox-href="#js-modal-auth" class="js-modal js-modal-inMenu">Вход</button>
+          <button data-fancybox-href="#js-modal-reg" class="js-modal js-modal-inMenu">Регистрация</button><i class="icon icon__auth"></i>
+        </div>
+        <div class="mobile-menu-header__item mobile-menu-header__item--back-to">
+          <button class="js-menu-parent"><i class="icon icon__arrow--vinous"></i><span>Назад</span></button>
+        </div>
+      </div>
+      <div class="mobile-menu-blocks">
+        <div class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>Найти товар</span><i class="icon icon__loop"></i></a></div>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>парфюмерия</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>111</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 111</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>уход</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__title"><span>макияж</span></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>лицо</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__title"><span>лицо</span></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>корректор</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>тональные средства</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>пудра</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>румяна</span></a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>глаза</span><i class="icon icon__arrow--vinous"></i></a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>губы</span><i class="icon icon__arrow--vinous"></i></a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>ногти</span><i class="icon icon__arrow--vinous"></i></a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>для любимых</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>222</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 222</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>дамские штучки</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>333</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 333</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>для дома</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>444</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 444</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>бренды</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>555</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 555</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="mobile-menu mobile-menu--pink">
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>разделы</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>666</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 666</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>промо</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>777</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 777</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>дополнительно</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>888</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 888</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mobile-menu__social">
+          <div class="title">Мы в соц.сетях:</div>
+          <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-block overlay-block--open-nav"></div>
+    <header class="header">
+      <div class="header-logo">
+        <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="#"><img src="img/logo.png" alt=""></a>
+      </div>
+      <div class="header-menu">
+        <nav>
+          <ul class="top-menu">
+            <li class="top-menu__item"><a data-sub-menu="catalog" href="#" class="top-menu__link">Каталог</a>
+              <section class="header-menu-sub">
+                <ul class="top-menu-sub">
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">макияж</a>
+                    <div class="child-menu-container">
+                      <div class="child-menu-group">
+                        <div class="child-menu">
+                          <div class="child-menu__title">лицо</div>
+                          <ul>
+                            <li><a href="#">корректор</a></li>
+                            <li><a href="#">тональные средства</a></li>
+                            <li><a href="#">пудра</a></li>
+                            <li><a href="#">румяна </a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">глаза</div>
+                          <ul>
+                            <li><a href="#">база под тени</a></li>
+                            <li><a href="#">карандаши и лайнеры</a></li>
+                            <li><a href="#">для бровей</a></li>
+                            <li><a href="#">тени</a></li>
+                            <li><a href="#">тушь</a></li>
+                            <li><a href="#">накладные ресницы</a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">губы</div>
+                          <ul>
+                            <li><a href="#">блески</a></li>
+                            <li><a href="#">карандаши</a></li>
+                            <li><a href="#">помада </a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">ногти</div>
+                          <ul>
+                            <li><a href="#">инструменты</a></li>
+                            <li><a href="#">дизайн ногтей</a></li>
+                            <li><a href="#">средства для снятия лака</a></li>
+                            <li><a href="#">лаки</a></li>
+                            <li><a href="#">уход за ногтями</a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">снятие макияжа</div>
+                          <ul>
+                            <li><a href="#">блески</a></li>
+                            <li><a href="#">карандаши</a></li>
+                            <li><a href="#">помада</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="banner"><a href="#"><img src="img/sub-menu-banner.jpg" alt=""></a></div>
+                    </div>
+                  </li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">парфюмерия</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">уход</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">для любимых</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">дамские штучки</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">для дома</a></li>
+                </ul>
+              </section>
+            </li>
+            <li class="top-menu__item"><a data-sub-menu="action" href="#" class="top-menu__link">Акции</a>
+              <section class="header-menu-sub">
+                <section class="action-header">
+                  <div class="action-header__container">
+                    <div class="action-header-list"><a href="#" class="action-header-list__item"><img src="img/action-list-1.jpg" alt="">
+                        <div class="desc">Фестиваль с 1 по 30 июня</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-2.jpg" alt="">
+                        <div class="desc">3 по цене 2</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-3.jpg" alt="">
+                        <div class="desc">ПОдарок за покупку</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-4.jpg" alt="">
+                        <div class="desc">выгодная цена</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-5.jpg" alt="">
+                        <div class="desc">-50% выгодная пара</div></a></div>
+                  </div>
+                </section>
+              </section>
+            </li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Только у нас</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Новинки</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Хочу скидки</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Магазины</a></li>
+            <li class="top-menu__item"><a href="#" class="top-menu__link">Пообщаемся</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-panel">
+        <div class="header-panel__actions header-panel__item">
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a data-sub-menu="contacts" href="#" class="item"><i class="icon icon__phone"></i></a>
+          <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
+        </div><a href="#" class="header-basket header-panel__item">
+          <div class="header-basket__image"><i class="icon icon__basket"></i></div>
+          <div class="header-basket__count"><span>99</span></div></a>
+        <div class="header-social header-panel__item">
+          <div class="social"><a href="#" class="social__item"><img src="img/fb.png" alt=""></a><a href="#" class="social__item"><img src="img/vk.png" alt=""></a><a href="#" class="social__item"><img src="img/inst.png" alt=""></a></div>
+        </div>
+      </div>
+      <div class="header-search">
+        <form class="form-search">
+          <input type="text" placeholder="Напишите, что вы ищете">
+          <button type="submit"><i class="icon icon__loop--pink"></i></button>
+        </form>
+        <button class="header-search__hide js-search-panel"><span>Свернуть</span><i class="icon icon__arrow--white--small"></i></button>
+      </div>
+    </header>
+    <section class="catalog-header">
+      <picture>
+        <!--[if IE 9]><!-->
+        <video style="display: none;">
+          <!--<![endif]-->
+          <source srcset="img/catalog-banner--1920.jpg" media="(min-width: 1366px)">
+          <source srcset="img/catalog-banner--1366.jpg" media="(min-width: 1024px)">
+          <source srcset="img/catalog-banner--1024.jpg" media="(min-width: 800px)">
+          <source srcset="img/catalog-banner--800.jpg" media="(min-width: 520px)">
+          <source srcset="img/catalog-banner--520.jpg" media="(min-width: 340px)">
+          <source srcset="img/catalog-banner--340.jpg" media="(max-width: 340px)">
+        </video>
+        <source srcset="img/catalog-banner--1920.jpg" media="(min-width: 1366px)">
+        <source srcset="img/catalog-banner--1366.jpg" media="(min-width: 1024px)">
+        <source srcset="img/catalog-banner--1024.jpg" media="(min-width: 800px)">
+        <source srcset="img/catalog-banner--800.jpg" media="(min-width: 520px)">
+        <source srcset="img/catalog-banner--520.jpg" media="(min-width: 340px)">
+        <source srcset="img/catalog-banner--340.jpg" media="(max-width: 340px)"><img srcset="img/catalog-banner--1920.jpg">
+      </picture>
+    </section>
+    <section class="page-content page-content--catalog">
+      <section class="page-content-header">
+        <section class="breadcrumbs"><a href="#" class="breadcrumbs-item">Главная</a><span class="breadcrumbs-sep">></span><span class="breadcrumbs-item">Поиск</span></section>
+        <div class="show-by"><span class="show-by__title">Показывать:</span>
+          <select name="showBy" class="show-by__select js-select">
+            <option value="20">20</option>
+            <option value="16">16</option>
+            <option value="12">12</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+      </section>
+      <div class="page-content__left">
+        <div class="left-block-float">
+          <ul class="left-menu">
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Макияж</span><i class="icon icon__arrow--violet"></i></a>
+              <ul class="left-menu-sub left-menu-sub--level-1">
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Лицо</a>
+                  <ul class="left-menu-sub left-menu-sub--level-2">
+                    <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Корректор</a></li>
+                    <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Тональные средства</a></li>
+                    <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">пудра</a></li>
+                    <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Румяна</a></li>
+                  </ul>
+                </li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Глаза</a></li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Губы</a></li>
+                <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Ногти</a></li>
+              </ul>
+            </li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Парфюмерия</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Уход</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Для любимых</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Дамские штучки</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Для дома</span><i class="icon icon__arrow--violet"></i></a></li>
+            <li class="left-menu__item"><a href="#" class="left-menu__link"><span>Бренды</span><i class="icon icon__arrow--violet"></i>
+                <ul class="left-menu-sub left-menu-sub--level-1 left-menu-sub--scroll">
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Vox</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Lady Pink</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Tony Moly</a></li>
+                  <li class="left-menu-sub__item"><a href="#" class="left-menu-sub__link">Deco</a></li>
+                </ul></a></li>
+          </ul>
+          <div class="legend"><a href="#" class="legend-item color-green active">
+              <div class="legend-item__text"><span>Новинки</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div></a><a href="#" class="legend-item color-rose">
+              <div class="legend-item__text"><span>Выгодные цены</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__purse"></i></div></a><a href="#" class="legend-item color-blue">
+              <div class="legend-item__text"><span>Подарки</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__box"></i></div></a><a href="#" class="legend-item color-red">
+              <div class="legend-item__text"><span>Скидки</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div></a><a href="#" class="legend-item color-gold">
+              <div class="legend-item__text"><span>Хиты</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__star--white"></i></div></a><a href="#" class="legend-item color-orange">
+              <div class="legend-item__text"><span>эксклюзивно</span></div>
+              <div class="legend-item__image bg-inherit"><i class="icon icon__exclamation-point"></i></div></a></div>
+        </div>
+      </div>
+      <div class="page-content__right">
+        <section class="catalog-products">
+          <div class="catalog-products-search">
+            <form>
+              <input type="text" placeholder="поиск..." class="input-text">
+              <button type="submit"><i class="icon icon__loop--grey-2"></i></button>
+            </form>
+            <div class="catalog-products-search__text"><span>По Вашему запросу&nbsp;<b>Помада&nbsp;</b>найдено 56 товаров</span></div>
+          </div>
+          <div class="catalog-products-header">
+            <div class="catalog-products-header__left">
+              <button class="button--default catalog-filter-toggle js-toggle-filters"><span>Фильтры</span></button>
+              <div class="catalog-filter">
+                <div class="catalog-filter__item catalog-filter__item--spec">
+                  <div class="filter-list__mobile-title"><span>спецпредложения</span><i class="icon icon__plus--black"></i></div>
+                  <div class="filter-list filter-list--grey filter-list--mobile">
+                    <div class="filter-list-items">
+                      <div class="filter-list-item">
+                        <input id="cat-all" type="radio" name="spec" value="all">
+                        <label for="cat-all">Все предложения<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-1" type="radio" name="spec" value="all">
+                        <label for="cat-1" class="color-green">НОВИНКИ<span class="filter-list-item__count">(8)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-2" type="radio" name="spec" value="all">
+                        <label for="cat-2" class="color-rose">ВЫГОДНЫЕ ЦЕНЫ<span class="filter-list-item__count">(2)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-3" type="radio" name="spec" value="all">
+                        <label for="cat-3" class="color-blue">ПОДАРКИ<span class="filter-list-item__count">(1)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-4" type="radio" name="spec" value="all">
+                        <label for="cat-4" class="color-red">СКИДКИ<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-5" type="radio" name="spec" value="all">
+                        <label for="cat-5" class="color-gold">ХИТЫ<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="cat-6" type="radio" name="spec" value="all">
+                        <label for="cat-6" class="color-orange">ЭКСКЛЮЗИВНО<span class="filter-list-item__count">(5)</span></label>
+                      </div>
+                    </div>
+                    <button class="filter-list__show-all">Развернуть +</button>
+                  </div>
+                </div>
+                <div class="catalog-filter__item">
+                  <div class="filter-list__mobile-title"><span>Бренд</span><i class="icon icon__plus--black"></i></div>
+                  <div class="filter-list filter-list--white filter-list--mobile">
+                    <div class="filter-list__title"><span>Все бренды</span><i class="icon icon__triangle--grey"></i></div>
+                    <div class="filter-list-items filter-list-items--scroll">
+                      <div class="filter-list-item">
+                        <input id="brend-all" type="checkbox" value="all">
+                        <label for="brend-all">Все бренды<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-vox" type="checkbox" value="vox">
+                        <label for="brend-vox">Vox<span class="filter-list-item__count">(8)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-ladypink" type="checkbox" value="ladypink">
+                        <label for="brend-ladypink">Lady Pink<span class="filter-list-item__count">(10)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-tonymoly" type="checkbox" value="tonymoly">
+                        <label for="brend-tonymoly">Tony Moly<span class="filter-list-item__count">(25)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-deco" type="checkbox" value="deco">
+                        <label for="brend-deco">Deco<span class="filter-list-item__count">(9)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-all" type="checkbox" value="all">
+                        <label for="brend-all">Все бренды<span class="filter-list-item__count">(16)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-vox" type="checkbox" value="vox">
+                        <label for="brend-vox">Vox<span class="filter-list-item__count">(8)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-ladypink" type="checkbox" value="ladypink">
+                        <label for="brend-ladypink">Lady Pink<span class="filter-list-item__count">(10)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-tonymoly" type="checkbox" value="tonymoly">
+                        <label for="brend-tonymoly">Tony Moly<span class="filter-list-item__count">(25)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="brend-deco" type="checkbox" value="deco">
+                        <label for="brend-deco">Deco<span class="filter-list-item__count">(9)</span></label>
+                      </div>
+                    </div>
+                    <button class="filter-list__show-all">Развернуть +</button>
+                  </div>
+                </div>
+                <div class="catalog-filter__item catalog-filter__item--price">
+                  <div class="filter-price"><img src="img/filter-price.png" alt=""></div>
+                </div>
+                <div class="catalog-filter__item text-right">
+                  <div class="filter-list__mobile-title"><span>Акции</span><i class="icon icon__plus--black"></i></div>
+                  <div class="filter-list filter-list--grey filter-list--mobile">
+                    <div class="filter-list__title"><span>Все акции</span><i class="icon icon__triangle--white"></i></div>
+                    <div class="filter-list-items">
+                      <div class="filter-list-item">
+                        <input id="action-all" type="checkbox" value="all">
+                        <label for="action-all">Все акции</label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="action-1" type="checkbox" value="action-1">
+                        <label for="action-1">Выгодная цена</label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="action-2" type="checkbox" value="action-2">
+                        <label for="action-2">Выгодная пара</label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="action-3" type="checkbox" value="action-3">
+                        <label for="action-3">2=3</label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="action-4" type="checkbox" value="action-4">
+                        <label for="action-4">Фестиваль</label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="action-5" type="checkbox" value="action-5">
+                        <label for="action-5">Подарок за покупку</label>
+                      </div>
+                    </div>
+                    <button class="filter-list__show-all">Развернуть +</button>
+                  </div>
+                </div>
+                <div class="catalog-filter__item text-right">
+                  <div class="filter-list__mobile-title"><span>Цвет</span><i class="icon icon__plus--black"></i></div>
+                  <div class="filter-list filter-list--grey filter-list--mobile">
+                    <div class="filter-list__title"><span>Цвет</span><i class="icon icon__triangle--white"></i></div>
+                    <div class="filter-list-items">
+                      <div class="filter-list-item">
+                        <input id="color-all" type="checkbox" value="all">
+                        <label for="color-all">Все цвета<span class="filter-list-item__count">(50)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-green" type="checkbox" value="green">
+                        <label for="color-green" class="color-green">Зеленый<span class="filter-list-item__count">(12)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-gold" type="checkbox" value="gold">
+                        <label for="color-gold" class="color-gold">Золотой<span class="filter-list-item__count">(8)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-braun" type="checkbox" value="braun">
+                        <label for="color-braun" class="color-braun">Коричневый<span class="filter-list-item__count">(7)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-red" type="checkbox" value="red">
+                        <label for="color-red" class="color-red">Красный<span class="filter-list-item__count">(3)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-blue" type="checkbox" value="blue">
+                        <label for="color-blue" class="color-blue">Синий<span class="filter-list-item__count">(15)</span></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="color-rose" type="checkbox" value="rose">
+                        <label for="color-rose" class="color-rose">Розовый<span class="filter-list-item__count">(15)</span></label>
+                      </div>
+                    </div>
+                    <button class="filter-list__show-all">Развернуть +</button>
+                  </div>
+                </div>
+                <div class="catalog-filter-footer">
+                  <button class="button button--grey">Закрыть фильтры</button>
+                  <button class="button button--default">Показать 16 товаров</button>
+                  <button class="button button--transparent">Очистить фильтры</button>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products-header__right">
+              <div class="catalog-sort"><span class="catalog-sort__label">Сортировать по:</span>
+                <div class="catalog-sort__item">
+                  <div class="filter-list filter-list--grey filter-list--sort dropdown">
+                    <div class="filter-list__title"><span><span>По рейтингу</span><i class="icon icon__arrow--grey rotate"></i></span><i class="icon icon__triangle--white"></i></div>
+                    <div class="filter-list-items">
+                      <div class="filter-list-item">
+                        <input id="ratingUp" type="checkbox" value="ratingUp">
+                        <label for="ratingUp"><span>По рейтингу</span><i class="icon icon__arrow--grey rotate"></i></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="ratingDown" type="checkbox" value="ratingDown">
+                        <label for="ratingDown"><span>По рейтингу</span><i class="icon icon__arrow--grey"></i></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="priceUp" type="checkbox" value="priceUp">
+                        <label for="priceUp"><span>По цене</span><i class="icon icon__arrow--grey rotate"></i></label>
+                      </div>
+                      <div class="filter-list-item">
+                        <input id="priceDown" type="checkbox" value="priceDown">
+                        <label for="priceDown"><span>По цене</span><i class="icon icon__arrow--grey"></i></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-list__search"><span>По Вашему запросу&nbsp;<b>Помада&nbsp;</b>найдено 56 товаров</span></div>
+          <div class="products-list row">
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div></a>
+                  <div class="products-list-item__rating">
+                    <div class="rating">
+                      <div class="rating__item active"></div>
+                      <div class="rating__item active"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                      <div class="rating__item"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header">
+                  <div class="products-list-item__status">
+                    <div class="legend-item color-red">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
+                    </div>
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </div><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__2.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header">
+                  <div class="products-list-item__status">
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </div><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__3.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__4.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header">
+                  <div class="products-list-item__status">
+                    <div class="legend-item color-red">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__discount"></i></div>
+                    </div>
+                    <div class="legend-item color-green">
+                      <div class="legend-item__image bg-inherit"><i class="icon icon__new"></i></div>
+                    </div>
+                  </div><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__5.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div style="background-image: url('img/inst-list.png')" class="instagram-slider-item__image"></div>
+                <div class="instagram-slider-item__title"><i class="icon icon__inst--large"></i><span>#podrygkashop</span></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item"><a href="#" style="background-image: url('img/products-list-action.png')" class="products-list-item__action"></a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="products-list-item">
+                <div class="products-list-item__header"><a href="#">
+                    <div class="products-list-item__image"><img src="img/novetly-slider__1.jpg" alt=""></div>
+                    <div class="products-list-item__title">PERFECT MAT LIPSTICK second line test</div>
+                    <div class="products-list-item__category">помада</div>
+                    <div class="products-list-item__rating">
+                      <div class="rating">
+                        <div class="rating__item active"></div>
+                        <div class="rating__item active"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                        <div class="rating__item"></div>
+                      </div>
+                    </div></a></div>
+                <div class="products-list-item__footer">
+                  <div class="products-list-item__price">
+                    <div class="value value--current"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                    <div class="value value--old"><span>1346</span><span class="rouble">&#x20bd;</span></div>
+                  </div>
+                  <div class="products-list-item__shades">
+                    <button class="image image--basket js-add-basket">
+                      <div class="icon icon__basket--large"></div>
+                    </button>
+                    <button class="image image--like js-like">
+                      <div class="icon icon__heart"></div>
+                    </button>
+                    <div class="text">14 оттенков</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more">
+            <button>ПОКАЗАТЬ ЕЩЕ</button>
+            <div class="show-more__count"><<span class="current">1</span>/<span class="total">34</span>></div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="section-journal owl-nav--light">
+      <div class="section-journal-container">
+        <div class="section-journal__slider">
+          <div class="journal-slider-wrap">
+            <div class="journal-slider owl-carousel js-slider-journal">
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-1.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">05</span><span>/май</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-2.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">04</span><span>/апрель</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-3.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">03</span><span>/март</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-3.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">02</span><span>/февраль</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-1.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">01</span><span>/январь</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-2.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">01</span><span>/январь</span></div>
+              </div>
+              <div class="journal-slider-item"><a href="#" class="journal-slider-item__image"><img src="img/journal-3.jpg" alt=""></a>
+                <div class="journal-slider-item__desc"><span class="strong">01</span><span>/январь</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-journal__desc">
+          <div class="title">Журнал <span>подружка</span></div>
+          <ul class="list-bg list-bg--flower">
+            <li class="list-bg__item"><span>Узнавай про новинки</span></li>
+            <li class="list-bg__item"> <span>читай Статьи, советы и т.п.</span></li>
+            <li class="list-bg__item"> <span>Скачай на телефон</span></li>
+          </ul>
+          <div class="block-shop-app"><a href="#" class="block-shop-app__item"><img src="img/google-play.png" alt=""></a><a href="#" class="block-shop-app__item"><img src="img/app-store.png" alt=""></a></div>
+        </div>
+      </div>
+      <div class="section-journal-bottom">
+        <div class="section-journal-bottom__container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="vendor/fancybox/jquery.fancybox.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel2.thumbs.js"></script>
+    <script src="vendor/picturefill/picturefill.min.js" async></script>
+    <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
+    <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="vendor/zoomsl/zoomsl-3.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <footer class="footer">
+      <div class="footer-menu-section">
+        <div class="footer-menu-section__item">
+          <div class="title"><span>разделы</span>
+            <div class="icon"></div>
+          </div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">каталог</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">акции</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">только у нас</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">новинки</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">хочу скидку</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">магазины</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">пообщаемся</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-section__item">
+          <div class="title"><span>каталог</span>
+            <div class="icon"></div>
+          </div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Макияж</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Парфюмерия</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Уход</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Для любимых</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Дамские штучки</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Для дома</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Бренды</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-section__item">
+          <div class="title"><span>промо</span>
+            <div class="icon"></div>
+          </div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Акции</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Журналы</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Подарочные сертификаты</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Подписка на рассылку</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-section__item">
+          <div class="title"><span>дополнительно</span>
+            <div class="icon"></div>
+          </div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Поиск</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Карта сайта</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Вниманию покупателей</a></li>
+            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__logo-section">
+        <div class="image"><img src="img/logo--large.png" alt=""></div>
+      </div>
+      <div class="footer__social">
+        <div class="title">Мы в соц.сетях:</div>
+        <div class="social"><a href="#" class="social__item"><i class="icon icon__fb--white"></i></a><a href="#" class="social__item"><i class="icon icon__vk--white"></i></a><a href="#" class="social__item"><i class="icon icon__inst--white"></i></a></div>
+      </div>
+    </footer>
+    <div class="modal-hide">
+      <div id="js-modal-reg" class="modal-container">
+        <div class="modal-container__title"><span>регистрация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Зарегистрируйтесь, если у вас нет учетной записи, или <a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">авторизуйтесь</a></p>
+            <div class="input-container">
+              <input type="text" placeholder="Имя*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Контактный email*" class="input-text">
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Мобильный телефон" class="input-text">
+            </div>
+            <div class="date"><span>Дата рождения*</span>
+              <div class="date__input">
+                <select data-placeholder=" " class="js-select input--day">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">22</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--month">
+                  <option value=""></option>
+                  <option value="1">январь</option>
+                  <option value="2">февраль</option>
+                </select>
+                <select data-placeholder=" " class="js-select input--year">
+                  <option value=""></option>
+                  <option value="1">1988</option>
+                  <option value="2">2000</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="gender"><span>Пол*</span>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="female" class="input-radio">
+                <label for="female">женский</label>
+              </div>
+              <div class="gender__input">
+                <input type="radio" name="gender" id="male" class="input-radio">
+                <label for="male">мужской</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="input-container input-container--with-two">
+              <input type="text" placeholder="Введи пароль*" class="input-text">
+              <input type="text" placeholder="Повтори пароль*" class="input-text">
+            </div>
+            <div class="form-modal__annotaiton"><span>*Поля обязательные для регистрации</span></div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__terms">
+              <input type="checkbox" class="input-checkbox small"><span>Я согласен с <a href="#">правилами пользования сайтом</a></span>
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="зарегистрироваться" class="button button--default">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-auth" class="modal-container">
+        <div class="modal-container__title"><span>авторизация</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Авторизуйтесь, если у вас уже есть учетная запись, либо <a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">зарегистрируйтесь</a></p>
+            <div class="input-container">
+              <label>Логин</label>
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="input-container">
+              <label>Пароль</label>
+              <input type="text" placeholder="Не менее 6 символов" class="input-text">
+              <div class="recovery"><a data-fancybox-href="#js-modal-recovery" href="#" class="js-modal">Забыли пароль?</a></div>
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="войти" class="button button--default">
+              <div class="remember">
+                <input type="checkbox" class="input-checkbox small"><span>Запомнить меня</span>
+              </div>
+            </div>
+            <div class="form-modal__social">
+              <div class="title">Войти с помощью</div>
+              <div class="social"><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__ok"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-hide">
+      <div id="js-modal-recovery" class="modal-container">
+        <div class="modal-container__title"><span>восстановление пароля</span></div>
+        <div class="modal-container-content">
+          <div class="form-modal form-modal--auth">
+            <p>Для того, чтобы восстановить свой пароль, введи указанный ранее при регистрации e-mail и нажми «восстановить»</p>
+            <div class="input-container">
+              <input type="text" placeholder="Адрес e-mail" class="input-text">
+            </div>
+            <div class="form-modal__capcha"><span>Введи число с картинки*:</span>
+              <div class="code"></div>
+              <button>
+                <div class="icon icon__refresh"></div>
+              </button>
+              <input type="text" placeholder="" class="input-text">
+            </div>
+            <div class="form-modal__footer">
+              <input type="submit" value="восстановить" class="button button--default"><a data-fancybox-href="#js-modal-reg" href="#" class="js-modal">Регистрация</a><a data-fancybox-href="#js-modal-auth" href="#" class="js-modal">Вернуться к авторизации</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

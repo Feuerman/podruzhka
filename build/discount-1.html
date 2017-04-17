@@ -3,6 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+  <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
+  <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link href="vendor/slick/slick.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-inner">
   <div class="page-wrapper">
@@ -16,56 +24,108 @@
           <button class="js-menu-parent"><i class="icon icon__arrow--vinous"></i><span>Назад</span></button>
         </div>
       </div>
-      <div menu-level="1" class="mobile-menu-blocks active level-1">
+      <div class="mobile-menu-blocks">
         <div class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>Найти товар</span><i class="icon icon__loop"></i></a></div>
         <ul class="mobile-menu">
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>парфюмерия</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>уход</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>для любимых</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>дамские штучки</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>для дома</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>бренды</span><i class="icon icon__arrow--vinous"></i></a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>парфюмерия</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>111</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 111</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>уход</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__title"><span>макияж</span></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>лицо</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__title"><span>лицо</span></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>корректор</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>тональные средства</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>пудра</span></a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>румяна</span></a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>глаза</span><i class="icon icon__arrow--vinous"></i></a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>губы</span><i class="icon icon__arrow--vinous"></i></a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>ногти</span><i class="icon icon__arrow--vinous"></i></a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>для любимых</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>222</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 222</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>дамские штучки</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>333</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 333</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>для дома</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>444</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 444</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>бренды</span><i class="icon icon__arrow--vinous"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>555</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 555</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
         <ul class="mobile-menu mobile-menu--pink">
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>разделы</span><i class="icon icon__arrow--white--right"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>промо</span><i class="icon icon__arrow--white--right"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>дополнительно</span><i class="icon icon__arrow--white--right"></i></a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>разделы</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>666</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 666</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>промо</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>777</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 777</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>дополнительно</span><i class="icon icon__arrow--white--right"></i></a>
+            <ul menu-level="1" class="mobile-menu">
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>888</span><i class="icon icon__arrow--vinous"></i></a>
+                <ul menu-level="2" class="mobile-menu">
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>child 888</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
         <div class="mobile-menu__social">
           <div class="title">Мы в соц.сетях:</div>
           <div class="social"><a href="#" class="social__item"><img src="img/fb--white.png" alt=""></a><a href="#" class="social__item"><img src="img/vk--white.png" alt=""></a><a href="#" class="social__item"><img src="img/inst--white.png" alt=""></a></div>
         </div>
       </div>
-      <div menu-level="2" class="mobile-menu-blocks level-2">
-        <div class="mobile-menu__title"><span>макияж</span></div>
-        <ul class="mobile-menu">
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>лицо</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>глаза</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>губы</span><i class="icon icon__arrow--vinous"></i></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link js-link-children"><span>ногти</span><i class="icon icon__arrow--vinous"></i></a></li>
-        </ul>
-      </div>
-      <div menu-level="3" class="mobile-menu-blocks level-3">
-        <div class="mobile-menu__title"><span>лицо</span></div>
-        <ul class="mobile-menu">
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>корректор</span></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>тональные средства</span></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>пудра</span></a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span>румяна</span></a></li>
-        </ul>
-      </div>
     </div>
     <div class="overlay-block overlay-block--open-nav"></div>
-    <section class="action-header">
-      <div class="action-header__container">
-        <div class="action-header-list"><a href="#" class="action-header-list__item"><img src="img/action-list-1.jpg" alt="">
-            <div class="desc">Фестиваль с 1 по 30 июня</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-2.jpg" alt="">
-            <div class="desc">3 по цене 2</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-3.jpg" alt="">
-            <div class="desc">ПОдарок за покупку</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-4.jpg" alt="">
-            <div class="desc">выгодная цена</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-5.jpg" alt="">
-            <div class="desc">-50% выгодная пара</div></a></div>
-      </div>
-    </section>
     <header class="header">
       <div class="header-logo">
         <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="#"><img src="img/logo.png" alt=""></a>
@@ -73,8 +133,84 @@
       <div class="header-menu">
         <nav>
           <ul class="top-menu">
-            <li class="top-menu__item"><a href="#" class="top-menu__link">Каталог</a></li>
-            <li class="top-menu__item"><a href="#" class="top-menu__link js-show-action-block">Акции</a></li>
+            <li class="top-menu__item"><a data-sub-menu="catalog" href="#" class="top-menu__link">Каталог</a>
+              <section class="header-menu-sub">
+                <ul class="top-menu-sub">
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">макияж</a>
+                    <div class="child-menu-container">
+                      <div class="child-menu-group">
+                        <div class="child-menu">
+                          <div class="child-menu__title">лицо</div>
+                          <ul>
+                            <li><a href="#">корректор</a></li>
+                            <li><a href="#">тональные средства</a></li>
+                            <li><a href="#">пудра</a></li>
+                            <li><a href="#">румяна </a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">глаза</div>
+                          <ul>
+                            <li><a href="#">база под тени</a></li>
+                            <li><a href="#">карандаши и лайнеры</a></li>
+                            <li><a href="#">для бровей</a></li>
+                            <li><a href="#">тени</a></li>
+                            <li><a href="#">тушь</a></li>
+                            <li><a href="#">накладные ресницы</a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">губы</div>
+                          <ul>
+                            <li><a href="#">блески</a></li>
+                            <li><a href="#">карандаши</a></li>
+                            <li><a href="#">помада </a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">ногти</div>
+                          <ul>
+                            <li><a href="#">инструменты</a></li>
+                            <li><a href="#">дизайн ногтей</a></li>
+                            <li><a href="#">средства для снятия лака</a></li>
+                            <li><a href="#">лаки</a></li>
+                            <li><a href="#">уход за ногтями</a></li>
+                          </ul>
+                        </div>
+                        <div class="child-menu">
+                          <div class="child-menu__title">снятие макияжа</div>
+                          <ul>
+                            <li><a href="#">блески</a></li>
+                            <li><a href="#">карандаши</a></li>
+                            <li><a href="#">помада</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="banner"><a href="#"><img src="img/sub-menu-banner.jpg" alt=""></a></div>
+                    </div>
+                  </li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">парфюмерия</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">уход</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">для любимых</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">дамские штучки</a></li>
+                  <li class="top-menu-sub__item"><a href="#" class="top-menu-sub__link">для дома</a></li>
+                </ul>
+              </section>
+            </li>
+            <li class="top-menu__item"><a data-sub-menu="action" href="#" class="top-menu__link">Акции</a>
+              <section class="header-menu-sub">
+                <section class="action-header">
+                  <div class="action-header__container">
+                    <div class="action-header-list"><a href="#" class="action-header-list__item"><img src="img/action-list-1.jpg" alt="">
+                        <div class="desc">Фестиваль с 1 по 30 июня</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-2.jpg" alt="">
+                        <div class="desc">3 по цене 2</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-3.jpg" alt="">
+                        <div class="desc">ПОдарок за покупку</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-4.jpg" alt="">
+                        <div class="desc">выгодная цена</div></a><a href="#" class="action-header-list__item"><img src="img/action-list-5.jpg" alt="">
+                        <div class="desc">-50% выгодная пара</div></a></div>
+                  </div>
+                </section>
+              </section>
+            </li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Только у нас</a></li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Новинки</a></li>
             <li class="top-menu__item"><a href="#" class="top-menu__link">Хочу скидки</a></li>
@@ -85,7 +221,7 @@
       </div>
       <div class="header-panel">
         <div class="header-panel__actions header-panel__item">
-          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a href="#" class="item js-modal-callback"><i class="icon icon__phone"></i></a>
+          <button class="item js-search-panel"><i class="icon icon__loop"></i></button><a data-sub-menu="contacts" href="#" class="item"><i class="icon icon__phone"></i></a>
           <button data-fancybox-href="#js-modal-auth" class="item js-modal"><i class="icon icon__auth"></i></button>
         </div><a href="#" class="header-basket header-panel__item">
           <div class="header-basket__image"><i class="icon icon__basket"></i></div>
@@ -399,15 +535,9 @@
         </div>
       </div>
     </section>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
-    <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
-    <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="vendor/fancybox/jquery.fancybox.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel2.thumbs.js"></script>
     <script src="vendor/picturefill/picturefill.min.js" async></script>
