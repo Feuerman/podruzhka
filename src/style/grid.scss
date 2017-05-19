@@ -1,11 +1,17 @@
 body {
 	background-color: rgb(222, 222, 222);
-	font-family: Tahoma;
+	font-family: Tahoma, TahomaReg;
 	transition: all 0.5s ease-in-out;
 	&.open-menu-panel {
 		position: relative;
 		transform: translateX(245px);
 		overflow-x: hidden;
+	}
+}
+
+.fancybox-margin {
+	.header.fixed {
+		overflow-y: scroll;
 	}
 }
 
@@ -26,6 +32,7 @@ body {
 	width: 1920px;
 	max-width: 100%;
 	margin: 0 auto;
+	transition: all 0.7s ease-in-out;
 }
 @media screen and (min-width: 1921px){
 	.page-wrapper {
@@ -53,7 +60,7 @@ body {
 	}
 }
 .header {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	max-width: 1920px;
 	z-index: 400;
@@ -64,7 +71,13 @@ body {
 	padding-left: 83px;
 	padding-right: 83px;
 	& + section, & + div {
-		margin-top: 85px;
+		// margin-top: 85px;
+	}
+	&.fixed {
+		position: fixed;
+		& + section, & + div {
+			margin-top: 85px;
+		}
 	}
 }
 .mobile-menu-container {
@@ -90,7 +103,12 @@ body {
 @media screen and (max-width: 479px) {
 	.header {
 		& + section, & + div {
-			margin-top: 66px;
+			margin-top: 0;
+		}
+		&.fixed {
+			& + section, & + div {
+				margin-top: 66px;
+			}
 		}
 	}
 }

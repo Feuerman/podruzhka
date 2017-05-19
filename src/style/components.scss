@@ -480,8 +480,6 @@
 	min-height: 200px;
 	&-wrap {
 		position: relative;
-		padding-left: 83px;
-		padding-right: 83px;
 		background: rgb(248, 248, 248);
 	}
 	img {
@@ -502,12 +500,12 @@
 		}
 	}
 	.owl-dots {
-		padding-left: 38%;
 		position: absolute;
 		bottom: 11px;
 		left: 0;
 		right: 0;
 		margin: auto;
+		text-align: center;
 	}
 }
 
@@ -709,6 +707,18 @@
 	}
 }
 
+.jq-selectbox {
+	ul {
+		max-height: 150px;
+	}
+	.mCSB_scrollTools {
+		width: 9px;
+	}
+	.mCSB_inside>.mCSB_container {
+		margin-right: 0;
+	}
+}
+
 .products-list {
 	clear: both;
 	margin-left: -10px;
@@ -748,6 +758,7 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			z-index: 100;
 			.legend-item {
 				display: inline-block;
 				margin: 0;
@@ -1468,6 +1479,17 @@
 			margin-bottom: 25px;
 			color: rgb(80, 80, 80);
 			font-size: 1.3rem;
+			p:not(:first-child) {
+				display: none;
+			}
+			&.active {
+				p {
+					display: block !important;
+				}
+				& + .link {
+					display: none;
+				}				
+			}
 		}
 		.link {
 			color: rgb(80, 80, 80);
@@ -1754,6 +1776,7 @@
 		&__metro {
 			overflow: hidden;
 			.icon {
+				clear: both;
 				display: block;
 				float: left;
 				margin-top: 3px;
@@ -1772,6 +1795,9 @@
 				&__desc {
 					color: rgb(161, 161, 161);
 				}
+			}
+			.text + .icon {
+				margin-top: 15px;
 			}
 		}
 		&__availability {
@@ -3189,7 +3215,7 @@
 
 .journal-popup {
 	background-color: rgb(255, 255, 255);
-	padding-top: 60px!important;
+	padding-top: 20px!important;
 	&__slider {
 		padding: 0 140px;
 		&-item {
@@ -3220,12 +3246,12 @@
 			background-position: $icon-arrow-lightgrey-right-offset-x $icon-arrow-lightgrey-right-offset-y;
 		}
 		&-thumbs {
-			padding: 40px 0;			
+			padding: 40px 0 20px 0;			
 			.slick-slide {
 				margin: 0 10px;
 				padding-top: 20px;
 				padding-bottom: 20px;			
-				&.slick-current {
+				&.current {
 					img {
 						transform: scale(1.1);
 						box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -4592,7 +4618,7 @@
 		.left {
 			display: inline-block;
 			span {
-				font-family: Tahoma;
+				font-family: Tahoma, TahomaReg;
 				font-size: 10.5rem;
 				color: rgb(227, 25, 144);
 			}
@@ -5439,13 +5465,7 @@
 		&__link {
 
 		}
-	}
-	.top-slider {
-		.owl-dots {
-			padding-left: 0;
-			text-align: center;
-		}
-	}
+	}	
 	.novetly-slider {
 		.products-list {
 			&-item {
@@ -5551,11 +5571,14 @@
 				width: 23%;
 				padding-right: 10px;
 			}
+			&__metro {
+				width: 28%;
+			}
 			&__availability {
 				width: 11%;
 			}
 			&__mode {
-				width: 20%;
+				width: 15%;
 			}
 			&__name {
 				span {	
@@ -6097,6 +6120,17 @@
 			}
 		}		
 	}
+	.journal-popup {
+		&__slider {
+			padding: 0 60px;
+			.slick-prev {
+				left: 10px;
+			}
+			.slick-next {
+				right: 10px;
+			}
+		}	
+	}
 }
 @media screen and (max-width: 1199px) {
 	.left-block-float {
@@ -6340,6 +6374,22 @@
 	}
 }
 @media screen and (max-width: 991px) {
+	.journal-popup {
+		&__slider {
+			padding: 0 25px;
+			&-thumbs {
+				padding: 0;
+			}
+			.slick-prev {
+				left: -5px;
+				transform: scale(0.5) translateY(-50%);
+			}
+			.slick-next {
+				transform: scale(0.5) translateY(-50%);
+				right: -5px;
+			}
+		}	
+	}
 	.exclusive-slider {
 		&-nav {
 			&__left {
@@ -8082,7 +8132,7 @@
 			right: 10%;
 			bottom: 35%;
 			.right {
-				width: 135px;
+				width: 170px;
 			}			
 		}
 	}

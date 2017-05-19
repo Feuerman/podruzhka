@@ -1,5 +1,6 @@
-
-	
+- if (mainPage)
+	.header-banner
+		img(src="img/slider-top-page__1.jpg", alt="")
 header.header
 	.header-logo
 		button.top-menu-button.js-top-nav-toggle
@@ -18,7 +19,8 @@ header.header
 								.child-menu-container
 									.child-menu-group
 										.child-menu
-											.child-menu__title лицо
+											.child-menu__title
+												a(href="#") лицо
 											ul
 												li
 													a(href="#") корректор
@@ -27,9 +29,10 @@ header.header
 												li
 													a(href="#") пудра
 												li
-													a(href="#") румяна 
+													a(href="#") румяна
 										.child-menu
-											.child-menu__title глаза
+											.child-menu__title
+												a(href="#") глаза
 											ul
 												li
 													a(href="#") база под тени
@@ -44,16 +47,18 @@ header.header
 												li
 													a(href="#") накладные ресницы
 										.child-menu
-											.child-menu__title губы
+											.child-menu__title
+												a(href="#") губы
 											ul
 												li
 													a(href="#") блески
 												li
 													a(href="#") карандаши
 												li
-													a(href="#") помада 
+													a(href="#") помада
 										.child-menu
-											.child-menu__title ногти
+											.child-menu__title
+												a(href="#") ногти
 											ul
 												li
 													a(href="#") инструменты
@@ -66,7 +71,8 @@ header.header
 												li
 													a(href="#") уход за ногтями
 										.child-menu
-											.child-menu__title снятие макияжа
+											.child-menu__title
+												a(href="#") снятие макияжа
 											ul
 												li
 													a(href="#") блески
@@ -122,8 +128,150 @@ header.header
 		.header-panel__actions.header-panel__item
 			button.item.js-search-panel
 				i.icon.icon__loop
-			a.item(data-sub-menu="contacts" href="#")
+			a.item.js-popup-contacts(href="#")
 				i.icon.icon__phone
+			section.header-menu-sub
+				section.contacts-header
+					.contacts-header__info
+						.col
+							.info-group
+								.info-group__title ООО «ТАБЕР ТРЕЙД» СЕТЬ МАГАЗИНОВ КОСМЕТИКИ «ПОДРУЖКА»
+								.info-group__content
+									p 115280 Москва ул. Ленинская Слобода, д. 19, Бизнес центр «Омега плаза».
+							.info-group
+								.info-group__title Телефон:
+								.info-group__content
+									p (495) 380-28-28	Многоканальный
+									p (495) 380-28-29	Отдел персонала
+									p (495) 926-80-82	Call-центр
+									p (800) 707-47-47	Звонок бесплатный
+							.info-group
+								.info-group__title E-mail:
+								.info-group__content
+									p
+										a(href="mailto:secretary@taber.ru") secretary@taber.ru&nbsp;
+										| Секретариат
+									p
+										a(href="mailto:rabota@taber.ru") rabota@taber.ru&nbsp;
+										| Отдел персонала
+							a.link(href="#") Обратная связь
+						.col
+							.map
+								script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58c8dfad57fffced55eba6e863e77e24c8e3e71b2276367f37dc49f7fd5a5e0a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true")
+							.info-group
+								.info-group__title Проезд:
+								.info-group__content
+									p м. Автозаводская, ул. Ленинская Слобода, д.19, Бизнес Центр «Омега Плаза», 2 этаж налево, офис сети магазинов «Подружка».
+					.contacts-header__workers
+						.tabs.js-tabs
+							.tabs-links
+								a.tabs__item(href="#") Руководство >
+								a.tabs__item(href="#") Администрация >
+								a.tabs__item(href="#") Департамент закупок >
+								a.tabs__item(href="#") Департамент маркетинга >
+								a.tabs__item(href="#") Департамент развития >
+								a.tabs__item(href="#") Отдел подбора персонала >
+								a.tabs__item(href="#") Департамент логистики >
+								a.tabs__item(href="#") Департамент IТ >
+								a.tabs__item(href="#") Отдел строительства, оборудования и эксплуатации >
+							.tabs-content
+								.tabs-content__item
+									.info-group
+										.info-group__title Директор по развитию
+										.info-group__content
+											p Николай Фоменко
+											p +7 985 776-99-62 (моб.)
+											p 
+												a(href="mailto:fomenko@taber.ru") fomenko@taber.ru
+									.info-group
+										.info-group__title Руководитель отдела поиска помещений и заключения договоров
+										.info-group__content
+											p Алексей Афанасенко
+											p (495) 380-28-28, доб. 3316
+											p +7 917 560-07-60 (моб.)
+											p 
+												a(href="mailto:a.afanasenko@taber.ru") a.afanasenko@taber.ru
+									.title Менеджеры отдела поиска помещений (Москва и МО):
+									.info-group
+										.info-group__title Менеджер по развитию в ТЦ
+										.info-group__content
+											p Евгений Симоненко
+											p (495) 380-28-28, доб. 3267
+											p +7 917 560-07-60 (моб.)
+											p 
+												a(href="mailto:e.simonenko@taber.ru") e.simonenko@taber.ru
+									.info-group
+										.info-group__title Менеджер по развитию в ТЦ
+										.info-group__content
+											p Анна Пауль
+											p (495) 380-28-28, доб. 3305
+											p 
+												a(href="mailto:paul@taber.ru") paul@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+									.info-group
+										.info-group__title Менеджер по недвижимости (развитие в Street)
+										.info-group__content
+											p Сергей Макушин
+											p (495) 380-28-28, доб. 3302
+											p 
+												a(href="mailto:makushin@taber.ru") makushin@taber.ru
+								.tabs-content__item
+									p 222
+								.tabs-content__item
+									p 333
+								.tabs-content__item
+									p 444
+								.tabs-content__item
+									p 555
+								.tabs-content__item
+									p 666
+								.tabs-content__item
+									p 777
+								.tabs-content__item
+									p 888
+								.tabs-content__item
+									p 999
 			button.item.js-modal(data-fancybox-href="#js-modal-auth")
 				i.icon.icon__auth
 		a.header-basket.header-panel__item(href="#")
@@ -139,6 +287,7 @@ header.header
 					img(src="img/vk.png", alt="")
 				a.social__item(href="#")
 					img(src="img/inst.png", alt="")
+	.clearfix
 	.header-search
 		form.form-search
 			input(type="text" placeholder="Напишите, что вы ищете")

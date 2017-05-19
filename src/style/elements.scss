@@ -109,7 +109,7 @@ a, input, button, textarea {
 
 .jq-selectbox {
 	height: 32px;
-	font-family: Tahoma;
+	font-family: Tahoma, TahomaReg;
 	color: rgb(161, 161, 161);
 	&__dropdown {
 		top: 100%!important;
@@ -132,7 +132,7 @@ a, input, button, textarea {
 			&.placeholder {
 				color: inherit;
 				text-shadow: none;
-				font-family: Tahoma;
+				font-family: Tahoma, TahomaReg;
 			}
 		}
 		&:hover {
@@ -1047,9 +1047,10 @@ input[type=range]::-ms-thumb {
 	max-width: 100%;
 	margin: 20px auto 0 auto;
 	display: table;
-	color: rgb(178, 178, 178);
-	button {
+	a {
 		outline: none;
+		color: rgb(178, 178, 178);
+		text-decoration: none !important;
 		&:hover {
 			color: rgb(255, 103, 184);
 		}
@@ -1083,6 +1084,7 @@ input[type=range]::-ms-thumb {
 		padding-left: 10px;
 		padding-right: 10px;
 		.item {
+			display: inline-block;
 			width: 30px;
 			font-size: 2.2rem;
 			text-align: center;
