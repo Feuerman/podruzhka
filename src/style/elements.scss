@@ -810,6 +810,7 @@ input[type=range]::-ms-thumb {
 
 .filter-list {
 	position: relative;
+	width: 100%;
 	min-width: 170px;
 	text-align: left;
 	&__mobile-title {

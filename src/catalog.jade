@@ -240,8 +240,14 @@ body.page-inner
 													span.filter-list-item__count (9)
 										button.filter-list__show-all Развернуть +
 								.catalog-filter__item.catalog-filter__item--price
-									.filter-price
-										img(src="img/filter-price.png", alt="")
+									.filter-list__mobile-title
+										span Цена
+										i.icon.icon__plus--black
+									.filter-list.filter-list--mobile
+										.filter-price
+											.layout-slider
+												.filter-price__title Цена
+												input#slider-price(type='text', name='area', value='0;10000')
 								.catalog-filter__item.text-right
 									.filter-list__mobile-title
 										span Акции

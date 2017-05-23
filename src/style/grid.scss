@@ -5,7 +5,7 @@ body {
 	&.open-menu-panel {
 		position: relative;
 		transform: translateX(245px);
-		overflow-x: hidden;
+		overflow-x: hidden;		
 	}
 }
 
@@ -28,15 +28,26 @@ body {
 }
 
 .page-wrapper {
-	overflow: hidden;
+	position: relative;
 	width: 1920px;
 	max-width: 100%;
 	margin: 0 auto;
 	transition: all 0.7s ease-in-out;
+	padding-top: 85px;
+	&.index {
+		position: absolute;
+		top: 60vh;
+		left: 0;
+		padding-top: 0;
+		&.slide {
+			top: 0;
+		}
+	}	
 }
 @media screen and (min-width: 1921px){
 	.page-wrapper {
-		position: relative;
+		position: absolute;
+		left: calc(50% - (1920 / 2));
 	}
 }
 .overlay-block {
@@ -70,17 +81,18 @@ body {
 	margin: auto;
 	padding-left: 83px;
 	padding-right: 83px;
-	& + section, & + div {
-		// margin-top: 85px;
-	}
+	// & + section, & + div {
+	// 	margin-top: 85px;
+	// }
 	&.fixed {
 		position: fixed;
-		& + section, & + div {
-			margin-top: 85px;
-		}
+		// & + section, & + div {
+		// 	margin-top: 85px;
+		// }
 	}
 }
 .mobile-menu-container {
+	overflow: hidden;
 	z-index: -1;
 	position: absolute;
 	left: -245px;

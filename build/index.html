@@ -10,10 +10,11 @@
   <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
   <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link href="vendor/slick/slick.css" rel="stylesheet">
+  <link href="vendor/range-slider/jslider.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper index">
     <div class="mobile-menu-container">
       <div class="mobile-menu-header">
         <div class="mobile-menu-header__item mobile-menu-header__item--auth">
@@ -126,7 +127,14 @@
       </div>
     </div>
     <div class="overlay-block overlay-block--open-nav"></div>
-    <div class="header-banner"><img src="img/slider-top-page__1.jpg" alt=""></div>
+    <div class="header-banner">
+      <div class="header-banner__slider js-header-banner owl-carousel">
+        <div style="background-image: url('img/slider-top-page__1.jpg')" class="item"></div>
+        <div style="background-image: url('img/slider-top-page__1.jpg')" class="item"></div>
+        <div style="background-image: url('img/slider-top-page__1.jpg')" class="item"></div>
+        <div style="background-image: url('img/slider-top-page__1.jpg')" class="item"></div>
+      </div>
+    </div>
     <header class="header">
       <div class="header-logo">
         <button class="top-menu-button js-top-nav-toggle"><span></span></button><a href="#"><img src="img/logo.png" alt=""></a>
@@ -272,7 +280,7 @@
                         <div class="info-group__content">
                           <p>Николай Фоменко</p>
                           <p>+7 985 776-99-62 (моб.)</p>
-                          <p> <a href="mailto:fomenko@taber.ru">fomenko@taber.ru</a></p>
+                          <p><a href="mailto:fomenko@taber.ru">fomenko@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -281,7 +289,7 @@
                           <p>Алексей Афанасенко</p>
                           <p>(495) 380-28-28, доб. 3316</p>
                           <p>+7 917 560-07-60 (моб.)</p>
-                          <p> <a href="mailto:a.afanasenko@taber.ru">a.afanasenko@taber.ru</a></p>
+                          <p><a href="mailto:a.afanasenko@taber.ru">a.afanasenko@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="title">Менеджеры отдела поиска помещений (Москва и МО):</div>
@@ -291,7 +299,7 @@
                           <p>Евгений Симоненко</p>
                           <p>(495) 380-28-28, доб. 3267</p>
                           <p>+7 917 560-07-60 (моб.)</p>
-                          <p> <a href="mailto:e.simonenko@taber.ru">e.simonenko@taber.ru</a></p>
+                          <p><a href="mailto:e.simonenko@taber.ru">e.simonenko@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -299,7 +307,7 @@
                         <div class="info-group__content">
                           <p>Анна Пауль</p>
                           <p>(495) 380-28-28, доб. 3305</p>
-                          <p> <a href="mailto:paul@taber.ru">paul@taber.ru</a></p>
+                          <p><a href="mailto:paul@taber.ru">paul@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -307,7 +315,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -315,7 +323,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -323,7 +331,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -331,7 +339,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -339,7 +347,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -347,7 +355,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                       <div class="info-group">
@@ -355,7 +363,7 @@
                         <div class="info-group__content">
                           <p>Сергей Макушин</p>
                           <p>(495) 380-28-28, доб. 3302</p>
-                          <p> <a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
+                          <p><a href="mailto:makushin@taber.ru">makushin@taber.ru</a></p>
                         </div>
                       </div>
                     </div>
@@ -973,6 +981,11 @@
     <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
     <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="vendor/zoomsl/zoomsl-3.0.min.js"></script>
+    <script src="vendor/range-slider/jquery.numberformatter-1.2.3.js"></script>
+    <script src="vendor/range-slider/tmpl.js"></script>
+    <script src="vendor/range-slider/jquery.dependClass-0.1.js"></script>
+    <script src="vendor/range-slider/draggable-0.1.js"></script>
+    <script src="vendor/range-slider/jquery.slider.js"></script>
     <script src="js/main.js"></script>
     <footer class="footer">
       <div class="footer-menu-section">
