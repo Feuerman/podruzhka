@@ -96,7 +96,7 @@
 		}
 		& > .left-menu-sub {
 			opacity: 1;
-			max-height: 500px;
+			max-height: 2000px;
 			&--level-1 {
 				margin-top: 10px;
 				margin-bottom: 15px;
@@ -161,6 +161,7 @@
 				margin-top: 7px;
 			}
 			.left-menu-sub__link {
+				text-transform: none;
 				font-size: 1.2rem;
 				font-weight: 600;
 			}
@@ -275,12 +276,16 @@
 	&__link {
 		position: relative;
 		display: block;
-		padding: 14px 23px;
+		padding: 0 23px;
 		font-size: 1.8rem;
 		color: rgb(113, 113, 113)!important;
 		background-color: rgb(255, 255, 255);
 		text-transform: uppercase;
 		transition: all 0.3s;
+		span {
+			display: inline-block;
+			padding: 14px 0;
+		}
 		&:hover, &.active {
 			background-color: rgb(242, 237, 241);
 			text-decoration: none;
@@ -786,7 +791,6 @@
 			line-height: 1.2;
 			font-weight: 300;
 			color: rgb(80, 80, 80);
-			text-transform: uppercase;
 		}
 		&__category {
 			float: left;
@@ -887,7 +891,7 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			background-position: top right;
+			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -1116,7 +1120,7 @@
 	}
 }
 
-.shades-slider {
+.shades-slider {	
 	.owl-prev, .owl-next {
 		position: absolute;
 		top: 0;
@@ -2115,12 +2119,16 @@
 		margin-bottom: 25px;
 		&__group {
 			overflow: hidden;
+			display: flex;
+			justify-content: flex-start;
 			.title {
-				float: left;
 				margin-right: 7px;
 				font-weight: 600;
 			}
 			.value {
+				&__item {
+					display: block;
+				}
 				.icon {
 					position: relative;
 					top: 1px;
@@ -4705,7 +4713,7 @@
 		position: relative;
 		z-index: 60;
 		width: 800px;
-		margin: 50px auto 20px auto;
+		margin: 50px auto 0 auto;
 		transform: translateX(3%);
 		&-bg {
 			position: absolute;
@@ -4728,6 +4736,7 @@
 			z-index: 50;
 			width: 33.333%;
 			display: inline-block;
+			margin-bottom: 50px;
 			letter-spacing: -1px;
 			text-decoration: none!important;
 			color: rgb(104, 104, 104);
@@ -6155,8 +6164,9 @@
 		}
 		&-info {
 			&__group {
+				flex-direction: column;
 				.title {
-					float: none;
+					
 				}
 			}
 		}				
@@ -7609,9 +7619,7 @@
 		&-info {
 			&__group {
 				margin-bottom: 10px;
-				.title {
-					float: left;
-				}
+				flex-direction: row;				
 			}
 		}
 		&__panel {
@@ -8928,7 +8936,7 @@
 				&__right {
 					justify-content: flex-start;
 					img {
-						width: 520px;
+						width: 100%;
 					}
 				}
 			}

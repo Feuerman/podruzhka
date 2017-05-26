@@ -1,11 +1,20 @@
 body {
+	overflow-x: hidden;
 	background-color: rgb(222, 222, 222);
 	font-family: Tahoma, TahomaReg;
 	transition: all 0.5s ease-in-out;
 	&.open-menu-panel {
 		position: relative;
 		transform: translateX(245px);
-		overflow-x: hidden;		
+		overflow-x: hidden;	
+		.page-wrapper {
+			overflow: visible;
+		}	
+	}
+	&.page-inner {
+		.header {
+			position: fixed!important;
+		}
 	}
 }
 
@@ -28,22 +37,26 @@ body {
 }
 
 .page-wrapper {
+	overflow: hidden;
 	position: relative;
 	width: 1920px;
 	max-width: 100%;
 	margin: 0 auto;
 	transition: all 0.7s ease-in-out;
-	padding-top: 85px;
 	&.index {
+		overflow: visible;
 		position: absolute;
 		top: 60vh;
 		left: 0;
-		padding-top: 0;
 		&.slide {
-			top: 0;
+			top: 0;			
+			.header-banner {
+				z-index: -1;
+			}
 		}
 	}	
 }
+
 @media screen and (min-width: 1921px){
 	.page-wrapper {
 		position: absolute;
@@ -86,9 +99,9 @@ body {
 	// }
 	&.fixed {
 		position: fixed;
-		// & + section, & + div {
-		// 	margin-top: 85px;
-		// }
+		& + section, & + div {
+			padding-top: 85px;
+		}
 	}
 }
 .mobile-menu-container {
@@ -119,7 +132,7 @@ body {
 		}
 		&.fixed {
 			& + section, & + div {
-				margin-top: 66px;
+				padding-top: 66px;
 			}
 		}
 	}

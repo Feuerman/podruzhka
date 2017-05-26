@@ -247,7 +247,12 @@ body.page-inner
 										.filter-price
 											.layout-slider
 												.filter-price__title Цена
-												input#slider-price(type='text', name='area', value='0;10000')
+												input#slider-price(type='text')
+												.filter-price__inputs
+													.item
+														input(type="text" data-type="from")
+													.item
+														input(type="text" data-type="to")
 								.catalog-filter__item.text-right
 									.filter-list__mobile-title
 										span Акции

@@ -149,7 +149,19 @@ body.page-inner
 								span Фильтры
 							.catalog-filter
 								.catalog-filter__item.catalog-filter__item--price
-									img(src="img/filter-price.png", alt="")
+									.filter-list__mobile-title
+										span Цена
+										i.icon.icon__plus--black
+									.filter-list.filter-list--mobile
+										.filter-price
+											.layout-slider
+												.filter-price__title Цена
+												input#slider-price(type='text')
+												.filter-price__inputs
+													.item
+														input(type="text" data-type="from")
+													.item
+														input(type="text" data-type="to")
 								.catalog-filter__item.catalog-filter__item--spec
 									.filter-list__mobile-title
 										span спецпредложения
